@@ -1,5 +1,6 @@
 import argparse
 import traceback
+from random import Random
 
 import numpy as np
 from sklearn.model_selection import cross_val_predict
@@ -8,36 +9,32 @@ from sklearn.svm import SVC
 import estimation_methods
 import IO
 
-def error(predictions, y):
-    error = []
+import tracemalloc
+from utils import minmax, reduce, display_top, npShuffle
 
-    if type(y[0]) == str:
-        for i in range(len(y)):
-            pred = predictions[i]
-            if (pred == y[i]):
-                error.append(0)
-            else:
-                error.append(1)
-    else:
-        for i in range(len(y)):
-            pred = predictions[i]
-            if (np.sign(pred) == y[i]):
-                error.append(0)
-            else:
-                error.append(1)
-    return error
+
+def error(predictions, y):
+    return np.sign(np.abs(predictions-y))
 
 
 bandwith = 1
 kernel = 'epanechnikov'
 
-def classification(X_train, Y_train, X_test, Y_test):
+def classification(X_train, Y_train, X_test, Y_test, seed):
+    tracemalloc.start()
     model = SVC(kernel='linear', C=1, coef0=0)
+
+    minmax_X = minmax(X_train)
+    X_train = reduce(X_train, minmax_X)
+    X_test = reduce(X_test, minmax_X)
 
     model.fit(X_train, Y_train)
     Pred_Eval = model.predict(X_test)
 
     eval = error(Pred_Eval, Y_test)
+
+    X_train=npShuffle(X_train,seed)
+    Y_train=npShuffle(Y_train,seed)
 
     CV = cross_val_predict(model, X_train, Y_train, cv=10)#, method='decision_function')
     CVError = error(CV, Y_train)
@@ -47,20 +44,37 @@ def classification(X_train, Y_train, X_test, Y_test):
 
     P_train = importanceModel.decision_function(X_train)
     P_test = importanceModel.decision_function(X_test)
+
     try:
-        importances_kliep = estimation_methods.kliep(X_train, X_test)
-        kliep_err = CVError * importances_kliep
+        importances_logReg = estimation_methods.log_regression(X_train, X_test)
+        logReg_err = CVError * importances_logReg
     except Exception:
-        print("Fallo kliep")
-        kliep_err = []
+        print("Fallo LogReg")
+        logReg_err = []
         traceback.print_exc()
 
     try:
-        importances_kliep_model = estimation_methods.kliep_model(P_train, P_test)
-        kliep_model_err = CVError * importances_kliep_model
+        importances_MLogReg = estimation_methods.log_regression_model(P_train, P_test)
+        MLogReg_err = CVError * importances_MLogReg
     except Exception:
-        print("Fallo kliep con modelo")
-        kliep_model_err = []
+        print("Fallo MLogReg")
+        MLogReg_err = []
+        traceback.print_exc()
+
+    try:
+        importances_KMM = estimation_methods.kmm(X_train, X_test)
+        KMM_err = CVError * importances_KMM
+    except Exception:
+        print("Fallo KMM")
+        KMM_err = []
+        traceback.print_exc()
+
+    try:
+        importances_MKMM = estimation_methods.kmm_model(P_train, P_test)
+        MKMM_err = CVError * importances_MKMM
+    except Exception:
+        print("Fallo MKMM")
+        MKMM_err = []
         traceback.print_exc()
 
     try:
@@ -79,9 +93,31 @@ def classification(X_train, Y_train, X_test, Y_test):
         kernel_density_model_err = []
         traceback.print_exc()
 
-    return [
-        np.average(eval), np.average(CVError), np.average(kliep_err), np.average(kliep_model_err), np.average(kernel_density_err), np.average(kernel_density_model_err)]
+    try:
+        importances_kliep = estimation_methods.kliep(X_train, X_test)
+        kliep_err = CVError * importances_kliep
+    except Exception:
+        print("Fallo kliep")
+        kliep_err = []
+        traceback.print_exc()
 
+    try:
+        importances_kliep_model = estimation_methods.kliep_model(P_train, P_test)
+        kliep_model_err = CVError * importances_kliep_model
+    except Exception:
+        print("Fallo kliep con modelo")
+        kliep_model_err = []
+        traceback.print_exc()
+
+    logReg_err = []
+    KMM_err = []
+    kernel_density_err = []
+    kliep_err = []
+    return [np.average(eval), np.average(CVError),
+            np.average(logReg_err), np.average(MLogReg_err),
+            np.average(KMM_err), np.average(MKMM_err),
+            np.average(kernel_density_err), np.average(kernel_density_model_err),
+            np.average(kliep_err), np.average(kliep_model_err)]
 
 def main():
     parser = argparse.ArgumentParser()
@@ -100,7 +136,7 @@ def main():
 
 
     X_train, Y_train, X_test, Y_test = IO.readDataset(filename_train, filename_test)
-    results = classification(X_train, Y_train, X_test, Y_test)
+    results = classification(X_train, Y_train, X_test, Y_test, seed)
     IO.writeToCSV(results, dataset_name, execution_id, seed)
 
 if __name__== "__main__":

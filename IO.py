@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 
-headers = ["Eval", "CV", "Kliep", "MKliep","KernelDensity", "MKernelDensity"]
+headers = ["Eval", "CV","LR", "PLR", "KMM", "PKMM", "KDE", "PKDE", "KLIEP",  "PKLIEP"]
 
 def readDataset(filename_train, filename_test):
     data_train = pd.read_csv(filename_train, sep=",", header=0)
@@ -18,8 +18,11 @@ def readDataset(filename_train, filename_test):
 
 
 def writeToCSV(data, dataset_name, execution_id, seed):
-    directory = './results-' + str(seed) + '/' + dataset_name
-    filename = directory + "/" + dataset_name + "-" + execution_id + ".csv"
+    #directory = './results-' + str(seed) + '/' + dataset_name
+    #filename = directory + "/" + dataset_name + "-" + execution_id + ".csv"
+
+    directory = './results-y/' + dataset_name
+    filename = directory + "/" + dataset_name + "-" + str(seed)+ "-" + execution_id + ".csv"
 
     if not os.path.isdir(directory):
         os.makedirs(directory)
@@ -31,8 +34,10 @@ def writeToCSV(data, dataset_name, execution_id, seed):
     return
 
 def saveCSV(data, title, dataset_name, percentage, seed):
-    directory = './results-' + str(seed) + '/' + dataset_name
-    filename = directory + "/" + dataset_name + "-" + str(percentage) + "-"+title+".csv"
+    #directory = './results-' + str(seed) + '/' + dataset_name
+    #filename = directory + "/" + dataset_name + "-" + str(percentage) + "-"+title+".csv"
+    directory = './results-y/' + dataset_name
+    filename = directory + "/" + dataset_name + "-" + str(seed) + "-" + str(percentage) + "-"+title+".csv"
 
     if not os.path.isdir(directory):
         os.makedirs(directory)

@@ -20,21 +20,20 @@ def main():
     #test_number = int(args.test_number)
     seed = int(args.seed)
 
-    data = join(dataset_name, percentage, seed)
+    #data = join(dataset_name, percentage, seed)
     # for plancton
-    #filename = "results/" + dataset_name + "/" + dataset_name +"-"+str(seed) + "-1.csv"
-    #data = pd.read_csv(filename, header = 0)
-    #data = data.values
+    filename = "results/" + dataset_name + "/" + dataset_name +"-"+str(seed) + "-1.csv"
+    data = pd.read_csv(filename, header = 0)
+    data = data.values
 
     distances = calculateDistances(data)
     IO.saveCSV(distances, "distances", dataset_name, percentage, seed)
-"""
+
     if np.isnan(distances).any():
         ranking = []
     else:
         ranking = friedman(distances, dataset_name, percentage)
     IO.saveCSV(ranking, "friedman", dataset_name, percentage, seed)
-"""
 
 
 def friedman(evals, dataset_name, percentage):

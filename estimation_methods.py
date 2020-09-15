@@ -1,6 +1,8 @@
+from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KernelDensity
 from DRE import DensityRatioEstimator
 import numpy as np
+from KMM import iwe_kernel_mean_matching
 
 # Aux function to transpose 1 dim
 def T(V):
@@ -35,20 +37,18 @@ def kernel_density(X_train, X_test, bandwidth, kernel):
     # Train's DF
     kde.fit(X_train)
     DF_trainV = kde.score_samples(X_train)
-    DF_train = list(map(lambda x: np.exp(x), DF_trainV))
+#    DF_train = list(map(lambda x: np.exp(x), DF_trainV))
 
     kde = KernelDensity(bandwidth=bandwidth, kernel=kernel)
     # Test's DF
     kde.fit(X_test)
     DF_testV = kde.score_samples(X_train)
-    DF_test = list(map(lambda x: np.exp(x), DF_testV))
-
-    DF_train = DF_train
-    DF_test = DF_test
+#    DF_test = list(map(lambda x: np.exp(x), DF_testV))
 
     importance = np.zeros(len(X_train))
     for i in range(len(X_train)):
-        importance[i] = DF_test[i] / DF_train[i]
+#        importance[i] = DF_test[i] / DF_train[i]
+        importance[i] =np.exp(DF_testV[i]-DF_trainV[i])
 
     # Adjust for mean(importance)=1
     importance_sum = np.sum(importance)
@@ -77,18 +77,19 @@ def kernel_density_model(P_train, P_test, bandwidth, kernel):
     # Train's DF
     kde.fit(P_trainV)
     DF_trainV = kde.score_samples(P_trainV)
-    DF_train = list(map(lambda x: np.exp(x), DF_trainV))
+    #DF_train = list(map(lambda x: np.exp(x), DF_trainV))
 
     # kde = KernelDensity(bandwidth=np.std(P_test), kernel='epanechnikov')
     kde = KernelDensity(bandwidth=bandwidth, kernel=kernel)
     # Test's DF
     kde.fit(P_testV)
     DF_testV = kde.score_samples(P_trainV)
-    DF_test = list(map(lambda x: np.exp(x), DF_testV))
+    #DF_test = list(map(lambda x: np.exp(x), DF_testV))
 
     importance = np.zeros(len(P_train))
     for i in range(len(P_train)):
-        importance[i] = DF_test[i] / DF_train[i]
+        #importance[i] = DF_test[i] / DF_train[i]
+        importance[i] = np.exp(DF_testV[i] - DF_trainV[i])
 
     # Adjust for mean(importance)=1
     importance_sum = np.sum(importance)
@@ -101,3 +102,111 @@ def kernel_density_model(P_train, P_test, bandwidth, kernel):
     for i in range(len(P_train)):
         importance[i] = importance[i] * Mean1Coef
     return importance
+
+
+def log_regression(X_train, X_test):
+    X = np.concatenate((X_train, X_test))
+    y = np.zeros(len(X))
+    y[:len(X_train)] = 1
+    Y = y
+    log_reg = LogisticRegression()
+    log_reg.fit(X, Y)
+    Prob_train = log_reg.predict_proba(X_train)[:, 1]  # clases [0,1]
+    Prob_test = log_reg.predict_proba(X_train)[:, 0]  # 1 - P_train
+    importance = Prob_train / Prob_test
+
+    # Adjust for mean(importance)=1
+    importance_sum = np.sum(importance)
+    if importance_sum == 0:
+        for i in range(len(X_train)):
+            importance[i] = 1
+        importance_sum = np.sum(importance)
+
+    Mean1Coef = len(X_train) / importance_sum
+    for i in range(len(X_train)):
+        importance[i] = importance[i] * Mean1Coef
+
+    return importance
+
+
+def log_regression_model(P_train, P_test):
+    X = []
+    for element in P_train:
+        X.append([element])
+    for element in P_test:
+        X.append([element])
+    y = np.zeros(len(X))
+    y[:len(P_train)] = 1
+    Y = y
+    log_reg = LogisticRegression()
+    log_reg.fit(X, Y)
+    ptrain = []
+    for element in P_train:
+        ptrain.append([element])
+    Prob_train = log_reg.predict_proba(ptrain)[:, 1]  # clases [0,1]
+    Prob_test = log_reg.predict_proba(ptrain)[:, 0]  # 1 - P_train
+    importance = Prob_train / Prob_test
+
+    # Adjust for mean(importance)=1
+    importance_sum = np.sum(importance)
+    if importance_sum == 0:
+        for i in range(len(P_train)):
+            importance[i] = 1
+        importance_sum = np.sum(importance)
+
+    Mean1Coef = len(P_train) / importance_sum
+    for i in range(len(P_train)):
+        importance[i] = importance[i] * Mean1Coef
+
+    return importance
+
+
+def log_regression_model_classification(P_train, P_test):
+    X = np.concatenate((P_train, P_test))
+    y = np.zeros(len(X))
+    y[:len(P_train)] = 1
+    Y = y
+    log_reg = LogisticRegression()
+    log_reg.fit(X, Y)
+    Prob_train = log_reg.predict_proba(P_train)[:, 1]  # clases [0,1]
+    Prob_test = log_reg.predict_proba(P_train)[:, 0]  # 1 - P_train
+
+    importance = Prob_train / Prob_test
+
+    # Adjust for mean(importance)=1
+    importance_sum = np.sum(importance)
+    if importance_sum == 0:
+        for i in range(len(P_train)):
+            importance[i] = 1
+        importance_sum = np.sum(importance)
+
+    Mean1Coef = len(P_train) / importance_sum
+    for i in range(len(P_train)):
+        importance[i] = importance[i] * Mean1Coef
+
+    return importance
+
+
+def kmm(X_train, X_test):
+    importance = iwe_kernel_mean_matching(X_train, X_test)
+    return importance
+
+
+def kmm_model(P_train, P_test):
+    train = []
+    for element in P_train:
+        train.append([element])
+    train = np.array(train)
+    test = []
+    for element in P_test:
+        test.append([element])
+    test = np.array(test)
+    importance = iwe_kernel_mean_matching(train, test)
+    return importance
+
+
+def kmm_model_classification(P_train, P_test):
+    importance = iwe_kernel_mean_matching(P_train, P_test)
+    return importance
+
+

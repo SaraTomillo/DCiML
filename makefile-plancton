@@ -1,0 +1,917 @@
+python=python3
+
+files = results/plancton-2006/plancton-2006-2032-1.0.csv  results/plancton-2006/plancton-2006-2032-1.0-friedman.csv results/plancton-2007/plancton-2007-2032-1.0.csv  results/plancton-2007/plancton-2007-2032-1.0-friedman.csv results/plancton-2008/plancton-2008-2032-1.0.csv  results/plancton-2008/plancton-2008-2032-1.0-friedman.csv results/plancton-2009/plancton-2009-2032-1.0.csv  results/plancton-2009/plancton-2009-2032-1.0-friedman.csv results/plancton-2010/plancton-2010-2032-1.0.csv  results/plancton-2010/plancton-2010-2032-1.0-friedman.csv results/plancton-2011/plancton-2011-2032-1.0.csv  results/plancton-2011/plancton-2011-2032-1.0-friedman.csv results/plancton-2012/plancton-2012-2032-1.0.csv  results/plancton-2012/plancton-2012-2032-1.0-friedman.csv results/plancton-2013/plancton-2013-2032-1.0.csv  results/plancton-2013/plancton-2013-2032-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2032-1.0.csv  results/plancton-2006-2007/plancton-2006-2007-2032-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2032-1.0.csv  results/plancton-2007-2008/plancton-2007-2008-2032-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2032-1.0.csv  results/plancton-2008-2009/plancton-2008-2009-2032-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2032-1.0.csv  results/plancton-2009-2010/plancton-2009-2010-2032-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2032-1.0.csv  results/plancton-2010-2011/plancton-2010-2011-2032-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2032-1.0.csv  results/plancton-2011-2012/plancton-2011-2012-2032-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2032-1.0.csv  results/plancton-2012-2013/plancton-2012-2013-2032-1.0-friedman.csv  results/plancton-2006/plancton-2006-2033-1.0.csv  results/plancton-2006/plancton-2006-2033-1.0-friedman.csv results/plancton-2007/plancton-2007-2033-1.0.csv  results/plancton-2007/plancton-2007-2033-1.0-friedman.csv results/plancton-2008/plancton-2008-2033-1.0.csv  results/plancton-2008/plancton-2008-2033-1.0-friedman.csv results/plancton-2009/plancton-2009-2033-1.0.csv  results/plancton-2009/plancton-2009-2033-1.0-friedman.csv results/plancton-2010/plancton-2010-2033-1.0.csv  results/plancton-2010/plancton-2010-2033-1.0-friedman.csv results/plancton-2011/plancton-2011-2033-1.0.csv  results/plancton-2011/plancton-2011-2033-1.0-friedman.csv results/plancton-2012/plancton-2012-2033-1.0.csv  results/plancton-2012/plancton-2012-2033-1.0-friedman.csv results/plancton-2013/plancton-2013-2033-1.0.csv  results/plancton-2013/plancton-2013-2033-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2033-1.0.csv  results/plancton-2006-2007/plancton-2006-2007-2033-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2033-1.0.csv  results/plancton-2007-2008/plancton-2007-2008-2033-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2033-1.0.csv  results/plancton-2008-2009/plancton-2008-2009-2033-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2033-1.0.csv  results/plancton-2009-2010/plancton-2009-2010-2033-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2033-1.0.csv  results/plancton-2010-2011/plancton-2010-2011-2033-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2033-1.0.csv  results/plancton-2011-2012/plancton-2011-2012-2033-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2033-1.0.csv  results/plancton-2012-2013/plancton-2012-2013-2033-1.0-friedman.csv  results/plancton-2006/plancton-2006-2034-1.0.csv  results/plancton-2006/plancton-2006-2034-1.0-friedman.csv results/plancton-2007/plancton-2007-2034-1.0.csv  results/plancton-2007/plancton-2007-2034-1.0-friedman.csv results/plancton-2008/plancton-2008-2034-1.0.csv  results/plancton-2008/plancton-2008-2034-1.0-friedman.csv results/plancton-2009/plancton-2009-2034-1.0.csv  results/plancton-2009/plancton-2009-2034-1.0-friedman.csv results/plancton-2010/plancton-2010-2034-1.0.csv  results/plancton-2010/plancton-2010-2034-1.0-friedman.csv results/plancton-2011/plancton-2011-2034-1.0.csv  results/plancton-2011/plancton-2011-2034-1.0-friedman.csv results/plancton-2012/plancton-2012-2034-1.0.csv  results/plancton-2012/plancton-2012-2034-1.0-friedman.csv results/plancton-2013/plancton-2013-2034-1.0.csv  results/plancton-2013/plancton-2013-2034-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2034-1.0.csv  results/plancton-2006-2007/plancton-2006-2007-2034-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2034-1.0.csv  results/plancton-2007-2008/plancton-2007-2008-2034-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2034-1.0.csv  results/plancton-2008-2009/plancton-2008-2009-2034-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2034-1.0.csv  results/plancton-2009-2010/plancton-2009-2010-2034-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2034-1.0.csv  results/plancton-2010-2011/plancton-2010-2011-2034-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2034-1.0.csv  results/plancton-2011-2012/plancton-2011-2012-2034-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2034-1.0.csv  results/plancton-2012-2013/plancton-2012-2013-2034-1.0-friedman.csv  results/plancton-2006/plancton-2006-2035-1.0.csv  results/plancton-2006/plancton-2006-2035-1.0-friedman.csv results/plancton-2007/plancton-2007-2035-1.0.csv  results/plancton-2007/plancton-2007-2035-1.0-friedman.csv results/plancton-2008/plancton-2008-2035-1.0.csv  results/plancton-2008/plancton-2008-2035-1.0-friedman.csv results/plancton-2009/plancton-2009-2035-1.0.csv  results/plancton-2009/plancton-2009-2035-1.0-friedman.csv results/plancton-2010/plancton-2010-2035-1.0.csv  results/plancton-2010/plancton-2010-2035-1.0-friedman.csv results/plancton-2011/plancton-2011-2035-1.0.csv  results/plancton-2011/plancton-2011-2035-1.0-friedman.csv results/plancton-2012/plancton-2012-2035-1.0.csv  results/plancton-2012/plancton-2012-2035-1.0-friedman.csv results/plancton-2013/plancton-2013-2035-1.0.csv  results/plancton-2013/plancton-2013-2035-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2035-1.0.csv  results/plancton-2006-2007/plancton-2006-2007-2035-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2035-1.0.csv  results/plancton-2007-2008/plancton-2007-2008-2035-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2035-1.0.csv  results/plancton-2008-2009/plancton-2008-2009-2035-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2035-1.0.csv  results/plancton-2009-2010/plancton-2009-2010-2035-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2035-1.0.csv  results/plancton-2010-2011/plancton-2010-2011-2035-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2035-1.0.csv  results/plancton-2011-2012/plancton-2011-2012-2035-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2035-1.0.csv  results/plancton-2012-2013/plancton-2012-2013-2035-1.0-friedman.csv  results/plancton-2006/plancton-2006-2036-1.0.csv  results/plancton-2006/plancton-2006-2036-1.0-friedman.csv results/plancton-2007/plancton-2007-2036-1.0.csv  results/plancton-2007/plancton-2007-2036-1.0-friedman.csv results/plancton-2008/plancton-2008-2036-1.0.csv  results/plancton-2008/plancton-2008-2036-1.0-friedman.csv results/plancton-2009/plancton-2009-2036-1.0.csv  results/plancton-2009/plancton-2009-2036-1.0-friedman.csv results/plancton-2010/plancton-2010-2036-1.0.csv  results/plancton-2010/plancton-2010-2036-1.0-friedman.csv results/plancton-2011/plancton-2011-2036-1.0.csv  results/plancton-2011/plancton-2011-2036-1.0-friedman.csv results/plancton-2012/plancton-2012-2036-1.0.csv  results/plancton-2012/plancton-2012-2036-1.0-friedman.csv results/plancton-2013/plancton-2013-2036-1.0.csv  results/plancton-2013/plancton-2013-2036-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2036-1.0.csv  results/plancton-2006-2007/plancton-2006-2007-2036-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2036-1.0.csv  results/plancton-2007-2008/plancton-2007-2008-2036-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2036-1.0.csv  results/plancton-2008-2009/plancton-2008-2009-2036-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2036-1.0.csv  results/plancton-2009-2010/plancton-2009-2010-2036-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2036-1.0.csv  results/plancton-2010-2011/plancton-2010-2011-2036-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2036-1.0.csv  results/plancton-2011-2012/plancton-2011-2012-2036-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2036-1.0.csv  results/plancton-2012-2013/plancton-2012-2013-2036-1.0-friedman.csv  results/plancton-2006/plancton-2006-2037-1.0.csv  results/plancton-2006/plancton-2006-2037-1.0-friedman.csv results/plancton-2007/plancton-2007-2037-1.0.csv  results/plancton-2007/plancton-2007-2037-1.0-friedman.csv results/plancton-2008/plancton-2008-2037-1.0.csv  results/plancton-2008/plancton-2008-2037-1.0-friedman.csv results/plancton-2009/plancton-2009-2037-1.0.csv  results/plancton-2009/plancton-2009-2037-1.0-friedman.csv results/plancton-2010/plancton-2010-2037-1.0.csv  results/plancton-2010/plancton-2010-2037-1.0-friedman.csv results/plancton-2011/plancton-2011-2037-1.0.csv  results/plancton-2011/plancton-2011-2037-1.0-friedman.csv results/plancton-2012/plancton-2012-2037-1.0.csv  results/plancton-2012/plancton-2012-2037-1.0-friedman.csv results/plancton-2013/plancton-2013-2037-1.0.csv  results/plancton-2013/plancton-2013-2037-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2037-1.0.csv  results/plancton-2006-2007/plancton-2006-2007-2037-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2037-1.0.csv  results/plancton-2007-2008/plancton-2007-2008-2037-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2037-1.0.csv  results/plancton-2008-2009/plancton-2008-2009-2037-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2037-1.0.csv  results/plancton-2009-2010/plancton-2009-2010-2037-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2037-1.0.csv  results/plancton-2010-2011/plancton-2010-2011-2037-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2037-1.0.csv  results/plancton-2011-2012/plancton-2011-2012-2037-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2037-1.0.csv  results/plancton-2012-2013/plancton-2012-2013-2037-1.0-friedman.csv  results/plancton-2006/plancton-2006-2038-1.0.csv  results/plancton-2006/plancton-2006-2038-1.0-friedman.csv results/plancton-2007/plancton-2007-2038-1.0.csv  results/plancton-2007/plancton-2007-2038-1.0-friedman.csv results/plancton-2008/plancton-2008-2038-1.0.csv  results/plancton-2008/plancton-2008-2038-1.0-friedman.csv results/plancton-2009/plancton-2009-2038-1.0.csv  results/plancton-2009/plancton-2009-2038-1.0-friedman.csv results/plancton-2010/plancton-2010-2038-1.0.csv  results/plancton-2010/plancton-2010-2038-1.0-friedman.csv results/plancton-2011/plancton-2011-2038-1.0.csv  results/plancton-2011/plancton-2011-2038-1.0-friedman.csv results/plancton-2012/plancton-2012-2038-1.0.csv  results/plancton-2012/plancton-2012-2038-1.0-friedman.csv results/plancton-2013/plancton-2013-2038-1.0.csv  results/plancton-2013/plancton-2013-2038-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2038-1.0.csv  results/plancton-2006-2007/plancton-2006-2007-2038-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2038-1.0.csv  results/plancton-2007-2008/plancton-2007-2008-2038-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2038-1.0.csv  results/plancton-2008-2009/plancton-2008-2009-2038-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2038-1.0.csv  results/plancton-2009-2010/plancton-2009-2010-2038-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2038-1.0.csv  results/plancton-2010-2011/plancton-2010-2011-2038-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2038-1.0.csv  results/plancton-2011-2012/plancton-2011-2012-2038-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2038-1.0.csv  results/plancton-2012-2013/plancton-2012-2013-2038-1.0-friedman.csv  results/plancton-2006/plancton-2006-2039-1.0.csv  results/plancton-2006/plancton-2006-2039-1.0-friedman.csv results/plancton-2007/plancton-2007-2039-1.0.csv  results/plancton-2007/plancton-2007-2039-1.0-friedman.csv results/plancton-2008/plancton-2008-2039-1.0.csv  results/plancton-2008/plancton-2008-2039-1.0-friedman.csv results/plancton-2009/plancton-2009-2039-1.0.csv  results/plancton-2009/plancton-2009-2039-1.0-friedman.csv results/plancton-2010/plancton-2010-2039-1.0.csv  results/plancton-2010/plancton-2010-2039-1.0-friedman.csv results/plancton-2011/plancton-2011-2039-1.0.csv  results/plancton-2011/plancton-2011-2039-1.0-friedman.csv results/plancton-2012/plancton-2012-2039-1.0.csv  results/plancton-2012/plancton-2012-2039-1.0-friedman.csv results/plancton-2013/plancton-2013-2039-1.0.csv  results/plancton-2013/plancton-2013-2039-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2039-1.0.csv  results/plancton-2006-2007/plancton-2006-2007-2039-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2039-1.0.csv  results/plancton-2007-2008/plancton-2007-2008-2039-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2039-1.0.csv  results/plancton-2008-2009/plancton-2008-2009-2039-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2039-1.0.csv  results/plancton-2009-2010/plancton-2009-2010-2039-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2039-1.0.csv  results/plancton-2010-2011/plancton-2010-2011-2039-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2039-1.0.csv  results/plancton-2011-2012/plancton-2011-2012-2039-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2039-1.0.csv  results/plancton-2012-2013/plancton-2012-2013-2039-1.0-friedman.csv  results/plancton-2006/plancton-2006-2040-1.0.csv  results/plancton-2006/plancton-2006-2040-1.0-friedman.csv results/plancton-2007/plancton-2007-2040-1.0.csv  results/plancton-2007/plancton-2007-2040-1.0-friedman.csv results/plancton-2008/plancton-2008-2040-1.0.csv  results/plancton-2008/plancton-2008-2040-1.0-friedman.csv results/plancton-2009/plancton-2009-2040-1.0.csv  results/plancton-2009/plancton-2009-2040-1.0-friedman.csv results/plancton-2010/plancton-2010-2040-1.0.csv  results/plancton-2010/plancton-2010-2040-1.0-friedman.csv results/plancton-2011/plancton-2011-2040-1.0.csv  results/plancton-2011/plancton-2011-2040-1.0-friedman.csv results/plancton-2012/plancton-2012-2040-1.0.csv  results/plancton-2012/plancton-2012-2040-1.0-friedman.csv results/plancton-2013/plancton-2013-2040-1.0.csv  results/plancton-2013/plancton-2013-2040-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2040-1.0.csv  results/plancton-2006-2007/plancton-2006-2007-2040-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2040-1.0.csv  results/plancton-2007-2008/plancton-2007-2008-2040-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2040-1.0.csv  results/plancton-2008-2009/plancton-2008-2009-2040-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2040-1.0.csv  results/plancton-2009-2010/plancton-2009-2010-2040-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2040-1.0.csv  results/plancton-2010-2011/plancton-2010-2011-2040-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2040-1.0.csv  results/plancton-2011-2012/plancton-2011-2012-2040-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2040-1.0.csv  results/plancton-2012-2013/plancton-2012-2013-2040-1.0-friedman.csv  results/plancton-2006/plancton-2006-2041-1.0.csv  results/plancton-2006/plancton-2006-2041-1.0-friedman.csv results/plancton-2007/plancton-2007-2041-1.0.csv  results/plancton-2007/plancton-2007-2041-1.0-friedman.csv results/plancton-2008/plancton-2008-2041-1.0.csv  results/plancton-2008/plancton-2008-2041-1.0-friedman.csv results/plancton-2009/plancton-2009-2041-1.0.csv  results/plancton-2009/plancton-2009-2041-1.0-friedman.csv results/plancton-2010/plancton-2010-2041-1.0.csv  results/plancton-2010/plancton-2010-2041-1.0-friedman.csv results/plancton-2011/plancton-2011-2041-1.0.csv  results/plancton-2011/plancton-2011-2041-1.0-friedman.csv results/plancton-2012/plancton-2012-2041-1.0.csv  results/plancton-2012/plancton-2012-2041-1.0-friedman.csv results/plancton-2013/plancton-2013-2041-1.0.csv  results/plancton-2013/plancton-2013-2041-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2041-1.0.csv  results/plancton-2006-2007/plancton-2006-2007-2041-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2041-1.0.csv  results/plancton-2007-2008/plancton-2007-2008-2041-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2041-1.0.csv  results/plancton-2008-2009/plancton-2008-2009-2041-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2041-1.0.csv  results/plancton-2009-2010/plancton-2009-2010-2041-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2041-1.0.csv  results/plancton-2010-2011/plancton-2010-2011-2041-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2041-1.0.csv  results/plancton-2011-2012/plancton-2011-2012-2041-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2041-1.0.csv  results/plancton-2012-2013/plancton-2012-2013-2041-1.0-friedman.csv  results-final/plancton/plancton-friedman-CV-KDE-MKDE-1.0.csv 
+
+all	: $(files)
+	@echo ALL done
+
+delete	:
+	rm -f $(files)
+	@echo DELETE done
+
+build	: delete all
+	@echo BUILD done
+
+results/plancton-2006/plancton-2006-2032-1.0-friedman.csv	: friedman.py results/plancton-2006/plancton-2006-2032-1.0.csv
+	$(python) friedman.py plancton-2006 1.0 2032
+
+results/plancton-2006/plancton-2006-2032-1.0.csv	: classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv
+	$(python) classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv plancton-2006 1 2032
+
+results/plancton-2007/plancton-2007-2032-1.0-friedman.csv	: friedman.py results/plancton-2007/plancton-2007-2032-1.0.csv
+	$(python) friedman.py plancton-2007 1.0 2032
+
+results/plancton-2007/plancton-2007-2032-1.0.csv	: classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv
+	$(python) classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv plancton-2007 1 2032
+
+results/plancton-2008/plancton-2008-2032-1.0-friedman.csv	: friedman.py results/plancton-2008/plancton-2008-2032-1.0.csv
+	$(python) friedman.py plancton-2008 1.0 2032
+
+results/plancton-2008/plancton-2008-2032-1.0.csv	: classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv
+	$(python) classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv plancton-2008 1 2032
+
+results/plancton-2009/plancton-2009-2032-1.0-friedman.csv	: friedman.py results/plancton-2009/plancton-2009-2032-1.0.csv
+	$(python) friedman.py plancton-2009 1.0 2032
+
+results/plancton-2009/plancton-2009-2032-1.0.csv	: classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv
+	$(python) classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv plancton-2009 1 2032
+
+results/plancton-2010/plancton-2010-2032-1.0-friedman.csv	: friedman.py results/plancton-2010/plancton-2010-2032-1.0.csv
+	$(python) friedman.py plancton-2010 1.0 2032
+
+results/plancton-2010/plancton-2010-2032-1.0.csv	: classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv
+	$(python) classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv plancton-2010 1 2032
+
+results/plancton-2011/plancton-2011-2032-1.0-friedman.csv	: friedman.py results/plancton-2011/plancton-2011-2032-1.0.csv
+	$(python) friedman.py plancton-2011 1.0 2032
+
+results/plancton-2011/plancton-2011-2032-1.0.csv	: classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv
+	$(python) classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv plancton-2011 1 2032
+
+results/plancton-2012/plancton-2012-2032-1.0-friedman.csv	: friedman.py results/plancton-2012/plancton-2012-2032-1.0.csv
+	$(python) friedman.py plancton-2012 1.0 2032
+
+results/plancton-2012/plancton-2012-2032-1.0.csv	: classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv
+	$(python) classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv plancton-2012 1 2032
+
+results/plancton-2013/plancton-2013-2032-1.0-friedman.csv	: friedman.py results/plancton-2013/plancton-2013-2032-1.0.csv
+	$(python) friedman.py plancton-2013 1.0 2032
+
+results/plancton-2013/plancton-2013-2032-1.0.csv	: classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv
+	$(python) classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv plancton-2013 1 2032
+
+results/plancton-2006-2007/plancton-2006-2007-2032-1.0-friedman.csv	: friedman.py results/plancton-2006-2007/plancton-2006-2007-2032-1.0.csv
+	$(python) friedman.py plancton-2006-2007 1.0 2032
+
+results/plancton-2006-2007/plancton-2006-2007-2032-1.0.csv	: classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv
+	$(python) classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv plancton-2006-2007 1 2032
+
+results/plancton-2007-2008/plancton-2007-2008-2032-1.0-friedman.csv	: friedman.py results/plancton-2007-2008/plancton-2007-2008-2032-1.0.csv
+	$(python) friedman.py plancton-2007-2008 1.0 2032
+
+results/plancton-2007-2008/plancton-2007-2008-2032-1.0.csv	: classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv
+	$(python) classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv plancton-2007-2008 1 2032
+
+results/plancton-2008-2009/plancton-2008-2009-2032-1.0-friedman.csv	: friedman.py results/plancton-2008-2009/plancton-2008-2009-2032-1.0.csv
+	$(python) friedman.py plancton-2008-2009 1.0 2032
+
+results/plancton-2008-2009/plancton-2008-2009-2032-1.0.csv	: classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv
+	$(python) classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv plancton-2008-2009 1 2032
+
+results/plancton-2009-2010/plancton-2009-2010-2032-1.0-friedman.csv	: friedman.py results/plancton-2009-2010/plancton-2009-2010-2032-1.0.csv
+	$(python) friedman.py plancton-2009-2010 1.0 2032
+
+results/plancton-2009-2010/plancton-2009-2010-2032-1.0.csv	: classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv
+	$(python) classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv plancton-2009-2010 1 2032
+
+results/plancton-2010-2011/plancton-2010-2011-2032-1.0-friedman.csv	: friedman.py results/plancton-2010-2011/plancton-2010-2011-2032-1.0.csv
+	$(python) friedman.py plancton-2010-2011 1.0 2032
+
+results/plancton-2010-2011/plancton-2010-2011-2032-1.0.csv	: classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv
+	$(python) classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv plancton-2010-2011 1 2032
+
+results/plancton-2011-2012/plancton-2011-2012-2032-1.0-friedman.csv	: friedman.py results/plancton-2011-2012/plancton-2011-2012-2032-1.0.csv
+	$(python) friedman.py plancton-2011-2012 1.0 2032
+
+results/plancton-2011-2012/plancton-2011-2012-2032-1.0.csv	: classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv
+	$(python) classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv plancton-2011-2012 1 2032
+
+results/plancton-2012-2013/plancton-2012-2013-2032-1.0-friedman.csv	: friedman.py results/plancton-2012-2013/plancton-2012-2013-2032-1.0.csv
+	$(python) friedman.py plancton-2012-2013 1.0 2032
+
+results/plancton-2012-2013/plancton-2012-2013-2032-1.0.csv	: classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv
+	$(python) classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv plancton-2012-2013 1 2032
+
+results/plancton-2006/plancton-2006-2033-1.0-friedman.csv	: friedman.py results/plancton-2006/plancton-2006-2033-1.0.csv
+	$(python) friedman.py plancton-2006 1.0 2033
+
+results/plancton-2006/plancton-2006-2033-1.0.csv	: classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv
+	$(python) classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv plancton-2006 1 2033
+
+results/plancton-2007/plancton-2007-2033-1.0-friedman.csv	: friedman.py results/plancton-2007/plancton-2007-2033-1.0.csv
+	$(python) friedman.py plancton-2007 1.0 2033
+
+results/plancton-2007/plancton-2007-2033-1.0.csv	: classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv
+	$(python) classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv plancton-2007 1 2033
+
+results/plancton-2008/plancton-2008-2033-1.0-friedman.csv	: friedman.py results/plancton-2008/plancton-2008-2033-1.0.csv
+	$(python) friedman.py plancton-2008 1.0 2033
+
+results/plancton-2008/plancton-2008-2033-1.0.csv	: classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv
+	$(python) classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv plancton-2008 1 2033
+
+results/plancton-2009/plancton-2009-2033-1.0-friedman.csv	: friedman.py results/plancton-2009/plancton-2009-2033-1.0.csv
+	$(python) friedman.py plancton-2009 1.0 2033
+
+results/plancton-2009/plancton-2009-2033-1.0.csv	: classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv
+	$(python) classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv plancton-2009 1 2033
+
+results/plancton-2010/plancton-2010-2033-1.0-friedman.csv	: friedman.py results/plancton-2010/plancton-2010-2033-1.0.csv
+	$(python) friedman.py plancton-2010 1.0 2033
+
+results/plancton-2010/plancton-2010-2033-1.0.csv	: classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv
+	$(python) classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv plancton-2010 1 2033
+
+results/plancton-2011/plancton-2011-2033-1.0-friedman.csv	: friedman.py results/plancton-2011/plancton-2011-2033-1.0.csv
+	$(python) friedman.py plancton-2011 1.0 2033
+
+results/plancton-2011/plancton-2011-2033-1.0.csv	: classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv
+	$(python) classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv plancton-2011 1 2033
+
+results/plancton-2012/plancton-2012-2033-1.0-friedman.csv	: friedman.py results/plancton-2012/plancton-2012-2033-1.0.csv
+	$(python) friedman.py plancton-2012 1.0 2033
+
+results/plancton-2012/plancton-2012-2033-1.0.csv	: classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv
+	$(python) classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv plancton-2012 1 2033
+
+results/plancton-2013/plancton-2013-2033-1.0-friedman.csv	: friedman.py results/plancton-2013/plancton-2013-2033-1.0.csv
+	$(python) friedman.py plancton-2013 1.0 2033
+
+results/plancton-2013/plancton-2013-2033-1.0.csv	: classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv
+	$(python) classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv plancton-2013 1 2033
+
+results/plancton-2006-2007/plancton-2006-2007-2033-1.0-friedman.csv	: friedman.py results/plancton-2006-2007/plancton-2006-2007-2033-1.0.csv
+	$(python) friedman.py plancton-2006-2007 1.0 2033
+
+results/plancton-2006-2007/plancton-2006-2007-2033-1.0.csv	: classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv
+	$(python) classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv plancton-2006-2007 1 2033
+
+results/plancton-2007-2008/plancton-2007-2008-2033-1.0-friedman.csv	: friedman.py results/plancton-2007-2008/plancton-2007-2008-2033-1.0.csv
+	$(python) friedman.py plancton-2007-2008 1.0 2033
+
+results/plancton-2007-2008/plancton-2007-2008-2033-1.0.csv	: classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv
+	$(python) classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv plancton-2007-2008 1 2033
+
+results/plancton-2008-2009/plancton-2008-2009-2033-1.0-friedman.csv	: friedman.py results/plancton-2008-2009/plancton-2008-2009-2033-1.0.csv
+	$(python) friedman.py plancton-2008-2009 1.0 2033
+
+results/plancton-2008-2009/plancton-2008-2009-2033-1.0.csv	: classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv
+	$(python) classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv plancton-2008-2009 1 2033
+
+results/plancton-2009-2010/plancton-2009-2010-2033-1.0-friedman.csv	: friedman.py results/plancton-2009-2010/plancton-2009-2010-2033-1.0.csv
+	$(python) friedman.py plancton-2009-2010 1.0 2033
+
+results/plancton-2009-2010/plancton-2009-2010-2033-1.0.csv	: classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv
+	$(python) classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv plancton-2009-2010 1 2033
+
+results/plancton-2010-2011/plancton-2010-2011-2033-1.0-friedman.csv	: friedman.py results/plancton-2010-2011/plancton-2010-2011-2033-1.0.csv
+	$(python) friedman.py plancton-2010-2011 1.0 2033
+
+results/plancton-2010-2011/plancton-2010-2011-2033-1.0.csv	: classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv
+	$(python) classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv plancton-2010-2011 1 2033
+
+results/plancton-2011-2012/plancton-2011-2012-2033-1.0-friedman.csv	: friedman.py results/plancton-2011-2012/plancton-2011-2012-2033-1.0.csv
+	$(python) friedman.py plancton-2011-2012 1.0 2033
+
+results/plancton-2011-2012/plancton-2011-2012-2033-1.0.csv	: classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv
+	$(python) classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv plancton-2011-2012 1 2033
+
+results/plancton-2012-2013/plancton-2012-2013-2033-1.0-friedman.csv	: friedman.py results/plancton-2012-2013/plancton-2012-2013-2033-1.0.csv
+	$(python) friedman.py plancton-2012-2013 1.0 2033
+
+results/plancton-2012-2013/plancton-2012-2013-2033-1.0.csv	: classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv
+	$(python) classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv plancton-2012-2013 1 2033
+
+results/plancton-2006/plancton-2006-2034-1.0-friedman.csv	: friedman.py results/plancton-2006/plancton-2006-2034-1.0.csv
+	$(python) friedman.py plancton-2006 1.0 2034
+
+results/plancton-2006/plancton-2006-2034-1.0.csv	: classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv
+	$(python) classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv plancton-2006 1 2034
+
+results/plancton-2007/plancton-2007-2034-1.0-friedman.csv	: friedman.py results/plancton-2007/plancton-2007-2034-1.0.csv
+	$(python) friedman.py plancton-2007 1.0 2034
+
+results/plancton-2007/plancton-2007-2034-1.0.csv	: classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv
+	$(python) classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv plancton-2007 1 2034
+
+results/plancton-2008/plancton-2008-2034-1.0-friedman.csv	: friedman.py results/plancton-2008/plancton-2008-2034-1.0.csv
+	$(python) friedman.py plancton-2008 1.0 2034
+
+results/plancton-2008/plancton-2008-2034-1.0.csv	: classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv
+	$(python) classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv plancton-2008 1 2034
+
+results/plancton-2009/plancton-2009-2034-1.0-friedman.csv	: friedman.py results/plancton-2009/plancton-2009-2034-1.0.csv
+	$(python) friedman.py plancton-2009 1.0 2034
+
+results/plancton-2009/plancton-2009-2034-1.0.csv	: classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv
+	$(python) classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv plancton-2009 1 2034
+
+results/plancton-2010/plancton-2010-2034-1.0-friedman.csv	: friedman.py results/plancton-2010/plancton-2010-2034-1.0.csv
+	$(python) friedman.py plancton-2010 1.0 2034
+
+results/plancton-2010/plancton-2010-2034-1.0.csv	: classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv
+	$(python) classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv plancton-2010 1 2034
+
+results/plancton-2011/plancton-2011-2034-1.0-friedman.csv	: friedman.py results/plancton-2011/plancton-2011-2034-1.0.csv
+	$(python) friedman.py plancton-2011 1.0 2034
+
+results/plancton-2011/plancton-2011-2034-1.0.csv	: classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv
+	$(python) classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv plancton-2011 1 2034
+
+results/plancton-2012/plancton-2012-2034-1.0-friedman.csv	: friedman.py results/plancton-2012/plancton-2012-2034-1.0.csv
+	$(python) friedman.py plancton-2012 1.0 2034
+
+results/plancton-2012/plancton-2012-2034-1.0.csv	: classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv
+	$(python) classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv plancton-2012 1 2034
+
+results/plancton-2013/plancton-2013-2034-1.0-friedman.csv	: friedman.py results/plancton-2013/plancton-2013-2034-1.0.csv
+	$(python) friedman.py plancton-2013 1.0 2034
+
+results/plancton-2013/plancton-2013-2034-1.0.csv	: classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv
+	$(python) classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv plancton-2013 1 2034
+
+results/plancton-2006-2007/plancton-2006-2007-2034-1.0-friedman.csv	: friedman.py results/plancton-2006-2007/plancton-2006-2007-2034-1.0.csv
+	$(python) friedman.py plancton-2006-2007 1.0 2034
+
+results/plancton-2006-2007/plancton-2006-2007-2034-1.0.csv	: classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv
+	$(python) classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv plancton-2006-2007 1 2034
+
+results/plancton-2007-2008/plancton-2007-2008-2034-1.0-friedman.csv	: friedman.py results/plancton-2007-2008/plancton-2007-2008-2034-1.0.csv
+	$(python) friedman.py plancton-2007-2008 1.0 2034
+
+results/plancton-2007-2008/plancton-2007-2008-2034-1.0.csv	: classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv
+	$(python) classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv plancton-2007-2008 1 2034
+
+results/plancton-2008-2009/plancton-2008-2009-2034-1.0-friedman.csv	: friedman.py results/plancton-2008-2009/plancton-2008-2009-2034-1.0.csv
+	$(python) friedman.py plancton-2008-2009 1.0 2034
+
+results/plancton-2008-2009/plancton-2008-2009-2034-1.0.csv	: classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv
+	$(python) classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv plancton-2008-2009 1 2034
+
+results/plancton-2009-2010/plancton-2009-2010-2034-1.0-friedman.csv	: friedman.py results/plancton-2009-2010/plancton-2009-2010-2034-1.0.csv
+	$(python) friedman.py plancton-2009-2010 1.0 2034
+
+results/plancton-2009-2010/plancton-2009-2010-2034-1.0.csv	: classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv
+	$(python) classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv plancton-2009-2010 1 2034
+
+results/plancton-2010-2011/plancton-2010-2011-2034-1.0-friedman.csv	: friedman.py results/plancton-2010-2011/plancton-2010-2011-2034-1.0.csv
+	$(python) friedman.py plancton-2010-2011 1.0 2034
+
+results/plancton-2010-2011/plancton-2010-2011-2034-1.0.csv	: classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv
+	$(python) classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv plancton-2010-2011 1 2034
+
+results/plancton-2011-2012/plancton-2011-2012-2034-1.0-friedman.csv	: friedman.py results/plancton-2011-2012/plancton-2011-2012-2034-1.0.csv
+	$(python) friedman.py plancton-2011-2012 1.0 2034
+
+results/plancton-2011-2012/plancton-2011-2012-2034-1.0.csv	: classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv
+	$(python) classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv plancton-2011-2012 1 2034
+
+results/plancton-2012-2013/plancton-2012-2013-2034-1.0-friedman.csv	: friedman.py results/plancton-2012-2013/plancton-2012-2013-2034-1.0.csv
+	$(python) friedman.py plancton-2012-2013 1.0 2034
+
+results/plancton-2012-2013/plancton-2012-2013-2034-1.0.csv	: classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv
+	$(python) classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv plancton-2012-2013 1 2034
+
+results/plancton-2006/plancton-2006-2035-1.0-friedman.csv	: friedman.py results/plancton-2006/plancton-2006-2035-1.0.csv
+	$(python) friedman.py plancton-2006 1.0 2035
+
+results/plancton-2006/plancton-2006-2035-1.0.csv	: classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv
+	$(python) classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv plancton-2006 1 2035
+
+results/plancton-2007/plancton-2007-2035-1.0-friedman.csv	: friedman.py results/plancton-2007/plancton-2007-2035-1.0.csv
+	$(python) friedman.py plancton-2007 1.0 2035
+
+results/plancton-2007/plancton-2007-2035-1.0.csv	: classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv
+	$(python) classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv plancton-2007 1 2035
+
+results/plancton-2008/plancton-2008-2035-1.0-friedman.csv	: friedman.py results/plancton-2008/plancton-2008-2035-1.0.csv
+	$(python) friedman.py plancton-2008 1.0 2035
+
+results/plancton-2008/plancton-2008-2035-1.0.csv	: classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv
+	$(python) classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv plancton-2008 1 2035
+
+results/plancton-2009/plancton-2009-2035-1.0-friedman.csv	: friedman.py results/plancton-2009/plancton-2009-2035-1.0.csv
+	$(python) friedman.py plancton-2009 1.0 2035
+
+results/plancton-2009/plancton-2009-2035-1.0.csv	: classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv
+	$(python) classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv plancton-2009 1 2035
+
+results/plancton-2010/plancton-2010-2035-1.0-friedman.csv	: friedman.py results/plancton-2010/plancton-2010-2035-1.0.csv
+	$(python) friedman.py plancton-2010 1.0 2035
+
+results/plancton-2010/plancton-2010-2035-1.0.csv	: classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv
+	$(python) classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv plancton-2010 1 2035
+
+results/plancton-2011/plancton-2011-2035-1.0-friedman.csv	: friedman.py results/plancton-2011/plancton-2011-2035-1.0.csv
+	$(python) friedman.py plancton-2011 1.0 2035
+
+results/plancton-2011/plancton-2011-2035-1.0.csv	: classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv
+	$(python) classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv plancton-2011 1 2035
+
+results/plancton-2012/plancton-2012-2035-1.0-friedman.csv	: friedman.py results/plancton-2012/plancton-2012-2035-1.0.csv
+	$(python) friedman.py plancton-2012 1.0 2035
+
+results/plancton-2012/plancton-2012-2035-1.0.csv	: classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv
+	$(python) classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv plancton-2012 1 2035
+
+results/plancton-2013/plancton-2013-2035-1.0-friedman.csv	: friedman.py results/plancton-2013/plancton-2013-2035-1.0.csv
+	$(python) friedman.py plancton-2013 1.0 2035
+
+results/plancton-2013/plancton-2013-2035-1.0.csv	: classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv
+	$(python) classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv plancton-2013 1 2035
+
+results/plancton-2006-2007/plancton-2006-2007-2035-1.0-friedman.csv	: friedman.py results/plancton-2006-2007/plancton-2006-2007-2035-1.0.csv
+	$(python) friedman.py plancton-2006-2007 1.0 2035
+
+results/plancton-2006-2007/plancton-2006-2007-2035-1.0.csv	: classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv
+	$(python) classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv plancton-2006-2007 1 2035
+
+results/plancton-2007-2008/plancton-2007-2008-2035-1.0-friedman.csv	: friedman.py results/plancton-2007-2008/plancton-2007-2008-2035-1.0.csv
+	$(python) friedman.py plancton-2007-2008 1.0 2035
+
+results/plancton-2007-2008/plancton-2007-2008-2035-1.0.csv	: classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv
+	$(python) classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv plancton-2007-2008 1 2035
+
+results/plancton-2008-2009/plancton-2008-2009-2035-1.0-friedman.csv	: friedman.py results/plancton-2008-2009/plancton-2008-2009-2035-1.0.csv
+	$(python) friedman.py plancton-2008-2009 1.0 2035
+
+results/plancton-2008-2009/plancton-2008-2009-2035-1.0.csv	: classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv
+	$(python) classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv plancton-2008-2009 1 2035
+
+results/plancton-2009-2010/plancton-2009-2010-2035-1.0-friedman.csv	: friedman.py results/plancton-2009-2010/plancton-2009-2010-2035-1.0.csv
+	$(python) friedman.py plancton-2009-2010 1.0 2035
+
+results/plancton-2009-2010/plancton-2009-2010-2035-1.0.csv	: classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv
+	$(python) classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv plancton-2009-2010 1 2035
+
+results/plancton-2010-2011/plancton-2010-2011-2035-1.0-friedman.csv	: friedman.py results/plancton-2010-2011/plancton-2010-2011-2035-1.0.csv
+	$(python) friedman.py plancton-2010-2011 1.0 2035
+
+results/plancton-2010-2011/plancton-2010-2011-2035-1.0.csv	: classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv
+	$(python) classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv plancton-2010-2011 1 2035
+
+results/plancton-2011-2012/plancton-2011-2012-2035-1.0-friedman.csv	: friedman.py results/plancton-2011-2012/plancton-2011-2012-2035-1.0.csv
+	$(python) friedman.py plancton-2011-2012 1.0 2035
+
+results/plancton-2011-2012/plancton-2011-2012-2035-1.0.csv	: classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv
+	$(python) classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv plancton-2011-2012 1 2035
+
+results/plancton-2012-2013/plancton-2012-2013-2035-1.0-friedman.csv	: friedman.py results/plancton-2012-2013/plancton-2012-2013-2035-1.0.csv
+	$(python) friedman.py plancton-2012-2013 1.0 2035
+
+results/plancton-2012-2013/plancton-2012-2013-2035-1.0.csv	: classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv
+	$(python) classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv plancton-2012-2013 1 2035
+
+results/plancton-2006/plancton-2006-2036-1.0-friedman.csv	: friedman.py results/plancton-2006/plancton-2006-2036-1.0.csv
+	$(python) friedman.py plancton-2006 1.0 2036
+
+results/plancton-2006/plancton-2006-2036-1.0.csv	: classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv
+	$(python) classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv plancton-2006 1 2036
+
+results/plancton-2007/plancton-2007-2036-1.0-friedman.csv	: friedman.py results/plancton-2007/plancton-2007-2036-1.0.csv
+	$(python) friedman.py plancton-2007 1.0 2036
+
+results/plancton-2007/plancton-2007-2036-1.0.csv	: classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv
+	$(python) classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv plancton-2007 1 2036
+
+results/plancton-2008/plancton-2008-2036-1.0-friedman.csv	: friedman.py results/plancton-2008/plancton-2008-2036-1.0.csv
+	$(python) friedman.py plancton-2008 1.0 2036
+
+results/plancton-2008/plancton-2008-2036-1.0.csv	: classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv
+	$(python) classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv plancton-2008 1 2036
+
+results/plancton-2009/plancton-2009-2036-1.0-friedman.csv	: friedman.py results/plancton-2009/plancton-2009-2036-1.0.csv
+	$(python) friedman.py plancton-2009 1.0 2036
+
+results/plancton-2009/plancton-2009-2036-1.0.csv	: classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv
+	$(python) classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv plancton-2009 1 2036
+
+results/plancton-2010/plancton-2010-2036-1.0-friedman.csv	: friedman.py results/plancton-2010/plancton-2010-2036-1.0.csv
+	$(python) friedman.py plancton-2010 1.0 2036
+
+results/plancton-2010/plancton-2010-2036-1.0.csv	: classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv
+	$(python) classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv plancton-2010 1 2036
+
+results/plancton-2011/plancton-2011-2036-1.0-friedman.csv	: friedman.py results/plancton-2011/plancton-2011-2036-1.0.csv
+	$(python) friedman.py plancton-2011 1.0 2036
+
+results/plancton-2011/plancton-2011-2036-1.0.csv	: classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv
+	$(python) classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv plancton-2011 1 2036
+
+results/plancton-2012/plancton-2012-2036-1.0-friedman.csv	: friedman.py results/plancton-2012/plancton-2012-2036-1.0.csv
+	$(python) friedman.py plancton-2012 1.0 2036
+
+results/plancton-2012/plancton-2012-2036-1.0.csv	: classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv
+	$(python) classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv plancton-2012 1 2036
+
+results/plancton-2013/plancton-2013-2036-1.0-friedman.csv	: friedman.py results/plancton-2013/plancton-2013-2036-1.0.csv
+	$(python) friedman.py plancton-2013 1.0 2036
+
+results/plancton-2013/plancton-2013-2036-1.0.csv	: classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv
+	$(python) classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv plancton-2013 1 2036
+
+results/plancton-2006-2007/plancton-2006-2007-2036-1.0-friedman.csv	: friedman.py results/plancton-2006-2007/plancton-2006-2007-2036-1.0.csv
+	$(python) friedman.py plancton-2006-2007 1.0 2036
+
+results/plancton-2006-2007/plancton-2006-2007-2036-1.0.csv	: classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv
+	$(python) classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv plancton-2006-2007 1 2036
+
+results/plancton-2007-2008/plancton-2007-2008-2036-1.0-friedman.csv	: friedman.py results/plancton-2007-2008/plancton-2007-2008-2036-1.0.csv
+	$(python) friedman.py plancton-2007-2008 1.0 2036
+
+results/plancton-2007-2008/plancton-2007-2008-2036-1.0.csv	: classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv
+	$(python) classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv plancton-2007-2008 1 2036
+
+results/plancton-2008-2009/plancton-2008-2009-2036-1.0-friedman.csv	: friedman.py results/plancton-2008-2009/plancton-2008-2009-2036-1.0.csv
+	$(python) friedman.py plancton-2008-2009 1.0 2036
+
+results/plancton-2008-2009/plancton-2008-2009-2036-1.0.csv	: classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv
+	$(python) classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv plancton-2008-2009 1 2036
+
+results/plancton-2009-2010/plancton-2009-2010-2036-1.0-friedman.csv	: friedman.py results/plancton-2009-2010/plancton-2009-2010-2036-1.0.csv
+	$(python) friedman.py plancton-2009-2010 1.0 2036
+
+results/plancton-2009-2010/plancton-2009-2010-2036-1.0.csv	: classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv
+	$(python) classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv plancton-2009-2010 1 2036
+
+results/plancton-2010-2011/plancton-2010-2011-2036-1.0-friedman.csv	: friedman.py results/plancton-2010-2011/plancton-2010-2011-2036-1.0.csv
+	$(python) friedman.py plancton-2010-2011 1.0 2036
+
+results/plancton-2010-2011/plancton-2010-2011-2036-1.0.csv	: classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv
+	$(python) classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv plancton-2010-2011 1 2036
+
+results/plancton-2011-2012/plancton-2011-2012-2036-1.0-friedman.csv	: friedman.py results/plancton-2011-2012/plancton-2011-2012-2036-1.0.csv
+	$(python) friedman.py plancton-2011-2012 1.0 2036
+
+results/plancton-2011-2012/plancton-2011-2012-2036-1.0.csv	: classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv
+	$(python) classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv plancton-2011-2012 1 2036
+
+results/plancton-2012-2013/plancton-2012-2013-2036-1.0-friedman.csv	: friedman.py results/plancton-2012-2013/plancton-2012-2013-2036-1.0.csv
+	$(python) friedman.py plancton-2012-2013 1.0 2036
+
+results/plancton-2012-2013/plancton-2012-2013-2036-1.0.csv	: classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv
+	$(python) classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv plancton-2012-2013 1 2036
+
+results/plancton-2006/plancton-2006-2037-1.0-friedman.csv	: friedman.py results/plancton-2006/plancton-2006-2037-1.0.csv
+	$(python) friedman.py plancton-2006 1.0 2037
+
+results/plancton-2006/plancton-2006-2037-1.0.csv	: classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv
+	$(python) classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv plancton-2006 1 2037
+
+results/plancton-2007/plancton-2007-2037-1.0-friedman.csv	: friedman.py results/plancton-2007/plancton-2007-2037-1.0.csv
+	$(python) friedman.py plancton-2007 1.0 2037
+
+results/plancton-2007/plancton-2007-2037-1.0.csv	: classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv
+	$(python) classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv plancton-2007 1 2037
+
+results/plancton-2008/plancton-2008-2037-1.0-friedman.csv	: friedman.py results/plancton-2008/plancton-2008-2037-1.0.csv
+	$(python) friedman.py plancton-2008 1.0 2037
+
+results/plancton-2008/plancton-2008-2037-1.0.csv	: classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv
+	$(python) classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv plancton-2008 1 2037
+
+results/plancton-2009/plancton-2009-2037-1.0-friedman.csv	: friedman.py results/plancton-2009/plancton-2009-2037-1.0.csv
+	$(python) friedman.py plancton-2009 1.0 2037
+
+results/plancton-2009/plancton-2009-2037-1.0.csv	: classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv
+	$(python) classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv plancton-2009 1 2037
+
+results/plancton-2010/plancton-2010-2037-1.0-friedman.csv	: friedman.py results/plancton-2010/plancton-2010-2037-1.0.csv
+	$(python) friedman.py plancton-2010 1.0 2037
+
+results/plancton-2010/plancton-2010-2037-1.0.csv	: classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv
+	$(python) classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv plancton-2010 1 2037
+
+results/plancton-2011/plancton-2011-2037-1.0-friedman.csv	: friedman.py results/plancton-2011/plancton-2011-2037-1.0.csv
+	$(python) friedman.py plancton-2011 1.0 2037
+
+results/plancton-2011/plancton-2011-2037-1.0.csv	: classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv
+	$(python) classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv plancton-2011 1 2037
+
+results/plancton-2012/plancton-2012-2037-1.0-friedman.csv	: friedman.py results/plancton-2012/plancton-2012-2037-1.0.csv
+	$(python) friedman.py plancton-2012 1.0 2037
+
+results/plancton-2012/plancton-2012-2037-1.0.csv	: classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv
+	$(python) classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv plancton-2012 1 2037
+
+results/plancton-2013/plancton-2013-2037-1.0-friedman.csv	: friedman.py results/plancton-2013/plancton-2013-2037-1.0.csv
+	$(python) friedman.py plancton-2013 1.0 2037
+
+results/plancton-2013/plancton-2013-2037-1.0.csv	: classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv
+	$(python) classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv plancton-2013 1 2037
+
+results/plancton-2006-2007/plancton-2006-2007-2037-1.0-friedman.csv	: friedman.py results/plancton-2006-2007/plancton-2006-2007-2037-1.0.csv
+	$(python) friedman.py plancton-2006-2007 1.0 2037
+
+results/plancton-2006-2007/plancton-2006-2007-2037-1.0.csv	: classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv
+	$(python) classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv plancton-2006-2007 1 2037
+
+results/plancton-2007-2008/plancton-2007-2008-2037-1.0-friedman.csv	: friedman.py results/plancton-2007-2008/plancton-2007-2008-2037-1.0.csv
+	$(python) friedman.py plancton-2007-2008 1.0 2037
+
+results/plancton-2007-2008/plancton-2007-2008-2037-1.0.csv	: classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv
+	$(python) classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv plancton-2007-2008 1 2037
+
+results/plancton-2008-2009/plancton-2008-2009-2037-1.0-friedman.csv	: friedman.py results/plancton-2008-2009/plancton-2008-2009-2037-1.0.csv
+	$(python) friedman.py plancton-2008-2009 1.0 2037
+
+results/plancton-2008-2009/plancton-2008-2009-2037-1.0.csv	: classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv
+	$(python) classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv plancton-2008-2009 1 2037
+
+results/plancton-2009-2010/plancton-2009-2010-2037-1.0-friedman.csv	: friedman.py results/plancton-2009-2010/plancton-2009-2010-2037-1.0.csv
+	$(python) friedman.py plancton-2009-2010 1.0 2037
+
+results/plancton-2009-2010/plancton-2009-2010-2037-1.0.csv	: classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv
+	$(python) classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv plancton-2009-2010 1 2037
+
+results/plancton-2010-2011/plancton-2010-2011-2037-1.0-friedman.csv	: friedman.py results/plancton-2010-2011/plancton-2010-2011-2037-1.0.csv
+	$(python) friedman.py plancton-2010-2011 1.0 2037
+
+results/plancton-2010-2011/plancton-2010-2011-2037-1.0.csv	: classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv
+	$(python) classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv plancton-2010-2011 1 2037
+
+results/plancton-2011-2012/plancton-2011-2012-2037-1.0-friedman.csv	: friedman.py results/plancton-2011-2012/plancton-2011-2012-2037-1.0.csv
+	$(python) friedman.py plancton-2011-2012 1.0 2037
+
+results/plancton-2011-2012/plancton-2011-2012-2037-1.0.csv	: classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv
+	$(python) classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv plancton-2011-2012 1 2037
+
+results/plancton-2012-2013/plancton-2012-2013-2037-1.0-friedman.csv	: friedman.py results/plancton-2012-2013/plancton-2012-2013-2037-1.0.csv
+	$(python) friedman.py plancton-2012-2013 1.0 2037
+
+results/plancton-2012-2013/plancton-2012-2013-2037-1.0.csv	: classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv
+	$(python) classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv plancton-2012-2013 1 2037
+
+results/plancton-2006/plancton-2006-2038-1.0-friedman.csv	: friedman.py results/plancton-2006/plancton-2006-2038-1.0.csv
+	$(python) friedman.py plancton-2006 1.0 2038
+
+results/plancton-2006/plancton-2006-2038-1.0.csv	: classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv
+	$(python) classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv plancton-2006 1 2038
+
+results/plancton-2007/plancton-2007-2038-1.0-friedman.csv	: friedman.py results/plancton-2007/plancton-2007-2038-1.0.csv
+	$(python) friedman.py plancton-2007 1.0 2038
+
+results/plancton-2007/plancton-2007-2038-1.0.csv	: classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv
+	$(python) classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv plancton-2007 1 2038
+
+results/plancton-2008/plancton-2008-2038-1.0-friedman.csv	: friedman.py results/plancton-2008/plancton-2008-2038-1.0.csv
+	$(python) friedman.py plancton-2008 1.0 2038
+
+results/plancton-2008/plancton-2008-2038-1.0.csv	: classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv
+	$(python) classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv plancton-2008 1 2038
+
+results/plancton-2009/plancton-2009-2038-1.0-friedman.csv	: friedman.py results/plancton-2009/plancton-2009-2038-1.0.csv
+	$(python) friedman.py plancton-2009 1.0 2038
+
+results/plancton-2009/plancton-2009-2038-1.0.csv	: classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv
+	$(python) classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv plancton-2009 1 2038
+
+results/plancton-2010/plancton-2010-2038-1.0-friedman.csv	: friedman.py results/plancton-2010/plancton-2010-2038-1.0.csv
+	$(python) friedman.py plancton-2010 1.0 2038
+
+results/plancton-2010/plancton-2010-2038-1.0.csv	: classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv
+	$(python) classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv plancton-2010 1 2038
+
+results/plancton-2011/plancton-2011-2038-1.0-friedman.csv	: friedman.py results/plancton-2011/plancton-2011-2038-1.0.csv
+	$(python) friedman.py plancton-2011 1.0 2038
+
+results/plancton-2011/plancton-2011-2038-1.0.csv	: classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv
+	$(python) classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv plancton-2011 1 2038
+
+results/plancton-2012/plancton-2012-2038-1.0-friedman.csv	: friedman.py results/plancton-2012/plancton-2012-2038-1.0.csv
+	$(python) friedman.py plancton-2012 1.0 2038
+
+results/plancton-2012/plancton-2012-2038-1.0.csv	: classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv
+	$(python) classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv plancton-2012 1 2038
+
+results/plancton-2013/plancton-2013-2038-1.0-friedman.csv	: friedman.py results/plancton-2013/plancton-2013-2038-1.0.csv
+	$(python) friedman.py plancton-2013 1.0 2038
+
+results/plancton-2013/plancton-2013-2038-1.0.csv	: classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv
+	$(python) classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv plancton-2013 1 2038
+
+results/plancton-2006-2007/plancton-2006-2007-2038-1.0-friedman.csv	: friedman.py results/plancton-2006-2007/plancton-2006-2007-2038-1.0.csv
+	$(python) friedman.py plancton-2006-2007 1.0 2038
+
+results/plancton-2006-2007/plancton-2006-2007-2038-1.0.csv	: classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv
+	$(python) classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv plancton-2006-2007 1 2038
+
+results/plancton-2007-2008/plancton-2007-2008-2038-1.0-friedman.csv	: friedman.py results/plancton-2007-2008/plancton-2007-2008-2038-1.0.csv
+	$(python) friedman.py plancton-2007-2008 1.0 2038
+
+results/plancton-2007-2008/plancton-2007-2008-2038-1.0.csv	: classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv
+	$(python) classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv plancton-2007-2008 1 2038
+
+results/plancton-2008-2009/plancton-2008-2009-2038-1.0-friedman.csv	: friedman.py results/plancton-2008-2009/plancton-2008-2009-2038-1.0.csv
+	$(python) friedman.py plancton-2008-2009 1.0 2038
+
+results/plancton-2008-2009/plancton-2008-2009-2038-1.0.csv	: classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv
+	$(python) classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv plancton-2008-2009 1 2038
+
+results/plancton-2009-2010/plancton-2009-2010-2038-1.0-friedman.csv	: friedman.py results/plancton-2009-2010/plancton-2009-2010-2038-1.0.csv
+	$(python) friedman.py plancton-2009-2010 1.0 2038
+
+results/plancton-2009-2010/plancton-2009-2010-2038-1.0.csv	: classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv
+	$(python) classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv plancton-2009-2010 1 2038
+
+results/plancton-2010-2011/plancton-2010-2011-2038-1.0-friedman.csv	: friedman.py results/plancton-2010-2011/plancton-2010-2011-2038-1.0.csv
+	$(python) friedman.py plancton-2010-2011 1.0 2038
+
+results/plancton-2010-2011/plancton-2010-2011-2038-1.0.csv	: classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv
+	$(python) classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv plancton-2010-2011 1 2038
+
+results/plancton-2011-2012/plancton-2011-2012-2038-1.0-friedman.csv	: friedman.py results/plancton-2011-2012/plancton-2011-2012-2038-1.0.csv
+	$(python) friedman.py plancton-2011-2012 1.0 2038
+
+results/plancton-2011-2012/plancton-2011-2012-2038-1.0.csv	: classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv
+	$(python) classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv plancton-2011-2012 1 2038
+
+results/plancton-2012-2013/plancton-2012-2013-2038-1.0-friedman.csv	: friedman.py results/plancton-2012-2013/plancton-2012-2013-2038-1.0.csv
+	$(python) friedman.py plancton-2012-2013 1.0 2038
+
+results/plancton-2012-2013/plancton-2012-2013-2038-1.0.csv	: classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv
+	$(python) classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv plancton-2012-2013 1 2038
+
+results/plancton-2006/plancton-2006-2039-1.0-friedman.csv	: friedman.py results/plancton-2006/plancton-2006-2039-1.0.csv
+	$(python) friedman.py plancton-2006 1.0 2039
+
+results/plancton-2006/plancton-2006-2039-1.0.csv	: classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv
+	$(python) classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv plancton-2006 1 2039
+
+results/plancton-2007/plancton-2007-2039-1.0-friedman.csv	: friedman.py results/plancton-2007/plancton-2007-2039-1.0.csv
+	$(python) friedman.py plancton-2007 1.0 2039
+
+results/plancton-2007/plancton-2007-2039-1.0.csv	: classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv
+	$(python) classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv plancton-2007 1 2039
+
+results/plancton-2008/plancton-2008-2039-1.0-friedman.csv	: friedman.py results/plancton-2008/plancton-2008-2039-1.0.csv
+	$(python) friedman.py plancton-2008 1.0 2039
+
+results/plancton-2008/plancton-2008-2039-1.0.csv	: classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv
+	$(python) classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv plancton-2008 1 2039
+
+results/plancton-2009/plancton-2009-2039-1.0-friedman.csv	: friedman.py results/plancton-2009/plancton-2009-2039-1.0.csv
+	$(python) friedman.py plancton-2009 1.0 2039
+
+results/plancton-2009/plancton-2009-2039-1.0.csv	: classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv
+	$(python) classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv plancton-2009 1 2039
+
+results/plancton-2010/plancton-2010-2039-1.0-friedman.csv	: friedman.py results/plancton-2010/plancton-2010-2039-1.0.csv
+	$(python) friedman.py plancton-2010 1.0 2039
+
+results/plancton-2010/plancton-2010-2039-1.0.csv	: classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv
+	$(python) classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv plancton-2010 1 2039
+
+results/plancton-2011/plancton-2011-2039-1.0-friedman.csv	: friedman.py results/plancton-2011/plancton-2011-2039-1.0.csv
+	$(python) friedman.py plancton-2011 1.0 2039
+
+results/plancton-2011/plancton-2011-2039-1.0.csv	: classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv
+	$(python) classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv plancton-2011 1 2039
+
+results/plancton-2012/plancton-2012-2039-1.0-friedman.csv	: friedman.py results/plancton-2012/plancton-2012-2039-1.0.csv
+	$(python) friedman.py plancton-2012 1.0 2039
+
+results/plancton-2012/plancton-2012-2039-1.0.csv	: classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv
+	$(python) classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv plancton-2012 1 2039
+
+results/plancton-2013/plancton-2013-2039-1.0-friedman.csv	: friedman.py results/plancton-2013/plancton-2013-2039-1.0.csv
+	$(python) friedman.py plancton-2013 1.0 2039
+
+results/plancton-2013/plancton-2013-2039-1.0.csv	: classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv
+	$(python) classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv plancton-2013 1 2039
+
+results/plancton-2006-2007/plancton-2006-2007-2039-1.0-friedman.csv	: friedman.py results/plancton-2006-2007/plancton-2006-2007-2039-1.0.csv
+	$(python) friedman.py plancton-2006-2007 1.0 2039
+
+results/plancton-2006-2007/plancton-2006-2007-2039-1.0.csv	: classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv
+	$(python) classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv plancton-2006-2007 1 2039
+
+results/plancton-2007-2008/plancton-2007-2008-2039-1.0-friedman.csv	: friedman.py results/plancton-2007-2008/plancton-2007-2008-2039-1.0.csv
+	$(python) friedman.py plancton-2007-2008 1.0 2039
+
+results/plancton-2007-2008/plancton-2007-2008-2039-1.0.csv	: classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv
+	$(python) classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv plancton-2007-2008 1 2039
+
+results/plancton-2008-2009/plancton-2008-2009-2039-1.0-friedman.csv	: friedman.py results/plancton-2008-2009/plancton-2008-2009-2039-1.0.csv
+	$(python) friedman.py plancton-2008-2009 1.0 2039
+
+results/plancton-2008-2009/plancton-2008-2009-2039-1.0.csv	: classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv
+	$(python) classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv plancton-2008-2009 1 2039
+
+results/plancton-2009-2010/plancton-2009-2010-2039-1.0-friedman.csv	: friedman.py results/plancton-2009-2010/plancton-2009-2010-2039-1.0.csv
+	$(python) friedman.py plancton-2009-2010 1.0 2039
+
+results/plancton-2009-2010/plancton-2009-2010-2039-1.0.csv	: classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv
+	$(python) classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv plancton-2009-2010 1 2039
+
+results/plancton-2010-2011/plancton-2010-2011-2039-1.0-friedman.csv	: friedman.py results/plancton-2010-2011/plancton-2010-2011-2039-1.0.csv
+	$(python) friedman.py plancton-2010-2011 1.0 2039
+
+results/plancton-2010-2011/plancton-2010-2011-2039-1.0.csv	: classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv
+	$(python) classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv plancton-2010-2011 1 2039
+
+results/plancton-2011-2012/plancton-2011-2012-2039-1.0-friedman.csv	: friedman.py results/plancton-2011-2012/plancton-2011-2012-2039-1.0.csv
+	$(python) friedman.py plancton-2011-2012 1.0 2039
+
+results/plancton-2011-2012/plancton-2011-2012-2039-1.0.csv	: classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv
+	$(python) classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv plancton-2011-2012 1 2039
+
+results/plancton-2012-2013/plancton-2012-2013-2039-1.0-friedman.csv	: friedman.py results/plancton-2012-2013/plancton-2012-2013-2039-1.0.csv
+	$(python) friedman.py plancton-2012-2013 1.0 2039
+
+results/plancton-2012-2013/plancton-2012-2013-2039-1.0.csv	: classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv
+	$(python) classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv plancton-2012-2013 1 2039
+
+results/plancton-2006/plancton-2006-2040-1.0-friedman.csv	: friedman.py results/plancton-2006/plancton-2006-2040-1.0.csv
+	$(python) friedman.py plancton-2006 1.0 2040
+
+results/plancton-2006/plancton-2006-2040-1.0.csv	: classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv
+	$(python) classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv plancton-2006 1 2040
+
+results/plancton-2007/plancton-2007-2040-1.0-friedman.csv	: friedman.py results/plancton-2007/plancton-2007-2040-1.0.csv
+	$(python) friedman.py plancton-2007 1.0 2040
+
+results/plancton-2007/plancton-2007-2040-1.0.csv	: classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv
+	$(python) classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv plancton-2007 1 2040
+
+results/plancton-2008/plancton-2008-2040-1.0-friedman.csv	: friedman.py results/plancton-2008/plancton-2008-2040-1.0.csv
+	$(python) friedman.py plancton-2008 1.0 2040
+
+results/plancton-2008/plancton-2008-2040-1.0.csv	: classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv
+	$(python) classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv plancton-2008 1 2040
+
+results/plancton-2009/plancton-2009-2040-1.0-friedman.csv	: friedman.py results/plancton-2009/plancton-2009-2040-1.0.csv
+	$(python) friedman.py plancton-2009 1.0 2040
+
+results/plancton-2009/plancton-2009-2040-1.0.csv	: classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv
+	$(python) classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv plancton-2009 1 2040
+
+results/plancton-2010/plancton-2010-2040-1.0-friedman.csv	: friedman.py results/plancton-2010/plancton-2010-2040-1.0.csv
+	$(python) friedman.py plancton-2010 1.0 2040
+
+results/plancton-2010/plancton-2010-2040-1.0.csv	: classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv
+	$(python) classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv plancton-2010 1 2040
+
+results/plancton-2011/plancton-2011-2040-1.0-friedman.csv	: friedman.py results/plancton-2011/plancton-2011-2040-1.0.csv
+	$(python) friedman.py plancton-2011 1.0 2040
+
+results/plancton-2011/plancton-2011-2040-1.0.csv	: classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv
+	$(python) classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv plancton-2011 1 2040
+
+results/plancton-2012/plancton-2012-2040-1.0-friedman.csv	: friedman.py results/plancton-2012/plancton-2012-2040-1.0.csv
+	$(python) friedman.py plancton-2012 1.0 2040
+
+results/plancton-2012/plancton-2012-2040-1.0.csv	: classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv
+	$(python) classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv plancton-2012 1 2040
+
+results/plancton-2013/plancton-2013-2040-1.0-friedman.csv	: friedman.py results/plancton-2013/plancton-2013-2040-1.0.csv
+	$(python) friedman.py plancton-2013 1.0 2040
+
+results/plancton-2013/plancton-2013-2040-1.0.csv	: classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv
+	$(python) classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv plancton-2013 1 2040
+
+results/plancton-2006-2007/plancton-2006-2007-2040-1.0-friedman.csv	: friedman.py results/plancton-2006-2007/plancton-2006-2007-2040-1.0.csv
+	$(python) friedman.py plancton-2006-2007 1.0 2040
+
+results/plancton-2006-2007/plancton-2006-2007-2040-1.0.csv	: classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv
+	$(python) classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv plancton-2006-2007 1 2040
+
+results/plancton-2007-2008/plancton-2007-2008-2040-1.0-friedman.csv	: friedman.py results/plancton-2007-2008/plancton-2007-2008-2040-1.0.csv
+	$(python) friedman.py plancton-2007-2008 1.0 2040
+
+results/plancton-2007-2008/plancton-2007-2008-2040-1.0.csv	: classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv
+	$(python) classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv plancton-2007-2008 1 2040
+
+results/plancton-2008-2009/plancton-2008-2009-2040-1.0-friedman.csv	: friedman.py results/plancton-2008-2009/plancton-2008-2009-2040-1.0.csv
+	$(python) friedman.py plancton-2008-2009 1.0 2040
+
+results/plancton-2008-2009/plancton-2008-2009-2040-1.0.csv	: classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv
+	$(python) classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv plancton-2008-2009 1 2040
+
+results/plancton-2009-2010/plancton-2009-2010-2040-1.0-friedman.csv	: friedman.py results/plancton-2009-2010/plancton-2009-2010-2040-1.0.csv
+	$(python) friedman.py plancton-2009-2010 1.0 2040
+
+results/plancton-2009-2010/plancton-2009-2010-2040-1.0.csv	: classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv
+	$(python) classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv plancton-2009-2010 1 2040
+
+results/plancton-2010-2011/plancton-2010-2011-2040-1.0-friedman.csv	: friedman.py results/plancton-2010-2011/plancton-2010-2011-2040-1.0.csv
+	$(python) friedman.py plancton-2010-2011 1.0 2040
+
+results/plancton-2010-2011/plancton-2010-2011-2040-1.0.csv	: classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv
+	$(python) classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv plancton-2010-2011 1 2040
+
+results/plancton-2011-2012/plancton-2011-2012-2040-1.0-friedman.csv	: friedman.py results/plancton-2011-2012/plancton-2011-2012-2040-1.0.csv
+	$(python) friedman.py plancton-2011-2012 1.0 2040
+
+results/plancton-2011-2012/plancton-2011-2012-2040-1.0.csv	: classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv
+	$(python) classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv plancton-2011-2012 1 2040
+
+results/plancton-2012-2013/plancton-2012-2013-2040-1.0-friedman.csv	: friedman.py results/plancton-2012-2013/plancton-2012-2013-2040-1.0.csv
+	$(python) friedman.py plancton-2012-2013 1.0 2040
+
+results/plancton-2012-2013/plancton-2012-2013-2040-1.0.csv	: classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv
+	$(python) classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv plancton-2012-2013 1 2040
+
+results/plancton-2006/plancton-2006-2041-1.0-friedman.csv	: friedman.py results/plancton-2006/plancton-2006-2041-1.0.csv
+	$(python) friedman.py plancton-2006 1.0 2041
+
+results/plancton-2006/plancton-2006-2041-1.0.csv	: classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv
+	$(python) classification.py datasets-plancton/plancton-2006-1.csv datasets-plancton/plancton-2006-2.csv plancton-2006 1 2041
+
+results/plancton-2007/plancton-2007-2041-1.0-friedman.csv	: friedman.py results/plancton-2007/plancton-2007-2041-1.0.csv
+	$(python) friedman.py plancton-2007 1.0 2041
+
+results/plancton-2007/plancton-2007-2041-1.0.csv	: classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv
+	$(python) classification.py datasets-plancton/plancton-2007-1.csv datasets-plancton/plancton-2007-2.csv plancton-2007 1 2041
+
+results/plancton-2008/plancton-2008-2041-1.0-friedman.csv	: friedman.py results/plancton-2008/plancton-2008-2041-1.0.csv
+	$(python) friedman.py plancton-2008 1.0 2041
+
+results/plancton-2008/plancton-2008-2041-1.0.csv	: classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv
+	$(python) classification.py datasets-plancton/plancton-2008-1.csv datasets-plancton/plancton-2008-2.csv plancton-2008 1 2041
+
+results/plancton-2009/plancton-2009-2041-1.0-friedman.csv	: friedman.py results/plancton-2009/plancton-2009-2041-1.0.csv
+	$(python) friedman.py plancton-2009 1.0 2041
+
+results/plancton-2009/plancton-2009-2041-1.0.csv	: classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv
+	$(python) classification.py datasets-plancton/plancton-2009-1.csv datasets-plancton/plancton-2009-2.csv plancton-2009 1 2041
+
+results/plancton-2010/plancton-2010-2041-1.0-friedman.csv	: friedman.py results/plancton-2010/plancton-2010-2041-1.0.csv
+	$(python) friedman.py plancton-2010 1.0 2041
+
+results/plancton-2010/plancton-2010-2041-1.0.csv	: classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv
+	$(python) classification.py datasets-plancton/plancton-2010-1.csv datasets-plancton/plancton-2010-2.csv plancton-2010 1 2041
+
+results/plancton-2011/plancton-2011-2041-1.0-friedman.csv	: friedman.py results/plancton-2011/plancton-2011-2041-1.0.csv
+	$(python) friedman.py plancton-2011 1.0 2041
+
+results/plancton-2011/plancton-2011-2041-1.0.csv	: classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv
+	$(python) classification.py datasets-plancton/plancton-2011-1.csv datasets-plancton/plancton-2011-2.csv plancton-2011 1 2041
+
+results/plancton-2012/plancton-2012-2041-1.0-friedman.csv	: friedman.py results/plancton-2012/plancton-2012-2041-1.0.csv
+	$(python) friedman.py plancton-2012 1.0 2041
+
+results/plancton-2012/plancton-2012-2041-1.0.csv	: classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv
+	$(python) classification.py datasets-plancton/plancton-2012-1.csv datasets-plancton/plancton-2012-2.csv plancton-2012 1 2041
+
+results/plancton-2013/plancton-2013-2041-1.0-friedman.csv	: friedman.py results/plancton-2013/plancton-2013-2041-1.0.csv
+	$(python) friedman.py plancton-2013 1.0 2041
+
+results/plancton-2013/plancton-2013-2041-1.0.csv	: classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv
+	$(python) classification.py datasets-plancton/plancton-2013-1.csv datasets-plancton/plancton-2013-2.csv plancton-2013 1 2041
+
+results/plancton-2006-2007/plancton-2006-2007-2041-1.0-friedman.csv	: friedman.py results/plancton-2006-2007/plancton-2006-2007-2041-1.0.csv
+	$(python) friedman.py plancton-2006-2007 1.0 2041
+
+results/plancton-2006-2007/plancton-2006-2007-2041-1.0.csv	: classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv
+	$(python) classification.py datasets-plancton/plancton-2006-2.csv  datasets-plancton/plancton-2007-1.csv plancton-2006-2007 1 2041
+
+results/plancton-2007-2008/plancton-2007-2008-2041-1.0-friedman.csv	: friedman.py results/plancton-2007-2008/plancton-2007-2008-2041-1.0.csv
+	$(python) friedman.py plancton-2007-2008 1.0 2041
+
+results/plancton-2007-2008/plancton-2007-2008-2041-1.0.csv	: classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv
+	$(python) classification.py datasets-plancton/plancton-2007-2.csv  datasets-plancton/plancton-2008-1.csv plancton-2007-2008 1 2041
+
+results/plancton-2008-2009/plancton-2008-2009-2041-1.0-friedman.csv	: friedman.py results/plancton-2008-2009/plancton-2008-2009-2041-1.0.csv
+	$(python) friedman.py plancton-2008-2009 1.0 2041
+
+results/plancton-2008-2009/plancton-2008-2009-2041-1.0.csv	: classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv
+	$(python) classification.py datasets-plancton/plancton-2008-2.csv  datasets-plancton/plancton-2009-1.csv plancton-2008-2009 1 2041
+
+results/plancton-2009-2010/plancton-2009-2010-2041-1.0-friedman.csv	: friedman.py results/plancton-2009-2010/plancton-2009-2010-2041-1.0.csv
+	$(python) friedman.py plancton-2009-2010 1.0 2041
+
+results/plancton-2009-2010/plancton-2009-2010-2041-1.0.csv	: classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv
+	$(python) classification.py datasets-plancton/plancton-2009-2.csv  datasets-plancton/plancton-2010-1.csv plancton-2009-2010 1 2041
+
+results/plancton-2010-2011/plancton-2010-2011-2041-1.0-friedman.csv	: friedman.py results/plancton-2010-2011/plancton-2010-2011-2041-1.0.csv
+	$(python) friedman.py plancton-2010-2011 1.0 2041
+
+results/plancton-2010-2011/plancton-2010-2011-2041-1.0.csv	: classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv
+	$(python) classification.py datasets-plancton/plancton-2010-2.csv  datasets-plancton/plancton-2011-1.csv plancton-2010-2011 1 2041
+
+results/plancton-2011-2012/plancton-2011-2012-2041-1.0-friedman.csv	: friedman.py results/plancton-2011-2012/plancton-2011-2012-2041-1.0.csv
+	$(python) friedman.py plancton-2011-2012 1.0 2041
+
+results/plancton-2011-2012/plancton-2011-2012-2041-1.0.csv	: classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv
+	$(python) classification.py datasets-plancton/plancton-2011-2.csv  datasets-plancton/plancton-2012-1.csv plancton-2011-2012 1 2041
+
+results/plancton-2012-2013/plancton-2012-2013-2041-1.0-friedman.csv	: friedman.py results/plancton-2012-2013/plancton-2012-2013-2041-1.0.csv
+	$(python) friedman.py plancton-2012-2013 1.0 2041
+
+results/plancton-2012-2013/plancton-2012-2013-2041-1.0.csv	: classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv
+	$(python) classification.py datasets-plancton/plancton-2012-2.csv  datasets-plancton/plancton-2013-1.csv plancton-2012-2013 1 2041
+
+results-final/plancton/plancton-friedman-CV-KDE-MKDE-1.0.csv	: planctonRanking.py  results/plancton-2006/plancton-2006-2032-1.0-friedman.csv results/plancton-2007/plancton-2007-2032-1.0-friedman.csv results/plancton-2008/plancton-2008-2032-1.0-friedman.csv results/plancton-2009/plancton-2009-2032-1.0-friedman.csv results/plancton-2010/plancton-2010-2032-1.0-friedman.csv results/plancton-2011/plancton-2011-2032-1.0-friedman.csv results/plancton-2012/plancton-2012-2032-1.0-friedman.csv results/plancton-2013/plancton-2013-2032-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2032-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2032-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2032-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2032-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2032-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2032-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2032-1.0-friedman.csv  results/plancton-2006/plancton-2006-2033-1.0-friedman.csv results/plancton-2007/plancton-2007-2033-1.0-friedman.csv results/plancton-2008/plancton-2008-2033-1.0-friedman.csv results/plancton-2009/plancton-2009-2033-1.0-friedman.csv results/plancton-2010/plancton-2010-2033-1.0-friedman.csv results/plancton-2011/plancton-2011-2033-1.0-friedman.csv results/plancton-2012/plancton-2012-2033-1.0-friedman.csv results/plancton-2013/plancton-2013-2033-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2033-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2033-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2033-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2033-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2033-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2033-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2033-1.0-friedman.csv  results/plancton-2006/plancton-2006-2034-1.0-friedman.csv results/plancton-2007/plancton-2007-2034-1.0-friedman.csv results/plancton-2008/plancton-2008-2034-1.0-friedman.csv results/plancton-2009/plancton-2009-2034-1.0-friedman.csv results/plancton-2010/plancton-2010-2034-1.0-friedman.csv results/plancton-2011/plancton-2011-2034-1.0-friedman.csv results/plancton-2012/plancton-2012-2034-1.0-friedman.csv results/plancton-2013/plancton-2013-2034-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2034-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2034-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2034-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2034-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2034-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2034-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2034-1.0-friedman.csv  results/plancton-2006/plancton-2006-2035-1.0-friedman.csv results/plancton-2007/plancton-2007-2035-1.0-friedman.csv results/plancton-2008/plancton-2008-2035-1.0-friedman.csv results/plancton-2009/plancton-2009-2035-1.0-friedman.csv results/plancton-2010/plancton-2010-2035-1.0-friedman.csv results/plancton-2011/plancton-2011-2035-1.0-friedman.csv results/plancton-2012/plancton-2012-2035-1.0-friedman.csv results/plancton-2013/plancton-2013-2035-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2035-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2035-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2035-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2035-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2035-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2035-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2035-1.0-friedman.csv  results/plancton-2006/plancton-2006-2036-1.0-friedman.csv results/plancton-2007/plancton-2007-2036-1.0-friedman.csv results/plancton-2008/plancton-2008-2036-1.0-friedman.csv results/plancton-2009/plancton-2009-2036-1.0-friedman.csv results/plancton-2010/plancton-2010-2036-1.0-friedman.csv results/plancton-2011/plancton-2011-2036-1.0-friedman.csv results/plancton-2012/plancton-2012-2036-1.0-friedman.csv results/plancton-2013/plancton-2013-2036-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2036-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2036-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2036-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2036-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2036-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2036-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2036-1.0-friedman.csv  results/plancton-2006/plancton-2006-2037-1.0-friedman.csv results/plancton-2007/plancton-2007-2037-1.0-friedman.csv results/plancton-2008/plancton-2008-2037-1.0-friedman.csv results/plancton-2009/plancton-2009-2037-1.0-friedman.csv results/plancton-2010/plancton-2010-2037-1.0-friedman.csv results/plancton-2011/plancton-2011-2037-1.0-friedman.csv results/plancton-2012/plancton-2012-2037-1.0-friedman.csv results/plancton-2013/plancton-2013-2037-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2037-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2037-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2037-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2037-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2037-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2037-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2037-1.0-friedman.csv  results/plancton-2006/plancton-2006-2038-1.0-friedman.csv results/plancton-2007/plancton-2007-2038-1.0-friedman.csv results/plancton-2008/plancton-2008-2038-1.0-friedman.csv results/plancton-2009/plancton-2009-2038-1.0-friedman.csv results/plancton-2010/plancton-2010-2038-1.0-friedman.csv results/plancton-2011/plancton-2011-2038-1.0-friedman.csv results/plancton-2012/plancton-2012-2038-1.0-friedman.csv results/plancton-2013/plancton-2013-2038-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2038-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2038-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2038-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2038-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2038-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2038-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2038-1.0-friedman.csv  results/plancton-2006/plancton-2006-2039-1.0-friedman.csv results/plancton-2007/plancton-2007-2039-1.0-friedman.csv results/plancton-2008/plancton-2008-2039-1.0-friedman.csv results/plancton-2009/plancton-2009-2039-1.0-friedman.csv results/plancton-2010/plancton-2010-2039-1.0-friedman.csv results/plancton-2011/plancton-2011-2039-1.0-friedman.csv results/plancton-2012/plancton-2012-2039-1.0-friedman.csv results/plancton-2013/plancton-2013-2039-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2039-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2039-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2039-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2039-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2039-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2039-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2039-1.0-friedman.csv  results/plancton-2006/plancton-2006-2040-1.0-friedman.csv results/plancton-2007/plancton-2007-2040-1.0-friedman.csv results/plancton-2008/plancton-2008-2040-1.0-friedman.csv results/plancton-2009/plancton-2009-2040-1.0-friedman.csv results/plancton-2010/plancton-2010-2040-1.0-friedman.csv results/plancton-2011/plancton-2011-2040-1.0-friedman.csv results/plancton-2012/plancton-2012-2040-1.0-friedman.csv results/plancton-2013/plancton-2013-2040-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2040-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2040-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2040-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2040-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2040-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2040-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2040-1.0-friedman.csv  results/plancton-2006/plancton-2006-2041-1.0-friedman.csv results/plancton-2007/plancton-2007-2041-1.0-friedman.csv results/plancton-2008/plancton-2008-2041-1.0-friedman.csv results/plancton-2009/plancton-2009-2041-1.0-friedman.csv results/plancton-2010/plancton-2010-2041-1.0-friedman.csv results/plancton-2011/plancton-2011-2041-1.0-friedman.csv results/plancton-2012/plancton-2012-2041-1.0-friedman.csv results/plancton-2013/plancton-2013-2041-1.0-friedman.csv results/plancton-2006-2007/plancton-2006-2007-2041-1.0-friedman.csv  results/plancton-2007-2008/plancton-2007-2008-2041-1.0-friedman.csv  results/plancton-2008-2009/plancton-2008-2009-2041-1.0-friedman.csv  results/plancton-2009-2010/plancton-2009-2010-2041-1.0-friedman.csv  results/plancton-2010-2011/plancton-2010-2011-2041-1.0-friedman.csv  results/plancton-2011-2012/plancton-2011-2012-2041-1.0-friedman.csv  results/plancton-2012-2013/plancton-2012-2013-2041-1.0-friedman.csv 
+	$(python) planctonRanking.py
+
