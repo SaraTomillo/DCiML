@@ -1,10 +1,10 @@
 import csv
 import pandas as pd
-import numpy as np
 import os
-import friedman
+from utils import friedman
 
-headers = ["CV", "LR", "PLR","KDE", "PKDE"]
+#headers = ["CV", "Kliep", "MKliep","KernelDensity", "MKernelDensity"]
+headers = ["CV", "LR", "PLR","KMM", "PKMM"]
 
 
 def joinAllDistances(datasets, percentage, seeds):
@@ -87,7 +87,7 @@ def main():
 
     for dataset_name in datasets:
         distances = joinDatasetResults(dataset_name, percentage, seeds)
-
+        """
         # LR-PLR
         distances_Kliep_MKliep = []
         for element in distances:
@@ -96,14 +96,14 @@ def main():
         if len(distances_Kliep_MKliep) >= 1:
             ranking = friedman.friedman_pairs(distances_Kliep_MKliep, dataset_name, percentage)
             saveCSV(ranking, "friedman-LR-PLR", dataset_name, percentage, headers=["LR", "PLR"])
-
-        # KDE-PKDE
+        """
+        # KMM-PKMM
         distances_KDE_MKDE = []
         for element in distances:
             distances_KDE_MKDE.append([element[3:]])
         ranking = friedman.friedman_pairs(distances_KDE_MKDE, dataset_name, percentage)
         saveCSV(ranking, "friedman-KDE-PKDE", dataset_name, percentage, headers=["KDE", "PKDE"])
-
+        """
         # CV-LR-PLR
         distances_CV_Kliep_MKliep = []
         for element in distances:
@@ -112,8 +112,8 @@ def main():
         if len(distances_CV_Kliep_MKliep) >= 1:
             ranking = friedman.friedman(distances_CV_Kliep_MKliep, dataset_name, percentage)
             saveCSV(ranking, "friedman-CV-LR-PLR", dataset_name, percentage, headers=["CV", "LR", "PLR"])
-
-        # CV-KDE-PKDE
+        """
+        # CV-KMM-PKMM
         distances_CV_KDE_MKDE = []
         for element in distances:
             distances_CV_KDE_MKDE.append([element[0], element[3], element[4]])
@@ -125,37 +125,81 @@ def main():
     dataset_name = "plancton"
     distances = data.values
 
-	# LR-PLR
-	distances_Kliep_MKliep = []
-	for element in distances:
-		if not np.isnan(element[1]):
-			distances_Kliep_MKliep.append([element[1:3]])
-	if len(distances_Kliep_MKliep) >= 1:
-		ranking = friedman.friedman_pairs(distances_Kliep_MKliep, dataset_name, percentage)
-		saveCSV(ranking, "friedman-LR-PLR", dataset_name, percentage, headers=["LR", "PLR"])
+    # LR-PLR
+    distances_LR_PLR = []
+    for element in distances:
+        distances_LR_PLR.append([element[3:]])
+    ranking = friedman.friedman_pairs(distances_LR_PLR, dataset_name, percentage)
+    saveCSV(ranking, "friedman-LR-PLR", dataset_name, percentage, headers=["LR", "PLR"])
+    # CV-LR-PLR
+    distances_CV_KDE_MKDE = []
+    for element in distances:
+        distances_CV_KDE_MKDE.append([element[0], element[3], element[4]])
+    ranking = friedman.friedman(distances_CV_KDE_MKDE, dataset_name, percentage)
+    saveCSV(ranking, "friedman-CV-LR-PLR", dataset_name, percentage, headers=["CV", "LR", "PKMM"])
+    # KMM-PKMM
+    distances_KDE_MKDE = []
+    for element in distances:
+        distances_KDE_MKDE.append([element[3:]])
+    ranking = friedman.friedman_pairs(distances_KDE_MKDE, dataset_name, percentage)
+    saveCSV(ranking, "friedman-KMM-PKMM", dataset_name, percentage, headers=["KMM", "PKMM"])
+    # CV-KMM-PKMM
+    distances_CV_KDE_MKDE = []
+    for element in distances:
+        distances_CV_KDE_MKDE.append([element[0], element[3], element[4]])
+    ranking = friedman.friedman(distances_CV_KDE_MKDE, dataset_name, percentage)
+    saveCSV(ranking, "friedman-CV-KMM-PKMM", dataset_name, percentage, headers=["CV", "KMM", "PKMM"])
 
-	# KDE-PKDE
-	distances_KDE_MKDE = []
-	for element in distances:
-		distances_KDE_MKDE.append([element[3:]])
-	ranking = friedman.friedman_pairs(distances_KDE_MKDE, dataset_name, percentage)
-	saveCSV(ranking, "friedman-KDE-PKDE", dataset_name, percentage, headers=["KDE", "PKDE"])
 
-	# CV-LR-PLR
-	distances_CV_Kliep_MKliep = []
-	for element in distances:
-		if not np.isnan(element[1]):
-			distances_CV_Kliep_MKliep.append(element[0:3])
-	if len(distances_CV_Kliep_MKliep) >= 1:
-		ranking = friedman.friedman(distances_CV_Kliep_MKliep, dataset_name, percentage)
-		saveCSV(ranking, "friedman-CV-LR-PLR", dataset_name, percentage, headers=["CV", "LR", "PLR"])
+"""
+        # KLiep-MKliep
+        distances_Kliep_MKliep = []
+        for element in distances:
+            if not np.isnan(element[1]):
+                distances_Kliep_MKliep.append([element[1:3]])
+        if len(distances_Kliep_MKliep) >= 1:
+            ranking = friedman.friedman_pairs(distances_Kliep_MKliep, dataset_name, percentage)
+            saveCSV(ranking, "friedman-Kliep-MKliep", dataset_name, percentage, headers=["Kliep", "MKliep"])
 
-	# CV-KDE-PKDE
-	distances_CV_KDE_MKDE = []
-	for element in distances:
-		distances_CV_KDE_MKDE.append([element[0], element[3], element[4]])
-	ranking = friedman.friedman(distances_CV_KDE_MKDE, dataset_name, percentage)
-	saveCSV(ranking, "friedman-CV-KDE-PKDE", dataset_name, percentage, headers=["CV", "KDE", "PKDE"])
+        # KDE-MKDE
+        distances_KDE_MKDE = []
+        for element in distances:
+            distances_KDE_MKDE.append([element[3:]])
+        ranking = friedman.friedman_pairs(distances_KDE_MKDE, dataset_name, percentage)
+        saveCSV(ranking, "friedman-KDE-MKDE", dataset_name, percentage, headers=["KDE", "MKDE"])
+
+        # CV-KLiep-MKliep
+        distances_CV_Kliep_MKliep = []
+        for element in distances:
+            if not np.isnan(element[1]):
+                distances_CV_Kliep_MKliep.append(element[0:3])
+        if len(distances_CV_Kliep_MKliep) >= 1:
+            ranking = friedman.friedman(distances_CV_Kliep_MKliep, dataset_name, percentage)
+            saveCSV(ranking, "friedman-CV-KLiep-MKliep", dataset_name, percentage, headers=["CV", "Kliep", "MKliep"])
+
+        # CV-KDE-MKDE
+        distances_CV_KDE_MKDE = []
+        for element in distances:
+            distances_CV_KDE_MKDE.append([element[0], element[3], element[4]])
+        ranking = friedman.friedman(distances_CV_KDE_MKDE, dataset_name, percentage)
+        saveCSV(ranking, "friedman-CV-KDE-MKDE", dataset_name, percentage, headers=["CV", "KDE", "MKDE"])
+
+    joinAllDistances(datasets, percentage, seeds)
+    data = pd.read_csv("results-final/plancton/plancton-2041-1.0-distances.csv", header = 0)
+    dataset_name = "plancton"
+    distances = data.values
+    distances_KDE_MKDE = []
+    for element in distances:
+        distances_KDE_MKDE.append([element[3:]])
+    ranking = friedman.friedman_pairs(distances_KDE_MKDE, dataset_name, percentage)
+    saveCSV(ranking, "friedman-KDE-MKDE", dataset_name, percentage, headers=["KDE", "MKDE"])
+    # CV-KDE-MKDE
+    distances_CV_KDE_MKDE = []
+    for element in distances:
+        distances_CV_KDE_MKDE.append([element[0], element[3], element[4]])
+    ranking = friedman.friedman(distances_CV_KDE_MKDE, dataset_name, percentage)
+    saveCSV(ranking, "friedman-CV-KDE-MKDE", dataset_name, percentage, headers=["CV", "KDE", "MKDE"])
+"""
 
 
 

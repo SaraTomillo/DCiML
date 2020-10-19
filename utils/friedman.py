@@ -1,11 +1,10 @@
 import argparse
-import os
 
 import numpy as np
-import pandas as pd
 
-from friedman_nemeny import FriedmanNemenyi
-import IO
+from utils.methods.friedman_nemeny import FriedmanNemenyi
+from utils import IO
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -20,23 +19,24 @@ def main():
     #test_number = int(args.test_number)
     seed = int(args.seed)
 
-    #data = join(dataset_name, percentage, seed)
+    data = join(dataset_name, percentage, seed)
     # for plancton
-    filename = "results/" + dataset_name + "/" + dataset_name +"-"+str(seed) + "-1.csv"
-    data = pd.read_csv(filename, header = 0)
-    data = data.values
+    #filename = "./results-total-final/" + dataset_name + "/" + dataset_name +"-"+str(seed) + "-1.csv"
+    #data = pd.read_csv(filename, header = 0)
+    #data = data.values
 
     distances = calculateDistances(data)
     IO.saveCSV(distances, "distances", dataset_name, percentage, seed)
-
+"""
     if np.isnan(distances).any():
         ranking = []
     else:
         ranking = friedman(distances, dataset_name, percentage)
     IO.saveCSV(ranking, "friedman", dataset_name, percentage, seed)
+"""
 
 
-def friedman(evals, dataset_name, percentage):
+def friedman(evals):
     FN = FriedmanNemenyi(evals, order=1, decimals=4)
     data = []
     for rank in FN.getRanks():
@@ -47,9 +47,9 @@ def friedman(evals, dataset_name, percentage):
     data.append(FN.getDeviationRanks())
     data.append([])
     data.append(FN.getCDs())
-    return data
+    return data, FN.getAvgRanks(), FN.getCDs()
 
-def friedman_pairs(evals, dataset_name, percentage):
+def friedman_pairs(evals):
     ranks = []
     for row in evals:
         aux = row[0][0] - row[0][1]
@@ -69,34 +69,26 @@ def friedman_pairs(evals, dataset_name, percentage):
     data.append(average)
     return data
 
-def calculateDistances(data):
-    distances = []
-    for row in data:
-        eval = float(row[0])
-        i = 0
-        distance = np.zeros(len(row[1:]))
-        for val in row[1:]:
-            if not np.math.isnan(val):
-                distance[i] = abs(eval - float(val))
-            else:
-                distance[i] = float("nan") #eval
-            i+=1
-        distances.append(distance)
-    return distances
+"""
 
-
-def join(dataset, percentage, seed):
+datasets = ["plancton-2006", "plancton-2007", "plancton-2008", "plancton-2009", "plancton-2010", "plancton-2011", "plancton-2012", "plancton-2013",
+                           "plancton-2006-2007", "plancton-2007-2008", "plancton-2008-2009", "plancton-2009-2010", "plancton-2010-2011", "plancton-2011-2012", "plancton-2012-2013"]
+percentage = 1
+seeds = [2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041]
+seed = 2041
+for dataset_name in datasets:
+    filename = "./results-final-total/" + dataset_name + "/" + dataset_name +"-results-total-placton-1.csv"
+    data = pd.read_csv(filename, sep=",", header=0, index_col=False)
+    aux = data.values
+    print(filename)
+    print(data.head())
     data = []
-    for subdir, dirs, files in os.walk(os.getcwd()+"/results/" + dataset + "/"):
-        for file in files:
-            if str(percentage) in file:
-                if not "distances" in file and not "friedman" in file:
-                    filename = str(os.path.join(os.path.join("results/", dataset), file))
-                    aux = pd.read_csv(filename, sep=",", header=0, index_col=False)
-                    data.append(np.asarray(aux.iloc[0]))#.to_numpy())
-    return np.asarray(data)
+    for i in range(len(aux)):
+        row = []
+        for element in aux[i]:
+            row.append(float(element))
+        data.append(row)
+    distances = calculateDistances(data)
 
-
-
-if __name__ == "__main__":
-    main()
+    IO.saveCSV(distances, "distances", dataset_name, percentage, seed)
+"""

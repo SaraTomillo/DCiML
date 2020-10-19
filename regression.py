@@ -1,24 +1,20 @@
 import argparse
 import traceback
-from random import Random
 
 import numpy as np
 from sklearn.model_selection import cross_val_predict
 from sklearn.svm import SVR
 
 import estimation_methods
-import IO
+from utils import IO
 
-import linecache
-import os
-import tracemalloc
-from utils import minmax, reduce, npShuffle
+from utils.utils import minmax, reduce, npShuffle
 
 def error(predictions, y):
     return abs(predictions - y)
 
 bandwith = 1
-kernel = 'epanechnikov'
+kernel = 'rbf'
 
 def regression(X_train, Y_train, X_test, Y_test, seed):
     model = SVR(kernel='linear', C=1, coef0=0)
@@ -43,7 +39,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
     CV = cross_val_predict(model, X_train, Y_train, cv=10)
     CVError = error(CV, Y_train)
 
-    importanceModel = SVR(kernel='linear', C=1, coef0=0)
+    importanceModel = SVR(kernel='linear', C=1000, coef0=0)
     importanceModel.fit(X_train, Y_train)
 
     P_train = importanceModel.predict(X_train)
@@ -51,18 +47,34 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
 
     try:
         importances_logReg = estimation_methods.log_regression(X_train, X_test)
-        logReg_err = CVError * importances_logReg
+        LR_err = CVError * importances_logReg
     except Exception:
-        print("Fallo LogReg")
-        logReg_err = []
+        print("Fallo LR")
+        LR_err = []
         traceback.print_exc()
 
     try:
         importances_MLogReg = estimation_methods.log_regression_model(P_train, P_test)
-        MLogReg_err = CVError * importances_MLogReg
+        PLR_err = CVError * importances_MLogReg
     except Exception:
-        print("Fallo MLogReg")
-        MLogReg_err = []
+        print("Fallo PLR")
+        PLR_err = []
+        traceback.print_exc()
+
+    try:
+        importances_logReg = estimation_methods.log_regression(Y_train, Y_test)
+        CLR_err = CVError * importances_logReg
+    except Exception:
+        print("Fallo CLR")
+        CLR_err = []
+        traceback.print_exc()
+
+    try:
+        importances_MLogReg = estimation_methods.log_regression_mixed(Y_train, P_test)
+        MLR_err = CVError * importances_MLogReg
+    except Exception:
+        print("Fallo MLR")
+        MLR_err = []
         traceback.print_exc()
 
     try:
@@ -75,6 +87,22 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
 
     try:
         importances_MKMM = estimation_methods.kmm_model(P_train, P_test)
+        PKMM_err = CVError * importances_MKMM
+    except Exception:
+        print("Fallo PKMM")
+        PKMM_err = []
+        traceback.print_exc()
+
+    try:
+        importances_KMM = estimation_methods.kmm(Y_train, Y_test)
+        CKMM_err = CVError * importances_KMM
+    except Exception:
+        print("Fallo CKMM")
+        CKMM_err = []
+        traceback.print_exc()
+
+    try:
+        importances_MKMM = estimation_methods.kmm_mixed(Y_train, P_test)
         MKMM_err = CVError * importances_MKMM
     except Exception:
         print("Fallo MKMM")
@@ -83,46 +111,74 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
 
     try:
         importances_kernel_density = estimation_methods.kernel_density(X_train, X_test, bandwith, kernel)
-        kernel_density_err = CVError * importances_kernel_density
+        KDE_err = CVError * importances_kernel_density
     except Exception:
-        print("Fallo kernel density")
-        kernel_density_err = []
-        traceback.print_exc()
- 
-    try:
-        importances_kernel_density_model = estimation_methods.kernel_density_model(P_train, P_test, bandwith, kernel)
-        kernel_density_model_err = CVError * importances_kernel_density_model
-    except Exception:
-        print("Fallo kernel density con modelo")
-        kernel_density_model_err = []
+        print("Fallo KDE")
+        KDE_err = []
         traceback.print_exc()
 
     try:
-        importances_kliep = estimation_methods.kliep(X_train, X_test)
-        kliep_err = CVError * importances_kliep
+        importances_kernel_density_model = estimation_methods.kernel_density_model(P_train, P_test, bandwith, kernel)
+        PKDE_err = CVError * importances_kernel_density_model
     except Exception:
-        print("Fallo kliep")
-        kliep_err = []
+        print("Fallo PKDE")
+        PKDE_err = []
+        traceback.print_exc()
+
+    try:
+        importances_kernel_density = estimation_methods.kernel_density(Y_train, Y_test, bandwith, kernel)
+        CKDE_err = CVError * importances_kernel_density
+    except Exception:
+        print("Fallo CKDE")
+        CKDE_err = []
+        traceback.print_exc()
+
+    try:
+        importances_kernel_density_model = estimation_methods.kernel_density_mixed(Y_train, P_test, bandwith, kernel)
+        MKDE_err = CVError * importances_kernel_density_model
+    except Exception:
+        print("Fallo MKDE")
+        MKDE_err = []
+        traceback.print_exc()
+
+
+    try:
+        importances_kliep = estimation_methods.kliep(X_train, X_test)
+        KLIEP_err = CVError * importances_kliep
+    except Exception:
+        print("Fallo KLIEP")
+        KLIEP_err = []
         traceback.print_exc()
 
     try:
         importances_kliep_model = estimation_methods.kliep_model(P_train, P_test)
-        kliep_model_err = CVError * importances_kliep_model
+        PKLIEP_err = CVError * importances_kliep_model
     except Exception:
-        print("Fallo kliep con modelo")
-        kliep_model_err = []
+        print("Fallo PKLIEP")
+        PKLIEP_err = []
         traceback.print_exc()
 
-    logReg_err = []
-    KMM_err = []
-    kernel_density_err = []
-    kliep_err = []
+    try:
+        importances_kliep = estimation_methods.kliep(Y_train, Y_test)
+        CKLIEP_err = CVError * importances_kliep
+    except Exception:
+        print("Fallo CKLIEP")
+        CKLIEP_err = []
+        traceback.print_exc()
+
+    try:
+        importances_kliep_model = estimation_methods.kliep_mixed(Y_train, P_test)
+        MKLIEP_err = CVError * importances_kliep_model
+    except Exception:
+        print("Fallo MKLIEP")
+        MKLIEP_err = []
+        traceback.print_exc()
 
     return [np.average(eval), np.average(CVError),
-            np.average(logReg_err), np.average(MLogReg_err),
-            np.average(KMM_err), np.average(MKMM_err),
-            np.average(kernel_density_err), np.average(kernel_density_model_err),
-            np.average(kliep_err), np.average(kliep_model_err)]
+            np.average(LR_err), np.average(PLR_err), np.average(CLR_err), np.average(MLR_err),
+            np.average(KMM_err), np.average(PKMM_err), np.average(CKMM_err), np.average(MKMM_err),
+            np.average(KDE_err), np.average(PKDE_err),np.average(CKDE_err), np.average(MKDE_err),
+            np.average(KLIEP_err), np.average(PKLIEP_err), np.average(CKLIEP_err), np.average(MKLIEP_err)]
 
 def main():
     parser = argparse.ArgumentParser()
@@ -141,7 +197,7 @@ def main():
 
     X_train, Y_train, X_test, Y_test = IO.readDataset(filename_train, filename_test)
     results = regression(X_train, Y_train, X_test, Y_test, seed)
-    IO.writeToCSV(results, dataset_name, execution_id,seed)
+    IO.writeToCSV(results, dataset_name, execution_id, seed)
 
 
 if __name__== "__main__":

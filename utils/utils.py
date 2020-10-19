@@ -41,7 +41,6 @@ def reduce(data, minmax):
         new_data.append(new_col)
     return(np.transpose(new_data))
 
-
 def npShuffle(M,seed):
     r=Random()
     r.seed(seed)

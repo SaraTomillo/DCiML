@@ -167,25 +167,3 @@ class FriedmanNemenyi:
         table +='\\end{tabular}\n'
         table +='\\end{table}\n'
         return table
-
-
-"""
-Evals = [[1, 2, 3, 5], \
-         [2, 4, 6, 6], \
-         [3, 3, 1, 3], \
-         [2, 4, 4, 5], \
-         [1, 3, 4, 5], \
-         [1, 3, 3, 5]]
-FN = FriedmanNemenyi(Evals, order=1, decimals=4)
-print("f={} p={}".format(FN.getF(), FN.getP()))
-print("Ranks=")
-print(FN.getRanks())
-print(FN.getAvgRanks())
-print("CD")
-print(FN.getCDs())
-
-FN.getLatex(Evals, FN.getRanks(), ["eval", "CV", "kliep", "mod"], ["d1", "d2", "d3", "d4", "d5", "d6"],
-            FN.getAvgRanks())
-"""
-
-
