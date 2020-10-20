@@ -14,7 +14,7 @@ def error(predictions, y):
     return abs(predictions - y)
 
 bandwith = 1
-kernel = 'rbf'
+kernel = 'linear'
 
 def regression(X_train, Y_train, X_test, Y_test, seed):
     model = SVR(kernel='linear', C=1, coef0=0)

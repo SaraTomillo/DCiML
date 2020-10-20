@@ -23,11 +23,11 @@ test_percentage = 1.0
 seeds = [2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041]
 for seed in seeds:
     for dataset in datasets:
-        f.write(" results/" + dataset + "/" + dataset +"-" + str(seed)+"-"+ str(test_percentage) + ".csv ")
+        f.write(" results/error_estimations" + dataset + "/" + dataset +"-" + str(seed)+"-"+ str(test_percentage) + ".csv ")
 
     for i in range(2006, 2013):
         dataset = "plankton-" + str(i) + "-" +str(i+1)
-        f.write(" results/" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage) + ".csv ")
+        f.write(" results/error_estimations" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage) + ".csv ")
 
 f.write("\n\n")
 
@@ -48,7 +48,7 @@ f.write("\t@echo BUILD done\n\n")
 for seed in seeds:
     for dataset in datasets:
         # Write individual instructions
-        f.write("results/" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage) + ".csv\t: classification.py datasets/" + dataset + "-1.csv datasets/" + dataset + "-2.csv\n")
+        f.write("results/error_estimations" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage) + ".csv\t: classification.py datasets/" + dataset + "-1.csv datasets/" + dataset + "-2.csv\n")
         f.write("\t$(python) classification.py datasets/" + dataset + "-1.csv datasets/" + dataset + "-2.csv " + dataset + " 1 " + str(seed) + "\n\n")
 
     for i in range(2006, 2013):
@@ -57,7 +57,7 @@ for seed in seeds:
         dataset_test = " datasets/plankton-" + str(i+1) + "-1.csv"
 
         # Write individual instructions
-        f.write("results/" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage) + ".csv\t: classification.py "+ dataset_train + " " + dataset_test + "\n")
+        f.write("results/error_estimations" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage) + ".csv\t: classification.py "+ dataset_train + " " + dataset_test + "\n")
         f.write("\t$(python) classification.py " + dataset_train + " " + dataset_test +" "+dataset + " 1 " + str(seed) + "\n\n")
 
 

@@ -1,8 +1,8 @@
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KernelDensity
-from utils.utils import DensityRatioEstimator
+from utils.methods.DRE import DensityRatioEstimator
 import numpy as np
-from utils.utils import iwe_kernel_mean_matching
+from utils.methods.KMM import iwe_kernel_mean_matching
 
 # Aux function to transpose 1 dim
 def T(V):

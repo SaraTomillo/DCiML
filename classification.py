@@ -17,7 +17,7 @@ def error(predictions, y):
 
 
 bandwith = 1
-kernel = 'rbf'
+kernel = 'linear'
 
 def classification(X_train, Y_train, X_test, Y_test, seed):
     tracemalloc.start()
@@ -44,6 +44,9 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     P_train = importanceModel.decision_function(X_train)
     P_test = importanceModel.decision_function(X_test)
 
+    Y_train = Y_train.reshape(-1, 1)
+    Y_test = Y_test.reshape(-1, 1)
+
     try:
         importances_logReg = estimation_methods.log_regression(Y_train, Y_test)
         LR_err = CVError * importances_logReg
@@ -59,6 +62,14 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         print("Error PLR")
         PLR_err = []
         traceback.print_exc()
+    if len(PLR_err) == 0:
+        try:
+            importances_MLogReg = estimation_methods.log_regression_model(P_train, P_test)
+            PLR_err = CVError * importances_MLogReg
+        except Exception:
+            print("Error PLR")
+            PLR_err = []
+            traceback.print_exc()
 
     try:
         importances_KMM = estimation_methods.kmm(Y_train, Y_test)
@@ -75,6 +86,14 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         print("Error PKMM")
         PKMM_err = []
         traceback.print_exc()
+    if len(PKMM_err) == 0:
+        try:
+            importances_MKMM = estimation_methods.kmm_model(P_train, P_test)
+            PKMM_err = CVError * importances_MKMM
+        except Exception:
+            print("Error PKMM")
+            PKMM_err = []
+            traceback.print_exc()
 
     try:
         importances_kernel_density = estimation_methods.kernel_density(Y_train, Y_test, bandwith, kernel)
@@ -93,7 +112,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         traceback.print_exc()
 
     try:
-        importances_KLIEP = estimation_methods.KLIEP(Y_train, Y_test)
+        importances_KLIEP = estimation_methods.kliep(Y_train, Y_test)
         KLIEP_err = CVError * importances_KLIEP
     except Exception:
         print("Error KLIEP")
@@ -101,7 +120,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         traceback.print_exc()
 
     try:
-        importances_KLIEP_model = estimation_methods.KLIEP_model(P_train, P_test)
+        importances_KLIEP_model = estimation_methods.kliep_model(P_train, P_test)
         PKLIEP_err = CVError * importances_KLIEP_model
     except Exception:
         print("Error PKLIEP")

@@ -9,6 +9,9 @@ datasets_classification = ["iris", "sonar", "ionosphere", "cmc", "haberman",
 datasets_regression = ["abalone", "computer-hardware", "wine-quality-red", "wine-quality-white",
                        "auto-mpg", "autos", "residential-v9", "residential-v10", "ticdata", "student-mat","student-por"]
 
+datasets_classification = ["iris"]
+datasets_regression = []
+
 datasets = []
 for element in datasets_classification:
     datasets.append(element)
@@ -56,30 +59,28 @@ f.write("\t@echo BUILD done\n\n")
 for seed in seeds:
     for dataset in datasets_regression:
         for test_percentage in test_percentages:
-            dataset_name = "results/error_estimations" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage)
+            dataset_name = "results/error_estimations/" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage)
 
         for test_number in range(tests_number):
             execution = str(test_percentage) + "-" + str(test_number) + ".csv"
             # Write individual instructions
-            f.write(dataset_name + "-" + str(test_number) + ".csv\t: regression.py datasets-" + str(seed) + "/" + dataset + "/" + dataset + "-train-" + str(test_percentage) + ".csv datasets-" + str(seed) + "/" + dataset + "/" + dataset + "-test-" + execution + "\n")
-            f.write("\t$(python) regression.py datasets-" + str(seed) + "/" + dataset + "/" + dataset + "-train-" + str(
-                test_percentage) + ".csv datasets-" + str(seed) + "/" + dataset + "/" + dataset + "-test-" + execution + " " + dataset + " " + execution[:-4] + " " + str(seed) + "\n\n")
-
-f.write("results/results-final/regression.csv\t: generate_results.py \n")
-f.write("\t$(python) generate_results.py\n\n")
+            f.write(dataset_name + "-" + str(test_number) + ".csv\t: regression.py datasets/regression/" + dataset + "/datasets-" + str(seed) + "/" + dataset + "-train-" + str(test_percentage) + ".csv datasets/regression/" + dataset + "/datasets-" + str(seed) + "/" + dataset + "-test-" + execution + "\n")
+            f.write("\t$(python) regression.py datasets/regression/" + dataset + "/datasets-" + str(seed) + "/" + dataset + "-train-" + str(test_percentage) + ".csv datasets/regression/" + dataset + "/datasets-" + str(seed) + "/" + dataset + "-test-" + execution + " " + dataset + " " + execution[:-4] + " " + str(seed) + "\n\n")
 
 # DATASETS CLASSIFICATION
 for seed in seeds:
     for dataset in datasets_classification:
         for test_percentage in test_percentages:
-            dataset_name = "results/error_estimations" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage)
+            dataset_name = "results/error_estimations/" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage)
 
         for test_number in range(tests_number):
             execution = str(test_percentage) + "-" + str(test_number) + ".csv"
             # Write individual instructions
-            f.write(dataset_name + "-" + str(test_number) + ".csv\t: classification.py datasets-" + str(seed) + "/" + dataset + "/" + dataset + "-train-" + str(test_percentage) + ".csv datasets-" + str(seed) + "/" + dataset + "/" + dataset + "-test-" + execution + "\n")
-            f.write("\t$(python) classification.py datasets-" + str(seed) + "/" + dataset + "/" + dataset + "-train-" + str(
-                test_percentage) + ".csv datasets-" + str(seed) + "/" + dataset + "/" + dataset + "-test-" + execution + " " + dataset + " " + execution[:-4] + " " + str(seed) + "\n\n")
+            f.write(dataset_name + "-" + str(test_number) + ".csv\t: classification.py datasets/classification/" + dataset + "/datasets-" + str(seed) + "/" + dataset + "-train-" + str(test_percentage) + ".csv datasets/classification/" + dataset + "/datasets-" + str(seed) + "/" + dataset + "-test-" + execution + "\n")
+            f.write("\t$(python) classification.py datasets/classification/" + dataset + "/datasets-" + str(seed) + "/" + dataset + "-train-" + str(test_percentage) + ".csv datasets/classification/" + dataset + "/datasets-" + str(seed) + "/" + dataset + "-test-" + execution + " " + dataset + " " + execution[:-4] + " " + str(seed) + "\n\n")
+
+f.write("results/results-final/regression.csv\t: generate_results.py \n")
+f.write("\t$(python) generate_results.py\n\n")
 
 f.write("results/results-final/classification.csv\t: generate_results.py \n")
 f.write("\t$(python) generate_results.py\n\n")
