@@ -9,9 +9,6 @@ datasets_classification = ["iris", "sonar", "ionosphere", "cmc", "haberman",
 datasets_regression = ["abalone", "computer-hardware", "wine-quality-red", "wine-quality-white",
                        "auto-mpg", "autos", "residential-v9", "residential-v10", "ticdata", "student-mat","student-por"]
 
-datasets_classification = ["iris"]
-datasets_regression = []
-
 datasets = []
 for element in datasets_classification:
     datasets.append(element)

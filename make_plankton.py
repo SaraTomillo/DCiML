@@ -48,8 +48,8 @@ f.write("\t@echo BUILD done\n\n")
 for seed in seeds:
     for dataset in datasets:
         # Write individual instructions
-        f.write("results/error_estimations" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage) + ".csv\t: classification.py datasets/" + dataset + "-1.csv datasets/" + dataset + "-2.csv\n")
-        f.write("\t$(python) classification.py datasets/" + dataset + "-1.csv datasets/" + dataset + "-2.csv " + dataset + " 1 " + str(seed) + "\n\n")
+        f.write("results/error_estimations" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage) + ".csv\t: classification_plankton.py datasets/" + dataset + "-1.csv datasets/" + dataset + "-2.csv\n")
+        f.write("\t$(python) classification_plankton.py datasets/" + dataset + "-1.csv datasets/" + dataset + "-2.csv " + dataset + " 1 " + str(seed) + "\n\n")
 
     for i in range(2006, 2013):
         dataset = "plankton-" + str(i) + "-" +str(i+1)
@@ -57,8 +57,8 @@ for seed in seeds:
         dataset_test = " datasets/plankton-" + str(i+1) + "-1.csv"
 
         # Write individual instructions
-        f.write("results/error_estimations" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage) + ".csv\t: classification.py "+ dataset_train + " " + dataset_test + "\n")
-        f.write("\t$(python) classification.py " + dataset_train + " " + dataset_test +" "+dataset + " 1 " + str(seed) + "\n\n")
+        f.write("results/error_estimations" + dataset + "/" + dataset + "-" + str(seed) + "-" + str(test_percentage) + ".csv\t: classification_plankton.py "+ dataset_train + " " + dataset_test + "\n")
+        f.write("\t$(python) classification_plankton.py " + dataset_train + " " + dataset_test +" "+dataset + " 1 " + str(seed) + "\n\n")
 
 
 f.write("\n\t$(python) generateResults.py\n\n")

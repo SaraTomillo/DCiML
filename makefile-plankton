@@ -1,6 +1,6 @@
 python=python3
 
-files = results/plankton-2006/plankton-2006-2032-1.0.csv  results/plankton-2007/plankton-2007-2032-1.0.csv  results/plankton-2008/plankton-2008-2032-1.0.csv  results/plankton-2009/plankton-2009-2032-1.0.csv  results/plankton-2010/plankton-2010-2032-1.0.csv  results/plankton-2011/plankton-2011-2032-1.0.csv  results/plankton-2012/plankton-2012-2032-1.0.csv  results/plankton-2013/plankton-2013-2032-1.0.csv  results/plankton-2006-2007/plankton-2006-2007-2032-1.0.csv  results/plankton-2007-2008/plankton-2007-2008-2032-1.0.csv  results/plankton-2008-2009/plankton-2008-2009-2032-1.0.csv  results/plankton-2009-2010/plankton-2009-2010-2032-1.0.csv  results/plankton-2010-2011/plankton-2010-2011-2032-1.0.csv  results/plankton-2011-2012/plankton-2011-2012-2032-1.0.csv  results/plankton-2012-2013/plankton-2012-2013-2032-1.0.csv  results/plankton-2006/plankton-2006-2033-1.0.csv  results/plankton-2007/plankton-2007-2033-1.0.csv  results/plankton-2008/plankton-2008-2033-1.0.csv  results/plankton-2009/plankton-2009-2033-1.0.csv  results/plankton-2010/plankton-2010-2033-1.0.csv  results/plankton-2011/plankton-2011-2033-1.0.csv  results/plankton-2012/plankton-2012-2033-1.0.csv  results/plankton-2013/plankton-2013-2033-1.0.csv  results/plankton-2006-2007/plankton-2006-2007-2033-1.0.csv  results/plankton-2007-2008/plankton-2007-2008-2033-1.0.csv  results/plankton-2008-2009/plankton-2008-2009-2033-1.0.csv  results/plankton-2009-2010/plankton-2009-2010-2033-1.0.csv  results/plankton-2010-2011/plankton-2010-2011-2033-1.0.csv  results/plankton-2011-2012/plankton-2011-2012-2033-1.0.csv  results/plankton-2012-2013/plankton-2012-2013-2033-1.0.csv  results/plankton-2006/plankton-2006-2034-1.0.csv  results/plankton-2007/plankton-2007-2034-1.0.csv  results/plankton-2008/plankton-2008-2034-1.0.csv  results/plankton-2009/plankton-2009-2034-1.0.csv  results/plankton-2010/plankton-2010-2034-1.0.csv  results/plankton-2011/plankton-2011-2034-1.0.csv  results/plankton-2012/plankton-2012-2034-1.0.csv  results/plankton-2013/plankton-2013-2034-1.0.csv  results/plankton-2006-2007/plankton-2006-2007-2034-1.0.csv  results/plankton-2007-2008/plankton-2007-2008-2034-1.0.csv  results/plankton-2008-2009/plankton-2008-2009-2034-1.0.csv  results/plankton-2009-2010/plankton-2009-2010-2034-1.0.csv  results/plankton-2010-2011/plankton-2010-2011-2034-1.0.csv  results/plankton-2011-2012/plankton-2011-2012-2034-1.0.csv  results/plankton-2012-2013/plankton-2012-2013-2034-1.0.csv  results/plankton-2006/plankton-2006-2035-1.0.csv  results/plankton-2007/plankton-2007-2035-1.0.csv  results/plankton-2008/plankton-2008-2035-1.0.csv  results/plankton-2009/plankton-2009-2035-1.0.csv  results/plankton-2010/plankton-2010-2035-1.0.csv  results/plankton-2011/plankton-2011-2035-1.0.csv  results/plankton-2012/plankton-2012-2035-1.0.csv  results/plankton-2013/plankton-2013-2035-1.0.csv  results/plankton-2006-2007/plankton-2006-2007-2035-1.0.csv  results/plankton-2007-2008/plankton-2007-2008-2035-1.0.csv  results/plankton-2008-2009/plankton-2008-2009-2035-1.0.csv  results/plankton-2009-2010/plankton-2009-2010-2035-1.0.csv  results/plankton-2010-2011/plankton-2010-2011-2035-1.0.csv  results/plankton-2011-2012/plankton-2011-2012-2035-1.0.csv  results/plankton-2012-2013/plankton-2012-2013-2035-1.0.csv  results/plankton-2006/plankton-2006-2036-1.0.csv  results/plankton-2007/plankton-2007-2036-1.0.csv  results/plankton-2008/plankton-2008-2036-1.0.csv  results/plankton-2009/plankton-2009-2036-1.0.csv  results/plankton-2010/plankton-2010-2036-1.0.csv  results/plankton-2011/plankton-2011-2036-1.0.csv  results/plankton-2012/plankton-2012-2036-1.0.csv  results/plankton-2013/plankton-2013-2036-1.0.csv  results/plankton-2006-2007/plankton-2006-2007-2036-1.0.csv  results/plankton-2007-2008/plankton-2007-2008-2036-1.0.csv  results/plankton-2008-2009/plankton-2008-2009-2036-1.0.csv  results/plankton-2009-2010/plankton-2009-2010-2036-1.0.csv  results/plankton-2010-2011/plankton-2010-2011-2036-1.0.csv  results/plankton-2011-2012/plankton-2011-2012-2036-1.0.csv  results/plankton-2012-2013/plankton-2012-2013-2036-1.0.csv  results/plankton-2006/plankton-2006-2037-1.0.csv  results/plankton-2007/plankton-2007-2037-1.0.csv  results/plankton-2008/plankton-2008-2037-1.0.csv  results/plankton-2009/plankton-2009-2037-1.0.csv  results/plankton-2010/plankton-2010-2037-1.0.csv  results/plankton-2011/plankton-2011-2037-1.0.csv  results/plankton-2012/plankton-2012-2037-1.0.csv  results/plankton-2013/plankton-2013-2037-1.0.csv  results/plankton-2006-2007/plankton-2006-2007-2037-1.0.csv  results/plankton-2007-2008/plankton-2007-2008-2037-1.0.csv  results/plankton-2008-2009/plankton-2008-2009-2037-1.0.csv  results/plankton-2009-2010/plankton-2009-2010-2037-1.0.csv  results/plankton-2010-2011/plankton-2010-2011-2037-1.0.csv  results/plankton-2011-2012/plankton-2011-2012-2037-1.0.csv  results/plankton-2012-2013/plankton-2012-2013-2037-1.0.csv  results/plankton-2006/plankton-2006-2038-1.0.csv  results/plankton-2007/plankton-2007-2038-1.0.csv  results/plankton-2008/plankton-2008-2038-1.0.csv  results/plankton-2009/plankton-2009-2038-1.0.csv  results/plankton-2010/plankton-2010-2038-1.0.csv  results/plankton-2011/plankton-2011-2038-1.0.csv  results/plankton-2012/plankton-2012-2038-1.0.csv  results/plankton-2013/plankton-2013-2038-1.0.csv  results/plankton-2006-2007/plankton-2006-2007-2038-1.0.csv  results/plankton-2007-2008/plankton-2007-2008-2038-1.0.csv  results/plankton-2008-2009/plankton-2008-2009-2038-1.0.csv  results/plankton-2009-2010/plankton-2009-2010-2038-1.0.csv  results/plankton-2010-2011/plankton-2010-2011-2038-1.0.csv  results/plankton-2011-2012/plankton-2011-2012-2038-1.0.csv  results/plankton-2012-2013/plankton-2012-2013-2038-1.0.csv  results/plankton-2006/plankton-2006-2039-1.0.csv  results/plankton-2007/plankton-2007-2039-1.0.csv  results/plankton-2008/plankton-2008-2039-1.0.csv  results/plankton-2009/plankton-2009-2039-1.0.csv  results/plankton-2010/plankton-2010-2039-1.0.csv  results/plankton-2011/plankton-2011-2039-1.0.csv  results/plankton-2012/plankton-2012-2039-1.0.csv  results/plankton-2013/plankton-2013-2039-1.0.csv  results/plankton-2006-2007/plankton-2006-2007-2039-1.0.csv  results/plankton-2007-2008/plankton-2007-2008-2039-1.0.csv  results/plankton-2008-2009/plankton-2008-2009-2039-1.0.csv  results/plankton-2009-2010/plankton-2009-2010-2039-1.0.csv  results/plankton-2010-2011/plankton-2010-2011-2039-1.0.csv  results/plankton-2011-2012/plankton-2011-2012-2039-1.0.csv  results/plankton-2012-2013/plankton-2012-2013-2039-1.0.csv  results/plankton-2006/plankton-2006-2040-1.0.csv  results/plankton-2007/plankton-2007-2040-1.0.csv  results/plankton-2008/plankton-2008-2040-1.0.csv  results/plankton-2009/plankton-2009-2040-1.0.csv  results/plankton-2010/plankton-2010-2040-1.0.csv  results/plankton-2011/plankton-2011-2040-1.0.csv  results/plankton-2012/plankton-2012-2040-1.0.csv  results/plankton-2013/plankton-2013-2040-1.0.csv  results/plankton-2006-2007/plankton-2006-2007-2040-1.0.csv  results/plankton-2007-2008/plankton-2007-2008-2040-1.0.csv  results/plankton-2008-2009/plankton-2008-2009-2040-1.0.csv  results/plankton-2009-2010/plankton-2009-2010-2040-1.0.csv  results/plankton-2010-2011/plankton-2010-2011-2040-1.0.csv  results/plankton-2011-2012/plankton-2011-2012-2040-1.0.csv  results/plankton-2012-2013/plankton-2012-2013-2040-1.0.csv  results/plankton-2006/plankton-2006-2041-1.0.csv  results/plankton-2007/plankton-2007-2041-1.0.csv  results/plankton-2008/plankton-2008-2041-1.0.csv  results/plankton-2009/plankton-2009-2041-1.0.csv  results/plankton-2010/plankton-2010-2041-1.0.csv  results/plankton-2011/plankton-2011-2041-1.0.csv  results/plankton-2012/plankton-2012-2041-1.0.csv  results/plankton-2013/plankton-2013-2041-1.0.csv  results/plankton-2006-2007/plankton-2006-2007-2041-1.0.csv  results/plankton-2007-2008/plankton-2007-2008-2041-1.0.csv  results/plankton-2008-2009/plankton-2008-2009-2041-1.0.csv  results/plankton-2009-2010/plankton-2009-2010-2041-1.0.csv  results/plankton-2010-2011/plankton-2010-2011-2041-1.0.csv  results/plankton-2011-2012/plankton-2011-2012-2041-1.0.csv  results/plankton-2012-2013/plankton-2012-2013-2041-1.0.csv 
+files = results/error_estimationsplankton-2006/plankton-2006-2032-1.0.csv  results/error_estimationsplankton-2007/plankton-2007-2032-1.0.csv  results/error_estimationsplankton-2008/plankton-2008-2032-1.0.csv  results/error_estimationsplankton-2009/plankton-2009-2032-1.0.csv  results/error_estimationsplankton-2010/plankton-2010-2032-1.0.csv  results/error_estimationsplankton-2011/plankton-2011-2032-1.0.csv  results/error_estimationsplankton-2012/plankton-2012-2032-1.0.csv  results/error_estimationsplankton-2013/plankton-2013-2032-1.0.csv  results/error_estimationsplankton-2006-2007/plankton-2006-2007-2032-1.0.csv  results/error_estimationsplankton-2007-2008/plankton-2007-2008-2032-1.0.csv  results/error_estimationsplankton-2008-2009/plankton-2008-2009-2032-1.0.csv  results/error_estimationsplankton-2009-2010/plankton-2009-2010-2032-1.0.csv  results/error_estimationsplankton-2010-2011/plankton-2010-2011-2032-1.0.csv  results/error_estimationsplankton-2011-2012/plankton-2011-2012-2032-1.0.csv  results/error_estimationsplankton-2012-2013/plankton-2012-2013-2032-1.0.csv  results/error_estimationsplankton-2006/plankton-2006-2033-1.0.csv  results/error_estimationsplankton-2007/plankton-2007-2033-1.0.csv  results/error_estimationsplankton-2008/plankton-2008-2033-1.0.csv  results/error_estimationsplankton-2009/plankton-2009-2033-1.0.csv  results/error_estimationsplankton-2010/plankton-2010-2033-1.0.csv  results/error_estimationsplankton-2011/plankton-2011-2033-1.0.csv  results/error_estimationsplankton-2012/plankton-2012-2033-1.0.csv  results/error_estimationsplankton-2013/plankton-2013-2033-1.0.csv  results/error_estimationsplankton-2006-2007/plankton-2006-2007-2033-1.0.csv  results/error_estimationsplankton-2007-2008/plankton-2007-2008-2033-1.0.csv  results/error_estimationsplankton-2008-2009/plankton-2008-2009-2033-1.0.csv  results/error_estimationsplankton-2009-2010/plankton-2009-2010-2033-1.0.csv  results/error_estimationsplankton-2010-2011/plankton-2010-2011-2033-1.0.csv  results/error_estimationsplankton-2011-2012/plankton-2011-2012-2033-1.0.csv  results/error_estimationsplankton-2012-2013/plankton-2012-2013-2033-1.0.csv  results/error_estimationsplankton-2006/plankton-2006-2034-1.0.csv  results/error_estimationsplankton-2007/plankton-2007-2034-1.0.csv  results/error_estimationsplankton-2008/plankton-2008-2034-1.0.csv  results/error_estimationsplankton-2009/plankton-2009-2034-1.0.csv  results/error_estimationsplankton-2010/plankton-2010-2034-1.0.csv  results/error_estimationsplankton-2011/plankton-2011-2034-1.0.csv  results/error_estimationsplankton-2012/plankton-2012-2034-1.0.csv  results/error_estimationsplankton-2013/plankton-2013-2034-1.0.csv  results/error_estimationsplankton-2006-2007/plankton-2006-2007-2034-1.0.csv  results/error_estimationsplankton-2007-2008/plankton-2007-2008-2034-1.0.csv  results/error_estimationsplankton-2008-2009/plankton-2008-2009-2034-1.0.csv  results/error_estimationsplankton-2009-2010/plankton-2009-2010-2034-1.0.csv  results/error_estimationsplankton-2010-2011/plankton-2010-2011-2034-1.0.csv  results/error_estimationsplankton-2011-2012/plankton-2011-2012-2034-1.0.csv  results/error_estimationsplankton-2012-2013/plankton-2012-2013-2034-1.0.csv  results/error_estimationsplankton-2006/plankton-2006-2035-1.0.csv  results/error_estimationsplankton-2007/plankton-2007-2035-1.0.csv  results/error_estimationsplankton-2008/plankton-2008-2035-1.0.csv  results/error_estimationsplankton-2009/plankton-2009-2035-1.0.csv  results/error_estimationsplankton-2010/plankton-2010-2035-1.0.csv  results/error_estimationsplankton-2011/plankton-2011-2035-1.0.csv  results/error_estimationsplankton-2012/plankton-2012-2035-1.0.csv  results/error_estimationsplankton-2013/plankton-2013-2035-1.0.csv  results/error_estimationsplankton-2006-2007/plankton-2006-2007-2035-1.0.csv  results/error_estimationsplankton-2007-2008/plankton-2007-2008-2035-1.0.csv  results/error_estimationsplankton-2008-2009/plankton-2008-2009-2035-1.0.csv  results/error_estimationsplankton-2009-2010/plankton-2009-2010-2035-1.0.csv  results/error_estimationsplankton-2010-2011/plankton-2010-2011-2035-1.0.csv  results/error_estimationsplankton-2011-2012/plankton-2011-2012-2035-1.0.csv  results/error_estimationsplankton-2012-2013/plankton-2012-2013-2035-1.0.csv  results/error_estimationsplankton-2006/plankton-2006-2036-1.0.csv  results/error_estimationsplankton-2007/plankton-2007-2036-1.0.csv  results/error_estimationsplankton-2008/plankton-2008-2036-1.0.csv  results/error_estimationsplankton-2009/plankton-2009-2036-1.0.csv  results/error_estimationsplankton-2010/plankton-2010-2036-1.0.csv  results/error_estimationsplankton-2011/plankton-2011-2036-1.0.csv  results/error_estimationsplankton-2012/plankton-2012-2036-1.0.csv  results/error_estimationsplankton-2013/plankton-2013-2036-1.0.csv  results/error_estimationsplankton-2006-2007/plankton-2006-2007-2036-1.0.csv  results/error_estimationsplankton-2007-2008/plankton-2007-2008-2036-1.0.csv  results/error_estimationsplankton-2008-2009/plankton-2008-2009-2036-1.0.csv  results/error_estimationsplankton-2009-2010/plankton-2009-2010-2036-1.0.csv  results/error_estimationsplankton-2010-2011/plankton-2010-2011-2036-1.0.csv  results/error_estimationsplankton-2011-2012/plankton-2011-2012-2036-1.0.csv  results/error_estimationsplankton-2012-2013/plankton-2012-2013-2036-1.0.csv  results/error_estimationsplankton-2006/plankton-2006-2037-1.0.csv  results/error_estimationsplankton-2007/plankton-2007-2037-1.0.csv  results/error_estimationsplankton-2008/plankton-2008-2037-1.0.csv  results/error_estimationsplankton-2009/plankton-2009-2037-1.0.csv  results/error_estimationsplankton-2010/plankton-2010-2037-1.0.csv  results/error_estimationsplankton-2011/plankton-2011-2037-1.0.csv  results/error_estimationsplankton-2012/plankton-2012-2037-1.0.csv  results/error_estimationsplankton-2013/plankton-2013-2037-1.0.csv  results/error_estimationsplankton-2006-2007/plankton-2006-2007-2037-1.0.csv  results/error_estimationsplankton-2007-2008/plankton-2007-2008-2037-1.0.csv  results/error_estimationsplankton-2008-2009/plankton-2008-2009-2037-1.0.csv  results/error_estimationsplankton-2009-2010/plankton-2009-2010-2037-1.0.csv  results/error_estimationsplankton-2010-2011/plankton-2010-2011-2037-1.0.csv  results/error_estimationsplankton-2011-2012/plankton-2011-2012-2037-1.0.csv  results/error_estimationsplankton-2012-2013/plankton-2012-2013-2037-1.0.csv  results/error_estimationsplankton-2006/plankton-2006-2038-1.0.csv  results/error_estimationsplankton-2007/plankton-2007-2038-1.0.csv  results/error_estimationsplankton-2008/plankton-2008-2038-1.0.csv  results/error_estimationsplankton-2009/plankton-2009-2038-1.0.csv  results/error_estimationsplankton-2010/plankton-2010-2038-1.0.csv  results/error_estimationsplankton-2011/plankton-2011-2038-1.0.csv  results/error_estimationsplankton-2012/plankton-2012-2038-1.0.csv  results/error_estimationsplankton-2013/plankton-2013-2038-1.0.csv  results/error_estimationsplankton-2006-2007/plankton-2006-2007-2038-1.0.csv  results/error_estimationsplankton-2007-2008/plankton-2007-2008-2038-1.0.csv  results/error_estimationsplankton-2008-2009/plankton-2008-2009-2038-1.0.csv  results/error_estimationsplankton-2009-2010/plankton-2009-2010-2038-1.0.csv  results/error_estimationsplankton-2010-2011/plankton-2010-2011-2038-1.0.csv  results/error_estimationsplankton-2011-2012/plankton-2011-2012-2038-1.0.csv  results/error_estimationsplankton-2012-2013/plankton-2012-2013-2038-1.0.csv  results/error_estimationsplankton-2006/plankton-2006-2039-1.0.csv  results/error_estimationsplankton-2007/plankton-2007-2039-1.0.csv  results/error_estimationsplankton-2008/plankton-2008-2039-1.0.csv  results/error_estimationsplankton-2009/plankton-2009-2039-1.0.csv  results/error_estimationsplankton-2010/plankton-2010-2039-1.0.csv  results/error_estimationsplankton-2011/plankton-2011-2039-1.0.csv  results/error_estimationsplankton-2012/plankton-2012-2039-1.0.csv  results/error_estimationsplankton-2013/plankton-2013-2039-1.0.csv  results/error_estimationsplankton-2006-2007/plankton-2006-2007-2039-1.0.csv  results/error_estimationsplankton-2007-2008/plankton-2007-2008-2039-1.0.csv  results/error_estimationsplankton-2008-2009/plankton-2008-2009-2039-1.0.csv  results/error_estimationsplankton-2009-2010/plankton-2009-2010-2039-1.0.csv  results/error_estimationsplankton-2010-2011/plankton-2010-2011-2039-1.0.csv  results/error_estimationsplankton-2011-2012/plankton-2011-2012-2039-1.0.csv  results/error_estimationsplankton-2012-2013/plankton-2012-2013-2039-1.0.csv  results/error_estimationsplankton-2006/plankton-2006-2040-1.0.csv  results/error_estimationsplankton-2007/plankton-2007-2040-1.0.csv  results/error_estimationsplankton-2008/plankton-2008-2040-1.0.csv  results/error_estimationsplankton-2009/plankton-2009-2040-1.0.csv  results/error_estimationsplankton-2010/plankton-2010-2040-1.0.csv  results/error_estimationsplankton-2011/plankton-2011-2040-1.0.csv  results/error_estimationsplankton-2012/plankton-2012-2040-1.0.csv  results/error_estimationsplankton-2013/plankton-2013-2040-1.0.csv  results/error_estimationsplankton-2006-2007/plankton-2006-2007-2040-1.0.csv  results/error_estimationsplankton-2007-2008/plankton-2007-2008-2040-1.0.csv  results/error_estimationsplankton-2008-2009/plankton-2008-2009-2040-1.0.csv  results/error_estimationsplankton-2009-2010/plankton-2009-2010-2040-1.0.csv  results/error_estimationsplankton-2010-2011/plankton-2010-2011-2040-1.0.csv  results/error_estimationsplankton-2011-2012/plankton-2011-2012-2040-1.0.csv  results/error_estimationsplankton-2012-2013/plankton-2012-2013-2040-1.0.csv  results/error_estimationsplankton-2006/plankton-2006-2041-1.0.csv  results/error_estimationsplankton-2007/plankton-2007-2041-1.0.csv  results/error_estimationsplankton-2008/plankton-2008-2041-1.0.csv  results/error_estimationsplankton-2009/plankton-2009-2041-1.0.csv  results/error_estimationsplankton-2010/plankton-2010-2041-1.0.csv  results/error_estimationsplankton-2011/plankton-2011-2041-1.0.csv  results/error_estimationsplankton-2012/plankton-2012-2041-1.0.csv  results/error_estimationsplankton-2013/plankton-2013-2041-1.0.csv  results/error_estimationsplankton-2006-2007/plankton-2006-2007-2041-1.0.csv  results/error_estimationsplankton-2007-2008/plankton-2007-2008-2041-1.0.csv  results/error_estimationsplankton-2008-2009/plankton-2008-2009-2041-1.0.csv  results/error_estimationsplankton-2009-2010/plankton-2009-2010-2041-1.0.csv  results/error_estimationsplankton-2010-2011/plankton-2010-2011-2041-1.0.csv  results/error_estimationsplankton-2011-2012/plankton-2011-2012-2041-1.0.csv  results/error_estimationsplankton-2012-2013/plankton-2012-2013-2041-1.0.csv 
 
 all	: $(files)
 	@echo ALL done
@@ -12,455 +12,455 @@ delete	:
 build	: delete all
 	@echo BUILD done
 
-results/plankton-2006/plankton-2006-2032-1.0.csv	: classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
-	$(python) classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2032
+results/error_estimationsplankton-2006/plankton-2006-2032-1.0.csv	: classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2032
 
-results/plankton-2007/plankton-2007-2032-1.0.csv	: classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
-	$(python) classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2032
+results/error_estimationsplankton-2007/plankton-2007-2032-1.0.csv	: classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2032
 
-results/plankton-2008/plankton-2008-2032-1.0.csv	: classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
-	$(python) classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2032
+results/error_estimationsplankton-2008/plankton-2008-2032-1.0.csv	: classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2032
 
-results/plankton-2009/plankton-2009-2032-1.0.csv	: classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
-	$(python) classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2032
+results/error_estimationsplankton-2009/plankton-2009-2032-1.0.csv	: classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2032
 
-results/plankton-2010/plankton-2010-2032-1.0.csv	: classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
-	$(python) classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2032
+results/error_estimationsplankton-2010/plankton-2010-2032-1.0.csv	: classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2032
 
-results/plankton-2011/plankton-2011-2032-1.0.csv	: classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
-	$(python) classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2032
+results/error_estimationsplankton-2011/plankton-2011-2032-1.0.csv	: classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2032
 
-results/plankton-2012/plankton-2012-2032-1.0.csv	: classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
-	$(python) classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2032
+results/error_estimationsplankton-2012/plankton-2012-2032-1.0.csv	: classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2032
 
-results/plankton-2013/plankton-2013-2032-1.0.csv	: classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
-	$(python) classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2032
+results/error_estimationsplankton-2013/plankton-2013-2032-1.0.csv	: classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2032
 
-results/plankton-2006-2007/plankton-2006-2007-2032-1.0.csv	: classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2032
+results/error_estimationsplankton-2006-2007/plankton-2006-2007-2032-1.0.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2032
 
-results/plankton-2007-2008/plankton-2007-2008-2032-1.0.csv	: classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2032
+results/error_estimationsplankton-2007-2008/plankton-2007-2008-2032-1.0.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2032
 
-results/plankton-2008-2009/plankton-2008-2009-2032-1.0.csv	: classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2032
+results/error_estimationsplankton-2008-2009/plankton-2008-2009-2032-1.0.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2032
 
-results/plankton-2009-2010/plankton-2009-2010-2032-1.0.csv	: classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2032
+results/error_estimationsplankton-2009-2010/plankton-2009-2010-2032-1.0.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2032
 
-results/plankton-2010-2011/plankton-2010-2011-2032-1.0.csv	: classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2032
+results/error_estimationsplankton-2010-2011/plankton-2010-2011-2032-1.0.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2032
 
-results/plankton-2011-2012/plankton-2011-2012-2032-1.0.csv	: classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2032
+results/error_estimationsplankton-2011-2012/plankton-2011-2012-2032-1.0.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2032
 
-results/plankton-2012-2013/plankton-2012-2013-2032-1.0.csv	: classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2032
+results/error_estimationsplankton-2012-2013/plankton-2012-2013-2032-1.0.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2032
 
-results/plankton-2006/plankton-2006-2033-1.0.csv	: classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
-	$(python) classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2033
+results/error_estimationsplankton-2006/plankton-2006-2033-1.0.csv	: classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2033
 
-results/plankton-2007/plankton-2007-2033-1.0.csv	: classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
-	$(python) classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2033
+results/error_estimationsplankton-2007/plankton-2007-2033-1.0.csv	: classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2033
 
-results/plankton-2008/plankton-2008-2033-1.0.csv	: classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
-	$(python) classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2033
+results/error_estimationsplankton-2008/plankton-2008-2033-1.0.csv	: classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2033
 
-results/plankton-2009/plankton-2009-2033-1.0.csv	: classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
-	$(python) classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2033
+results/error_estimationsplankton-2009/plankton-2009-2033-1.0.csv	: classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2033
 
-results/plankton-2010/plankton-2010-2033-1.0.csv	: classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
-	$(python) classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2033
+results/error_estimationsplankton-2010/plankton-2010-2033-1.0.csv	: classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2033
 
-results/plankton-2011/plankton-2011-2033-1.0.csv	: classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
-	$(python) classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2033
+results/error_estimationsplankton-2011/plankton-2011-2033-1.0.csv	: classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2033
 
-results/plankton-2012/plankton-2012-2033-1.0.csv	: classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
-	$(python) classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2033
+results/error_estimationsplankton-2012/plankton-2012-2033-1.0.csv	: classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2033
 
-results/plankton-2013/plankton-2013-2033-1.0.csv	: classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
-	$(python) classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2033
+results/error_estimationsplankton-2013/plankton-2013-2033-1.0.csv	: classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2033
 
-results/plankton-2006-2007/plankton-2006-2007-2033-1.0.csv	: classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2033
+results/error_estimationsplankton-2006-2007/plankton-2006-2007-2033-1.0.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2033
 
-results/plankton-2007-2008/plankton-2007-2008-2033-1.0.csv	: classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2033
+results/error_estimationsplankton-2007-2008/plankton-2007-2008-2033-1.0.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2033
 
-results/plankton-2008-2009/plankton-2008-2009-2033-1.0.csv	: classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2033
+results/error_estimationsplankton-2008-2009/plankton-2008-2009-2033-1.0.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2033
 
-results/plankton-2009-2010/plankton-2009-2010-2033-1.0.csv	: classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2033
+results/error_estimationsplankton-2009-2010/plankton-2009-2010-2033-1.0.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2033
 
-results/plankton-2010-2011/plankton-2010-2011-2033-1.0.csv	: classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2033
+results/error_estimationsplankton-2010-2011/plankton-2010-2011-2033-1.0.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2033
 
-results/plankton-2011-2012/plankton-2011-2012-2033-1.0.csv	: classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2033
+results/error_estimationsplankton-2011-2012/plankton-2011-2012-2033-1.0.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2033
 
-results/plankton-2012-2013/plankton-2012-2013-2033-1.0.csv	: classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2033
+results/error_estimationsplankton-2012-2013/plankton-2012-2013-2033-1.0.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2033
 
-results/plankton-2006/plankton-2006-2034-1.0.csv	: classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
-	$(python) classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2034
+results/error_estimationsplankton-2006/plankton-2006-2034-1.0.csv	: classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2034
 
-results/plankton-2007/plankton-2007-2034-1.0.csv	: classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
-	$(python) classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2034
+results/error_estimationsplankton-2007/plankton-2007-2034-1.0.csv	: classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2034
 
-results/plankton-2008/plankton-2008-2034-1.0.csv	: classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
-	$(python) classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2034
+results/error_estimationsplankton-2008/plankton-2008-2034-1.0.csv	: classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2034
 
-results/plankton-2009/plankton-2009-2034-1.0.csv	: classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
-	$(python) classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2034
+results/error_estimationsplankton-2009/plankton-2009-2034-1.0.csv	: classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2034
 
-results/plankton-2010/plankton-2010-2034-1.0.csv	: classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
-	$(python) classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2034
+results/error_estimationsplankton-2010/plankton-2010-2034-1.0.csv	: classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2034
 
-results/plankton-2011/plankton-2011-2034-1.0.csv	: classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
-	$(python) classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2034
+results/error_estimationsplankton-2011/plankton-2011-2034-1.0.csv	: classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2034
 
-results/plankton-2012/plankton-2012-2034-1.0.csv	: classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
-	$(python) classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2034
+results/error_estimationsplankton-2012/plankton-2012-2034-1.0.csv	: classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2034
 
-results/plankton-2013/plankton-2013-2034-1.0.csv	: classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
-	$(python) classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2034
+results/error_estimationsplankton-2013/plankton-2013-2034-1.0.csv	: classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2034
 
-results/plankton-2006-2007/plankton-2006-2007-2034-1.0.csv	: classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2034
+results/error_estimationsplankton-2006-2007/plankton-2006-2007-2034-1.0.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2034
 
-results/plankton-2007-2008/plankton-2007-2008-2034-1.0.csv	: classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2034
+results/error_estimationsplankton-2007-2008/plankton-2007-2008-2034-1.0.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2034
 
-results/plankton-2008-2009/plankton-2008-2009-2034-1.0.csv	: classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2034
+results/error_estimationsplankton-2008-2009/plankton-2008-2009-2034-1.0.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2034
 
-results/plankton-2009-2010/plankton-2009-2010-2034-1.0.csv	: classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2034
+results/error_estimationsplankton-2009-2010/plankton-2009-2010-2034-1.0.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2034
 
-results/plankton-2010-2011/plankton-2010-2011-2034-1.0.csv	: classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2034
+results/error_estimationsplankton-2010-2011/plankton-2010-2011-2034-1.0.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2034
 
-results/plankton-2011-2012/plankton-2011-2012-2034-1.0.csv	: classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2034
+results/error_estimationsplankton-2011-2012/plankton-2011-2012-2034-1.0.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2034
 
-results/plankton-2012-2013/plankton-2012-2013-2034-1.0.csv	: classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2034
+results/error_estimationsplankton-2012-2013/plankton-2012-2013-2034-1.0.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2034
 
-results/plankton-2006/plankton-2006-2035-1.0.csv	: classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
-	$(python) classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2035
+results/error_estimationsplankton-2006/plankton-2006-2035-1.0.csv	: classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2035
 
-results/plankton-2007/plankton-2007-2035-1.0.csv	: classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
-	$(python) classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2035
+results/error_estimationsplankton-2007/plankton-2007-2035-1.0.csv	: classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2035
 
-results/plankton-2008/plankton-2008-2035-1.0.csv	: classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
-	$(python) classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2035
+results/error_estimationsplankton-2008/plankton-2008-2035-1.0.csv	: classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2035
 
-results/plankton-2009/plankton-2009-2035-1.0.csv	: classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
-	$(python) classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2035
+results/error_estimationsplankton-2009/plankton-2009-2035-1.0.csv	: classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2035
 
-results/plankton-2010/plankton-2010-2035-1.0.csv	: classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
-	$(python) classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2035
+results/error_estimationsplankton-2010/plankton-2010-2035-1.0.csv	: classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2035
 
-results/plankton-2011/plankton-2011-2035-1.0.csv	: classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
-	$(python) classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2035
+results/error_estimationsplankton-2011/plankton-2011-2035-1.0.csv	: classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2035
 
-results/plankton-2012/plankton-2012-2035-1.0.csv	: classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
-	$(python) classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2035
+results/error_estimationsplankton-2012/plankton-2012-2035-1.0.csv	: classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2035
 
-results/plankton-2013/plankton-2013-2035-1.0.csv	: classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
-	$(python) classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2035
+results/error_estimationsplankton-2013/plankton-2013-2035-1.0.csv	: classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2035
 
-results/plankton-2006-2007/plankton-2006-2007-2035-1.0.csv	: classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2035
+results/error_estimationsplankton-2006-2007/plankton-2006-2007-2035-1.0.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2035
 
-results/plankton-2007-2008/plankton-2007-2008-2035-1.0.csv	: classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2035
+results/error_estimationsplankton-2007-2008/plankton-2007-2008-2035-1.0.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2035
 
-results/plankton-2008-2009/plankton-2008-2009-2035-1.0.csv	: classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2035
+results/error_estimationsplankton-2008-2009/plankton-2008-2009-2035-1.0.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2035
 
-results/plankton-2009-2010/plankton-2009-2010-2035-1.0.csv	: classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2035
+results/error_estimationsplankton-2009-2010/plankton-2009-2010-2035-1.0.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2035
 
-results/plankton-2010-2011/plankton-2010-2011-2035-1.0.csv	: classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2035
+results/error_estimationsplankton-2010-2011/plankton-2010-2011-2035-1.0.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2035
 
-results/plankton-2011-2012/plankton-2011-2012-2035-1.0.csv	: classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2035
+results/error_estimationsplankton-2011-2012/plankton-2011-2012-2035-1.0.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2035
 
-results/plankton-2012-2013/plankton-2012-2013-2035-1.0.csv	: classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2035
+results/error_estimationsplankton-2012-2013/plankton-2012-2013-2035-1.0.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2035
 
-results/plankton-2006/plankton-2006-2036-1.0.csv	: classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
-	$(python) classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2036
+results/error_estimationsplankton-2006/plankton-2006-2036-1.0.csv	: classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2036
 
-results/plankton-2007/plankton-2007-2036-1.0.csv	: classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
-	$(python) classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2036
+results/error_estimationsplankton-2007/plankton-2007-2036-1.0.csv	: classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2036
 
-results/plankton-2008/plankton-2008-2036-1.0.csv	: classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
-	$(python) classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2036
+results/error_estimationsplankton-2008/plankton-2008-2036-1.0.csv	: classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2036
 
-results/plankton-2009/plankton-2009-2036-1.0.csv	: classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
-	$(python) classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2036
+results/error_estimationsplankton-2009/plankton-2009-2036-1.0.csv	: classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2036
 
-results/plankton-2010/plankton-2010-2036-1.0.csv	: classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
-	$(python) classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2036
+results/error_estimationsplankton-2010/plankton-2010-2036-1.0.csv	: classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2036
 
-results/plankton-2011/plankton-2011-2036-1.0.csv	: classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
-	$(python) classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2036
+results/error_estimationsplankton-2011/plankton-2011-2036-1.0.csv	: classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2036
 
-results/plankton-2012/plankton-2012-2036-1.0.csv	: classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
-	$(python) classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2036
+results/error_estimationsplankton-2012/plankton-2012-2036-1.0.csv	: classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2036
 
-results/plankton-2013/plankton-2013-2036-1.0.csv	: classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
-	$(python) classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2036
+results/error_estimationsplankton-2013/plankton-2013-2036-1.0.csv	: classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2036
 
-results/plankton-2006-2007/plankton-2006-2007-2036-1.0.csv	: classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2036
+results/error_estimationsplankton-2006-2007/plankton-2006-2007-2036-1.0.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2036
 
-results/plankton-2007-2008/plankton-2007-2008-2036-1.0.csv	: classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2036
+results/error_estimationsplankton-2007-2008/plankton-2007-2008-2036-1.0.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2036
 
-results/plankton-2008-2009/plankton-2008-2009-2036-1.0.csv	: classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2036
+results/error_estimationsplankton-2008-2009/plankton-2008-2009-2036-1.0.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2036
 
-results/plankton-2009-2010/plankton-2009-2010-2036-1.0.csv	: classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2036
+results/error_estimationsplankton-2009-2010/plankton-2009-2010-2036-1.0.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2036
 
-results/plankton-2010-2011/plankton-2010-2011-2036-1.0.csv	: classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2036
+results/error_estimationsplankton-2010-2011/plankton-2010-2011-2036-1.0.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2036
 
-results/plankton-2011-2012/plankton-2011-2012-2036-1.0.csv	: classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2036
+results/error_estimationsplankton-2011-2012/plankton-2011-2012-2036-1.0.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2036
 
-results/plankton-2012-2013/plankton-2012-2013-2036-1.0.csv	: classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2036
+results/error_estimationsplankton-2012-2013/plankton-2012-2013-2036-1.0.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2036
 
-results/plankton-2006/plankton-2006-2037-1.0.csv	: classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
-	$(python) classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2037
+results/error_estimationsplankton-2006/plankton-2006-2037-1.0.csv	: classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2037
 
-results/plankton-2007/plankton-2007-2037-1.0.csv	: classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
-	$(python) classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2037
+results/error_estimationsplankton-2007/plankton-2007-2037-1.0.csv	: classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2037
 
-results/plankton-2008/plankton-2008-2037-1.0.csv	: classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
-	$(python) classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2037
+results/error_estimationsplankton-2008/plankton-2008-2037-1.0.csv	: classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2037
 
-results/plankton-2009/plankton-2009-2037-1.0.csv	: classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
-	$(python) classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2037
+results/error_estimationsplankton-2009/plankton-2009-2037-1.0.csv	: classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2037
 
-results/plankton-2010/plankton-2010-2037-1.0.csv	: classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
-	$(python) classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2037
+results/error_estimationsplankton-2010/plankton-2010-2037-1.0.csv	: classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2037
 
-results/plankton-2011/plankton-2011-2037-1.0.csv	: classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
-	$(python) classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2037
+results/error_estimationsplankton-2011/plankton-2011-2037-1.0.csv	: classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2037
 
-results/plankton-2012/plankton-2012-2037-1.0.csv	: classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
-	$(python) classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2037
+results/error_estimationsplankton-2012/plankton-2012-2037-1.0.csv	: classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2037
 
-results/plankton-2013/plankton-2013-2037-1.0.csv	: classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
-	$(python) classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2037
+results/error_estimationsplankton-2013/plankton-2013-2037-1.0.csv	: classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2037
 
-results/plankton-2006-2007/plankton-2006-2007-2037-1.0.csv	: classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2037
+results/error_estimationsplankton-2006-2007/plankton-2006-2007-2037-1.0.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2037
 
-results/plankton-2007-2008/plankton-2007-2008-2037-1.0.csv	: classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2037
+results/error_estimationsplankton-2007-2008/plankton-2007-2008-2037-1.0.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2037
 
-results/plankton-2008-2009/plankton-2008-2009-2037-1.0.csv	: classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2037
+results/error_estimationsplankton-2008-2009/plankton-2008-2009-2037-1.0.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2037
 
-results/plankton-2009-2010/plankton-2009-2010-2037-1.0.csv	: classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2037
+results/error_estimationsplankton-2009-2010/plankton-2009-2010-2037-1.0.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2037
 
-results/plankton-2010-2011/plankton-2010-2011-2037-1.0.csv	: classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2037
+results/error_estimationsplankton-2010-2011/plankton-2010-2011-2037-1.0.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2037
 
-results/plankton-2011-2012/plankton-2011-2012-2037-1.0.csv	: classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2037
+results/error_estimationsplankton-2011-2012/plankton-2011-2012-2037-1.0.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2037
 
-results/plankton-2012-2013/plankton-2012-2013-2037-1.0.csv	: classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2037
+results/error_estimationsplankton-2012-2013/plankton-2012-2013-2037-1.0.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2037
 
-results/plankton-2006/plankton-2006-2038-1.0.csv	: classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
-	$(python) classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2038
+results/error_estimationsplankton-2006/plankton-2006-2038-1.0.csv	: classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2038
 
-results/plankton-2007/plankton-2007-2038-1.0.csv	: classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
-	$(python) classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2038
+results/error_estimationsplankton-2007/plankton-2007-2038-1.0.csv	: classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2038
 
-results/plankton-2008/plankton-2008-2038-1.0.csv	: classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
-	$(python) classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2038
+results/error_estimationsplankton-2008/plankton-2008-2038-1.0.csv	: classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2038
 
-results/plankton-2009/plankton-2009-2038-1.0.csv	: classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
-	$(python) classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2038
+results/error_estimationsplankton-2009/plankton-2009-2038-1.0.csv	: classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2038
 
-results/plankton-2010/plankton-2010-2038-1.0.csv	: classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
-	$(python) classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2038
+results/error_estimationsplankton-2010/plankton-2010-2038-1.0.csv	: classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2038
 
-results/plankton-2011/plankton-2011-2038-1.0.csv	: classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
-	$(python) classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2038
+results/error_estimationsplankton-2011/plankton-2011-2038-1.0.csv	: classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2038
 
-results/plankton-2012/plankton-2012-2038-1.0.csv	: classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
-	$(python) classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2038
+results/error_estimationsplankton-2012/plankton-2012-2038-1.0.csv	: classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2038
 
-results/plankton-2013/plankton-2013-2038-1.0.csv	: classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
-	$(python) classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2038
+results/error_estimationsplankton-2013/plankton-2013-2038-1.0.csv	: classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2038
 
-results/plankton-2006-2007/plankton-2006-2007-2038-1.0.csv	: classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2038
+results/error_estimationsplankton-2006-2007/plankton-2006-2007-2038-1.0.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2038
 
-results/plankton-2007-2008/plankton-2007-2008-2038-1.0.csv	: classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2038
+results/error_estimationsplankton-2007-2008/plankton-2007-2008-2038-1.0.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2038
 
-results/plankton-2008-2009/plankton-2008-2009-2038-1.0.csv	: classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2038
+results/error_estimationsplankton-2008-2009/plankton-2008-2009-2038-1.0.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2038
 
-results/plankton-2009-2010/plankton-2009-2010-2038-1.0.csv	: classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2038
+results/error_estimationsplankton-2009-2010/plankton-2009-2010-2038-1.0.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2038
 
-results/plankton-2010-2011/plankton-2010-2011-2038-1.0.csv	: classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2038
+results/error_estimationsplankton-2010-2011/plankton-2010-2011-2038-1.0.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2038
 
-results/plankton-2011-2012/plankton-2011-2012-2038-1.0.csv	: classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2038
+results/error_estimationsplankton-2011-2012/plankton-2011-2012-2038-1.0.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2038
 
-results/plankton-2012-2013/plankton-2012-2013-2038-1.0.csv	: classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2038
+results/error_estimationsplankton-2012-2013/plankton-2012-2013-2038-1.0.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2038
 
-results/plankton-2006/plankton-2006-2039-1.0.csv	: classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
-	$(python) classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2039
+results/error_estimationsplankton-2006/plankton-2006-2039-1.0.csv	: classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2039
 
-results/plankton-2007/plankton-2007-2039-1.0.csv	: classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
-	$(python) classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2039
+results/error_estimationsplankton-2007/plankton-2007-2039-1.0.csv	: classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2039
 
-results/plankton-2008/plankton-2008-2039-1.0.csv	: classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
-	$(python) classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2039
+results/error_estimationsplankton-2008/plankton-2008-2039-1.0.csv	: classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2039
 
-results/plankton-2009/plankton-2009-2039-1.0.csv	: classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
-	$(python) classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2039
+results/error_estimationsplankton-2009/plankton-2009-2039-1.0.csv	: classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2039
 
-results/plankton-2010/plankton-2010-2039-1.0.csv	: classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
-	$(python) classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2039
+results/error_estimationsplankton-2010/plankton-2010-2039-1.0.csv	: classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2039
 
-results/plankton-2011/plankton-2011-2039-1.0.csv	: classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
-	$(python) classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2039
+results/error_estimationsplankton-2011/plankton-2011-2039-1.0.csv	: classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2039
 
-results/plankton-2012/plankton-2012-2039-1.0.csv	: classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
-	$(python) classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2039
+results/error_estimationsplankton-2012/plankton-2012-2039-1.0.csv	: classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2039
 
-results/plankton-2013/plankton-2013-2039-1.0.csv	: classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
-	$(python) classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2039
+results/error_estimationsplankton-2013/plankton-2013-2039-1.0.csv	: classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2039
 
-results/plankton-2006-2007/plankton-2006-2007-2039-1.0.csv	: classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2039
+results/error_estimationsplankton-2006-2007/plankton-2006-2007-2039-1.0.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2039
 
-results/plankton-2007-2008/plankton-2007-2008-2039-1.0.csv	: classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2039
+results/error_estimationsplankton-2007-2008/plankton-2007-2008-2039-1.0.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2039
 
-results/plankton-2008-2009/plankton-2008-2009-2039-1.0.csv	: classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2039
+results/error_estimationsplankton-2008-2009/plankton-2008-2009-2039-1.0.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2039
 
-results/plankton-2009-2010/plankton-2009-2010-2039-1.0.csv	: classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2039
+results/error_estimationsplankton-2009-2010/plankton-2009-2010-2039-1.0.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2039
 
-results/plankton-2010-2011/plankton-2010-2011-2039-1.0.csv	: classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2039
+results/error_estimationsplankton-2010-2011/plankton-2010-2011-2039-1.0.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2039
 
-results/plankton-2011-2012/plankton-2011-2012-2039-1.0.csv	: classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2039
+results/error_estimationsplankton-2011-2012/plankton-2011-2012-2039-1.0.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2039
 
-results/plankton-2012-2013/plankton-2012-2013-2039-1.0.csv	: classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2039
+results/error_estimationsplankton-2012-2013/plankton-2012-2013-2039-1.0.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2039
 
-results/plankton-2006/plankton-2006-2040-1.0.csv	: classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
-	$(python) classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2040
+results/error_estimationsplankton-2006/plankton-2006-2040-1.0.csv	: classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2040
 
-results/plankton-2007/plankton-2007-2040-1.0.csv	: classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
-	$(python) classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2040
+results/error_estimationsplankton-2007/plankton-2007-2040-1.0.csv	: classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2040
 
-results/plankton-2008/plankton-2008-2040-1.0.csv	: classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
-	$(python) classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2040
+results/error_estimationsplankton-2008/plankton-2008-2040-1.0.csv	: classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2040
 
-results/plankton-2009/plankton-2009-2040-1.0.csv	: classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
-	$(python) classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2040
+results/error_estimationsplankton-2009/plankton-2009-2040-1.0.csv	: classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2040
 
-results/plankton-2010/plankton-2010-2040-1.0.csv	: classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
-	$(python) classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2040
+results/error_estimationsplankton-2010/plankton-2010-2040-1.0.csv	: classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2040
 
-results/plankton-2011/plankton-2011-2040-1.0.csv	: classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
-	$(python) classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2040
+results/error_estimationsplankton-2011/plankton-2011-2040-1.0.csv	: classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2040
 
-results/plankton-2012/plankton-2012-2040-1.0.csv	: classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
-	$(python) classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2040
+results/error_estimationsplankton-2012/plankton-2012-2040-1.0.csv	: classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2040
 
-results/plankton-2013/plankton-2013-2040-1.0.csv	: classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
-	$(python) classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2040
+results/error_estimationsplankton-2013/plankton-2013-2040-1.0.csv	: classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2040
 
-results/plankton-2006-2007/plankton-2006-2007-2040-1.0.csv	: classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2040
+results/error_estimationsplankton-2006-2007/plankton-2006-2007-2040-1.0.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2040
 
-results/plankton-2007-2008/plankton-2007-2008-2040-1.0.csv	: classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2040
+results/error_estimationsplankton-2007-2008/plankton-2007-2008-2040-1.0.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2040
 
-results/plankton-2008-2009/plankton-2008-2009-2040-1.0.csv	: classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2040
+results/error_estimationsplankton-2008-2009/plankton-2008-2009-2040-1.0.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2040
 
-results/plankton-2009-2010/plankton-2009-2010-2040-1.0.csv	: classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2040
+results/error_estimationsplankton-2009-2010/plankton-2009-2010-2040-1.0.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2040
 
-results/plankton-2010-2011/plankton-2010-2011-2040-1.0.csv	: classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2040
+results/error_estimationsplankton-2010-2011/plankton-2010-2011-2040-1.0.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2040
 
-results/plankton-2011-2012/plankton-2011-2012-2040-1.0.csv	: classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2040
+results/error_estimationsplankton-2011-2012/plankton-2011-2012-2040-1.0.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2040
 
-results/plankton-2012-2013/plankton-2012-2013-2040-1.0.csv	: classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2040
+results/error_estimationsplankton-2012-2013/plankton-2012-2013-2040-1.0.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2040
 
-results/plankton-2006/plankton-2006-2041-1.0.csv	: classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
-	$(python) classification.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2041
+results/error_estimationsplankton-2006/plankton-2006-2041-1.0.csv	: classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton-2006-1.csv datasets/plankton-2006-2.csv plankton-2006 1 2041
 
-results/plankton-2007/plankton-2007-2041-1.0.csv	: classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
-	$(python) classification.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2041
+results/error_estimationsplankton-2007/plankton-2007-2041-1.0.csv	: classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton-2007-1.csv datasets/plankton-2007-2.csv plankton-2007 1 2041
 
-results/plankton-2008/plankton-2008-2041-1.0.csv	: classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
-	$(python) classification.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2041
+results/error_estimationsplankton-2008/plankton-2008-2041-1.0.csv	: classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton-2008-1.csv datasets/plankton-2008-2.csv plankton-2008 1 2041
 
-results/plankton-2009/plankton-2009-2041-1.0.csv	: classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
-	$(python) classification.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2041
+results/error_estimationsplankton-2009/plankton-2009-2041-1.0.csv	: classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton-2009-1.csv datasets/plankton-2009-2.csv plankton-2009 1 2041
 
-results/plankton-2010/plankton-2010-2041-1.0.csv	: classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
-	$(python) classification.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2041
+results/error_estimationsplankton-2010/plankton-2010-2041-1.0.csv	: classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton-2010-1.csv datasets/plankton-2010-2.csv plankton-2010 1 2041
 
-results/plankton-2011/plankton-2011-2041-1.0.csv	: classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
-	$(python) classification.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2041
+results/error_estimationsplankton-2011/plankton-2011-2041-1.0.csv	: classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton-2011-1.csv datasets/plankton-2011-2.csv plankton-2011 1 2041
 
-results/plankton-2012/plankton-2012-2041-1.0.csv	: classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
-	$(python) classification.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2041
+results/error_estimationsplankton-2012/plankton-2012-2041-1.0.csv	: classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton-2012-1.csv datasets/plankton-2012-2.csv plankton-2012 1 2041
 
-results/plankton-2013/plankton-2013-2041-1.0.csv	: classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
-	$(python) classification.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2041
+results/error_estimationsplankton-2013/plankton-2013-2041-1.0.csv	: classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton-2013-1.csv datasets/plankton-2013-2.csv plankton-2013 1 2041
 
-results/plankton-2006-2007/plankton-2006-2007-2041-1.0.csv	: classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2041
+results/error_estimationsplankton-2006-2007/plankton-2006-2007-2041-1.0.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2041
 
-results/plankton-2007-2008/plankton-2007-2008-2041-1.0.csv	: classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2041
+results/error_estimationsplankton-2007-2008/plankton-2007-2008-2041-1.0.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2041
 
-results/plankton-2008-2009/plankton-2008-2009-2041-1.0.csv	: classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2041
+results/error_estimationsplankton-2008-2009/plankton-2008-2009-2041-1.0.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2041
 
-results/plankton-2009-2010/plankton-2009-2010-2041-1.0.csv	: classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2041
+results/error_estimationsplankton-2009-2010/plankton-2009-2010-2041-1.0.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2041
 
-results/plankton-2010-2011/plankton-2010-2011-2041-1.0.csv	: classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2041
+results/error_estimationsplankton-2010-2011/plankton-2010-2011-2041-1.0.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2041
 
-results/plankton-2011-2012/plankton-2011-2012-2041-1.0.csv	: classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2041
+results/error_estimationsplankton-2011-2012/plankton-2011-2012-2041-1.0.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2041
 
-results/plankton-2012-2013/plankton-2012-2013-2041-1.0.csv	: classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2041
+results/error_estimationsplankton-2012-2013/plankton-2012-2013-2041-1.0.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2041
 
 
 	$(python) generateResults.py
