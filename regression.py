@@ -197,7 +197,7 @@ def main():
 
     X_train, Y_train, X_test, Y_test = IO.readDataset(filename_train, filename_test)
     results = regression(X_train, Y_train, X_test, Y_test, seed)
-    IO.writeToCSV(results, dataset_name, execution_id, seed)
+    IO.writeToCSV(results, "regression", dataset_name, execution_id, seed)
 
 
 if __name__== "__main__":

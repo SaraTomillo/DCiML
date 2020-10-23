@@ -1,32 +1,51 @@
-from distances_calculator import joinResults, calculateDistances
+import distances_calculator
 import rankings_regression, rankings_classification, rankings_plankton
 import utils.IO as IO
+import os
 import argparse
 
-def main(datasets, problem):
-    percentage = 0.33
-    """
+def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("datasets", help="the name of the dataset")
+    parser.add_argument("problem", help="the type of problem (regression, classification or plankton)")
     parser.add_argument("percentage", help="the test percentage")
-    parser.add_argument("type", help="the type of problem (regression, classification or plankton)")
     args = parser.parse_args()
 
-    datasets = str(args.datases)
+    problem = str(args.problem)
     percentage = float(args.percentage)
-    problem = str(args.type)
-    """
-    for dataset in datasets:
-        data = joinResults(dataset, percentage)
-        distances = calculateDistances(data)
-        IO.saveCSV(distances, "distances", dataset, percentage)
 
     if problem == "regression":
+        datasets = retrieveDatasets(problem)
+        for dataset in datasets:
+            calculateDistances(problem, dataset, percentage)
         generate_results_regression(datasets, percentage)
+
     elif problem == "classification":
+        datasets = retrieveDatasets(problem)
+        for dataset in datasets:
+            calculateDistances(problem, dataset, percentage)
         generate_results_classification(datasets, percentage)
+
     elif problem == "plankton":
+        datasets = retrieveDatasets(problem)
+        for dataset in datasets:
+            calculateDistances(problem, dataset, percentage)
         generate_results_plankton(datasets, percentage)
+
+
+def calculateDistances(problem, dataset, percentage):
+    data = distances_calculator.joinResults(problem, dataset, percentage)
+    distances = distances_calculator.calculateDistances(data)
+    IO.saveCSV(distances, "distances", problem, dataset, percentage)
+
+def retrieveDatasets(problem):
+    datasets = []
+    path = os.getcwd()+"/results/error_estimations/" + problem + "/"
+    for dirpath, dirnames, files in os.walk(path):
+        if dirpath != path:
+            break
+        datasets = dirnames
+    return datasets
+
 
 
 def generate_results_regression(datasets, percentage):
@@ -48,19 +67,5 @@ def generate_results_plankton(datasets, percentage):
     wilcoxon = rankings_plankton.wilcoxon_rank(datasets, percentage)
     IO.printResultsPlankton(datasets, ranks_methods, CDs_methods, ranks_all, CDs_all, wilcoxon)
 
-
 if __name__ == "__main__":
-    datasets_regression = ["abalone", "computer-hardware", "wine-quality-red", "wine-quality-white",
-                           "auto-mpg", "autos", "residential-v9", "residential-v10", "ticdata", "student-mat",
-                           "student-por"]
-    datasets_classification = ["iris", "sonar", "ionosphere", "cmc", "haberman",
-                               "transfusion", "wdbc", "SPECT", "titanic", "splice"]
-    datasets_plankton = ["plancton-2006", "plancton-2007", "plancton-2008", "plancton-2009", "plancton-2010", "plancton-2011",
-                "plancton-2012", "plancton-2013", "plancton-2006-2007", "plancton-2007-2008", "plancton-2008-2009",
-                "plancton-2009-2010", "plancton-2010-2011", "plancton-2011-2012",
-                "plancton-2012-2013"]
-
-    main(datasets_regression, "regression")
-    main(datasets_classification, "classification")
-    main(datasets_plankton, "plankton")
-
+    main()

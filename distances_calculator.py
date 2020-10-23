@@ -5,13 +5,13 @@ import rankings_regression
 from utils import IO
 
 
-def joinResults(dataset, percentage):
+def joinResults(problem_type, dataset, percentage):
     data = []
-    for subdir, dirs, files in os.walk(os.getcwd()+"/results/error_estimations/" + dataset + "/"):
+    for subdir, dirs, files in os.walk(os.getcwd()+"/results/error_estimations/" + problem_type + "/" + dataset + "/"):
         for file in files:
             if str(percentage) in file:
                 if not "distances" in file and not "friedman" in file:
-                    filename = str(os.path.join(os.path.join("results/error_estimations/", dataset), file))
+                    filename = str(os.path.join(os.path.join("results/error_estimations/", problem_type + "/" + dataset), file))
                     aux = pd.read_csv(filename, sep=",", header=0, index_col=False)
                     data.append(np.asarray(aux.iloc[0]))
     return np.asarray(data)

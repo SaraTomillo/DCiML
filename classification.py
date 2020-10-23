@@ -151,7 +151,7 @@ def main():
 
     X_train, Y_train, X_test, Y_test = IO.readDataset(filename_train, filename_test)
     results = classification(X_train, Y_train, X_test, Y_test, seed)
-    IO.writeToCSV(results, dataset_name, execution_id, seed)
+    IO.writeToCSV(results, "classification", dataset_name, execution_id, seed)
 
 if __name__== "__main__":
   main()

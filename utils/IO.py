@@ -4,7 +4,10 @@ import numpy as np
 import os
 
 
-headers = ["Eval", "CV", "LR", "PLR", "CLR", "MLR", "KMM","PKMM", "CKMM", "MKMM", "KDE", "PKDE", "CKDE", "MKDE", "KLIEP", "PKLIEP", "CKLIEP", "MKLIEP"]
+headers = []
+headers_regression = ["Eval", "CV", "LR", "PLR", "CLR", "MLR", "KMM","PKMM", "CKMM", "MKMM", "KDE", "PKDE", "CKDE", "MKDE", "KLIEP", "PKLIEP", "CKLIEP", "MKLIEP"]
+headers_classification = ["Eval", "CV", "LR", "PLR", "KMM","PKMM", "KDE", "PKDE", "KLIEP", "PKLIEP"]
+headers_plankton = ["Eval", "CV", "LR", "PLR", "KDE", "PKDE"]
 
 def readDataset(filename_train, filename_test):
     data_train = pd.read_csv(filename_train, sep=",", header=0)
@@ -18,12 +21,21 @@ def readDataset(filename_train, filename_test):
     return X_train, Y_train, X_test, Y_test
 
 
-def writeToCSV(data, dataset_name, execution_id, seed):
-    directory = './results/error_estimations/' + dataset_name
+def writeToCSV(data, problem_type, dataset_name, execution_id, seed):
+    directory = './results/error_estimations/' + problem_type + '/'+ dataset_name
     filename = directory + "/" + dataset_name + "-" + str(seed)+ "-" + execution_id + ".csv"
 
     if not os.path.isdir(directory):
         os.makedirs(directory)
+
+    headers = []
+    if problem_type == "regression":
+        headers = headers_regression
+    elif problem_type == "classification":
+        headers = headers_classification
+    elif problem_type == "plankton":
+        headers = headers_plankton
+
 
     with open(filename, 'w', newline='') as file:
         writer = csv.writer(file, delimiter=',')
@@ -31,12 +43,20 @@ def writeToCSV(data, dataset_name, execution_id, seed):
         writer.writerows([data])
     return
 
-def saveCSV(data, title, dataset_name, percentage, headers=headers):
-    directory = './results/rankings/' + dataset_name
+def saveCSV(data, title, problem_type, dataset_name, percentage, headers=headers):
+    directory = './results/rankings/' + problem_type + '/' + dataset_name
     filename = directory + "/" + dataset_name + "-" +title + "-" + str(percentage) + ".csv"
 
     if not os.path.isdir(directory):
         os.makedirs(directory)
+
+    if headers==headers:
+        if problem_type == "regression":
+            headers = headers_regression
+        elif problem_type == "classification":
+            headers = headers_classification
+        elif problem_type == "plankton":
+            headers = headers_plankton
 
     with open(filename, 'w', newline='') as file:
         writer = csv.writer(file, delimiter=',')
