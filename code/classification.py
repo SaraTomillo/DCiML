@@ -5,11 +5,11 @@ import numpy as np
 from sklearn.model_selection import cross_val_predict
 from sklearn.svm import SVC
 
-import estimation_methods
-from utils import IO
+from code import estimation_methods
+from code.utils import IO
 
 import tracemalloc
-from utils.utils import minmax, reduce, npShuffle
+from code.utils.utils import minmax, reduce, npShuffle
 
 
 def error(predictions, y):
@@ -70,6 +70,31 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
             print("Error PLR")
             PLR_err = []
             traceback.print_exc()
+
+    try:
+        importances_KMM = estimation_methods.kmm(Y_train, Y_test)
+        KMM_err = CVError * importances_KMM
+    except Exception:
+        print("Error KMM")
+        KMM_err = []
+        traceback.print_exc()
+
+    try:
+        importances_MKMM = estimation_methods.kmm_model_classification(P_train, P_test)
+        PKMM_err = CVError * importances_MKMM
+    except Exception:
+        print("Error PKMM")
+        PKMM_err = []
+        traceback.print_exc()
+    if len(PKMM_err) == 0:
+        try:
+            importances_MKMM = estimation_methods.kmm_model(P_train, P_test)
+            PKMM_err = CVError * importances_MKMM
+        except Exception:
+            print("Error PKMM")
+            PKMM_err = []
+            traceback.print_exc()
+
     try:
         importances_kernel_density = estimation_methods.kernel_density(Y_train, Y_test, bandwith, kernel)
         KDE_err = CVError * importances_kernel_density
@@ -86,10 +111,27 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         PKDE_err = []
         traceback.print_exc()
 
+    try:
+        importances_KLIEP = estimation_methods.kliep(Y_train, Y_test)
+        KLIEP_err = CVError * importances_KLIEP
+    except Exception:
+        print("Error KLIEP")
+        KLIEP_err = []
+        traceback.print_exc()
+
+    try:
+        importances_KLIEP_model = estimation_methods.kliep_model(P_train, P_test)
+        PKLIEP_err = CVError * importances_KLIEP_model
+    except Exception:
+        print("Error PKLIEP")
+        PKLIEP_err = []
+        traceback.print_exc()
 
     return [np.average(eval), np.average(CVError),
             np.average(LR_err), np.average(PLR_err),
-            np.average(KDE_err), np.average(PKDE_err)]
+            np.average(KMM_err), np.average(PKMM_err),
+            np.average(KDE_err), np.average(PKDE_err),
+            np.average(KLIEP_err), np.average(PKLIEP_err)]
 
 def main():
     parser = argparse.ArgumentParser()
@@ -109,7 +151,7 @@ def main():
 
     X_train, Y_train, X_test, Y_test = IO.readDataset(filename_train, filename_test)
     results = classification(X_train, Y_train, X_test, Y_test, seed)
-    IO.writeToCSV(results, "plankton", dataset_name, execution_id, seed)
+    IO.writeToCSV(results, "classification", dataset_name, execution_id, seed)
 
 if __name__== "__main__":
   main()

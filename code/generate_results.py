@@ -1,6 +1,5 @@
-import distances_calculator
-import rankings_regression, rankings_classification, rankings_plankton
-import utils.IO as IO
+from code import rankings_classification, rankings_regression, distances_calculator, rankings_plankton
+import code.utils.IO as IO
 import os
 import argparse
 
@@ -53,7 +52,7 @@ def generate_results_regression(datasets, percentage):
     ranks_all, CDs_all, ranks_all_no_M, CDs_all_no_M = rankings_regression.friedman_all(datasets, percentage)
     ranks_triplets_P, ranks_triplets_M, CDs_triplets = rankings_regression.friedman_triplets(datasets, percentage)
     wilcoxon = rankings_regression.wilcoxon_rank(datasets, percentage)
-    IO.printResultsRegression(datasets, ranks_methods, CDs_methods, ranks_all, CDs_all, ranks_all_no_M, CDs_all_no_M , ranks_triplets_P, ranks_triplets_M, CDs_triplets, wilcoxon)
+    IO.printResultsRegression(datasets, ranks_methods, CDs_methods, ranks_all, CDs_all, ranks_all_no_M, CDs_all_no_M, ranks_triplets_P, ranks_triplets_M, CDs_triplets, wilcoxon)
 
 def generate_results_classification(datasets, percentage):
     ranks_methods, CDs_methods = rankings_classification.friedman_methods(datasets, percentage)

@@ -1,6 +1,6 @@
 import pandas as pd
-from utils import friedman, wilcoxon
-from utils.IO import saveCSV
+from code.utils import wilcoxon, friedman
+from code.utils.IO import saveCSV
 
 def friedman_methods(datasets, percentage):
     ranksMethods = []

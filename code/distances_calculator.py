@@ -1,8 +1,6 @@
 import os
 import pandas as pd
 import numpy as np
-import rankings_regression
-from utils import IO
 
 
 def joinResults(problem_type, dataset, percentage):
