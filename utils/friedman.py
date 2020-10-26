@@ -2,8 +2,8 @@ import argparse
 
 import numpy as np
 
-from code.utils.methods.friedman_nemeny import FriedmanNemenyi
-from code.utils import IO
+from utils.methods.friedman_nemeny import FriedmanNemenyi
+from utils import IO
 
 
 def main():

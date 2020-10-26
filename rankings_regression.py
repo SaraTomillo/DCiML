@@ -1,6 +1,6 @@
 import pandas as pd
-from code.utils import wilcoxon, friedman
-from code.utils.IO import saveCSV
+from utils import wilcoxon, friedman
+from utils.IO import saveCSV
 
 def friedman_triplets(datasets, percentage):
     ranksP = []

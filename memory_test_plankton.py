@@ -7,10 +7,10 @@ from sklearn.model_selection import cross_val_predict
 from sklearn.svm import SVC
 
 from code import estimation_methods
-from code.utils import IO
+from utils import IO
 
 import tracemalloc
-from code.utils.utils import minmax, reduce, npShuffle, display_top
+from utils.utils import minmax, reduce, npShuffle, display_top
 import time
 import warnings
 warnings.filterwarnings("ignore")

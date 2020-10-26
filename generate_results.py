@@ -1,4 +1,4 @@
-import code.utils.IO as IO
+import utils.IO as IO
 import os
 import argparse
 

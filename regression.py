@@ -6,9 +6,9 @@ from sklearn.model_selection import cross_val_predict
 from sklearn.svm import SVR
 
 from code import estimation_methods
-from code.utils import IO
+from utils import IO
 
-from code.utils.utils import minmax, reduce, npShuffle
+from utils.utils import minmax, reduce, npShuffle
 
 def error(predictions, y):
     return abs(predictions - y)
