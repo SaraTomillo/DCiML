@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.model_selection import cross_val_predict
 from sklearn.svm import SVC
 
-from . import estimation_methods
+from code import estimation_methods
 from code.utils import IO
 
 import tracemalloc

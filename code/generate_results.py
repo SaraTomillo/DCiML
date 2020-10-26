@@ -1,7 +1,9 @@
-from . import rankings_classification, rankings_regression, distances_calculator, rankings_plankton
 import code.utils.IO as IO
 import os
 import argparse
+
+from code import distances_calculator, rankings_regression, rankings_classification, rankings_plankton
+
 
 def main():
     parser = argparse.ArgumentParser()
