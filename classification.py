@@ -7,6 +7,7 @@ from sklearn.svm import SVC
 
 from utils import IO
 
+import estimation_methods
 import tracemalloc
 from utils.utils import minmax, reduce, npShuffle
 

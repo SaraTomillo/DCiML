@@ -5,6 +5,12 @@ from random import Random
 
 import numpy as np
 
+# Aux function to transpose 1 dim
+def T(V):
+    VT = np.zeros([len(V), 1])
+    for i in range(len(V)):
+        VT[i] = V[i]
+    return VT
 
 def minmax(data):
     aux = np.transpose(data)

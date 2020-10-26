@@ -3,13 +3,8 @@ from sklearn.neighbors import KernelDensity
 from utils.methods.DRE import DensityRatioEstimator
 import numpy as np
 from utils.methods.KMM import iwe_kernel_mean_matching
+from utils.utils import T
 
-# Aux function to transpose 1 dim
-def T(V):
-    VT = np.zeros([len(V), 1])
-    for i in range(len(V)):
-        VT[i] = V[i]
-    return VT
 
 def kliep(X_train, X_test):
     kliep = DensityRatioEstimator()

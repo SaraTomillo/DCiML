@@ -5,9 +5,8 @@ import numpy as np
 from sklearn.model_selection import cross_val_predict
 from sklearn.svm import SVC
 
-from code import estimation_methods
 from utils import IO
-
+import estimation_methods
 import tracemalloc
 from utils.utils import minmax, reduce, npShuffle
 
