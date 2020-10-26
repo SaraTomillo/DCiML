@@ -1,4 +1,4 @@
-from code import rankings_classification, rankings_regression, distances_calculator, rankings_plankton
+from . import rankings_classification, rankings_regression, distances_calculator, rankings_plankton
 import code.utils.IO as IO
 import os
 import argparse

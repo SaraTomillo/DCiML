@@ -50,7 +50,7 @@ def saveCSV(data, title, problem_type, dataset_name, percentage, headers=headers
     if not os.path.isdir(directory):
         os.makedirs(directory)
 
-    if headers==headers:
+    if len(headers) == 0:
         if problem_type == "regression":
             headers = headers_regression
         elif problem_type == "classification":
