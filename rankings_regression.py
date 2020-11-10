@@ -2,12 +2,12 @@ import pandas as pd
 from utils import wilcoxon, friedman
 from utils.IO import saveCSV
 
-def friedman_triplets(datasets, percentage):
+def friedman_triplets(datasets, problem, percentage):
     ranksP = []
     ranksM = []
     for dataset_name in datasets:
         distances =[]
-        directory = "./results/rankings/regression/" + dataset_name
+        directory = "./results/rankings/" + problem +"/" + dataset_name
         filename = directory + "/" + dataset_name + "-distances-" + str(percentage) + ".csv"
         data = pd.read_csv(filename, sep=",", header=0)
         data = data.values
@@ -88,11 +88,11 @@ def friedman_triplets(datasets, percentage):
 
     return ranksP, ranksM, CDs
 
-def friedman_methods(datasets, percentage):
+def friedman_methods(datasets, problem, percentage):
     ranksMethods= []
     for dataset_name in datasets:
         distances =[]
-        directory = "./results/rankings/regression/" + dataset_name
+        directory = "./results/rankings/" + problem + "/" + dataset_name
         filename = directory + "/" + dataset_name + "-distances-" + str(percentage) + ".csv"
         data = pd.read_csv(filename, sep=",", header=0)
         data = data.values
@@ -141,12 +141,12 @@ def friedman_methods(datasets, percentage):
         return ranksMethods, CDs
 
 
-def friedman_all(datasets, percentage):
+def friedman_all(datasets, problem, percentage):
     ranksAll = []
     ranksAllNoM = []
     for dataset_name in datasets:
         distances =[]
-        directory = "./results/rankings/regression/" + dataset_name
+        directory = "./results/rankings/" + problem + "/" + dataset_name
         filename = directory + "/" + dataset_name + "-distances-" + str(percentage) + ".csv"
         data = pd.read_csv(filename, sep=",", header=0)
         data = data.values
@@ -177,7 +177,7 @@ def friedman_all(datasets, percentage):
     return ranksAll, CDs, ranksAllNoM, CDs_no_M
 
 
-def wilcoxon_rank(datasets, percentage):
+def wilcoxon_rank(datasets, problem, percentage):
     distances_LR_PLR = []
     distances_LR_MLR = []
     distances_KMM_PKMM = []
@@ -188,7 +188,7 @@ def wilcoxon_rank(datasets, percentage):
     distances_KLIEP_MKLIEP = []
     for dataset_name in datasets:
         distances =[]
-        directory = "./results/rankings/regression/" + dataset_name
+        directory = "./results/rankings/" + problem + "/" + dataset_name
         filename = directory + "/" + dataset_name + "-distances-" + str(percentage) + ".csv"
         data = pd.read_csv(filename, sep=",", header=0)
         data = data.values

@@ -2,11 +2,11 @@ import pandas as pd
 from utils import wilcoxon, friedman
 from utils.IO import saveCSV
 
-def friedman_methods(datasets, percentage):
+def friedman_methods(datasets, problem, percentage):
     ranksMethods = []
     for dataset_name in datasets:
         distances =[]
-        directory = "./results/rankings/plankton/" + dataset_name
+        directory = "./results/rankings/" + problem + "/" + dataset_name
         filename = directory + "/" + dataset_name + "-distances-" + str(percentage) + ".csv"
         data = pd.read_csv(filename, sep=",", header=0)
         data = data.values
@@ -40,11 +40,11 @@ def friedman_methods(datasets, percentage):
     return ranksMethods, CDs
 
 
-def friedman_all(datasets, percentage):
+def friedman_all(datasets, problem, percentage):
     avgRanks = []
     for dataset_name in datasets:
         distances =[]
-        directory = "./results/rankings/plankton/" + dataset_name
+        directory = "./results/rankings/" + problem + "/" + dataset_name
         filename = directory + "/" + dataset_name + "-distances-" + str(percentage) + ".csv"
         data = pd.read_csv(filename, sep=",", header=0)
         data = data.values
@@ -64,12 +64,12 @@ def friedman_all(datasets, percentage):
     return avgRanks, CDs
 
 
-def wilcoxon_rank(datasets, percentage):
+def wilcoxon_rank(datasets, problem, percentage):
     distances_LR_PLR = []
     distances_KDE_PKDE = []
     for dataset_name in datasets:
         distances =[]
-        directory = "./results/rankings/plankton/" + dataset_name
+        directory = "./results/rankings/" + problem + "/" + dataset_name
         filename = directory + "/" + dataset_name + "-distances-" + str(percentage) + ".csv"
         data = pd.read_csv(filename, sep=",", header=0)
         data = data.values

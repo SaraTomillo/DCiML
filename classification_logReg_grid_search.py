@@ -4,6 +4,9 @@ import traceback
 import numpy as np
 from sklearn.model_selection import cross_val_predict
 from sklearn.svm import SVC
+from sklearn.linear_model import LogisticRegression
+
+from sklearn.model_selection import GridSearchCV
 
 from utils import IO
 
@@ -39,7 +42,23 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     CV = cross_val_predict(model, X_train, Y_train, cv=10)#, method='decision_function')
     CVError = error(CV, Y_train)
 
-    importanceModel = SVC(kernel='linear', C=1, class_weight='balanced', coef0=0)
+    lr = LogisticRegression()
+    params = {
+        'C': [10**(-3), 10**(-2), 10**(-1), 10**(0), 10**(1), 10**(2), 10**(3)],
+        'random_state': [random],
+        'class_weight': ['balanced'],
+        'coef0': [0]
+    }
+    grid_LR = GridSearchCV(estimator=lr,
+                            param_grid=params,
+                            scoring='accuracy',
+                            cv=5,
+                            verbose=1,
+                            n_jobs=-1)
+
+    grid_LR.fit(X_train, Y_train)
+
+    importanceModel = grid_LR.best_estimator_
     importanceModel.fit(X_train, Y_train)
 
     P_train = importanceModel.decision_function(X_train)
@@ -47,6 +66,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
 
     Y_train = Y_train.reshape(-1, 1)
     Y_test = Y_test.reshape(-1, 1)
+
 
     train = []
     train.append(Y_train)
@@ -172,7 +192,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
             np.average(LR_err), np.average(PLR_err), np.average(BLR_err),
             np.average(KMM_err), np.average(PKMM_err), np.average(BKMM_err),
             np.average(KDE_err), np.average(PKDE_err), np.average(BKDE_err),
-            np.average(KLIEP_err), np.average(PKLIEP_err),  np.average(BKLIEP_err)]
+            np.average(KLIEP_err), np.average(PKLIEP_err), np.average(BKLIEP_err)]
 
 def main():
     parser = argparse.ArgumentParser()
@@ -192,7 +212,7 @@ def main():
 
     X_train, Y_train, X_test, Y_test = IO.readDataset(filename_train, filename_test)
     results = classification(X_train, Y_train, X_test, Y_test, seed)
-    IO.writeToCSV(results, "classification", dataset_name, execution_id, seed)
+    IO.writeToCSV(results, "classification-LR-GS", dataset_name, execution_id, seed)
 
 if __name__== "__main__":
   main()

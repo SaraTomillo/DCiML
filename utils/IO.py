@@ -65,9 +65,9 @@ def saveCSV(data, title, problem_type, dataset_name, percentage, headers=headers
     return
 
 
-def printResultsRegression(datasets, ranks_methods, CDs_methods, ranks_all, CDs_all, ranks_all_no_M, CDs_all_no_M , ranks_triplets_P, ranks_triplets_M, CDs_triplets, wilcoxon):
+def printResultsRegression(datasets, problem, ranks_methods, CDs_methods, ranks_all, CDs_all, ranks_all_no_M, CDs_all_no_M , ranks_triplets_P, ranks_triplets_M, CDs_triplets, wilcoxon):
     directory = './results/results-final'
-    filename = directory + "/regression.csv"
+    filename = directory + "/" + problem +".csv"
 
     if not os.path.isdir(directory):
         os.makedirs(directory)
@@ -169,9 +169,9 @@ def printResultsRegression(datasets, ranks_methods, CDs_methods, ranks_all, CDs_
 
 
 
-def printResultsClassification(datasets, ranks_methods, CDs_methods, ranks_all, CDs_all, wilcoxon):
+def printResultsClassification(datasets, problem, ranks_methods, CDs_methods, ranks_all, CDs_all, wilcoxon):
     directory = './results/results-final'
-    filename = directory + "/classification.csv"
+    filename = directory + "/" + problem + ".csv"
 
     if not os.path.isdir(directory):
         os.makedirs(directory)
@@ -222,9 +222,9 @@ def printResultsClassification(datasets, ranks_methods, CDs_methods, ranks_all, 
     return
 
 
-def printResultsPlankton(datasets, ranks_methods, CDs_methods, ranks_all, CDs_all, wilcoxon):
+def printResultsPlankton(datasets, problem, ranks_methods, CDs_methods, ranks_all, CDs_all, wilcoxon):
     directory = './results/results-final'
-    filename = directory + "/plankton.csv"
+    filename = directory + "/" + problem + ".csv"
 
     if not os.path.isdir(directory):
         os.makedirs(directory)

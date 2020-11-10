@@ -2,7 +2,7 @@ import utils.IO as IO
 import os
 import argparse
 
-from code import distances_calculator, rankings_regression, rankings_classification, rankings_plankton
+import distances_calculator, rankings_regression, rankings_classification, rankings_plankton
 
 
 def main():
@@ -14,23 +14,23 @@ def main():
     problem = str(args.problem)
     percentage = float(args.percentage)
 
-    if problem == "regression":
+    if "regression" in problem:
         datasets = retrieveDatasets(problem)
         for dataset in datasets:
             calculateDistances(problem, dataset, percentage)
-        generate_results_regression(datasets, percentage)
+        generate_results_regression(datasets, problem, percentage)
 
-    elif problem == "classification":
+    elif "classification" in problem:
         datasets = retrieveDatasets(problem)
         for dataset in datasets:
             calculateDistances(problem, dataset, percentage)
-        generate_results_classification(datasets, percentage)
+        generate_results_classification(datasets, problem, percentage)
 
-    elif problem == "plankton":
+    elif "plankton" in problem:
         datasets = retrieveDatasets(problem)
         for dataset in datasets:
             calculateDistances(problem, dataset, percentage)
-        generate_results_plankton(datasets, percentage)
+        generate_results_plankton(datasets, problem, percentage)
 
 
 def calculateDistances(problem, dataset, percentage):
@@ -49,24 +49,24 @@ def retrieveDatasets(problem):
 
 
 
-def generate_results_regression(datasets, percentage):
-    ranks_methods, CDs_methods = rankings_regression.friedman_methods(datasets, percentage)
-    ranks_all, CDs_all, ranks_all_no_M, CDs_all_no_M = rankings_regression.friedman_all(datasets, percentage)
-    ranks_triplets_P, ranks_triplets_M, CDs_triplets = rankings_regression.friedman_triplets(datasets, percentage)
-    wilcoxon = rankings_regression.wilcoxon_rank(datasets, percentage)
-    IO.printResultsRegression(datasets, ranks_methods, CDs_methods, ranks_all, CDs_all, ranks_all_no_M, CDs_all_no_M, ranks_triplets_P, ranks_triplets_M, CDs_triplets, wilcoxon)
+def generate_results_regression(datasets, problem, percentage):
+    ranks_methods, CDs_methods = rankings_regression.friedman_methods(datasets, problem, percentage)
+    ranks_all, CDs_all, ranks_all_no_M, CDs_all_no_M = rankings_regression.friedman_all(datasets, problem, percentage)
+    ranks_triplets_P, ranks_triplets_M, CDs_triplets = rankings_regression.friedman_triplets(datasets, problem, percentage)
+    wilcoxon = rankings_regression.wilcoxon_rank(datasets, problem, percentage)
+    IO.printResultsRegression(datasets, problem, ranks_methods, CDs_methods, ranks_all, CDs_all, ranks_all_no_M, CDs_all_no_M, ranks_triplets_P, ranks_triplets_M, CDs_triplets, wilcoxon)
 
-def generate_results_classification(datasets, percentage):
-    ranks_methods, CDs_methods = rankings_classification.friedman_methods(datasets, percentage)
-    ranks_all, CDs_all = rankings_classification.friedman_all(datasets, percentage)
-    wilcoxon = rankings_classification.wilcoxon_rank(datasets, percentage)
-    IO.printResultsClassification(datasets, ranks_methods, CDs_methods, ranks_all, CDs_all, wilcoxon)
+def generate_results_classification(datasets, problem, percentage):
+    ranks_methods, CDs_methods = rankings_classification.friedman_methods(datasets, problem, percentage)
+    ranks_all, CDs_all = rankings_classification.friedman_all(datasets, problem, percentage)
+    wilcoxon = rankings_classification.wilcoxon_rank(datasets, problem, percentage)
+    IO.printResultsClassification(datasets, problem, ranks_methods, CDs_methods, ranks_all, CDs_all, wilcoxon)
 
-def generate_results_plankton(datasets, percentage):
-    ranks_methods, CDs_methods = rankings_plankton.friedman_methods(datasets, percentage)
-    ranks_all, CDs_all = rankings_plankton.friedman_all(datasets, percentage)
-    wilcoxon = rankings_plankton.wilcoxon_rank(datasets, percentage)
-    IO.printResultsPlankton(datasets, ranks_methods, CDs_methods, ranks_all, CDs_all, wilcoxon)
+def generate_results_plankton(datasets, problem, percentage):
+    ranks_methods, CDs_methods = rankings_plankton.friedman_methods(datasets, problem, percentage)
+    ranks_all, CDs_all = rankings_plankton.friedman_all(datasets, problem, percentage)
+    wilcoxon = rankings_plankton.wilcoxon_rank(datasets, problem, percentage)
+    IO.printResultsPlankton(datasets, problem, ranks_methods, CDs_methods, ranks_all, CDs_all, wilcoxon)
 
 if __name__ == "__main__":
     main()

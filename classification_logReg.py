@@ -4,6 +4,7 @@ import traceback
 import numpy as np
 from sklearn.model_selection import cross_val_predict
 from sklearn.svm import SVC
+from sklearn.linear_model import LogisticRegression
 
 from utils import IO
 
@@ -39,7 +40,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     CV = cross_val_predict(model, X_train, Y_train, cv=10)#, method='decision_function')
     CVError = error(CV, Y_train)
 
-    importanceModel = SVC(kernel='linear', C=1, class_weight='balanced', coef0=0)
+    importanceModel = LogisticRegression(random_state=random, C=1, class_weight='balanced', coef0=0)
     importanceModel.fit(X_train, Y_train)
 
     P_train = importanceModel.decision_function(X_train)
@@ -192,7 +193,7 @@ def main():
 
     X_train, Y_train, X_test, Y_test = IO.readDataset(filename_train, filename_test)
     results = classification(X_train, Y_train, X_test, Y_test, seed)
-    IO.writeToCSV(results, "classification", dataset_name, execution_id, seed)
+    IO.writeToCSV(results, "classification-LR", dataset_name, execution_id, seed)
 
 if __name__== "__main__":
   main()

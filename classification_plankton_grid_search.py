@@ -2,11 +2,10 @@ import argparse
 import traceback
 
 import numpy as np
-from sklearn.model_selection import cross_val_predict
+from sklearn.model_selection import cross_val_predict, GridSearchCV
 from sklearn.svm import SVC
 
 from utils import IO
-
 import estimation_methods
 import tracemalloc
 from utils.utils import minmax, reduce, npShuffle
@@ -39,7 +38,22 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     CV = cross_val_predict(model, X_train, Y_train, cv=10)#, method='decision_function')
     CVError = error(CV, Y_train)
 
-    importanceModel = SVC(kernel='linear', C=1, class_weight='balanced', coef0=0)
+    svc = SVC()
+    params = {
+        'C': [10**(-3), 10**(-2), 10**(-1), 10**(0), 10**(1), 10**(2), 10**(3)],
+        'kernel': ['linear'],
+        'class_weight': ['balanced'],
+        'coef0': [0]
+    }
+    grid_SVC = GridSearchCV(estimator=svc,
+                           param_grid=params,
+                           scoring='accuracy',
+                           cv=5,
+                           verbose=1,
+                           n_jobs=-1)
+    grid_SVC.fit(X_train, Y_train)
+    importanceModel = grid_SVC.best_estimator_
+
     importanceModel.fit(X_train, Y_train)
 
     P_train = importanceModel.decision_function(X_train)
@@ -56,6 +70,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     test.append(Y_test)
     test.append(P_test)
 
+
     try:
         importances_logReg = estimation_methods.log_regression(X_train, X_test, random)
         LR_err = CVError * importances_logReg
@@ -65,59 +80,27 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         traceback.print_exc()
 
     try:
-        importances_PLogReg = estimation_methods.log_regression_model_classification(P_train, P_test, random)
-        PLR_err = CVError * importances_PLogReg
+        importances_MLogReg = estimation_methods.log_regression_model_classification(P_train, P_test, random)
+        PLR_err = CVError * importances_MLogReg
     except Exception:
         print("Error PLR")
         PLR_err = []
         traceback.print_exc()
     if len(PLR_err) == 0:
         try:
-            importances_PLogReg = estimation_methods.log_regression_model(P_train, P_test, random)
-            PLR_err = CVError * importances_PLogReg
+            importances_MLogReg = estimation_methods.log_regression_model(P_train, P_test, random)
+            PLR_err = CVError * importances_MLogReg
         except Exception:
             print("Error PLR")
             PLR_err = []
             traceback.print_exc()
 
     try:
-        importances_BlogReg = estimation_methods.log_regression(train, test, random)
-        BLR_err = CVError * importances_BlogReg
+        importances_logReg = estimation_methods.log_regression(train, test, random)
+        BLR_err = CVError * importances_logReg
     except Exception:
         print("Error BLR")
         BLR_err = []
-        traceback.print_exc()
-
-    try:
-        importances_KMM = estimation_methods.kmm(X_train, X_test)
-        KMM_err = CVError * importances_KMM
-    except Exception:
-        print("Error KMM")
-        KMM_err = []
-        traceback.print_exc()
-
-    try:
-        importances_PKMM = estimation_methods.kmm_model_classification(P_train, P_test)
-        PKMM_err = CVError * importances_PKMM
-    except Exception:
-        print("Error PKMM")
-        PKMM_err = []
-        traceback.print_exc()
-    if len(PKMM_err) == 0:
-        try:
-            importances_PKMM = estimation_methods.kmm_model(P_train, P_test)
-            PKMM_err = CVError * importances_PKMM
-        except Exception:
-            print("Error PKMM")
-            PKMM_err = []
-            traceback.print_exc()
-
-    try:
-        importances_BKMM = estimation_methods.kmm(train, test)
-        BKMM_err = CVError * importances_BKMM
-    except Exception:
-        print("Error BKMM")
-        BKMM_err = []
         traceback.print_exc()
 
     try:
@@ -144,35 +127,9 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         BKDE_err = []
         traceback.print_exc()
 
-    try:
-        importances_KLIEP = estimation_methods.kliep(X_train, X_test)
-        KLIEP_err = CVError * importances_KLIEP
-    except Exception:
-        print("Error KLIEP")
-        KLIEP_err = []
-        traceback.print_exc()
-
-    try:
-        importances_KLIEP_model = estimation_methods.kliep_model(P_train, P_test)
-        PKLIEP_err = CVError * importances_KLIEP_model
-    except Exception:
-        print("Error PKLIEP")
-        PKLIEP_err = []
-        traceback.print_exc()
-
-    try:
-        importances_KLIEP = estimation_methods.kliep(train, test)
-        BKLIEP_err = CVError * importances_KLIEP
-    except Exception:
-        print("Error BKLIEP")
-        BKLIEP_err = []
-        traceback.print_exc()
-
     return [np.average(eval), np.average(CVError),
             np.average(LR_err), np.average(PLR_err), np.average(BLR_err),
-            np.average(KMM_err), np.average(PKMM_err), np.average(BKMM_err),
-            np.average(KDE_err), np.average(PKDE_err), np.average(BKDE_err),
-            np.average(KLIEP_err), np.average(PKLIEP_err),  np.average(BKLIEP_err)]
+            np.average(KDE_err), np.average(PKDE_err), np.average(BKDE_err)]
 
 def main():
     parser = argparse.ArgumentParser()
@@ -192,7 +149,7 @@ def main():
 
     X_train, Y_train, X_test, Y_test = IO.readDataset(filename_train, filename_test)
     results = classification(X_train, Y_train, X_test, Y_test, seed)
-    IO.writeToCSV(results, "classification", dataset_name, execution_id, seed)
+    IO.writeToCSV(results, "plankton-GS", dataset_name, execution_id, seed)
 
 if __name__== "__main__":
   main()

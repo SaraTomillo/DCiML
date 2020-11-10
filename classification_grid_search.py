@@ -11,6 +11,7 @@ import estimation_methods
 import tracemalloc
 from utils.utils import minmax, reduce, npShuffle
 
+from sklearn.model_selection import GridSearchCV
 
 def error(predictions, y):
     return np.sign(np.abs(predictions-y))
@@ -39,7 +40,22 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     CV = cross_val_predict(model, X_train, Y_train, cv=10)#, method='decision_function')
     CVError = error(CV, Y_train)
 
-    importanceModel = SVC(kernel='linear', C=1, class_weight='balanced', coef0=0)
+    svc = SVC()
+    params = {
+        'C': [10**(-3), 10**(-2), 10**(-1), 10**(0), 10**(1), 10**(2), 10**(3)],
+        'kernel': ['linear'],
+        'class_weight': ['balanced'],
+        'coef0': [0]
+    }
+    grid_SVC = GridSearchCV(estimator=svc,
+                           param_grid=params,
+                           scoring='accuracy',
+                           cv=5,
+                           verbose=1,
+                           n_jobs=-1)
+    grid_SVC.fit(X_train, Y_train)
+    importanceModel = grid_SVC.best_estimator_
+
     importanceModel.fit(X_train, Y_train)
 
     P_train = importanceModel.decision_function(X_train)
@@ -57,7 +73,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     test.append(P_test)
 
     try:
-        importances_logReg = estimation_methods.log_regression(X_train, X_test, random)
+        importances_logReg = estimation_methods.log_regression(Y_train, Y_test, random)
         LR_err = CVError * importances_logReg
     except Exception:
         print("Error LR")
@@ -89,7 +105,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         traceback.print_exc()
 
     try:
-        importances_KMM = estimation_methods.kmm(X_train, X_test)
+        importances_KMM = estimation_methods.kmm(Y_train, Y_test)
         KMM_err = CVError * importances_KMM
     except Exception:
         print("Error KMM")
@@ -121,7 +137,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         traceback.print_exc()
 
     try:
-        importances_kernel_density = estimation_methods.kernel_density(X_train, X_test, bandwith, kernel)
+        importances_kernel_density = estimation_methods.kernel_density(Y_train, Y_test, bandwith, kernel)
         KDE_err = CVError * importances_kernel_density
     except Exception:
         print("Error KDE")
@@ -145,7 +161,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         traceback.print_exc()
 
     try:
-        importances_KLIEP = estimation_methods.kliep(X_train, X_test)
+        importances_KLIEP = estimation_methods.kliep(Y_train, Y_test)
         KLIEP_err = CVError * importances_KLIEP
     except Exception:
         print("Error KLIEP")
@@ -173,7 +189,6 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
             np.average(KMM_err), np.average(PKMM_err), np.average(BKMM_err),
             np.average(KDE_err), np.average(PKDE_err), np.average(BKDE_err),
             np.average(KLIEP_err), np.average(PKLIEP_err),  np.average(BKLIEP_err)]
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("filename_train", help="the csv file containing the train data")
@@ -192,7 +207,7 @@ def main():
 
     X_train, Y_train, X_test, Y_test = IO.readDataset(filename_train, filename_test)
     results = classification(X_train, Y_train, X_test, Y_test, seed)
-    IO.writeToCSV(results, "classification", dataset_name, execution_id, seed)
+    IO.writeToCSV(results, "classification-GS", dataset_name, execution_id, seed)
 
 if __name__== "__main__":
   main()

@@ -19,6 +19,7 @@ bandwith = 1
 kernel = 'linear'
 
 def classification(X_train, Y_train, X_test, Y_test, seed):
+    random = np.random.RandomState(seed)
     tracemalloc.start()
     model = SVC(kernel='linear', C=1, coef0=0)
 
@@ -46,8 +47,16 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     Y_train = Y_train.reshape(-1, 1)
     Y_test = Y_test.reshape(-1, 1)
 
+    train = []
+    train.append(Y_train)
+    train.append(P_train)
+
+    test = []
+    test.append(Y_test)
+    test.append(P_test)
+
     try:
-        importances_logReg = estimation_methods.log_regression(Y_train, Y_test)
+        importances_logReg = estimation_methods.log_regression(X_train, X_test, random)
         LR_err = CVError * importances_logReg
     except Exception:
         print("Error LR")
@@ -55,7 +64,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         traceback.print_exc()
 
     try:
-        importances_MLogReg = estimation_methods.log_regression_model_classification(P_train, P_test)
+        importances_MLogReg = estimation_methods.log_regression_model_classification(P_train, P_test, random)
         PLR_err = CVError * importances_MLogReg
     except Exception:
         print("Error PLR")
@@ -63,14 +72,23 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         traceback.print_exc()
     if len(PLR_err) == 0:
         try:
-            importances_MLogReg = estimation_methods.log_regression_model(P_train, P_test)
+            importances_MLogReg = estimation_methods.log_regression_model(P_train, P_test, random)
             PLR_err = CVError * importances_MLogReg
         except Exception:
             print("Error PLR")
             PLR_err = []
             traceback.print_exc()
+
     try:
-        importances_kernel_density = estimation_methods.kernel_density(Y_train, Y_test, bandwith, kernel)
+        importances_logReg = estimation_methods.log_regression(train, test, random)
+        BLR_err = CVError * importances_logReg
+    except Exception:
+        print("Error BLR")
+        BLR_err = []
+        traceback.print_exc()
+
+    try:
+        importances_kernel_density = estimation_methods.kernel_density(X_train, X_test, bandwith, kernel)
         KDE_err = CVError * importances_kernel_density
     except Exception:
         print("Error KDE")
@@ -85,10 +103,17 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         PKDE_err = []
         traceback.print_exc()
 
+    try:
+        importances_kernel_density = estimation_methods.kernel_density(train, test, bandwith, kernel)
+        BKDE_err = CVError * importances_kernel_density
+    except Exception:
+        print("Error BKDE")
+        BKDE_err = []
+        traceback.print_exc()
 
     return [np.average(eval), np.average(CVError),
-            np.average(LR_err), np.average(PLR_err),
-            np.average(KDE_err), np.average(PKDE_err)]
+            np.average(LR_err), np.average(PLR_err), np.average(BLR_err),
+            np.average(KDE_err), np.average(PKDE_err), np.average(BKDE_err)]
 
 def main():
     parser = argparse.ArgumentParser()

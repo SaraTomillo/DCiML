@@ -2,7 +2,7 @@ import argparse
 import traceback
 
 import numpy as np
-from sklearn.model_selection import cross_val_predict
+from sklearn.model_selection import cross_val_predict, GridSearchCV
 from sklearn.svm import SVR
 
 import estimation_methods
@@ -40,12 +40,25 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
     CV = cross_val_predict(model, X_train, Y_train, cv=10)
     CVError = error(CV, Y_train)
 
-    importanceModel = SVR(kernel='linear', C=1, coef0=0)
+    svr = SVR()
+    params = {
+        'C': [10**(-3), 10**(-2), 10**(-1), 10**(0), 10**(1), 10**(2), 10**(3)],
+        'kernel': ['linear'],
+        'coef0': [0]
+    }
+    grid_SVR = GridSearchCV(estimator=svr,
+                           param_grid=params,
+                           scoring='accuracy',
+                           cv=5,
+                           verbose=1,
+                           n_jobs=-1)
+    grid_SVR.fit(X_train, Y_train)
+    importanceModel = grid_SVR.best_estimator_
+
     importanceModel.fit(X_train, Y_train)
 
     P_train = importanceModel.predict(X_train)
     P_test = importanceModel.predict(X_test)
-
 
     train = []
     train.append(Y_train)
@@ -207,7 +220,6 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         MKLIEP_err = []
         traceback.print_exc()
 
-
     try:
         importances_kliep = estimation_methods.kliep(train, test)
         BKLIEP_err = CVError * importances_kliep
@@ -219,8 +231,9 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
     return [np.average(eval), np.average(CVError),
             np.average(LR_err), np.average(PLR_err), np.average(CLR_err), np.average(MLR_err), np.average(BLR_err),
             np.average(KMM_err), np.average(PKMM_err), np.average(CKMM_err), np.average(MKMM_err), np.average(BKMM_err),
-            np.average(KDE_err), np.average(PKDE_err),np.average(CKDE_err), np.average(MKDE_err),  np.average(BKDE_err),
-            np.average(KLIEP_err), np.average(PKLIEP_err), np.average(CKLIEP_err), np.average(MKLIEP_err),  np.average(BKLIEP_err)]
+            np.average(KDE_err), np.average(PKDE_err), np.average(CKDE_err), np.average(MKDE_err), np.average(BKDE_err),
+            np.average(KLIEP_err), np.average(PKLIEP_err), np.average(CKLIEP_err), np.average(MKLIEP_err),
+            np.average(BKLIEP_err)]
 
 def main():
     parser = argparse.ArgumentParser()
@@ -239,7 +252,7 @@ def main():
 
     X_train, Y_train, X_test, Y_test = IO.readDataset(filename_train, filename_test)
     results = regression(X_train, Y_train, X_test, Y_test, seed)
-    IO.writeToCSV(results, "regression", dataset_name, execution_id, seed)
+    IO.writeToCSV(results, "regression-GS", dataset_name, execution_id, seed)
 
 
 if __name__== "__main__":
