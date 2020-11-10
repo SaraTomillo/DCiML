@@ -5,9 +5,9 @@ import os
 
 
 headers = []
-headers_regression = ["Eval", "CV", "LR", "PLR", "CLR", "MLR", "KMM","PKMM", "CKMM", "MKMM", "KDE", "PKDE", "CKDE", "MKDE", "KLIEP", "PKLIEP", "CKLIEP", "MKLIEP"]
-headers_classification = ["Eval", "CV", "LR", "PLR", "KMM","PKMM", "KDE", "PKDE", "KLIEP", "PKLIEP"]
-headers_plankton = ["Eval", "CV", "LR", "PLR", "KDE", "PKDE"]
+headers_regression = ["Eval", "CV", "LR", "PLR", "CLR", "MLR", "BLR", "KMM","PKMM", "CKMM", "MKMM", "BKMM", "KDE", "PKDE", "CKDE", "MKDE", "BKDE", "KLIEP", "PKLIEP", "CKLIEP", "MKLIEP", "BKLIEP"]
+headers_classification = ["Eval", "CV", "LR", "PLR", "BLR", "KMM", "PKMM", "BKMM", "KDE", "PKDE", "BKDE", "KLIEP", "PKLIEP", "BKLIEP"]
+headers_plankton = ["Eval", "CV", "LR", "PLR", "BLR", "KDE", "PKDE", "BKDE"]
 
 def readDataset(filename_train, filename_test):
     data_train = pd.read_csv(filename_train, sep=",", header=0)
@@ -75,7 +75,7 @@ def printResultsRegression(datasets, problem, ranks_methods, CDs_methods, ranks_
     with open(filename, 'w', newline='') as file:
         writer = csv.writer(file, delimiter=',')
         writer.writerow(["FRIENDMAN ALL"])
-        writer.writerow(["Dataset","CV", "LR", "PLR", "MLR", "KMM", "PKMM", "MKMM", "KDE", "PKDE", "MKDE", "KLIEP", "PKLIEP", "MKLIEP"])
+        writer.writerow(["Dataset","CV", "LR", "PLR", "MLR", "BLR", "KMM", "PKMM", "MKMM", "BKMM", "KDE", "PKDE", "MKDE", "BKDE", "KLIEP", "PKLIEP", "MKLIEP", "BKLIEP"])
         for i in range(len(datasets)):
             aux = []
             aux.append(datasets[i])
@@ -91,7 +91,7 @@ def printResultsRegression(datasets, problem, ranks_methods, CDs_methods, ranks_
         writer.writerow(aux)
 
         writer.writerows([[''],[''],["FRIEDMAN WITHOUT M"]])
-        writer.writerow(["Dataset", "CV", "LR", "PLR", "KMM", "PKMM", "KDE", "PKDE","KLIEP", "PKLIEP"])
+        writer.writerow(["Dataset", "CV", "LR", "PLR", "KMM", "PKMM", "KDE", "PKDE", "KLIEP", "PKLIEP"])
         for i in range(len(datasets)):
             aux = []
             aux.append(datasets[i])

@@ -252,12 +252,12 @@ def log_regression_mixed(Y_train, P_test, random):
     return importance
 
 
-def log_regression_model_classification(P_train, P_test):
+def log_regression_model_classification(P_train, P_test, random):
     X = np.concatenate((P_train, P_test))
     y = np.zeros(len(X))
     y[:len(P_train)] = 1
     Y = y
-    log_reg = LogisticRegression()
+    log_reg = LogisticRegression(random_state=random)
     log_reg.fit(X, Y)
     Prob_train = log_reg.predict_proba(P_train)[:, 1]  # clases [0,1]
     Prob_test = log_reg.predict_proba(P_train)[:, 0]  # 1 - P_train

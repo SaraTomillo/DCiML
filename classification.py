@@ -20,7 +20,7 @@ bandwith = 1
 kernel = 'linear'
 
 def classification(X_train, Y_train, X_test, Y_test, seed):
-    random = np.random.RandomState(seed)
+    random = np.random.RandomState(int(seed))
     tracemalloc.start()
     model = SVC(kernel='linear', C=1, coef0=0)
 
@@ -49,12 +49,21 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     Y_test = Y_test.reshape(-1, 1)
 
     train = []
-    train.append(Y_train)
-    train.append(P_train)
+    for row in range(len(Y_train)):
+        aux = []
+        aux.append(Y_train[row])
+        aux.append(P_train[row])
+        train.append(aux)
 
     test = []
-    test.append(Y_test)
-    test.append(P_test)
+    for row in range(len(Y_test)):
+        aux = []
+        aux.append(Y_test[row])
+        aux.append(P_test[row])
+        test.append(aux)
+
+    train = Y_train.reshape(-1, 1)
+    test = Y_test.reshape(-1, 1)
 
     try:
         importances_logReg = estimation_methods.log_regression(X_train, X_test, random)
