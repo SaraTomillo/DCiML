@@ -18,7 +18,7 @@ def main(problem):
     """
     plankton = False
     if problem == "regression":
-        filename = "results/rankings/regression/regression/regression-friedman-triplets-P-0.33.csv"
+        filename = "results/rankings/regression/regression/regression-friedman-triplets-M-0.33.csv"
     elif problem == "classification":
         filename = "results/rankings/classification/classification/classification-friedman-methods-0.33.csv"
     elif problem == "plankton":
@@ -27,17 +27,16 @@ def main(problem):
 
     LR_data, KMM_data, KDE_data, KLIEP_data = retrieveData(filename, plankton)
     CDs = generateCD(LR_data)
-    ps = []
-    p = generateWilcoxon(LR_data)
-    ps.append(p)
-    #p = generateWilcoxon(KMM_data)
-    #ps.append(p)
-    p = generateWilcoxon(KDE_data)
-    ps.append(p)
-    #p = generateWilcoxon(KLIEP_data)
-    #ps.append(p)
     print(CDs)
-    print(ps)
+
+    wins, loses, p = generateWilcoxon(LR_data)
+    print(str(wins) + "," + str(loses) + "," + str(p))
+    wins, loses, p = generateWilcoxon(KMM_data)
+    print(str(wins) + "," + str(loses) + "," + str(p))
+    wins, loses, p = generateWilcoxon(KDE_data)
+    print(str(wins) + "," + str(loses) + "," + str(p))
+    wins, loses, p = generateWilcoxon(KLIEP_data)
+    print(str(wins) + "," + str(loses) + "," + str(p))
 
 
 def retrieveData(filename, plankton):
@@ -62,8 +61,8 @@ def generateCD(triplet):
 
 def generateWilcoxon(triplet):
     wins, loses, p = wilcoxon.wilcoxon(triplet.values)
-    return p
+    return wins, loses, p
 
-#main("regression")
+main("regression")
 #main("classification")
-main("plankton")
+#main("plankton")

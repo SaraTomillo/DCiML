@@ -4,7 +4,7 @@ regressionFiles = results/error_estimations/regression/abalone/abalone-2032-0.33
 
 classificationFiles = results/error_estimations/classification/iris/iris-2032-0.33-0.csv results/error_estimations/classification/iris/iris-2032-0.33-1.csv results/error_estimations/classification/iris/iris-2032-0.33-2.csv results/error_estimations/classification/iris/iris-2032-0.33-3.csv results/error_estimations/classification/iris/iris-2032-0.33-4.csv results/error_estimations/classification/iris/iris-2032-0.33-5.csv results/error_estimations/classification/iris/iris-2032-0.33-6.csv results/error_estimations/classification/iris/iris-2032-0.33-7.csv results/error_estimations/classification/iris/iris-2032-0.33-8.csv results/error_estimations/classification/iris/iris-2032-0.33-9.csv results/error_estimations/classification/iris/iris-2032-0.33-10.csv results/error_estimations/classification/iris/iris-2032-0.33-11.csv results/error_estimations/classification/iris/iris-2032-0.33-12.csv results/error_estimations/classification/iris/iris-2032-0.33-13.csv results/error_estimations/classification/iris/iris-2032-0.33-14.csv results/error_estimations/classification/iris/iris-2032-0.33-15.csv results/error_estimations/classification/iris/iris-2032-0.33-16.csv results/error_estimations/classification/iris/iris-2032-0.33-17.csv results/error_estimations/classification/iris/iris-2032-0.33-18.csv results/error_estimations/classification/iris/iris-2032-0.33-19.csv results/error_estimations/classification/sonar/sonar-2032-0.33-0.csv results/error_estimations/classification/sonar/sonar-2032-0.33-1.csv results/error_estimations/classification/sonar/sonar-2032-0.33-2.csv results/error_estimations/classification/sonar/sonar-2032-0.33-3.csv results/error_estimations/classification/sonar/sonar-2032-0.33-4.csv results/error_estimations/classification/sonar/sonar-2032-0.33-5.csv results/error_estimations/classification/sonar/sonar-2032-0.33-6.csv results/error_estimations/classification/sonar/sonar-2032-0.33-7.csv results/error_estimations/classification/sonar/sonar-2032-0.33-8.csv results/error_estimations/classification/sonar/sonar-2032-0.33-9.csv results/error_estimations/classification/sonar/sonar-2032-0.33-10.csv results/error_estimations/classification/sonar/sonar-2032-0.33-11.csv results/error_estimations/classification/sonar/sonar-2032-0.33-12.csv results/error_estimations/classification/sonar/sonar-2032-0.33-13.csv results/error_estimations/classification/sonar/sonar-2032-0.33-14.csv results/error_estimations/classification/sonar/sonar-2032-0.33-15.csv results/error_estimations/classification/sonar/sonar-2032-0.33-16.csv results/error_estimations/classification/sonar/sonar-2032-0.33-17.csv results/error_estimations/classification/sonar/sonar-2032-0.33-18.csv results/error_estimations/classification/sonar/sonar-2032-0.33-19.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-0.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-1.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-2.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-3.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-4.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-5.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-6.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-7.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-8.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-9.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-10.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-11.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-12.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-13.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-14.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-15.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-16.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-17.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-18.csv results/error_estimations/classification/ionosphere/ionosphere-2032-0.33-19.csv results/error_estimations/classification/cmc/cmc-2032-0.33-0.csv results/error_estimations/classification/cmc/cmc-2032-0.33-1.csv results/error_estimations/classification/cmc/cmc-2032-0.33-2.csv results/error_estimations/classification/cmc/cmc-2032-0.33-3.csv results/error_estimations/classification/cmc/cmc-2032-0.33-4.csv results/error_estimations/classification/cmc/cmc-2032-0.33-5.csv results/error_estimations/classification/cmc/cmc-2032-0.33-6.csv results/error_estimations/classification/cmc/cmc-2032-0.33-7.csv results/error_estimations/classification/cmc/cmc-2032-0.33-8.csv results/error_estimations/classification/cmc/cmc-2032-0.33-9.csv results/error_estimations/classification/cmc/cmc-2032-0.33-10.csv results/error_estimations/classification/cmc/cmc-2032-0.33-11.csv results/error_estimations/classification/cmc/cmc-2032-0.33-12.csv results/error_estimations/classification/cmc/cmc-2032-0.33-13.csv results/error_estimations/classification/cmc/cmc-2032-0.33-14.csv results/error_estimations/classification/cmc/cmc-2032-0.33-15.csv results/error_estimations/classification/cmc/cmc-2032-0.33-16.csv results/error_estimations/classification/cmc/cmc-2032-0.33-17.csv results/error_estimations/classification/cmc/cmc-2032-0.33-18.csv results/error_estimations/classification/cmc/cmc-2032-0.33-19.csv results/error_estimations/classification/haberman/haberman-2032-0.33-0.csv results/error_estimations/classification/haberman/haberman-2032-0.33-1.csv results/error_estimations/classification/haberman/haberman-2032-0.33-2.csv results/error_estimations/classification/haberman/haberman-2032-0.33-3.csv results/error_estimations/classification/haberman/haberman-2032-0.33-4.csv results/error_estimations/classification/haberman/haberman-2032-0.33-5.csv results/error_estimations/classification/haberman/haberman-2032-0.33-6.csv results/error_estimations/classification/haberman/haberman-2032-0.33-7.csv results/error_estimations/classification/haberman/haberman-2032-0.33-8.csv results/error_estimations/classification/haberman/haberman-2032-0.33-9.csv results/error_estimations/classification/haberman/haberman-2032-0.33-10.csv results/error_estimations/classification/haberman/haberman-2032-0.33-11.csv results/error_estimations/classification/haberman/haberman-2032-0.33-12.csv results/error_estimations/classification/haberman/haberman-2032-0.33-13.csv results/error_estimations/classification/haberman/haberman-2032-0.33-14.csv results/error_estimations/classification/haberman/haberman-2032-0.33-15.csv results/error_estimations/classification/haberman/haberman-2032-0.33-16.csv results/error_estimations/classification/haberman/haberman-2032-0.33-17.csv results/error_estimations/classification/haberman/haberman-2032-0.33-18.csv results/error_estimations/classification/haberman/haberman-2032-0.33-19.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-0.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-1.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-2.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-3.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-4.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-5.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-6.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-7.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-8.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-9.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-10.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-11.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-12.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-13.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-14.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-15.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-16.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-17.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-18.csv results/error_estimations/classification/transfusion/transfusion-2032-0.33-19.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-0.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-1.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-2.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-3.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-4.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-5.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-6.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-7.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-8.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-9.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-10.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-11.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-12.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-13.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-14.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-15.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-16.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-17.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-18.csv results/error_estimations/classification/wdbc/wdbc-2032-0.33-19.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-0.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-1.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-2.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-3.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-4.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-5.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-6.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-7.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-8.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-9.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-10.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-11.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-12.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-13.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-14.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-15.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-16.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-17.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-18.csv results/error_estimations/classification/SPECT/SPECT-2032-0.33-19.csv results/error_estimations/classification/titanic/titanic-2032-0.33-0.csv results/error_estimations/classification/titanic/titanic-2032-0.33-1.csv results/error_estimations/classification/titanic/titanic-2032-0.33-2.csv results/error_estimations/classification/titanic/titanic-2032-0.33-3.csv results/error_estimations/classification/titanic/titanic-2032-0.33-4.csv results/error_estimations/classification/titanic/titanic-2032-0.33-5.csv results/error_estimations/classification/titanic/titanic-2032-0.33-6.csv results/error_estimations/classification/titanic/titanic-2032-0.33-7.csv results/error_estimations/classification/titanic/titanic-2032-0.33-8.csv results/error_estimations/classification/titanic/titanic-2032-0.33-9.csv results/error_estimations/classification/titanic/titanic-2032-0.33-10.csv results/error_estimations/classification/titanic/titanic-2032-0.33-11.csv results/error_estimations/classification/titanic/titanic-2032-0.33-12.csv results/error_estimations/classification/titanic/titanic-2032-0.33-13.csv results/error_estimations/classification/titanic/titanic-2032-0.33-14.csv results/error_estimations/classification/titanic/titanic-2032-0.33-15.csv results/error_estimations/classification/titanic/titanic-2032-0.33-16.csv results/error_estimations/classification/titanic/titanic-2032-0.33-17.csv results/error_estimations/classification/titanic/titanic-2032-0.33-18.csv results/error_estimations/classification/titanic/titanic-2032-0.33-19.csv results/error_estimations/classification/splice/splice-2032-0.33-0.csv results/error_estimations/classification/splice/splice-2032-0.33-1.csv results/error_estimations/classification/splice/splice-2032-0.33-2.csv results/error_estimations/classification/splice/splice-2032-0.33-3.csv results/error_estimations/classification/splice/splice-2032-0.33-4.csv results/error_estimations/classification/splice/splice-2032-0.33-5.csv results/error_estimations/classification/splice/splice-2032-0.33-6.csv results/error_estimations/classification/splice/splice-2032-0.33-7.csv results/error_estimations/classification/splice/splice-2032-0.33-8.csv results/error_estimations/classification/splice/splice-2032-0.33-9.csv results/error_estimations/classification/splice/splice-2032-0.33-10.csv results/error_estimations/classification/splice/splice-2032-0.33-11.csv results/error_estimations/classification/splice/splice-2032-0.33-12.csv results/error_estimations/classification/splice/splice-2032-0.33-13.csv results/error_estimations/classification/splice/splice-2032-0.33-14.csv results/error_estimations/classification/splice/splice-2032-0.33-15.csv results/error_estimations/classification/splice/splice-2032-0.33-16.csv results/error_estimations/classification/splice/splice-2032-0.33-17.csv results/error_estimations/classification/splice/splice-2032-0.33-18.csv results/error_estimations/classification/splice/splice-2032-0.33-19.csv results/error_estimations/classification/iris/iris-2033-0.33-0.csv results/error_estimations/classification/iris/iris-2033-0.33-1.csv results/error_estimations/classification/iris/iris-2033-0.33-2.csv results/error_estimations/classification/iris/iris-2033-0.33-3.csv results/error_estimations/classification/iris/iris-2033-0.33-4.csv results/error_estimations/classification/iris/iris-2033-0.33-5.csv results/error_estimations/classification/iris/iris-2033-0.33-6.csv results/error_estimations/classification/iris/iris-2033-0.33-7.csv results/error_estimations/classification/iris/iris-2033-0.33-8.csv results/error_estimations/classification/iris/iris-2033-0.33-9.csv results/error_estimations/classification/iris/iris-2033-0.33-10.csv results/error_estimations/classification/iris/iris-2033-0.33-11.csv results/error_estimations/classification/iris/iris-2033-0.33-12.csv results/error_estimations/classification/iris/iris-2033-0.33-13.csv results/error_estimations/classification/iris/iris-2033-0.33-14.csv results/error_estimations/classification/iris/iris-2033-0.33-15.csv results/error_estimations/classification/iris/iris-2033-0.33-16.csv results/error_estimations/classification/iris/iris-2033-0.33-17.csv results/error_estimations/classification/iris/iris-2033-0.33-18.csv results/error_estimations/classification/iris/iris-2033-0.33-19.csv results/error_estimations/classification/sonar/sonar-2033-0.33-0.csv results/error_estimations/classification/sonar/sonar-2033-0.33-1.csv results/error_estimations/classification/sonar/sonar-2033-0.33-2.csv results/error_estimations/classification/sonar/sonar-2033-0.33-3.csv results/error_estimations/classification/sonar/sonar-2033-0.33-4.csv results/error_estimations/classification/sonar/sonar-2033-0.33-5.csv results/error_estimations/classification/sonar/sonar-2033-0.33-6.csv results/error_estimations/classification/sonar/sonar-2033-0.33-7.csv results/error_estimations/classification/sonar/sonar-2033-0.33-8.csv results/error_estimations/classification/sonar/sonar-2033-0.33-9.csv results/error_estimations/classification/sonar/sonar-2033-0.33-10.csv results/error_estimations/classification/sonar/sonar-2033-0.33-11.csv results/error_estimations/classification/sonar/sonar-2033-0.33-12.csv results/error_estimations/classification/sonar/sonar-2033-0.33-13.csv results/error_estimations/classification/sonar/sonar-2033-0.33-14.csv results/error_estimations/classification/sonar/sonar-2033-0.33-15.csv results/error_estimations/classification/sonar/sonar-2033-0.33-16.csv results/error_estimations/classification/sonar/sonar-2033-0.33-17.csv results/error_estimations/classification/sonar/sonar-2033-0.33-18.csv results/error_estimations/classification/sonar/sonar-2033-0.33-19.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-0.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-1.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-2.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-3.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-4.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-5.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-6.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-7.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-8.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-9.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-10.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-11.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-12.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-13.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-14.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-15.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-16.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-17.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-18.csv results/error_estimations/classification/ionosphere/ionosphere-2033-0.33-19.csv results/error_estimations/classification/cmc/cmc-2033-0.33-0.csv results/error_estimations/classification/cmc/cmc-2033-0.33-1.csv results/error_estimations/classification/cmc/cmc-2033-0.33-2.csv results/error_estimations/classification/cmc/cmc-2033-0.33-3.csv results/error_estimations/classification/cmc/cmc-2033-0.33-4.csv results/error_estimations/classification/cmc/cmc-2033-0.33-5.csv results/error_estimations/classification/cmc/cmc-2033-0.33-6.csv results/error_estimations/classification/cmc/cmc-2033-0.33-7.csv results/error_estimations/classification/cmc/cmc-2033-0.33-8.csv results/error_estimations/classification/cmc/cmc-2033-0.33-9.csv results/error_estimations/classification/cmc/cmc-2033-0.33-10.csv results/error_estimations/classification/cmc/cmc-2033-0.33-11.csv results/error_estimations/classification/cmc/cmc-2033-0.33-12.csv results/error_estimations/classification/cmc/cmc-2033-0.33-13.csv results/error_estimations/classification/cmc/cmc-2033-0.33-14.csv results/error_estimations/classification/cmc/cmc-2033-0.33-15.csv results/error_estimations/classification/cmc/cmc-2033-0.33-16.csv results/error_estimations/classification/cmc/cmc-2033-0.33-17.csv results/error_estimations/classification/cmc/cmc-2033-0.33-18.csv results/error_estimations/classification/cmc/cmc-2033-0.33-19.csv results/error_estimations/classification/haberman/haberman-2033-0.33-0.csv results/error_estimations/classification/haberman/haberman-2033-0.33-1.csv results/error_estimations/classification/haberman/haberman-2033-0.33-2.csv results/error_estimations/classification/haberman/haberman-2033-0.33-3.csv results/error_estimations/classification/haberman/haberman-2033-0.33-4.csv results/error_estimations/classification/haberman/haberman-2033-0.33-5.csv results/error_estimations/classification/haberman/haberman-2033-0.33-6.csv results/error_estimations/classification/haberman/haberman-2033-0.33-7.csv results/error_estimations/classification/haberman/haberman-2033-0.33-8.csv results/error_estimations/classification/haberman/haberman-2033-0.33-9.csv results/error_estimations/classification/haberman/haberman-2033-0.33-10.csv results/error_estimations/classification/haberman/haberman-2033-0.33-11.csv results/error_estimations/classification/haberman/haberman-2033-0.33-12.csv results/error_estimations/classification/haberman/haberman-2033-0.33-13.csv results/error_estimations/classification/haberman/haberman-2033-0.33-14.csv results/error_estimations/classification/haberman/haberman-2033-0.33-15.csv results/error_estimations/classification/haberman/haberman-2033-0.33-16.csv results/error_estimations/classification/haberman/haberman-2033-0.33-17.csv results/error_estimations/classification/haberman/haberman-2033-0.33-18.csv results/error_estimations/classification/haberman/haberman-2033-0.33-19.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-0.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-1.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-2.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-3.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-4.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-5.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-6.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-7.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-8.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-9.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-10.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-11.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-12.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-13.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-14.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-15.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-16.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-17.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-18.csv results/error_estimations/classification/transfusion/transfusion-2033-0.33-19.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-0.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-1.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-2.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-3.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-4.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-5.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-6.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-7.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-8.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-9.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-10.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-11.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-12.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-13.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-14.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-15.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-16.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-17.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-18.csv results/error_estimations/classification/wdbc/wdbc-2033-0.33-19.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-0.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-1.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-2.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-3.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-4.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-5.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-6.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-7.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-8.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-9.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-10.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-11.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-12.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-13.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-14.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-15.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-16.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-17.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-18.csv results/error_estimations/classification/SPECT/SPECT-2033-0.33-19.csv results/error_estimations/classification/titanic/titanic-2033-0.33-0.csv results/error_estimations/classification/titanic/titanic-2033-0.33-1.csv results/error_estimations/classification/titanic/titanic-2033-0.33-2.csv results/error_estimations/classification/titanic/titanic-2033-0.33-3.csv results/error_estimations/classification/titanic/titanic-2033-0.33-4.csv results/error_estimations/classification/titanic/titanic-2033-0.33-5.csv results/error_estimations/classification/titanic/titanic-2033-0.33-6.csv results/error_estimations/classification/titanic/titanic-2033-0.33-7.csv results/error_estimations/classification/titanic/titanic-2033-0.33-8.csv results/error_estimations/classification/titanic/titanic-2033-0.33-9.csv results/error_estimations/classification/titanic/titanic-2033-0.33-10.csv results/error_estimations/classification/titanic/titanic-2033-0.33-11.csv results/error_estimations/classification/titanic/titanic-2033-0.33-12.csv results/error_estimations/classification/titanic/titanic-2033-0.33-13.csv results/error_estimations/classification/titanic/titanic-2033-0.33-14.csv results/error_estimations/classification/titanic/titanic-2033-0.33-15.csv results/error_estimations/classification/titanic/titanic-2033-0.33-16.csv results/error_estimations/classification/titanic/titanic-2033-0.33-17.csv results/error_estimations/classification/titanic/titanic-2033-0.33-18.csv results/error_estimations/classification/titanic/titanic-2033-0.33-19.csv results/error_estimations/classification/splice/splice-2033-0.33-0.csv results/error_estimations/classification/splice/splice-2033-0.33-1.csv results/error_estimations/classification/splice/splice-2033-0.33-2.csv results/error_estimations/classification/splice/splice-2033-0.33-3.csv results/error_estimations/classification/splice/splice-2033-0.33-4.csv results/error_estimations/classification/splice/splice-2033-0.33-5.csv results/error_estimations/classification/splice/splice-2033-0.33-6.csv results/error_estimations/classification/splice/splice-2033-0.33-7.csv results/error_estimations/classification/splice/splice-2033-0.33-8.csv results/error_estimations/classification/splice/splice-2033-0.33-9.csv results/error_estimations/classification/splice/splice-2033-0.33-10.csv results/error_estimations/classification/splice/splice-2033-0.33-11.csv results/error_estimations/classification/splice/splice-2033-0.33-12.csv results/error_estimations/classification/splice/splice-2033-0.33-13.csv results/error_estimations/classification/splice/splice-2033-0.33-14.csv results/error_estimations/classification/splice/splice-2033-0.33-15.csv results/error_estimations/classification/splice/splice-2033-0.33-16.csv results/error_estimations/classification/splice/splice-2033-0.33-17.csv results/error_estimations/classification/splice/splice-2033-0.33-18.csv results/error_estimations/classification/splice/splice-2033-0.33-19.csv results/error_estimations/classification/iris/iris-2034-0.33-0.csv results/error_estimations/classification/iris/iris-2034-0.33-1.csv results/error_estimations/classification/iris/iris-2034-0.33-2.csv results/error_estimations/classification/iris/iris-2034-0.33-3.csv results/error_estimations/classification/iris/iris-2034-0.33-4.csv results/error_estimations/classification/iris/iris-2034-0.33-5.csv results/error_estimations/classification/iris/iris-2034-0.33-6.csv results/error_estimations/classification/iris/iris-2034-0.33-7.csv results/error_estimations/classification/iris/iris-2034-0.33-8.csv results/error_estimations/classification/iris/iris-2034-0.33-9.csv results/error_estimations/classification/iris/iris-2034-0.33-10.csv results/error_estimations/classification/iris/iris-2034-0.33-11.csv results/error_estimations/classification/iris/iris-2034-0.33-12.csv results/error_estimations/classification/iris/iris-2034-0.33-13.csv results/error_estimations/classification/iris/iris-2034-0.33-14.csv results/error_estimations/classification/iris/iris-2034-0.33-15.csv results/error_estimations/classification/iris/iris-2034-0.33-16.csv results/error_estimations/classification/iris/iris-2034-0.33-17.csv results/error_estimations/classification/iris/iris-2034-0.33-18.csv results/error_estimations/classification/iris/iris-2034-0.33-19.csv results/error_estimations/classification/sonar/sonar-2034-0.33-0.csv results/error_estimations/classification/sonar/sonar-2034-0.33-1.csv results/error_estimations/classification/sonar/sonar-2034-0.33-2.csv results/error_estimations/classification/sonar/sonar-2034-0.33-3.csv results/error_estimations/classification/sonar/sonar-2034-0.33-4.csv results/error_estimations/classification/sonar/sonar-2034-0.33-5.csv results/error_estimations/classification/sonar/sonar-2034-0.33-6.csv results/error_estimations/classification/sonar/sonar-2034-0.33-7.csv results/error_estimations/classification/sonar/sonar-2034-0.33-8.csv results/error_estimations/classification/sonar/sonar-2034-0.33-9.csv results/error_estimations/classification/sonar/sonar-2034-0.33-10.csv results/error_estimations/classification/sonar/sonar-2034-0.33-11.csv results/error_estimations/classification/sonar/sonar-2034-0.33-12.csv results/error_estimations/classification/sonar/sonar-2034-0.33-13.csv results/error_estimations/classification/sonar/sonar-2034-0.33-14.csv results/error_estimations/classification/sonar/sonar-2034-0.33-15.csv results/error_estimations/classification/sonar/sonar-2034-0.33-16.csv results/error_estimations/classification/sonar/sonar-2034-0.33-17.csv results/error_estimations/classification/sonar/sonar-2034-0.33-18.csv results/error_estimations/classification/sonar/sonar-2034-0.33-19.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-0.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-1.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-2.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-3.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-4.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-5.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-6.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-7.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-8.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-9.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-10.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-11.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-12.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-13.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-14.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-15.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-16.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-17.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-18.csv results/error_estimations/classification/ionosphere/ionosphere-2034-0.33-19.csv results/error_estimations/classification/cmc/cmc-2034-0.33-0.csv results/error_estimations/classification/cmc/cmc-2034-0.33-1.csv results/error_estimations/classification/cmc/cmc-2034-0.33-2.csv results/error_estimations/classification/cmc/cmc-2034-0.33-3.csv results/error_estimations/classification/cmc/cmc-2034-0.33-4.csv results/error_estimations/classification/cmc/cmc-2034-0.33-5.csv results/error_estimations/classification/cmc/cmc-2034-0.33-6.csv results/error_estimations/classification/cmc/cmc-2034-0.33-7.csv results/error_estimations/classification/cmc/cmc-2034-0.33-8.csv results/error_estimations/classification/cmc/cmc-2034-0.33-9.csv results/error_estimations/classification/cmc/cmc-2034-0.33-10.csv results/error_estimations/classification/cmc/cmc-2034-0.33-11.csv results/error_estimations/classification/cmc/cmc-2034-0.33-12.csv results/error_estimations/classification/cmc/cmc-2034-0.33-13.csv results/error_estimations/classification/cmc/cmc-2034-0.33-14.csv results/error_estimations/classification/cmc/cmc-2034-0.33-15.csv results/error_estimations/classification/cmc/cmc-2034-0.33-16.csv results/error_estimations/classification/cmc/cmc-2034-0.33-17.csv results/error_estimations/classification/cmc/cmc-2034-0.33-18.csv results/error_estimations/classification/cmc/cmc-2034-0.33-19.csv results/error_estimations/classification/haberman/haberman-2034-0.33-0.csv results/error_estimations/classification/haberman/haberman-2034-0.33-1.csv results/error_estimations/classification/haberman/haberman-2034-0.33-2.csv results/error_estimations/classification/haberman/haberman-2034-0.33-3.csv results/error_estimations/classification/haberman/haberman-2034-0.33-4.csv results/error_estimations/classification/haberman/haberman-2034-0.33-5.csv results/error_estimations/classification/haberman/haberman-2034-0.33-6.csv results/error_estimations/classification/haberman/haberman-2034-0.33-7.csv results/error_estimations/classification/haberman/haberman-2034-0.33-8.csv results/error_estimations/classification/haberman/haberman-2034-0.33-9.csv results/error_estimations/classification/haberman/haberman-2034-0.33-10.csv results/error_estimations/classification/haberman/haberman-2034-0.33-11.csv results/error_estimations/classification/haberman/haberman-2034-0.33-12.csv results/error_estimations/classification/haberman/haberman-2034-0.33-13.csv results/error_estimations/classification/haberman/haberman-2034-0.33-14.csv results/error_estimations/classification/haberman/haberman-2034-0.33-15.csv results/error_estimations/classification/haberman/haberman-2034-0.33-16.csv results/error_estimations/classification/haberman/haberman-2034-0.33-17.csv results/error_estimations/classification/haberman/haberman-2034-0.33-18.csv results/error_estimations/classification/haberman/haberman-2034-0.33-19.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-0.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-1.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-2.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-3.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-4.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-5.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-6.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-7.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-8.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-9.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-10.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-11.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-12.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-13.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-14.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-15.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-16.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-17.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-18.csv results/error_estimations/classification/transfusion/transfusion-2034-0.33-19.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-0.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-1.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-2.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-3.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-4.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-5.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-6.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-7.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-8.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-9.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-10.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-11.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-12.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-13.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-14.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-15.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-16.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-17.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-18.csv results/error_estimations/classification/wdbc/wdbc-2034-0.33-19.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-0.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-1.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-2.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-3.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-4.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-5.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-6.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-7.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-8.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-9.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-10.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-11.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-12.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-13.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-14.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-15.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-16.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-17.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-18.csv results/error_estimations/classification/SPECT/SPECT-2034-0.33-19.csv results/error_estimations/classification/titanic/titanic-2034-0.33-0.csv results/error_estimations/classification/titanic/titanic-2034-0.33-1.csv results/error_estimations/classification/titanic/titanic-2034-0.33-2.csv results/error_estimations/classification/titanic/titanic-2034-0.33-3.csv results/error_estimations/classification/titanic/titanic-2034-0.33-4.csv results/error_estimations/classification/titanic/titanic-2034-0.33-5.csv results/error_estimations/classification/titanic/titanic-2034-0.33-6.csv results/error_estimations/classification/titanic/titanic-2034-0.33-7.csv results/error_estimations/classification/titanic/titanic-2034-0.33-8.csv results/error_estimations/classification/titanic/titanic-2034-0.33-9.csv results/error_estimations/classification/titanic/titanic-2034-0.33-10.csv results/error_estimations/classification/titanic/titanic-2034-0.33-11.csv results/error_estimations/classification/titanic/titanic-2034-0.33-12.csv results/error_estimations/classification/titanic/titanic-2034-0.33-13.csv results/error_estimations/classification/titanic/titanic-2034-0.33-14.csv results/error_estimations/classification/titanic/titanic-2034-0.33-15.csv results/error_estimations/classification/titanic/titanic-2034-0.33-16.csv results/error_estimations/classification/titanic/titanic-2034-0.33-17.csv results/error_estimations/classification/titanic/titanic-2034-0.33-18.csv results/error_estimations/classification/titanic/titanic-2034-0.33-19.csv results/error_estimations/classification/splice/splice-2034-0.33-0.csv results/error_estimations/classification/splice/splice-2034-0.33-1.csv results/error_estimations/classification/splice/splice-2034-0.33-2.csv results/error_estimations/classification/splice/splice-2034-0.33-3.csv results/error_estimations/classification/splice/splice-2034-0.33-4.csv results/error_estimations/classification/splice/splice-2034-0.33-5.csv results/error_estimations/classification/splice/splice-2034-0.33-6.csv results/error_estimations/classification/splice/splice-2034-0.33-7.csv results/error_estimations/classification/splice/splice-2034-0.33-8.csv results/error_estimations/classification/splice/splice-2034-0.33-9.csv results/error_estimations/classification/splice/splice-2034-0.33-10.csv results/error_estimations/classification/splice/splice-2034-0.33-11.csv results/error_estimations/classification/splice/splice-2034-0.33-12.csv results/error_estimations/classification/splice/splice-2034-0.33-13.csv results/error_estimations/classification/splice/splice-2034-0.33-14.csv results/error_estimations/classification/splice/splice-2034-0.33-15.csv results/error_estimations/classification/splice/splice-2034-0.33-16.csv results/error_estimations/classification/splice/splice-2034-0.33-17.csv results/error_estimations/classification/splice/splice-2034-0.33-18.csv results/error_estimations/classification/splice/splice-2034-0.33-19.csv results/error_estimations/classification/iris/iris-2035-0.33-0.csv results/error_estimations/classification/iris/iris-2035-0.33-1.csv results/error_estimations/classification/iris/iris-2035-0.33-2.csv results/error_estimations/classification/iris/iris-2035-0.33-3.csv results/error_estimations/classification/iris/iris-2035-0.33-4.csv results/error_estimations/classification/iris/iris-2035-0.33-5.csv results/error_estimations/classification/iris/iris-2035-0.33-6.csv results/error_estimations/classification/iris/iris-2035-0.33-7.csv results/error_estimations/classification/iris/iris-2035-0.33-8.csv results/error_estimations/classification/iris/iris-2035-0.33-9.csv results/error_estimations/classification/iris/iris-2035-0.33-10.csv results/error_estimations/classification/iris/iris-2035-0.33-11.csv results/error_estimations/classification/iris/iris-2035-0.33-12.csv results/error_estimations/classification/iris/iris-2035-0.33-13.csv results/error_estimations/classification/iris/iris-2035-0.33-14.csv results/error_estimations/classification/iris/iris-2035-0.33-15.csv results/error_estimations/classification/iris/iris-2035-0.33-16.csv results/error_estimations/classification/iris/iris-2035-0.33-17.csv results/error_estimations/classification/iris/iris-2035-0.33-18.csv results/error_estimations/classification/iris/iris-2035-0.33-19.csv results/error_estimations/classification/sonar/sonar-2035-0.33-0.csv results/error_estimations/classification/sonar/sonar-2035-0.33-1.csv results/error_estimations/classification/sonar/sonar-2035-0.33-2.csv results/error_estimations/classification/sonar/sonar-2035-0.33-3.csv results/error_estimations/classification/sonar/sonar-2035-0.33-4.csv results/error_estimations/classification/sonar/sonar-2035-0.33-5.csv results/error_estimations/classification/sonar/sonar-2035-0.33-6.csv results/error_estimations/classification/sonar/sonar-2035-0.33-7.csv results/error_estimations/classification/sonar/sonar-2035-0.33-8.csv results/error_estimations/classification/sonar/sonar-2035-0.33-9.csv results/error_estimations/classification/sonar/sonar-2035-0.33-10.csv results/error_estimations/classification/sonar/sonar-2035-0.33-11.csv results/error_estimations/classification/sonar/sonar-2035-0.33-12.csv results/error_estimations/classification/sonar/sonar-2035-0.33-13.csv results/error_estimations/classification/sonar/sonar-2035-0.33-14.csv results/error_estimations/classification/sonar/sonar-2035-0.33-15.csv results/error_estimations/classification/sonar/sonar-2035-0.33-16.csv results/error_estimations/classification/sonar/sonar-2035-0.33-17.csv results/error_estimations/classification/sonar/sonar-2035-0.33-18.csv results/error_estimations/classification/sonar/sonar-2035-0.33-19.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-0.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-1.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-2.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-3.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-4.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-5.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-6.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-7.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-8.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-9.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-10.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-11.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-12.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-13.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-14.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-15.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-16.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-17.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-18.csv results/error_estimations/classification/ionosphere/ionosphere-2035-0.33-19.csv results/error_estimations/classification/cmc/cmc-2035-0.33-0.csv results/error_estimations/classification/cmc/cmc-2035-0.33-1.csv results/error_estimations/classification/cmc/cmc-2035-0.33-2.csv results/error_estimations/classification/cmc/cmc-2035-0.33-3.csv results/error_estimations/classification/cmc/cmc-2035-0.33-4.csv results/error_estimations/classification/cmc/cmc-2035-0.33-5.csv results/error_estimations/classification/cmc/cmc-2035-0.33-6.csv results/error_estimations/classification/cmc/cmc-2035-0.33-7.csv results/error_estimations/classification/cmc/cmc-2035-0.33-8.csv results/error_estimations/classification/cmc/cmc-2035-0.33-9.csv results/error_estimations/classification/cmc/cmc-2035-0.33-10.csv results/error_estimations/classification/cmc/cmc-2035-0.33-11.csv results/error_estimations/classification/cmc/cmc-2035-0.33-12.csv results/error_estimations/classification/cmc/cmc-2035-0.33-13.csv results/error_estimations/classification/cmc/cmc-2035-0.33-14.csv results/error_estimations/classification/cmc/cmc-2035-0.33-15.csv results/error_estimations/classification/cmc/cmc-2035-0.33-16.csv results/error_estimations/classification/cmc/cmc-2035-0.33-17.csv results/error_estimations/classification/cmc/cmc-2035-0.33-18.csv results/error_estimations/classification/cmc/cmc-2035-0.33-19.csv results/error_estimations/classification/haberman/haberman-2035-0.33-0.csv results/error_estimations/classification/haberman/haberman-2035-0.33-1.csv results/error_estimations/classification/haberman/haberman-2035-0.33-2.csv results/error_estimations/classification/haberman/haberman-2035-0.33-3.csv results/error_estimations/classification/haberman/haberman-2035-0.33-4.csv results/error_estimations/classification/haberman/haberman-2035-0.33-5.csv results/error_estimations/classification/haberman/haberman-2035-0.33-6.csv results/error_estimations/classification/haberman/haberman-2035-0.33-7.csv results/error_estimations/classification/haberman/haberman-2035-0.33-8.csv results/error_estimations/classification/haberman/haberman-2035-0.33-9.csv results/error_estimations/classification/haberman/haberman-2035-0.33-10.csv results/error_estimations/classification/haberman/haberman-2035-0.33-11.csv results/error_estimations/classification/haberman/haberman-2035-0.33-12.csv results/error_estimations/classification/haberman/haberman-2035-0.33-13.csv results/error_estimations/classification/haberman/haberman-2035-0.33-14.csv results/error_estimations/classification/haberman/haberman-2035-0.33-15.csv results/error_estimations/classification/haberman/haberman-2035-0.33-16.csv results/error_estimations/classification/haberman/haberman-2035-0.33-17.csv results/error_estimations/classification/haberman/haberman-2035-0.33-18.csv results/error_estimations/classification/haberman/haberman-2035-0.33-19.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-0.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-1.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-2.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-3.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-4.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-5.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-6.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-7.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-8.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-9.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-10.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-11.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-12.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-13.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-14.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-15.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-16.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-17.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-18.csv results/error_estimations/classification/transfusion/transfusion-2035-0.33-19.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-0.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-1.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-2.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-3.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-4.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-5.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-6.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-7.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-8.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-9.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-10.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-11.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-12.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-13.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-14.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-15.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-16.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-17.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-18.csv results/error_estimations/classification/wdbc/wdbc-2035-0.33-19.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-0.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-1.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-2.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-3.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-4.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-5.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-6.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-7.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-8.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-9.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-10.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-11.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-12.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-13.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-14.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-15.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-16.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-17.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-18.csv results/error_estimations/classification/SPECT/SPECT-2035-0.33-19.csv results/error_estimations/classification/titanic/titanic-2035-0.33-0.csv results/error_estimations/classification/titanic/titanic-2035-0.33-1.csv results/error_estimations/classification/titanic/titanic-2035-0.33-2.csv results/error_estimations/classification/titanic/titanic-2035-0.33-3.csv results/error_estimations/classification/titanic/titanic-2035-0.33-4.csv results/error_estimations/classification/titanic/titanic-2035-0.33-5.csv results/error_estimations/classification/titanic/titanic-2035-0.33-6.csv results/error_estimations/classification/titanic/titanic-2035-0.33-7.csv results/error_estimations/classification/titanic/titanic-2035-0.33-8.csv results/error_estimations/classification/titanic/titanic-2035-0.33-9.csv results/error_estimations/classification/titanic/titanic-2035-0.33-10.csv results/error_estimations/classification/titanic/titanic-2035-0.33-11.csv results/error_estimations/classification/titanic/titanic-2035-0.33-12.csv results/error_estimations/classification/titanic/titanic-2035-0.33-13.csv results/error_estimations/classification/titanic/titanic-2035-0.33-14.csv results/error_estimations/classification/titanic/titanic-2035-0.33-15.csv results/error_estimations/classification/titanic/titanic-2035-0.33-16.csv results/error_estimations/classification/titanic/titanic-2035-0.33-17.csv results/error_estimations/classification/titanic/titanic-2035-0.33-18.csv results/error_estimations/classification/titanic/titanic-2035-0.33-19.csv results/error_estimations/classification/splice/splice-2035-0.33-0.csv results/error_estimations/classification/splice/splice-2035-0.33-1.csv results/error_estimations/classification/splice/splice-2035-0.33-2.csv results/error_estimations/classification/splice/splice-2035-0.33-3.csv results/error_estimations/classification/splice/splice-2035-0.33-4.csv results/error_estimations/classification/splice/splice-2035-0.33-5.csv results/error_estimations/classification/splice/splice-2035-0.33-6.csv results/error_estimations/classification/splice/splice-2035-0.33-7.csv results/error_estimations/classification/splice/splice-2035-0.33-8.csv results/error_estimations/classification/splice/splice-2035-0.33-9.csv results/error_estimations/classification/splice/splice-2035-0.33-10.csv results/error_estimations/classification/splice/splice-2035-0.33-11.csv results/error_estimations/classification/splice/splice-2035-0.33-12.csv results/error_estimations/classification/splice/splice-2035-0.33-13.csv results/error_estimations/classification/splice/splice-2035-0.33-14.csv results/error_estimations/classification/splice/splice-2035-0.33-15.csv results/error_estimations/classification/splice/splice-2035-0.33-16.csv results/error_estimations/classification/splice/splice-2035-0.33-17.csv results/error_estimations/classification/splice/splice-2035-0.33-18.csv results/error_estimations/classification/splice/splice-2035-0.33-19.csv results/error_estimations/classification/iris/iris-2036-0.33-0.csv results/error_estimations/classification/iris/iris-2036-0.33-1.csv results/error_estimations/classification/iris/iris-2036-0.33-2.csv results/error_estimations/classification/iris/iris-2036-0.33-3.csv results/error_estimations/classification/iris/iris-2036-0.33-4.csv results/error_estimations/classification/iris/iris-2036-0.33-5.csv results/error_estimations/classification/iris/iris-2036-0.33-6.csv results/error_estimations/classification/iris/iris-2036-0.33-7.csv results/error_estimations/classification/iris/iris-2036-0.33-8.csv results/error_estimations/classification/iris/iris-2036-0.33-9.csv results/error_estimations/classification/iris/iris-2036-0.33-10.csv results/error_estimations/classification/iris/iris-2036-0.33-11.csv results/error_estimations/classification/iris/iris-2036-0.33-12.csv results/error_estimations/classification/iris/iris-2036-0.33-13.csv results/error_estimations/classification/iris/iris-2036-0.33-14.csv results/error_estimations/classification/iris/iris-2036-0.33-15.csv results/error_estimations/classification/iris/iris-2036-0.33-16.csv results/error_estimations/classification/iris/iris-2036-0.33-17.csv results/error_estimations/classification/iris/iris-2036-0.33-18.csv results/error_estimations/classification/iris/iris-2036-0.33-19.csv results/error_estimations/classification/sonar/sonar-2036-0.33-0.csv results/error_estimations/classification/sonar/sonar-2036-0.33-1.csv results/error_estimations/classification/sonar/sonar-2036-0.33-2.csv results/error_estimations/classification/sonar/sonar-2036-0.33-3.csv results/error_estimations/classification/sonar/sonar-2036-0.33-4.csv results/error_estimations/classification/sonar/sonar-2036-0.33-5.csv results/error_estimations/classification/sonar/sonar-2036-0.33-6.csv results/error_estimations/classification/sonar/sonar-2036-0.33-7.csv results/error_estimations/classification/sonar/sonar-2036-0.33-8.csv results/error_estimations/classification/sonar/sonar-2036-0.33-9.csv results/error_estimations/classification/sonar/sonar-2036-0.33-10.csv results/error_estimations/classification/sonar/sonar-2036-0.33-11.csv results/error_estimations/classification/sonar/sonar-2036-0.33-12.csv results/error_estimations/classification/sonar/sonar-2036-0.33-13.csv results/error_estimations/classification/sonar/sonar-2036-0.33-14.csv results/error_estimations/classification/sonar/sonar-2036-0.33-15.csv results/error_estimations/classification/sonar/sonar-2036-0.33-16.csv results/error_estimations/classification/sonar/sonar-2036-0.33-17.csv results/error_estimations/classification/sonar/sonar-2036-0.33-18.csv results/error_estimations/classification/sonar/sonar-2036-0.33-19.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-0.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-1.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-2.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-3.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-4.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-5.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-6.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-7.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-8.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-9.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-10.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-11.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-12.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-13.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-14.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-15.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-16.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-17.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-18.csv results/error_estimations/classification/ionosphere/ionosphere-2036-0.33-19.csv results/error_estimations/classification/cmc/cmc-2036-0.33-0.csv results/error_estimations/classification/cmc/cmc-2036-0.33-1.csv results/error_estimations/classification/cmc/cmc-2036-0.33-2.csv results/error_estimations/classification/cmc/cmc-2036-0.33-3.csv results/error_estimations/classification/cmc/cmc-2036-0.33-4.csv results/error_estimations/classification/cmc/cmc-2036-0.33-5.csv results/error_estimations/classification/cmc/cmc-2036-0.33-6.csv results/error_estimations/classification/cmc/cmc-2036-0.33-7.csv results/error_estimations/classification/cmc/cmc-2036-0.33-8.csv results/error_estimations/classification/cmc/cmc-2036-0.33-9.csv results/error_estimations/classification/cmc/cmc-2036-0.33-10.csv results/error_estimations/classification/cmc/cmc-2036-0.33-11.csv results/error_estimations/classification/cmc/cmc-2036-0.33-12.csv results/error_estimations/classification/cmc/cmc-2036-0.33-13.csv results/error_estimations/classification/cmc/cmc-2036-0.33-14.csv results/error_estimations/classification/cmc/cmc-2036-0.33-15.csv results/error_estimations/classification/cmc/cmc-2036-0.33-16.csv results/error_estimations/classification/cmc/cmc-2036-0.33-17.csv results/error_estimations/classification/cmc/cmc-2036-0.33-18.csv results/error_estimations/classification/cmc/cmc-2036-0.33-19.csv results/error_estimations/classification/haberman/haberman-2036-0.33-0.csv results/error_estimations/classification/haberman/haberman-2036-0.33-1.csv results/error_estimations/classification/haberman/haberman-2036-0.33-2.csv results/error_estimations/classification/haberman/haberman-2036-0.33-3.csv results/error_estimations/classification/haberman/haberman-2036-0.33-4.csv results/error_estimations/classification/haberman/haberman-2036-0.33-5.csv results/error_estimations/classification/haberman/haberman-2036-0.33-6.csv results/error_estimations/classification/haberman/haberman-2036-0.33-7.csv results/error_estimations/classification/haberman/haberman-2036-0.33-8.csv results/error_estimations/classification/haberman/haberman-2036-0.33-9.csv results/error_estimations/classification/haberman/haberman-2036-0.33-10.csv results/error_estimations/classification/haberman/haberman-2036-0.33-11.csv results/error_estimations/classification/haberman/haberman-2036-0.33-12.csv results/error_estimations/classification/haberman/haberman-2036-0.33-13.csv results/error_estimations/classification/haberman/haberman-2036-0.33-14.csv results/error_estimations/classification/haberman/haberman-2036-0.33-15.csv results/error_estimations/classification/haberman/haberman-2036-0.33-16.csv results/error_estimations/classification/haberman/haberman-2036-0.33-17.csv results/error_estimations/classification/haberman/haberman-2036-0.33-18.csv results/error_estimations/classification/haberman/haberman-2036-0.33-19.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-0.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-1.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-2.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-3.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-4.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-5.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-6.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-7.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-8.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-9.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-10.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-11.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-12.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-13.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-14.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-15.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-16.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-17.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-18.csv results/error_estimations/classification/transfusion/transfusion-2036-0.33-19.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-0.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-1.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-2.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-3.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-4.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-5.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-6.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-7.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-8.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-9.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-10.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-11.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-12.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-13.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-14.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-15.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-16.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-17.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-18.csv results/error_estimations/classification/wdbc/wdbc-2036-0.33-19.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-0.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-1.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-2.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-3.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-4.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-5.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-6.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-7.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-8.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-9.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-10.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-11.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-12.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-13.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-14.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-15.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-16.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-17.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-18.csv results/error_estimations/classification/SPECT/SPECT-2036-0.33-19.csv results/error_estimations/classification/titanic/titanic-2036-0.33-0.csv results/error_estimations/classification/titanic/titanic-2036-0.33-1.csv results/error_estimations/classification/titanic/titanic-2036-0.33-2.csv results/error_estimations/classification/titanic/titanic-2036-0.33-3.csv results/error_estimations/classification/titanic/titanic-2036-0.33-4.csv results/error_estimations/classification/titanic/titanic-2036-0.33-5.csv results/error_estimations/classification/titanic/titanic-2036-0.33-6.csv results/error_estimations/classification/titanic/titanic-2036-0.33-7.csv results/error_estimations/classification/titanic/titanic-2036-0.33-8.csv results/error_estimations/classification/titanic/titanic-2036-0.33-9.csv results/error_estimations/classification/titanic/titanic-2036-0.33-10.csv results/error_estimations/classification/titanic/titanic-2036-0.33-11.csv results/error_estimations/classification/titanic/titanic-2036-0.33-12.csv results/error_estimations/classification/titanic/titanic-2036-0.33-13.csv results/error_estimations/classification/titanic/titanic-2036-0.33-14.csv results/error_estimations/classification/titanic/titanic-2036-0.33-15.csv results/error_estimations/classification/titanic/titanic-2036-0.33-16.csv results/error_estimations/classification/titanic/titanic-2036-0.33-17.csv results/error_estimations/classification/titanic/titanic-2036-0.33-18.csv results/error_estimations/classification/titanic/titanic-2036-0.33-19.csv results/error_estimations/classification/splice/splice-2036-0.33-0.csv results/error_estimations/classification/splice/splice-2036-0.33-1.csv results/error_estimations/classification/splice/splice-2036-0.33-2.csv results/error_estimations/classification/splice/splice-2036-0.33-3.csv results/error_estimations/classification/splice/splice-2036-0.33-4.csv results/error_estimations/classification/splice/splice-2036-0.33-5.csv results/error_estimations/classification/splice/splice-2036-0.33-6.csv results/error_estimations/classification/splice/splice-2036-0.33-7.csv results/error_estimations/classification/splice/splice-2036-0.33-8.csv results/error_estimations/classification/splice/splice-2036-0.33-9.csv results/error_estimations/classification/splice/splice-2036-0.33-10.csv results/error_estimations/classification/splice/splice-2036-0.33-11.csv results/error_estimations/classification/splice/splice-2036-0.33-12.csv results/error_estimations/classification/splice/splice-2036-0.33-13.csv results/error_estimations/classification/splice/splice-2036-0.33-14.csv results/error_estimations/classification/splice/splice-2036-0.33-15.csv results/error_estimations/classification/splice/splice-2036-0.33-16.csv results/error_estimations/classification/splice/splice-2036-0.33-17.csv results/error_estimations/classification/splice/splice-2036-0.33-18.csv results/error_estimations/classification/splice/splice-2036-0.33-19.csv results/results-final/classification.csv
 
-planktonFiles = results/error_estimations/plankton/iris/iris-2032-1.0.csv  results/error_estimations/plankton/sonar/sonar-2032-1.0.csv  results/error_estimations/plankton/ionosphere/ionosphere-2032-1.0.csv  results/error_estimations/plankton/cmc/cmc-2032-1.0.csv  results/error_estimations/plankton/haberman/haberman-2032-1.0.csv  results/error_estimations/plankton/transfusion/transfusion-2032-1.0.csv  results/error_estimations/plankton/wdbc/wdbc-2032-1.0.csv  results/error_estimations/plankton/SPECT/SPECT-2032-1.0.csv  results/error_estimations/plankton/titanic/titanic-2032-1.0.csv  results/error_estimations/plankton/splice/splice-2032-1.0.csv  results/error_estimations/plankton/abalone/abalone-2032-1.0.csv  results/error_estimations/plankton/computer-hardware/computer-hardware-2032-1.0.csv  results/error_estimations/plankton/wine-quality-red/wine-quality-red-2032-1.0.csv  results/error_estimations/plankton/wine-quality-white/wine-quality-white-2032-1.0.csv  results/error_estimations/plankton/auto-mpg/auto-mpg-2032-1.0.csv  results/error_estimations/plankton/autos/autos-2032-1.0.csv  results/error_estimations/plankton/residential-v9/residential-v9-2032-1.0.csv  results/error_estimations/plankton/residential-v10/residential-v10-2032-1.0.csv  results/error_estimations/plankton/ticdata/ticdata-2032-1.0.csv  results/error_estimations/plankton/student-mat/student-mat-2032-1.0.csv  results/error_estimations/plankton/student-por/student-por-2032-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2032-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2032-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2032-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2032-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2032-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2032-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2032-1.0.csv  results/error_estimations/plankton/iris/iris-2033-1.0.csv  results/error_estimations/plankton/sonar/sonar-2033-1.0.csv  results/error_estimations/plankton/ionosphere/ionosphere-2033-1.0.csv  results/error_estimations/plankton/cmc/cmc-2033-1.0.csv  results/error_estimations/plankton/haberman/haberman-2033-1.0.csv  results/error_estimations/plankton/transfusion/transfusion-2033-1.0.csv  results/error_estimations/plankton/wdbc/wdbc-2033-1.0.csv  results/error_estimations/plankton/SPECT/SPECT-2033-1.0.csv  results/error_estimations/plankton/titanic/titanic-2033-1.0.csv  results/error_estimations/plankton/splice/splice-2033-1.0.csv  results/error_estimations/plankton/abalone/abalone-2033-1.0.csv  results/error_estimations/plankton/computer-hardware/computer-hardware-2033-1.0.csv  results/error_estimations/plankton/wine-quality-red/wine-quality-red-2033-1.0.csv  results/error_estimations/plankton/wine-quality-white/wine-quality-white-2033-1.0.csv  results/error_estimations/plankton/auto-mpg/auto-mpg-2033-1.0.csv  results/error_estimations/plankton/autos/autos-2033-1.0.csv  results/error_estimations/plankton/residential-v9/residential-v9-2033-1.0.csv  results/error_estimations/plankton/residential-v10/residential-v10-2033-1.0.csv  results/error_estimations/plankton/ticdata/ticdata-2033-1.0.csv  results/error_estimations/plankton/student-mat/student-mat-2033-1.0.csv  results/error_estimations/plankton/student-por/student-por-2033-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2033-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2033-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2033-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2033-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2033-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2033-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2033-1.0.csv  results/error_estimations/plankton/iris/iris-2034-1.0.csv  results/error_estimations/plankton/sonar/sonar-2034-1.0.csv  results/error_estimations/plankton/ionosphere/ionosphere-2034-1.0.csv  results/error_estimations/plankton/cmc/cmc-2034-1.0.csv  results/error_estimations/plankton/haberman/haberman-2034-1.0.csv  results/error_estimations/plankton/transfusion/transfusion-2034-1.0.csv  results/error_estimations/plankton/wdbc/wdbc-2034-1.0.csv  results/error_estimations/plankton/SPECT/SPECT-2034-1.0.csv  results/error_estimations/plankton/titanic/titanic-2034-1.0.csv  results/error_estimations/plankton/splice/splice-2034-1.0.csv  results/error_estimations/plankton/abalone/abalone-2034-1.0.csv  results/error_estimations/plankton/computer-hardware/computer-hardware-2034-1.0.csv  results/error_estimations/plankton/wine-quality-red/wine-quality-red-2034-1.0.csv  results/error_estimations/plankton/wine-quality-white/wine-quality-white-2034-1.0.csv  results/error_estimations/plankton/auto-mpg/auto-mpg-2034-1.0.csv  results/error_estimations/plankton/autos/autos-2034-1.0.csv  results/error_estimations/plankton/residential-v9/residential-v9-2034-1.0.csv  results/error_estimations/plankton/residential-v10/residential-v10-2034-1.0.csv  results/error_estimations/plankton/ticdata/ticdata-2034-1.0.csv  results/error_estimations/plankton/student-mat/student-mat-2034-1.0.csv  results/error_estimations/plankton/student-por/student-por-2034-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2034-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2034-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2034-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2034-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2034-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2034-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2034-1.0.csv  results/error_estimations/plankton/iris/iris-2035-1.0.csv  results/error_estimations/plankton/sonar/sonar-2035-1.0.csv  results/error_estimations/plankton/ionosphere/ionosphere-2035-1.0.csv  results/error_estimations/plankton/cmc/cmc-2035-1.0.csv  results/error_estimations/plankton/haberman/haberman-2035-1.0.csv  results/error_estimations/plankton/transfusion/transfusion-2035-1.0.csv  results/error_estimations/plankton/wdbc/wdbc-2035-1.0.csv  results/error_estimations/plankton/SPECT/SPECT-2035-1.0.csv  results/error_estimations/plankton/titanic/titanic-2035-1.0.csv  results/error_estimations/plankton/splice/splice-2035-1.0.csv  results/error_estimations/plankton/abalone/abalone-2035-1.0.csv  results/error_estimations/plankton/computer-hardware/computer-hardware-2035-1.0.csv  results/error_estimations/plankton/wine-quality-red/wine-quality-red-2035-1.0.csv  results/error_estimations/plankton/wine-quality-white/wine-quality-white-2035-1.0.csv  results/error_estimations/plankton/auto-mpg/auto-mpg-2035-1.0.csv  results/error_estimations/plankton/autos/autos-2035-1.0.csv  results/error_estimations/plankton/residential-v9/residential-v9-2035-1.0.csv  results/error_estimations/plankton/residential-v10/residential-v10-2035-1.0.csv  results/error_estimations/plankton/ticdata/ticdata-2035-1.0.csv  results/error_estimations/plankton/student-mat/student-mat-2035-1.0.csv  results/error_estimations/plankton/student-por/student-por-2035-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2035-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2035-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2035-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2035-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2035-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2035-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2035-1.0.csv  results/error_estimations/plankton/iris/iris-2036-1.0.csv  results/error_estimations/plankton/sonar/sonar-2036-1.0.csv  results/error_estimations/plankton/ionosphere/ionosphere-2036-1.0.csv  results/error_estimations/plankton/cmc/cmc-2036-1.0.csv  results/error_estimations/plankton/haberman/haberman-2036-1.0.csv  results/error_estimations/plankton/transfusion/transfusion-2036-1.0.csv  results/error_estimations/plankton/wdbc/wdbc-2036-1.0.csv  results/error_estimations/plankton/SPECT/SPECT-2036-1.0.csv  results/error_estimations/plankton/titanic/titanic-2036-1.0.csv  results/error_estimations/plankton/splice/splice-2036-1.0.csv  results/error_estimations/plankton/abalone/abalone-2036-1.0.csv  results/error_estimations/plankton/computer-hardware/computer-hardware-2036-1.0.csv  results/error_estimations/plankton/wine-quality-red/wine-quality-red-2036-1.0.csv  results/error_estimations/plankton/wine-quality-white/wine-quality-white-2036-1.0.csv  results/error_estimations/plankton/auto-mpg/auto-mpg-2036-1.0.csv  results/error_estimations/plankton/autos/autos-2036-1.0.csv  results/error_estimations/plankton/residential-v9/residential-v9-2036-1.0.csv  results/error_estimations/plankton/residential-v10/residential-v10-2036-1.0.csv  results/error_estimations/plankton/ticdata/ticdata-2036-1.0.csv  results/error_estimations/plankton/student-mat/student-mat-2036-1.0.csv  results/error_estimations/plankton/student-por/student-por-2036-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2036-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2036-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2036-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2036-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2036-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2036-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2036-1.0.csv  results/error_estimations/plankton/iris/iris-2037-1.0.csv  results/error_estimations/plankton/sonar/sonar-2037-1.0.csv  results/error_estimations/plankton/ionosphere/ionosphere-2037-1.0.csv  results/error_estimations/plankton/cmc/cmc-2037-1.0.csv  results/error_estimations/plankton/haberman/haberman-2037-1.0.csv  results/error_estimations/plankton/transfusion/transfusion-2037-1.0.csv  results/error_estimations/plankton/wdbc/wdbc-2037-1.0.csv  results/error_estimations/plankton/SPECT/SPECT-2037-1.0.csv  results/error_estimations/plankton/titanic/titanic-2037-1.0.csv  results/error_estimations/plankton/splice/splice-2037-1.0.csv  results/error_estimations/plankton/abalone/abalone-2037-1.0.csv  results/error_estimations/plankton/computer-hardware/computer-hardware-2037-1.0.csv  results/error_estimations/plankton/wine-quality-red/wine-quality-red-2037-1.0.csv  results/error_estimations/plankton/wine-quality-white/wine-quality-white-2037-1.0.csv  results/error_estimations/plankton/auto-mpg/auto-mpg-2037-1.0.csv  results/error_estimations/plankton/autos/autos-2037-1.0.csv  results/error_estimations/plankton/residential-v9/residential-v9-2037-1.0.csv  results/error_estimations/plankton/residential-v10/residential-v10-2037-1.0.csv  results/error_estimations/plankton/ticdata/ticdata-2037-1.0.csv  results/error_estimations/plankton/student-mat/student-mat-2037-1.0.csv  results/error_estimations/plankton/student-por/student-por-2037-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2037-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2037-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2037-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2037-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2037-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2037-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2037-1.0.csv  results/error_estimations/plankton/iris/iris-2038-1.0.csv  results/error_estimations/plankton/sonar/sonar-2038-1.0.csv  results/error_estimations/plankton/ionosphere/ionosphere-2038-1.0.csv  results/error_estimations/plankton/cmc/cmc-2038-1.0.csv  results/error_estimations/plankton/haberman/haberman-2038-1.0.csv  results/error_estimations/plankton/transfusion/transfusion-2038-1.0.csv  results/error_estimations/plankton/wdbc/wdbc-2038-1.0.csv  results/error_estimations/plankton/SPECT/SPECT-2038-1.0.csv  results/error_estimations/plankton/titanic/titanic-2038-1.0.csv  results/error_estimations/plankton/splice/splice-2038-1.0.csv  results/error_estimations/plankton/abalone/abalone-2038-1.0.csv  results/error_estimations/plankton/computer-hardware/computer-hardware-2038-1.0.csv  results/error_estimations/plankton/wine-quality-red/wine-quality-red-2038-1.0.csv  results/error_estimations/plankton/wine-quality-white/wine-quality-white-2038-1.0.csv  results/error_estimations/plankton/auto-mpg/auto-mpg-2038-1.0.csv  results/error_estimations/plankton/autos/autos-2038-1.0.csv  results/error_estimations/plankton/residential-v9/residential-v9-2038-1.0.csv  results/error_estimations/plankton/residential-v10/residential-v10-2038-1.0.csv  results/error_estimations/plankton/ticdata/ticdata-2038-1.0.csv  results/error_estimations/plankton/student-mat/student-mat-2038-1.0.csv  results/error_estimations/plankton/student-por/student-por-2038-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2038-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2038-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2038-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2038-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2038-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2038-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2038-1.0.csv  results/error_estimations/plankton/iris/iris-2039-1.0.csv  results/error_estimations/plankton/sonar/sonar-2039-1.0.csv  results/error_estimations/plankton/ionosphere/ionosphere-2039-1.0.csv  results/error_estimations/plankton/cmc/cmc-2039-1.0.csv  results/error_estimations/plankton/haberman/haberman-2039-1.0.csv  results/error_estimations/plankton/transfusion/transfusion-2039-1.0.csv  results/error_estimations/plankton/wdbc/wdbc-2039-1.0.csv  results/error_estimations/plankton/SPECT/SPECT-2039-1.0.csv  results/error_estimations/plankton/titanic/titanic-2039-1.0.csv  results/error_estimations/plankton/splice/splice-2039-1.0.csv  results/error_estimations/plankton/abalone/abalone-2039-1.0.csv  results/error_estimations/plankton/computer-hardware/computer-hardware-2039-1.0.csv  results/error_estimations/plankton/wine-quality-red/wine-quality-red-2039-1.0.csv  results/error_estimations/plankton/wine-quality-white/wine-quality-white-2039-1.0.csv  results/error_estimations/plankton/auto-mpg/auto-mpg-2039-1.0.csv  results/error_estimations/plankton/autos/autos-2039-1.0.csv  results/error_estimations/plankton/residential-v9/residential-v9-2039-1.0.csv  results/error_estimations/plankton/residential-v10/residential-v10-2039-1.0.csv  results/error_estimations/plankton/ticdata/ticdata-2039-1.0.csv  results/error_estimations/plankton/student-mat/student-mat-2039-1.0.csv  results/error_estimations/plankton/student-por/student-por-2039-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2039-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2039-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2039-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2039-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2039-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2039-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2039-1.0.csv  results/error_estimations/plankton/iris/iris-2040-1.0.csv  results/error_estimations/plankton/sonar/sonar-2040-1.0.csv  results/error_estimations/plankton/ionosphere/ionosphere-2040-1.0.csv  results/error_estimations/plankton/cmc/cmc-2040-1.0.csv  results/error_estimations/plankton/haberman/haberman-2040-1.0.csv  results/error_estimations/plankton/transfusion/transfusion-2040-1.0.csv  results/error_estimations/plankton/wdbc/wdbc-2040-1.0.csv  results/error_estimations/plankton/SPECT/SPECT-2040-1.0.csv  results/error_estimations/plankton/titanic/titanic-2040-1.0.csv  results/error_estimations/plankton/splice/splice-2040-1.0.csv  results/error_estimations/plankton/abalone/abalone-2040-1.0.csv  results/error_estimations/plankton/computer-hardware/computer-hardware-2040-1.0.csv  results/error_estimations/plankton/wine-quality-red/wine-quality-red-2040-1.0.csv  results/error_estimations/plankton/wine-quality-white/wine-quality-white-2040-1.0.csv  results/error_estimations/plankton/auto-mpg/auto-mpg-2040-1.0.csv  results/error_estimations/plankton/autos/autos-2040-1.0.csv  results/error_estimations/plankton/residential-v9/residential-v9-2040-1.0.csv  results/error_estimations/plankton/residential-v10/residential-v10-2040-1.0.csv  results/error_estimations/plankton/ticdata/ticdata-2040-1.0.csv  results/error_estimations/plankton/student-mat/student-mat-2040-1.0.csv  results/error_estimations/plankton/student-por/student-por-2040-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2040-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2040-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2040-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2040-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2040-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2040-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2040-1.0.csv  results/error_estimations/plankton/iris/iris-2041-1.0.csv  results/error_estimations/plankton/sonar/sonar-2041-1.0.csv  results/error_estimations/plankton/ionosphere/ionosphere-2041-1.0.csv  results/error_estimations/plankton/cmc/cmc-2041-1.0.csv  results/error_estimations/plankton/haberman/haberman-2041-1.0.csv  results/error_estimations/plankton/transfusion/transfusion-2041-1.0.csv  results/error_estimations/plankton/wdbc/wdbc-2041-1.0.csv  results/error_estimations/plankton/SPECT/SPECT-2041-1.0.csv  results/error_estimations/plankton/titanic/titanic-2041-1.0.csv  results/error_estimations/plankton/splice/splice-2041-1.0.csv  results/error_estimations/plankton/abalone/abalone-2041-1.0.csv  results/error_estimations/plankton/computer-hardware/computer-hardware-2041-1.0.csv  results/error_estimations/plankton/wine-quality-red/wine-quality-red-2041-1.0.csv  results/error_estimations/plankton/wine-quality-white/wine-quality-white-2041-1.0.csv  results/error_estimations/plankton/auto-mpg/auto-mpg-2041-1.0.csv  results/error_estimations/plankton/autos/autos-2041-1.0.csv  results/error_estimations/plankton/residential-v9/residential-v9-2041-1.0.csv  results/error_estimations/plankton/residential-v10/residential-v10-2041-1.0.csv  results/error_estimations/plankton/ticdata/ticdata-2041-1.0.csv  results/error_estimations/plankton/student-mat/student-mat-2041-1.0.csv  results/error_estimations/plankton/student-por/student-por-2041-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2041-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2041-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2041-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2041-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2041-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2041-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2041-1.0.csv  results/results-final/plankton.csv
+planktonFiles = results/error_estimations/plankton/plankton-2006/plankton-2006-2032-1.0.csv  results/error_estimations/plankton/plankton-2007/plankton-2007-2032-1.0.csv  results/error_estimations/plankton/plankton-2008/plankton-2008-2032-1.0.csv  results/error_estimations/plankton/plankton-2009/plankton-2009-2032-1.0.csv  results/error_estimations/plankton/plankton-2010/plankton-2010-2032-1.0.csv  results/error_estimations/plankton/plankton-2011/plankton-2011-2032-1.0.csv  results/error_estimations/plankton/plankton-2012/plankton-2012-2032-1.0.csv  results/error_estimations/plankton/plankton-2013/plankton-2013-2032-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2032-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2032-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2032-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2032-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2032-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2032-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2032-1.0.csv  results/error_estimations/plankton/plankton-2006/plankton-2006-2033-1.0.csv  results/error_estimations/plankton/plankton-2007/plankton-2007-2033-1.0.csv  results/error_estimations/plankton/plankton-2008/plankton-2008-2033-1.0.csv  results/error_estimations/plankton/plankton-2009/plankton-2009-2033-1.0.csv  results/error_estimations/plankton/plankton-2010/plankton-2010-2033-1.0.csv  results/error_estimations/plankton/plankton-2011/plankton-2011-2033-1.0.csv  results/error_estimations/plankton/plankton-2012/plankton-2012-2033-1.0.csv  results/error_estimations/plankton/plankton-2013/plankton-2013-2033-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2033-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2033-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2033-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2033-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2033-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2033-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2033-1.0.csv  results/error_estimations/plankton/plankton-2006/plankton-2006-2034-1.0.csv  results/error_estimations/plankton/plankton-2007/plankton-2007-2034-1.0.csv  results/error_estimations/plankton/plankton-2008/plankton-2008-2034-1.0.csv  results/error_estimations/plankton/plankton-2009/plankton-2009-2034-1.0.csv  results/error_estimations/plankton/plankton-2010/plankton-2010-2034-1.0.csv  results/error_estimations/plankton/plankton-2011/plankton-2011-2034-1.0.csv  results/error_estimations/plankton/plankton-2012/plankton-2012-2034-1.0.csv  results/error_estimations/plankton/plankton-2013/plankton-2013-2034-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2034-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2034-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2034-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2034-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2034-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2034-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2034-1.0.csv  results/error_estimations/plankton/plankton-2006/plankton-2006-2035-1.0.csv  results/error_estimations/plankton/plankton-2007/plankton-2007-2035-1.0.csv  results/error_estimations/plankton/plankton-2008/plankton-2008-2035-1.0.csv  results/error_estimations/plankton/plankton-2009/plankton-2009-2035-1.0.csv  results/error_estimations/plankton/plankton-2010/plankton-2010-2035-1.0.csv  results/error_estimations/plankton/plankton-2011/plankton-2011-2035-1.0.csv  results/error_estimations/plankton/plankton-2012/plankton-2012-2035-1.0.csv  results/error_estimations/plankton/plankton-2013/plankton-2013-2035-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2035-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2035-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2035-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2035-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2035-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2035-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2035-1.0.csv  results/error_estimations/plankton/plankton-2006/plankton-2006-2036-1.0.csv  results/error_estimations/plankton/plankton-2007/plankton-2007-2036-1.0.csv  results/error_estimations/plankton/plankton-2008/plankton-2008-2036-1.0.csv  results/error_estimations/plankton/plankton-2009/plankton-2009-2036-1.0.csv  results/error_estimations/plankton/plankton-2010/plankton-2010-2036-1.0.csv  results/error_estimations/plankton/plankton-2011/plankton-2011-2036-1.0.csv  results/error_estimations/plankton/plankton-2012/plankton-2012-2036-1.0.csv  results/error_estimations/plankton/plankton-2013/plankton-2013-2036-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2036-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2036-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2036-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2036-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2036-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2036-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2036-1.0.csv  results/error_estimations/plankton/plankton-2006/plankton-2006-2037-1.0.csv  results/error_estimations/plankton/plankton-2007/plankton-2007-2037-1.0.csv  results/error_estimations/plankton/plankton-2008/plankton-2008-2037-1.0.csv  results/error_estimations/plankton/plankton-2009/plankton-2009-2037-1.0.csv  results/error_estimations/plankton/plankton-2010/plankton-2010-2037-1.0.csv  results/error_estimations/plankton/plankton-2011/plankton-2011-2037-1.0.csv  results/error_estimations/plankton/plankton-2012/plankton-2012-2037-1.0.csv  results/error_estimations/plankton/plankton-2013/plankton-2013-2037-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2037-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2037-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2037-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2037-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2037-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2037-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2037-1.0.csv  results/error_estimations/plankton/plankton-2006/plankton-2006-2038-1.0.csv  results/error_estimations/plankton/plankton-2007/plankton-2007-2038-1.0.csv  results/error_estimations/plankton/plankton-2008/plankton-2008-2038-1.0.csv  results/error_estimations/plankton/plankton-2009/plankton-2009-2038-1.0.csv  results/error_estimations/plankton/plankton-2010/plankton-2010-2038-1.0.csv  results/error_estimations/plankton/plankton-2011/plankton-2011-2038-1.0.csv  results/error_estimations/plankton/plankton-2012/plankton-2012-2038-1.0.csv  results/error_estimations/plankton/plankton-2013/plankton-2013-2038-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2038-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2038-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2038-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2038-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2038-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2038-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2038-1.0.csv  results/error_estimations/plankton/plankton-2006/plankton-2006-2039-1.0.csv  results/error_estimations/plankton/plankton-2007/plankton-2007-2039-1.0.csv  results/error_estimations/plankton/plankton-2008/plankton-2008-2039-1.0.csv  results/error_estimations/plankton/plankton-2009/plankton-2009-2039-1.0.csv  results/error_estimations/plankton/plankton-2010/plankton-2010-2039-1.0.csv  results/error_estimations/plankton/plankton-2011/plankton-2011-2039-1.0.csv  results/error_estimations/plankton/plankton-2012/plankton-2012-2039-1.0.csv  results/error_estimations/plankton/plankton-2013/plankton-2013-2039-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2039-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2039-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2039-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2039-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2039-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2039-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2039-1.0.csv  results/error_estimations/plankton/plankton-2006/plankton-2006-2040-1.0.csv  results/error_estimations/plankton/plankton-2007/plankton-2007-2040-1.0.csv  results/error_estimations/plankton/plankton-2008/plankton-2008-2040-1.0.csv  results/error_estimations/plankton/plankton-2009/plankton-2009-2040-1.0.csv  results/error_estimations/plankton/plankton-2010/plankton-2010-2040-1.0.csv  results/error_estimations/plankton/plankton-2011/plankton-2011-2040-1.0.csv  results/error_estimations/plankton/plankton-2012/plankton-2012-2040-1.0.csv  results/error_estimations/plankton/plankton-2013/plankton-2013-2040-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2040-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2040-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2040-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2040-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2040-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2040-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2040-1.0.csv  results/error_estimations/plankton/plankton-2006/plankton-2006-2041-1.0.csv  results/error_estimations/plankton/plankton-2007/plankton-2007-2041-1.0.csv  results/error_estimations/plankton/plankton-2008/plankton-2008-2041-1.0.csv  results/error_estimations/plankton/plankton-2009/plankton-2009-2041-1.0.csv  results/error_estimations/plankton/plankton-2010/plankton-2010-2041-1.0.csv  results/error_estimations/plankton/plankton-2011/plankton-2011-2041-1.0.csv  results/error_estimations/plankton/plankton-2012/plankton-2012-2041-1.0.csv  results/error_estimations/plankton/plankton-2013/plankton-2013-2041-1.0.csv  results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2041-1.0.csv  results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2041-1.0.csv  results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2041-1.0.csv  results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2041-1.0.csv  results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2041-1.0.csv  results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2041-1.0.csv  results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2041-1.0.csv  results/results-final/plankton.csv
 
 all	: classification regression plankton
 	@echo ALL done
@@ -6626,7 +6626,7 @@ results/error_estimations/regression/student-por/student-por-2041-0.33-19.csv	: 
 	$(python) regression.py datasets/regression/student-por/datasets-2041/student-por-train-0.33.csv datasets/regression/student-por/datasets-2041/student-por-test-0.33-19.csv student-por 0.33-19 2041
 
 results/results-final/regression.csv	: generate_results.py 
-	$(python) generate_results.py regression
+	$(python) generate_results.py 
 
 results/error_estimations/classification/iris/iris-2032-0.33-0.csv	: classification.py datasets/classification/iris/datasets-2032/iris-train-0.33.csv datasets/classification/iris/datasets-2032/iris-test-0.33-0.csv
 	$(python) classification.py datasets/classification/iris/datasets-2032/iris-train-0.33.csv datasets/classification/iris/datasets-2032/iris-test-0.33-0.csv iris 0.33-0 2032
@@ -12631,845 +12631,455 @@ results/error_estimations/classification/splice/splice-2041-0.33-19.csv	: classi
 results/results-final/classification.csv	: generate_results.py 
 	$(python) generate_results.py classification
 
-results/error_estimations/plankton/iris/iris-2032-0.33.csv	: classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv
-	$(python) classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv iris 1 2032
+results/error_estimations/plankton/plankton-2006/plankton-2006-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv plankton-2006 1 2032
 
-results/error_estimations/plankton/sonar/sonar-2032-0.33.csv	: classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv
-	$(python) classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv sonar 1 2032
+results/error_estimations/plankton/plankton-2007/plankton-2007-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv plankton-2007 1 2032
 
-results/error_estimations/plankton/ionosphere/ionosphere-2032-0.33.csv	: classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv
-	$(python) classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv ionosphere 1 2032
+results/error_estimations/plankton/plankton-2008/plankton-2008-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv plankton-2008 1 2032
 
-results/error_estimations/plankton/cmc/cmc-2032-0.33.csv	: classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv
-	$(python) classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv cmc 1 2032
+results/error_estimations/plankton/plankton-2009/plankton-2009-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv plankton-2009 1 2032
 
-results/error_estimations/plankton/haberman/haberman-2032-0.33.csv	: classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv
-	$(python) classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv haberman 1 2032
+results/error_estimations/plankton/plankton-2010/plankton-2010-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv plankton-2010 1 2032
 
-results/error_estimations/plankton/transfusion/transfusion-2032-0.33.csv	: classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv
-	$(python) classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv transfusion 1 2032
+results/error_estimations/plankton/plankton-2011/plankton-2011-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv plankton-2011 1 2032
 
-results/error_estimations/plankton/wdbc/wdbc-2032-0.33.csv	: classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv
-	$(python) classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv wdbc 1 2032
+results/error_estimations/plankton/plankton-2012/plankton-2012-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv plankton-2012 1 2032
 
-results/error_estimations/plankton/SPECT/SPECT-2032-0.33.csv	: classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv
-	$(python) classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv SPECT 1 2032
+results/error_estimations/plankton/plankton-2013/plankton-2013-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv plankton-2013 1 2032
 
-results/error_estimations/plankton/titanic/titanic-2032-0.33.csv	: classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv
-	$(python) classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv titanic 1 2032
+results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv plankton-2006-2007 1 2032
 
-results/error_estimations/plankton/splice/splice-2032-0.33.csv	: classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv
-	$(python) classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv splice 1 2032
+results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv plankton-2007-2008 1 2032
 
-results/error_estimations/plankton/abalone/abalone-2032-0.33.csv	: classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv
-	$(python) classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv abalone 1 2032
+results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv plankton-2008-2009 1 2032
 
-results/error_estimations/plankton/computer-hardware/computer-hardware-2032-0.33.csv	: classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv
-	$(python) classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv computer-hardware 1 2032
+results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv plankton-2009-2010 1 2032
 
-results/error_estimations/plankton/wine-quality-red/wine-quality-red-2032-0.33.csv	: classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv wine-quality-red 1 2032
+results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv plankton-2010-2011 1 2032
 
-results/error_estimations/plankton/wine-quality-white/wine-quality-white-2032-0.33.csv	: classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv wine-quality-white 1 2032
+results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv plankton-2011-2012 1 2032
 
-results/error_estimations/plankton/auto-mpg/auto-mpg-2032-0.33.csv	: classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv
-	$(python) classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv auto-mpg 1 2032
+results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2032-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv plankton-2012-2013 1 2032
 
-results/error_estimations/plankton/autos/autos-2032-0.33.csv	: classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv
-	$(python) classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv autos 1 2032
+results/error_estimations/plankton/plankton-2006/plankton-2006-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv plankton-2006 1 2033
 
-results/error_estimations/plankton/residential-v9/residential-v9-2032-0.33.csv	: classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv
-	$(python) classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv residential-v9 1 2032
+results/error_estimations/plankton/plankton-2007/plankton-2007-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv plankton-2007 1 2033
 
-results/error_estimations/plankton/residential-v10/residential-v10-2032-0.33.csv	: classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv
-	$(python) classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv residential-v10 1 2032
+results/error_estimations/plankton/plankton-2008/plankton-2008-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv plankton-2008 1 2033
 
-results/error_estimations/plankton/ticdata/ticdata-2032-0.33.csv	: classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv
-	$(python) classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv ticdata 1 2032
+results/error_estimations/plankton/plankton-2009/plankton-2009-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv plankton-2009 1 2033
 
-results/error_estimations/plankton/student-mat/student-mat-2032-0.33.csv	: classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv
-	$(python) classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv student-mat 1 2032
+results/error_estimations/plankton/plankton-2010/plankton-2010-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv plankton-2010 1 2033
 
-results/error_estimations/plankton/student-por/student-por-2032-0.33.csv	: classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv
-	$(python) classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv student-por 1 2032
+results/error_estimations/plankton/plankton-2011/plankton-2011-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv plankton-2011 1 2033
 
-results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2032-0.33.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2032
+results/error_estimations/plankton/plankton-2012/plankton-2012-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv plankton-2012 1 2033
 
-results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2032-0.33.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2032
+results/error_estimations/plankton/plankton-2013/plankton-2013-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv plankton-2013 1 2033
 
-results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2032-0.33.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2032
+results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv plankton-2006-2007 1 2033
 
-results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2032-0.33.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2032
+results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv plankton-2007-2008 1 2033
 
-results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2032-0.33.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2032
+results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv plankton-2008-2009 1 2033
 
-results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2032-0.33.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2032
+results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv plankton-2009-2010 1 2033
 
-results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2032-0.33.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2032
+results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv plankton-2010-2011 1 2033
 
-results/error_estimations/plankton/iris/iris-2033-0.33.csv	: classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv
-	$(python) classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv iris 1 2033
+results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv plankton-2011-2012 1 2033
 
-results/error_estimations/plankton/sonar/sonar-2033-0.33.csv	: classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv
-	$(python) classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv sonar 1 2033
+results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2033-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv plankton-2012-2013 1 2033
 
-results/error_estimations/plankton/ionosphere/ionosphere-2033-0.33.csv	: classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv
-	$(python) classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv ionosphere 1 2033
+results/error_estimations/plankton/plankton-2006/plankton-2006-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv plankton-2006 1 2034
 
-results/error_estimations/plankton/cmc/cmc-2033-0.33.csv	: classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv
-	$(python) classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv cmc 1 2033
+results/error_estimations/plankton/plankton-2007/plankton-2007-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv plankton-2007 1 2034
 
-results/error_estimations/plankton/haberman/haberman-2033-0.33.csv	: classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv
-	$(python) classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv haberman 1 2033
+results/error_estimations/plankton/plankton-2008/plankton-2008-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv plankton-2008 1 2034
 
-results/error_estimations/plankton/transfusion/transfusion-2033-0.33.csv	: classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv
-	$(python) classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv transfusion 1 2033
+results/error_estimations/plankton/plankton-2009/plankton-2009-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv plankton-2009 1 2034
 
-results/error_estimations/plankton/wdbc/wdbc-2033-0.33.csv	: classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv
-	$(python) classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv wdbc 1 2033
+results/error_estimations/plankton/plankton-2010/plankton-2010-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv plankton-2010 1 2034
 
-results/error_estimations/plankton/SPECT/SPECT-2033-0.33.csv	: classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv
-	$(python) classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv SPECT 1 2033
+results/error_estimations/plankton/plankton-2011/plankton-2011-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv plankton-2011 1 2034
 
-results/error_estimations/plankton/titanic/titanic-2033-0.33.csv	: classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv
-	$(python) classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv titanic 1 2033
+results/error_estimations/plankton/plankton-2012/plankton-2012-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv plankton-2012 1 2034
 
-results/error_estimations/plankton/splice/splice-2033-0.33.csv	: classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv
-	$(python) classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv splice 1 2033
+results/error_estimations/plankton/plankton-2013/plankton-2013-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv plankton-2013 1 2034
 
-results/error_estimations/plankton/abalone/abalone-2033-0.33.csv	: classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv
-	$(python) classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv abalone 1 2033
+results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv plankton-2006-2007 1 2034
 
-results/error_estimations/plankton/computer-hardware/computer-hardware-2033-0.33.csv	: classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv
-	$(python) classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv computer-hardware 1 2033
+results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv plankton-2007-2008 1 2034
 
-results/error_estimations/plankton/wine-quality-red/wine-quality-red-2033-0.33.csv	: classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv wine-quality-red 1 2033
+results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv plankton-2008-2009 1 2034
 
-results/error_estimations/plankton/wine-quality-white/wine-quality-white-2033-0.33.csv	: classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv wine-quality-white 1 2033
+results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv plankton-2009-2010 1 2034
 
-results/error_estimations/plankton/auto-mpg/auto-mpg-2033-0.33.csv	: classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv
-	$(python) classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv auto-mpg 1 2033
+results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv plankton-2010-2011 1 2034
 
-results/error_estimations/plankton/autos/autos-2033-0.33.csv	: classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv
-	$(python) classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv autos 1 2033
+results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv plankton-2011-2012 1 2034
 
-results/error_estimations/plankton/residential-v9/residential-v9-2033-0.33.csv	: classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv
-	$(python) classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv residential-v9 1 2033
+results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2034-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv plankton-2012-2013 1 2034
 
-results/error_estimations/plankton/residential-v10/residential-v10-2033-0.33.csv	: classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv
-	$(python) classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv residential-v10 1 2033
+results/error_estimations/plankton/plankton-2006/plankton-2006-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv plankton-2006 1 2035
 
-results/error_estimations/plankton/ticdata/ticdata-2033-0.33.csv	: classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv
-	$(python) classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv ticdata 1 2033
+results/error_estimations/plankton/plankton-2007/plankton-2007-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv plankton-2007 1 2035
 
-results/error_estimations/plankton/student-mat/student-mat-2033-0.33.csv	: classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv
-	$(python) classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv student-mat 1 2033
+results/error_estimations/plankton/plankton-2008/plankton-2008-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv plankton-2008 1 2035
 
-results/error_estimations/plankton/student-por/student-por-2033-0.33.csv	: classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv
-	$(python) classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv student-por 1 2033
+results/error_estimations/plankton/plankton-2009/plankton-2009-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv plankton-2009 1 2035
 
-results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2033-0.33.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2033
+results/error_estimations/plankton/plankton-2010/plankton-2010-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv plankton-2010 1 2035
 
-results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2033-0.33.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2033
+results/error_estimations/plankton/plankton-2011/plankton-2011-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv plankton-2011 1 2035
 
-results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2033-0.33.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2033
+results/error_estimations/plankton/plankton-2012/plankton-2012-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv plankton-2012 1 2035
 
-results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2033-0.33.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2033
+results/error_estimations/plankton/plankton-2013/plankton-2013-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv plankton-2013 1 2035
 
-results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2033-0.33.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2033
+results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv plankton-2006-2007 1 2035
 
-results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2033-0.33.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2033
+results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv plankton-2007-2008 1 2035
 
-results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2033-0.33.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2033
+results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv plankton-2008-2009 1 2035
 
-results/error_estimations/plankton/iris/iris-2034-0.33.csv	: classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv
-	$(python) classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv iris 1 2034
+results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv plankton-2009-2010 1 2035
 
-results/error_estimations/plankton/sonar/sonar-2034-0.33.csv	: classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv
-	$(python) classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv sonar 1 2034
+results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv plankton-2010-2011 1 2035
 
-results/error_estimations/plankton/ionosphere/ionosphere-2034-0.33.csv	: classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv
-	$(python) classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv ionosphere 1 2034
+results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv plankton-2011-2012 1 2035
 
-results/error_estimations/plankton/cmc/cmc-2034-0.33.csv	: classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv
-	$(python) classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv cmc 1 2034
+results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2035-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv plankton-2012-2013 1 2035
 
-results/error_estimations/plankton/haberman/haberman-2034-0.33.csv	: classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv
-	$(python) classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv haberman 1 2034
+results/error_estimations/plankton/plankton-2006/plankton-2006-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv plankton-2006 1 2036
 
-results/error_estimations/plankton/transfusion/transfusion-2034-0.33.csv	: classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv
-	$(python) classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv transfusion 1 2034
+results/error_estimations/plankton/plankton-2007/plankton-2007-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv plankton-2007 1 2036
 
-results/error_estimations/plankton/wdbc/wdbc-2034-0.33.csv	: classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv
-	$(python) classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv wdbc 1 2034
+results/error_estimations/plankton/plankton-2008/plankton-2008-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv plankton-2008 1 2036
 
-results/error_estimations/plankton/SPECT/SPECT-2034-0.33.csv	: classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv
-	$(python) classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv SPECT 1 2034
+results/error_estimations/plankton/plankton-2009/plankton-2009-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv plankton-2009 1 2036
 
-results/error_estimations/plankton/titanic/titanic-2034-0.33.csv	: classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv
-	$(python) classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv titanic 1 2034
+results/error_estimations/plankton/plankton-2010/plankton-2010-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv plankton-2010 1 2036
 
-results/error_estimations/plankton/splice/splice-2034-0.33.csv	: classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv
-	$(python) classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv splice 1 2034
+results/error_estimations/plankton/plankton-2011/plankton-2011-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv plankton-2011 1 2036
 
-results/error_estimations/plankton/abalone/abalone-2034-0.33.csv	: classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv
-	$(python) classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv abalone 1 2034
+results/error_estimations/plankton/plankton-2012/plankton-2012-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv plankton-2012 1 2036
 
-results/error_estimations/plankton/computer-hardware/computer-hardware-2034-0.33.csv	: classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv
-	$(python) classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv computer-hardware 1 2034
+results/error_estimations/plankton/plankton-2013/plankton-2013-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv plankton-2013 1 2036
 
-results/error_estimations/plankton/wine-quality-red/wine-quality-red-2034-0.33.csv	: classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv wine-quality-red 1 2034
+results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv plankton-2006-2007 1 2036
 
-results/error_estimations/plankton/wine-quality-white/wine-quality-white-2034-0.33.csv	: classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv wine-quality-white 1 2034
+results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv plankton-2007-2008 1 2036
 
-results/error_estimations/plankton/auto-mpg/auto-mpg-2034-0.33.csv	: classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv
-	$(python) classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv auto-mpg 1 2034
+results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv plankton-2008-2009 1 2036
 
-results/error_estimations/plankton/autos/autos-2034-0.33.csv	: classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv
-	$(python) classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv autos 1 2034
+results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv plankton-2009-2010 1 2036
 
-results/error_estimations/plankton/residential-v9/residential-v9-2034-0.33.csv	: classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv
-	$(python) classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv residential-v9 1 2034
+results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv plankton-2010-2011 1 2036
 
-results/error_estimations/plankton/residential-v10/residential-v10-2034-0.33.csv	: classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv
-	$(python) classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv residential-v10 1 2034
+results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv plankton-2011-2012 1 2036
 
-results/error_estimations/plankton/ticdata/ticdata-2034-0.33.csv	: classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv
-	$(python) classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv ticdata 1 2034
+results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2036-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv plankton-2012-2013 1 2036
 
-results/error_estimations/plankton/student-mat/student-mat-2034-0.33.csv	: classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv
-	$(python) classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv student-mat 1 2034
+results/error_estimations/plankton/plankton-2006/plankton-2006-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv plankton-2006 1 2037
 
-results/error_estimations/plankton/student-por/student-por-2034-0.33.csv	: classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv
-	$(python) classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv student-por 1 2034
+results/error_estimations/plankton/plankton-2007/plankton-2007-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv plankton-2007 1 2037
 
-results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2034-0.33.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2034
+results/error_estimations/plankton/plankton-2008/plankton-2008-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv plankton-2008 1 2037
 
-results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2034-0.33.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2034
+results/error_estimations/plankton/plankton-2009/plankton-2009-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv plankton-2009 1 2037
 
-results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2034-0.33.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2034
+results/error_estimations/plankton/plankton-2010/plankton-2010-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv plankton-2010 1 2037
 
-results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2034-0.33.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2034
+results/error_estimations/plankton/plankton-2011/plankton-2011-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv plankton-2011 1 2037
 
-results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2034-0.33.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2034
+results/error_estimations/plankton/plankton-2012/plankton-2012-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv plankton-2012 1 2037
 
-results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2034-0.33.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2034
+results/error_estimations/plankton/plankton-2013/plankton-2013-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv plankton-2013 1 2037
 
-results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2034-0.33.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2034
+results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv plankton-2006-2007 1 2037
 
-results/error_estimations/plankton/iris/iris-2035-0.33.csv	: classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv
-	$(python) classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv iris 1 2035
+results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv plankton-2007-2008 1 2037
 
-results/error_estimations/plankton/sonar/sonar-2035-0.33.csv	: classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv
-	$(python) classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv sonar 1 2035
+results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv plankton-2008-2009 1 2037
 
-results/error_estimations/plankton/ionosphere/ionosphere-2035-0.33.csv	: classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv
-	$(python) classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv ionosphere 1 2035
+results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv plankton-2009-2010 1 2037
 
-results/error_estimations/plankton/cmc/cmc-2035-0.33.csv	: classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv
-	$(python) classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv cmc 1 2035
+results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv plankton-2010-2011 1 2037
 
-results/error_estimations/plankton/haberman/haberman-2035-0.33.csv	: classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv
-	$(python) classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv haberman 1 2035
+results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv plankton-2011-2012 1 2037
 
-results/error_estimations/plankton/transfusion/transfusion-2035-0.33.csv	: classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv
-	$(python) classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv transfusion 1 2035
+results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2037-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv plankton-2012-2013 1 2037
 
-results/error_estimations/plankton/wdbc/wdbc-2035-0.33.csv	: classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv
-	$(python) classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv wdbc 1 2035
+results/error_estimations/plankton/plankton-2006/plankton-2006-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv plankton-2006 1 2038
 
-results/error_estimations/plankton/SPECT/SPECT-2035-0.33.csv	: classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv
-	$(python) classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv SPECT 1 2035
+results/error_estimations/plankton/plankton-2007/plankton-2007-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv plankton-2007 1 2038
 
-results/error_estimations/plankton/titanic/titanic-2035-0.33.csv	: classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv
-	$(python) classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv titanic 1 2035
+results/error_estimations/plankton/plankton-2008/plankton-2008-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv plankton-2008 1 2038
 
-results/error_estimations/plankton/splice/splice-2035-0.33.csv	: classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv
-	$(python) classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv splice 1 2035
+results/error_estimations/plankton/plankton-2009/plankton-2009-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv plankton-2009 1 2038
 
-results/error_estimations/plankton/abalone/abalone-2035-0.33.csv	: classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv
-	$(python) classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv abalone 1 2035
+results/error_estimations/plankton/plankton-2010/plankton-2010-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv plankton-2010 1 2038
 
-results/error_estimations/plankton/computer-hardware/computer-hardware-2035-0.33.csv	: classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv
-	$(python) classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv computer-hardware 1 2035
+results/error_estimations/plankton/plankton-2011/plankton-2011-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv plankton-2011 1 2038
 
-results/error_estimations/plankton/wine-quality-red/wine-quality-red-2035-0.33.csv	: classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv wine-quality-red 1 2035
+results/error_estimations/plankton/plankton-2012/plankton-2012-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv plankton-2012 1 2038
 
-results/error_estimations/plankton/wine-quality-white/wine-quality-white-2035-0.33.csv	: classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv wine-quality-white 1 2035
+results/error_estimations/plankton/plankton-2013/plankton-2013-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv plankton-2013 1 2038
 
-results/error_estimations/plankton/auto-mpg/auto-mpg-2035-0.33.csv	: classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv
-	$(python) classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv auto-mpg 1 2035
+results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv plankton-2006-2007 1 2038
 
-results/error_estimations/plankton/autos/autos-2035-0.33.csv	: classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv
-	$(python) classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv autos 1 2035
+results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv plankton-2007-2008 1 2038
 
-results/error_estimations/plankton/residential-v9/residential-v9-2035-0.33.csv	: classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv
-	$(python) classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv residential-v9 1 2035
+results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv plankton-2008-2009 1 2038
 
-results/error_estimations/plankton/residential-v10/residential-v10-2035-0.33.csv	: classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv
-	$(python) classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv residential-v10 1 2035
+results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv plankton-2009-2010 1 2038
 
-results/error_estimations/plankton/ticdata/ticdata-2035-0.33.csv	: classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv
-	$(python) classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv ticdata 1 2035
+results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv plankton-2010-2011 1 2038
 
-results/error_estimations/plankton/student-mat/student-mat-2035-0.33.csv	: classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv
-	$(python) classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv student-mat 1 2035
+results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv plankton-2011-2012 1 2038
 
-results/error_estimations/plankton/student-por/student-por-2035-0.33.csv	: classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv
-	$(python) classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv student-por 1 2035
+results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2038-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv plankton-2012-2013 1 2038
 
-results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2035-0.33.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2035
+results/error_estimations/plankton/plankton-2006/plankton-2006-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv plankton-2006 1 2039
 
-results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2035-0.33.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2035
+results/error_estimations/plankton/plankton-2007/plankton-2007-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv plankton-2007 1 2039
 
-results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2035-0.33.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2035
+results/error_estimations/plankton/plankton-2008/plankton-2008-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv plankton-2008 1 2039
 
-results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2035-0.33.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2035
+results/error_estimations/plankton/plankton-2009/plankton-2009-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv plankton-2009 1 2039
 
-results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2035-0.33.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2035
+results/error_estimations/plankton/plankton-2010/plankton-2010-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv plankton-2010 1 2039
 
-results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2035-0.33.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2035
+results/error_estimations/plankton/plankton-2011/plankton-2011-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv plankton-2011 1 2039
 
-results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2035-0.33.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2035
+results/error_estimations/plankton/plankton-2012/plankton-2012-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv plankton-2012 1 2039
 
-results/error_estimations/plankton/iris/iris-2036-0.33.csv	: classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv
-	$(python) classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv iris 1 2036
+results/error_estimations/plankton/plankton-2013/plankton-2013-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv plankton-2013 1 2039
 
-results/error_estimations/plankton/sonar/sonar-2036-0.33.csv	: classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv
-	$(python) classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv sonar 1 2036
+results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv plankton-2006-2007 1 2039
 
-results/error_estimations/plankton/ionosphere/ionosphere-2036-0.33.csv	: classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv
-	$(python) classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv ionosphere 1 2036
+results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv plankton-2007-2008 1 2039
 
-results/error_estimations/plankton/cmc/cmc-2036-0.33.csv	: classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv
-	$(python) classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv cmc 1 2036
+results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv plankton-2008-2009 1 2039
 
-results/error_estimations/plankton/haberman/haberman-2036-0.33.csv	: classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv
-	$(python) classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv haberman 1 2036
+results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv plankton-2009-2010 1 2039
 
-results/error_estimations/plankton/transfusion/transfusion-2036-0.33.csv	: classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv
-	$(python) classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv transfusion 1 2036
+results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv plankton-2010-2011 1 2039
 
-results/error_estimations/plankton/wdbc/wdbc-2036-0.33.csv	: classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv
-	$(python) classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv wdbc 1 2036
+results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv plankton-2011-2012 1 2039
 
-results/error_estimations/plankton/SPECT/SPECT-2036-0.33.csv	: classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv
-	$(python) classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv SPECT 1 2036
+results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2039-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv plankton-2012-2013 1 2039
 
-results/error_estimations/plankton/titanic/titanic-2036-0.33.csv	: classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv
-	$(python) classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv titanic 1 2036
+results/error_estimations/plankton/plankton-2006/plankton-2006-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv plankton-2006 1 2040
 
-results/error_estimations/plankton/splice/splice-2036-0.33.csv	: classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv
-	$(python) classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv splice 1 2036
+results/error_estimations/plankton/plankton-2007/plankton-2007-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv plankton-2007 1 2040
 
-results/error_estimations/plankton/abalone/abalone-2036-0.33.csv	: classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv
-	$(python) classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv abalone 1 2036
+results/error_estimations/plankton/plankton-2008/plankton-2008-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv plankton-2008 1 2040
 
-results/error_estimations/plankton/computer-hardware/computer-hardware-2036-0.33.csv	: classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv
-	$(python) classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv computer-hardware 1 2036
+results/error_estimations/plankton/plankton-2009/plankton-2009-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv plankton-2009 1 2040
 
-results/error_estimations/plankton/wine-quality-red/wine-quality-red-2036-0.33.csv	: classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv wine-quality-red 1 2036
+results/error_estimations/plankton/plankton-2010/plankton-2010-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv plankton-2010 1 2040
 
-results/error_estimations/plankton/wine-quality-white/wine-quality-white-2036-0.33.csv	: classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv wine-quality-white 1 2036
+results/error_estimations/plankton/plankton-2011/plankton-2011-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv plankton-2011 1 2040
 
-results/error_estimations/plankton/auto-mpg/auto-mpg-2036-0.33.csv	: classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv
-	$(python) classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv auto-mpg 1 2036
+results/error_estimations/plankton/plankton-2012/plankton-2012-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv plankton-2012 1 2040
 
-results/error_estimations/plankton/autos/autos-2036-0.33.csv	: classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv
-	$(python) classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv autos 1 2036
+results/error_estimations/plankton/plankton-2013/plankton-2013-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv plankton-2013 1 2040
 
-results/error_estimations/plankton/residential-v9/residential-v9-2036-0.33.csv	: classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv
-	$(python) classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv residential-v9 1 2036
+results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv plankton-2006-2007 1 2040
 
-results/error_estimations/plankton/residential-v10/residential-v10-2036-0.33.csv	: classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv
-	$(python) classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv residential-v10 1 2036
+results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv plankton-2007-2008 1 2040
 
-results/error_estimations/plankton/ticdata/ticdata-2036-0.33.csv	: classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv
-	$(python) classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv ticdata 1 2036
+results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv plankton-2008-2009 1 2040
 
-results/error_estimations/plankton/student-mat/student-mat-2036-0.33.csv	: classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv
-	$(python) classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv student-mat 1 2036
+results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv plankton-2009-2010 1 2040
 
-results/error_estimations/plankton/student-por/student-por-2036-0.33.csv	: classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv
-	$(python) classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv student-por 1 2036
+results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv plankton-2010-2011 1 2040
 
-results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2036-0.33.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2036
+results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv plankton-2011-2012 1 2040
 
-results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2036-0.33.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2036
+results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2040-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv plankton-2012-2013 1 2040
 
-results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2036-0.33.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2036
+results/error_estimations/plankton/plankton-2006/plankton-2006-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-1.csv datasets/plankton/plankton-2006-2.csv plankton-2006 1 2041
 
-results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2036-0.33.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2036
+results/error_estimations/plankton/plankton-2007/plankton-2007-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-1.csv datasets/plankton/plankton-2007-2.csv plankton-2007 1 2041
 
-results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2036-0.33.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2036
+results/error_estimations/plankton/plankton-2008/plankton-2008-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-1.csv datasets/plankton/plankton-2008-2.csv plankton-2008 1 2041
 
-results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2036-0.33.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2036
+results/error_estimations/plankton/plankton-2009/plankton-2009-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-1.csv datasets/plankton/plankton-2009-2.csv plankton-2009 1 2041
 
-results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2036-0.33.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2036
+results/error_estimations/plankton/plankton-2010/plankton-2010-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-1.csv datasets/plankton/plankton-2010-2.csv plankton-2010 1 2041
 
-results/error_estimations/plankton/iris/iris-2037-0.33.csv	: classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv
-	$(python) classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv iris 1 2037
+results/error_estimations/plankton/plankton-2011/plankton-2011-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-1.csv datasets/plankton/plankton-2011-2.csv plankton-2011 1 2041
 
-results/error_estimations/plankton/sonar/sonar-2037-0.33.csv	: classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv
-	$(python) classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv sonar 1 2037
+results/error_estimations/plankton/plankton-2012/plankton-2012-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-1.csv datasets/plankton/plankton-2012-2.csv plankton-2012 1 2041
 
-results/error_estimations/plankton/ionosphere/ionosphere-2037-0.33.csv	: classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv
-	$(python) classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv ionosphere 1 2037
+results/error_estimations/plankton/plankton-2013/plankton-2013-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2013-1.csv datasets/plankton/plankton-2013-2.csv plankton-2013 1 2041
 
-results/error_estimations/plankton/cmc/cmc-2037-0.33.csv	: classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv
-	$(python) classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv cmc 1 2037
+results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2006-2.csv  datasets/plankton/plankton-2007-1.csv plankton-2006-2007 1 2041
 
-results/error_estimations/plankton/haberman/haberman-2037-0.33.csv	: classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv
-	$(python) classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv haberman 1 2037
+results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2007-2.csv  datasets/plankton/plankton-2008-1.csv plankton-2007-2008 1 2041
 
-results/error_estimations/plankton/transfusion/transfusion-2037-0.33.csv	: classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv
-	$(python) classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv transfusion 1 2037
+results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2008-2.csv  datasets/plankton/plankton-2009-1.csv plankton-2008-2009 1 2041
 
-results/error_estimations/plankton/wdbc/wdbc-2037-0.33.csv	: classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv
-	$(python) classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv wdbc 1 2037
+results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2009-2.csv  datasets/plankton/plankton-2010-1.csv plankton-2009-2010 1 2041
 
-results/error_estimations/plankton/SPECT/SPECT-2037-0.33.csv	: classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv
-	$(python) classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv SPECT 1 2037
+results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2010-2.csv  datasets/plankton/plankton-2011-1.csv plankton-2010-2011 1 2041
 
-results/error_estimations/plankton/titanic/titanic-2037-0.33.csv	: classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv
-	$(python) classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv titanic 1 2037
+results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2011-2.csv  datasets/plankton/plankton-2012-1.csv plankton-2011-2012 1 2041
 
-results/error_estimations/plankton/splice/splice-2037-0.33.csv	: classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv
-	$(python) classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv splice 1 2037
-
-results/error_estimations/plankton/abalone/abalone-2037-0.33.csv	: classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv
-	$(python) classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv abalone 1 2037
-
-results/error_estimations/plankton/computer-hardware/computer-hardware-2037-0.33.csv	: classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv
-	$(python) classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv computer-hardware 1 2037
-
-results/error_estimations/plankton/wine-quality-red/wine-quality-red-2037-0.33.csv	: classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv wine-quality-red 1 2037
-
-results/error_estimations/plankton/wine-quality-white/wine-quality-white-2037-0.33.csv	: classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv wine-quality-white 1 2037
-
-results/error_estimations/plankton/auto-mpg/auto-mpg-2037-0.33.csv	: classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv
-	$(python) classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv auto-mpg 1 2037
-
-results/error_estimations/plankton/autos/autos-2037-0.33.csv	: classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv
-	$(python) classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv autos 1 2037
-
-results/error_estimations/plankton/residential-v9/residential-v9-2037-0.33.csv	: classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv
-	$(python) classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv residential-v9 1 2037
-
-results/error_estimations/plankton/residential-v10/residential-v10-2037-0.33.csv	: classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv
-	$(python) classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv residential-v10 1 2037
-
-results/error_estimations/plankton/ticdata/ticdata-2037-0.33.csv	: classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv
-	$(python) classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv ticdata 1 2037
-
-results/error_estimations/plankton/student-mat/student-mat-2037-0.33.csv	: classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv
-	$(python) classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv student-mat 1 2037
-
-results/error_estimations/plankton/student-por/student-por-2037-0.33.csv	: classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv
-	$(python) classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv student-por 1 2037
-
-results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2037-0.33.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2037
-
-results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2037-0.33.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2037
-
-results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2037-0.33.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2037
-
-results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2037-0.33.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2037
-
-results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2037-0.33.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2037
-
-results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2037-0.33.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2037
-
-results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2037-0.33.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2037
-
-results/error_estimations/plankton/iris/iris-2038-0.33.csv	: classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv
-	$(python) classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv iris 1 2038
-
-results/error_estimations/plankton/sonar/sonar-2038-0.33.csv	: classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv
-	$(python) classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv sonar 1 2038
-
-results/error_estimations/plankton/ionosphere/ionosphere-2038-0.33.csv	: classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv
-	$(python) classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv ionosphere 1 2038
-
-results/error_estimations/plankton/cmc/cmc-2038-0.33.csv	: classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv
-	$(python) classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv cmc 1 2038
-
-results/error_estimations/plankton/haberman/haberman-2038-0.33.csv	: classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv
-	$(python) classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv haberman 1 2038
-
-results/error_estimations/plankton/transfusion/transfusion-2038-0.33.csv	: classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv
-	$(python) classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv transfusion 1 2038
-
-results/error_estimations/plankton/wdbc/wdbc-2038-0.33.csv	: classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv
-	$(python) classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv wdbc 1 2038
-
-results/error_estimations/plankton/SPECT/SPECT-2038-0.33.csv	: classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv
-	$(python) classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv SPECT 1 2038
-
-results/error_estimations/plankton/titanic/titanic-2038-0.33.csv	: classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv
-	$(python) classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv titanic 1 2038
-
-results/error_estimations/plankton/splice/splice-2038-0.33.csv	: classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv
-	$(python) classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv splice 1 2038
-
-results/error_estimations/plankton/abalone/abalone-2038-0.33.csv	: classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv
-	$(python) classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv abalone 1 2038
-
-results/error_estimations/plankton/computer-hardware/computer-hardware-2038-0.33.csv	: classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv
-	$(python) classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv computer-hardware 1 2038
-
-results/error_estimations/plankton/wine-quality-red/wine-quality-red-2038-0.33.csv	: classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv wine-quality-red 1 2038
-
-results/error_estimations/plankton/wine-quality-white/wine-quality-white-2038-0.33.csv	: classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv wine-quality-white 1 2038
-
-results/error_estimations/plankton/auto-mpg/auto-mpg-2038-0.33.csv	: classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv
-	$(python) classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv auto-mpg 1 2038
-
-results/error_estimations/plankton/autos/autos-2038-0.33.csv	: classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv
-	$(python) classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv autos 1 2038
-
-results/error_estimations/plankton/residential-v9/residential-v9-2038-0.33.csv	: classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv
-	$(python) classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv residential-v9 1 2038
-
-results/error_estimations/plankton/residential-v10/residential-v10-2038-0.33.csv	: classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv
-	$(python) classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv residential-v10 1 2038
-
-results/error_estimations/plankton/ticdata/ticdata-2038-0.33.csv	: classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv
-	$(python) classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv ticdata 1 2038
-
-results/error_estimations/plankton/student-mat/student-mat-2038-0.33.csv	: classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv
-	$(python) classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv student-mat 1 2038
-
-results/error_estimations/plankton/student-por/student-por-2038-0.33.csv	: classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv
-	$(python) classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv student-por 1 2038
-
-results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2038-0.33.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2038
-
-results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2038-0.33.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2038
-
-results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2038-0.33.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2038
-
-results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2038-0.33.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2038
-
-results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2038-0.33.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2038
-
-results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2038-0.33.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2038
-
-results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2038-0.33.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2038
-
-results/error_estimations/plankton/iris/iris-2039-0.33.csv	: classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv
-	$(python) classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv iris 1 2039
-
-results/error_estimations/plankton/sonar/sonar-2039-0.33.csv	: classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv
-	$(python) classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv sonar 1 2039
-
-results/error_estimations/plankton/ionosphere/ionosphere-2039-0.33.csv	: classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv
-	$(python) classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv ionosphere 1 2039
-
-results/error_estimations/plankton/cmc/cmc-2039-0.33.csv	: classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv
-	$(python) classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv cmc 1 2039
-
-results/error_estimations/plankton/haberman/haberman-2039-0.33.csv	: classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv
-	$(python) classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv haberman 1 2039
-
-results/error_estimations/plankton/transfusion/transfusion-2039-0.33.csv	: classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv
-	$(python) classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv transfusion 1 2039
-
-results/error_estimations/plankton/wdbc/wdbc-2039-0.33.csv	: classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv
-	$(python) classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv wdbc 1 2039
-
-results/error_estimations/plankton/SPECT/SPECT-2039-0.33.csv	: classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv
-	$(python) classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv SPECT 1 2039
-
-results/error_estimations/plankton/titanic/titanic-2039-0.33.csv	: classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv
-	$(python) classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv titanic 1 2039
-
-results/error_estimations/plankton/splice/splice-2039-0.33.csv	: classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv
-	$(python) classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv splice 1 2039
-
-results/error_estimations/plankton/abalone/abalone-2039-0.33.csv	: classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv
-	$(python) classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv abalone 1 2039
-
-results/error_estimations/plankton/computer-hardware/computer-hardware-2039-0.33.csv	: classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv
-	$(python) classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv computer-hardware 1 2039
-
-results/error_estimations/plankton/wine-quality-red/wine-quality-red-2039-0.33.csv	: classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv wine-quality-red 1 2039
-
-results/error_estimations/plankton/wine-quality-white/wine-quality-white-2039-0.33.csv	: classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv wine-quality-white 1 2039
-
-results/error_estimations/plankton/auto-mpg/auto-mpg-2039-0.33.csv	: classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv
-	$(python) classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv auto-mpg 1 2039
-
-results/error_estimations/plankton/autos/autos-2039-0.33.csv	: classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv
-	$(python) classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv autos 1 2039
-
-results/error_estimations/plankton/residential-v9/residential-v9-2039-0.33.csv	: classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv
-	$(python) classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv residential-v9 1 2039
-
-results/error_estimations/plankton/residential-v10/residential-v10-2039-0.33.csv	: classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv
-	$(python) classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv residential-v10 1 2039
-
-results/error_estimations/plankton/ticdata/ticdata-2039-0.33.csv	: classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv
-	$(python) classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv ticdata 1 2039
-
-results/error_estimations/plankton/student-mat/student-mat-2039-0.33.csv	: classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv
-	$(python) classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv student-mat 1 2039
-
-results/error_estimations/plankton/student-por/student-por-2039-0.33.csv	: classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv
-	$(python) classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv student-por 1 2039
-
-results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2039-0.33.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2039
-
-results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2039-0.33.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2039
-
-results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2039-0.33.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2039
-
-results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2039-0.33.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2039
-
-results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2039-0.33.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2039
-
-results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2039-0.33.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2039
-
-results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2039-0.33.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2039
-
-results/error_estimations/plankton/iris/iris-2040-0.33.csv	: classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv
-	$(python) classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv iris 1 2040
-
-results/error_estimations/plankton/sonar/sonar-2040-0.33.csv	: classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv
-	$(python) classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv sonar 1 2040
-
-results/error_estimations/plankton/ionosphere/ionosphere-2040-0.33.csv	: classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv
-	$(python) classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv ionosphere 1 2040
-
-results/error_estimations/plankton/cmc/cmc-2040-0.33.csv	: classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv
-	$(python) classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv cmc 1 2040
-
-results/error_estimations/plankton/haberman/haberman-2040-0.33.csv	: classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv
-	$(python) classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv haberman 1 2040
-
-results/error_estimations/plankton/transfusion/transfusion-2040-0.33.csv	: classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv
-	$(python) classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv transfusion 1 2040
-
-results/error_estimations/plankton/wdbc/wdbc-2040-0.33.csv	: classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv
-	$(python) classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv wdbc 1 2040
-
-results/error_estimations/plankton/SPECT/SPECT-2040-0.33.csv	: classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv
-	$(python) classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv SPECT 1 2040
-
-results/error_estimations/plankton/titanic/titanic-2040-0.33.csv	: classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv
-	$(python) classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv titanic 1 2040
-
-results/error_estimations/plankton/splice/splice-2040-0.33.csv	: classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv
-	$(python) classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv splice 1 2040
-
-results/error_estimations/plankton/abalone/abalone-2040-0.33.csv	: classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv
-	$(python) classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv abalone 1 2040
-
-results/error_estimations/plankton/computer-hardware/computer-hardware-2040-0.33.csv	: classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv
-	$(python) classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv computer-hardware 1 2040
-
-results/error_estimations/plankton/wine-quality-red/wine-quality-red-2040-0.33.csv	: classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv wine-quality-red 1 2040
-
-results/error_estimations/plankton/wine-quality-white/wine-quality-white-2040-0.33.csv	: classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv wine-quality-white 1 2040
-
-results/error_estimations/plankton/auto-mpg/auto-mpg-2040-0.33.csv	: classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv
-	$(python) classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv auto-mpg 1 2040
-
-results/error_estimations/plankton/autos/autos-2040-0.33.csv	: classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv
-	$(python) classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv autos 1 2040
-
-results/error_estimations/plankton/residential-v9/residential-v9-2040-0.33.csv	: classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv
-	$(python) classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv residential-v9 1 2040
-
-results/error_estimations/plankton/residential-v10/residential-v10-2040-0.33.csv	: classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv
-	$(python) classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv residential-v10 1 2040
-
-results/error_estimations/plankton/ticdata/ticdata-2040-0.33.csv	: classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv
-	$(python) classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv ticdata 1 2040
-
-results/error_estimations/plankton/student-mat/student-mat-2040-0.33.csv	: classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv
-	$(python) classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv student-mat 1 2040
-
-results/error_estimations/plankton/student-por/student-por-2040-0.33.csv	: classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv
-	$(python) classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv student-por 1 2040
-
-results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2040-0.33.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2040
-
-results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2040-0.33.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2040
-
-results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2040-0.33.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2040
-
-results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2040-0.33.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2040
-
-results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2040-0.33.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2040
-
-results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2040-0.33.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2040
-
-results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2040-0.33.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2040
-
-results/error_estimations/plankton/iris/iris-2041-0.33.csv	: classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv
-	$(python) classification_plankton.py datasets/iris-1.csv datasets/iris-2.csv iris 1 2041
-
-results/error_estimations/plankton/sonar/sonar-2041-0.33.csv	: classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv
-	$(python) classification_plankton.py datasets/sonar-1.csv datasets/sonar-2.csv sonar 1 2041
-
-results/error_estimations/plankton/ionosphere/ionosphere-2041-0.33.csv	: classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv
-	$(python) classification_plankton.py datasets/ionosphere-1.csv datasets/ionosphere-2.csv ionosphere 1 2041
-
-results/error_estimations/plankton/cmc/cmc-2041-0.33.csv	: classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv
-	$(python) classification_plankton.py datasets/cmc-1.csv datasets/cmc-2.csv cmc 1 2041
-
-results/error_estimations/plankton/haberman/haberman-2041-0.33.csv	: classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv
-	$(python) classification_plankton.py datasets/haberman-1.csv datasets/haberman-2.csv haberman 1 2041
-
-results/error_estimations/plankton/transfusion/transfusion-2041-0.33.csv	: classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv
-	$(python) classification_plankton.py datasets/transfusion-1.csv datasets/transfusion-2.csv transfusion 1 2041
-
-results/error_estimations/plankton/wdbc/wdbc-2041-0.33.csv	: classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv
-	$(python) classification_plankton.py datasets/wdbc-1.csv datasets/wdbc-2.csv wdbc 1 2041
-
-results/error_estimations/plankton/SPECT/SPECT-2041-0.33.csv	: classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv
-	$(python) classification_plankton.py datasets/SPECT-1.csv datasets/SPECT-2.csv SPECT 1 2041
-
-results/error_estimations/plankton/titanic/titanic-2041-0.33.csv	: classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv
-	$(python) classification_plankton.py datasets/titanic-1.csv datasets/titanic-2.csv titanic 1 2041
-
-results/error_estimations/plankton/splice/splice-2041-0.33.csv	: classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv
-	$(python) classification_plankton.py datasets/splice-1.csv datasets/splice-2.csv splice 1 2041
-
-results/error_estimations/plankton/abalone/abalone-2041-0.33.csv	: classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv
-	$(python) classification_plankton.py datasets/abalone-1.csv datasets/abalone-2.csv abalone 1 2041
-
-results/error_estimations/plankton/computer-hardware/computer-hardware-2041-0.33.csv	: classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv
-	$(python) classification_plankton.py datasets/computer-hardware-1.csv datasets/computer-hardware-2.csv computer-hardware 1 2041
-
-results/error_estimations/plankton/wine-quality-red/wine-quality-red-2041-0.33.csv	: classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-red-1.csv datasets/wine-quality-red-2.csv wine-quality-red 1 2041
-
-results/error_estimations/plankton/wine-quality-white/wine-quality-white-2041-0.33.csv	: classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv
-	$(python) classification_plankton.py datasets/wine-quality-white-1.csv datasets/wine-quality-white-2.csv wine-quality-white 1 2041
-
-results/error_estimations/plankton/auto-mpg/auto-mpg-2041-0.33.csv	: classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv
-	$(python) classification_plankton.py datasets/auto-mpg-1.csv datasets/auto-mpg-2.csv auto-mpg 1 2041
-
-results/error_estimations/plankton/autos/autos-2041-0.33.csv	: classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv
-	$(python) classification_plankton.py datasets/autos-1.csv datasets/autos-2.csv autos 1 2041
-
-results/error_estimations/plankton/residential-v9/residential-v9-2041-0.33.csv	: classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv
-	$(python) classification_plankton.py datasets/residential-v9-1.csv datasets/residential-v9-2.csv residential-v9 1 2041
-
-results/error_estimations/plankton/residential-v10/residential-v10-2041-0.33.csv	: classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv
-	$(python) classification_plankton.py datasets/residential-v10-1.csv datasets/residential-v10-2.csv residential-v10 1 2041
-
-results/error_estimations/plankton/ticdata/ticdata-2041-0.33.csv	: classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv
-	$(python) classification_plankton.py datasets/ticdata-1.csv datasets/ticdata-2.csv ticdata 1 2041
-
-results/error_estimations/plankton/student-mat/student-mat-2041-0.33.csv	: classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv
-	$(python) classification_plankton.py datasets/student-mat-1.csv datasets/student-mat-2.csv student-mat 1 2041
-
-results/error_estimations/plankton/student-por/student-por-2041-0.33.csv	: classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv
-	$(python) classification_plankton.py datasets/student-por-1.csv datasets/student-por-2.csv student-por 1 2041
-
-results/error_estimations/plankton/plankton-2006-2007/plankton-2006-2007-2041-0.33.csv	: classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv
-	$(python) classification_plankton.py datasets/plankton-2006-2.csv  datasets/plankton-2007-1.csv plankton-2006-2007 1 2041
-
-results/error_estimations/plankton/plankton-2007-2008/plankton-2007-2008-2041-0.33.csv	: classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv
-	$(python) classification_plankton.py datasets/plankton-2007-2.csv  datasets/plankton-2008-1.csv plankton-2007-2008 1 2041
-
-results/error_estimations/plankton/plankton-2008-2009/plankton-2008-2009-2041-0.33.csv	: classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv
-	$(python) classification_plankton.py datasets/plankton-2008-2.csv  datasets/plankton-2009-1.csv plankton-2008-2009 1 2041
-
-results/error_estimations/plankton/plankton-2009-2010/plankton-2009-2010-2041-0.33.csv	: classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv
-	$(python) classification_plankton.py datasets/plankton-2009-2.csv  datasets/plankton-2010-1.csv plankton-2009-2010 1 2041
-
-results/error_estimations/plankton/plankton-2010-2011/plankton-2010-2011-2041-0.33.csv	: classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv
-	$(python) classification_plankton.py datasets/plankton-2010-2.csv  datasets/plankton-2011-1.csv plankton-2010-2011 1 2041
-
-results/error_estimations/plankton/plankton-2011-2012/plankton-2011-2012-2041-0.33.csv	: classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv
-	$(python) classification_plankton.py datasets/plankton-2011-2.csv  datasets/plankton-2012-1.csv plankton-2011-2012 1 2041
-
-results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2041-0.33.csv	: classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv
-	$(python) classification_plankton.py datasets/plankton-2012-2.csv  datasets/plankton-2013-1.csv plankton-2012-2013 1 2041
+results/error_estimations/plankton/plankton-2012-2013/plankton-2012-2013-2041-1.0.csv	: classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv
+	$(python) classification_plankton.py datasets/plankton/plankton-2012-2.csv  datasets/plankton/plankton-2013-1.csv plankton-2012-2013 1 2041
 
 results/results-final/plankton.csv	: generate_results.py 
 	$(python) generate_results.py plankton
