@@ -41,7 +41,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
     CV = cross_val_predict(model, X_train, Y_train, cv=10)
     CVError = error(CV, Y_train)
 
-    importanceModel = LogisticRegression(random_state=random, C=1, coef0=0)
+    importanceModel = LogisticRegression(random_state=random, C=1, coef0=0, n_jobs=None)
     importanceModel.fit(X_train, Y_train)
 
     P_train = importanceModel.predict(X_train)

@@ -47,14 +47,15 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         'C': [10**(-3), 10**(-2), 10**(-1), 10**(0), 10**(1), 10**(2), 10**(3)],
         'random_state': [random],
         'class_weight': ['balanced'],
-        'coef0': [0]
+        'coef0': [0],
+        'n_jobs': [None]
     }
     grid_LR = GridSearchCV(estimator=lr,
                             param_grid=params,
                             scoring='accuracy',
                             cv=5,
                             verbose=1,
-                            n_jobs=-1)
+                            n_jobs=None)
 
     grid_LR.fit(X_train, Y_train)
 

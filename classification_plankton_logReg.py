@@ -39,7 +39,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     CV = cross_val_predict(model, X_train, Y_train, cv=10)#, method='decision_function')
     CVError = error(CV, Y_train)
 
-    importanceModel = LogisticRegression(random_state=random, C=1, class_weight='balanced', coef0=0)
+    importanceModel = LogisticRegression(random_state=random, C=1, class_weight='balanced', coef0=0, n_jobs=None)
     importanceModel.fit(X_train, Y_train)
 
     P_train = importanceModel.decision_function(X_train)

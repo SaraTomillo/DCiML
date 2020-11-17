@@ -51,7 +51,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
                            scoring='accuracy',
                            cv=5,
                            verbose=1,
-                           n_jobs=-1)
+                           n_jobs=None)
     grid_SVR.fit(X_train, Y_train)
     importanceModel = grid_SVR.best_estimator_
 
