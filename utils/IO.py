@@ -232,7 +232,7 @@ def printResultsPlankton(datasets, problem, ranks_methods, CDs_methods, ranks_al
     with open(filename, 'w', newline='') as file:
         writer = csv.writer(file, delimiter=',')
         writer.writerow(["FRIENDMAN ALL"])
-        writer.writerow(["Dataset","CV", "LR", "PLR", "KDE", "PKDE"])
+        writer.writerow(["Dataset","CV", "LR", "PLR", "BLR", "KDE", "PKDE", "BKDE"])
         for i in range(len(datasets)):
             aux = []
             aux.append(datasets[i])
@@ -248,7 +248,7 @@ def printResultsPlankton(datasets, problem, ranks_methods, CDs_methods, ranks_al
         writer.writerow(aux)
 
         writer.writerows([[''],[''],["FRIEDMAN BY METHODS"]])
-        writer.writerow(["Dataset","CV", "LR", "PLR", "CV", "KDE", "PKDE"])
+        writer.writerow(["Dataset","CV", "LR", "PLR", "BLR", "CV", "KDE", "PKDE", "BKDE"])
         for i in range(len(datasets)):
             aux = []
             aux.append(datasets[i])
@@ -265,7 +265,7 @@ def printResultsPlankton(datasets, problem, ranks_methods, CDs_methods, ranks_al
 
         writer.writerows([[''], [''], ["WILCOXON"]])
         writer.writerow(["pair","wins 1st","wins 2nd","p-value"])
-        pairs = ["LR-PLR", "KDE-PKDE"]
+        pairs = ["LR-PLR", "LR-BLR", "PLR-BLR", "KDE-PKDE", "KDE-BKDE", "PKDE-BKDE"]
         for i in range(len(wilcoxon)):
             aux = []
             aux.append(pairs[i])
