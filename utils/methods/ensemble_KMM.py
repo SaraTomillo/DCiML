@@ -15,8 +15,8 @@ def partition(data, k):
     return out
 
 
-def ensemble_KMM_test(X_train, X_test, k):
-    random = np.RandomState(2032)
+def ensemble_KMM_test(X_train, X_test, k=20, seed=2032):
+    random = np.RandomState(seed)
 
     shuffled_test = np.shuffle(X_test, random)
     partitions_test = partition(shuffled_test, k)
@@ -37,8 +37,8 @@ def ensemble_KMM_test(X_train, X_test, k):
     return importances
 
 
-def ensemble_KMM_train(X_train, X_test):
-    random = np.RandomState(2032)
+def ensemble_KMM_train(X_train, X_test, k=20, seed=2032):
+    random = np.RandomState(seed)
 
     shuffled_train = np.shuffle(X_train, random)
     partitions_train = partition(shuffled_train, k)

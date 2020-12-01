@@ -28,14 +28,9 @@ def kmm(X, Z):
     if not DX == DZ:
         raise ValueError('Dimensionalities of X and Z should be equal.')
 
-    # Compute sample pairwise distances
-    KXX = cdist(X, X, metric='euclidean')
-    KXZ = cdist(X, Z, metric='euclidean')
-
     # Radial basis functions
-    KXX = np.exp(-KXX / (2 * bandwidth ** 2))
-    KXZ = np.exp(-KXZ / (2 * bandwidth ** 2))
-
+    KXX = np.exp(-cdist(X, X, metric='euclidean') / (2 * bandwidth ** 2))
+    KXZ = np.exp(-cdist(X, Z, metric='euclidean') / (2 * bandwidth ** 2))
 
     # Collapse second kernel and normalize
     KXZ = N / M * np.sum(KXZ, axis=1)
