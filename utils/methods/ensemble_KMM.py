@@ -1,6 +1,5 @@
 import numpy as np
 import estimation_methods as estimation_methods
-from utils.methods import KMM_optimized
 
 
 def partition(data, k):
@@ -16,16 +15,14 @@ def partition(data, k):
 
 
 def ensemble_KMM_test(X_train, X_test, k=20, seed=2032):
-    random = np.RandomState(seed)
-
-    shuffled_test = np.shuffle(X_test, random)
-    partitions_test = partition(shuffled_test, k)
+    np.random.RandomState(seed)
+    np.random.shuffle(X_test)
+    partitions_test = partition(X_test, k)
 
     importances_partitions = []
     weights = []
     for test_partition in partitions_test:
         importance = estimation_methods.kmm(X_train, test_partition)
-        #importance = KMM_optimized.kmm(X_train, test_partition)
         weight = len(test_partition)/len(X_test)
 
         importances_partitions.append(importance)
@@ -36,32 +33,16 @@ def ensemble_KMM_test(X_train, X_test, k=20, seed=2032):
 
     return importances
 
-
 def ensemble_KMM_train(X_train, X_test, k=20, seed=2032):
-    random = np.RandomState(seed)
-
-    shuffled_train = np.shuffle(X_train, random)
-    partitions_train = partition(shuffled_train, k)
+    np.random.RandomState(seed)
+    np.random.shuffle(X_train)
+    partitions_train = partition(X_train, k)
 
     importances_partitions = []
     for train_partition in partitions_train:
         importance = estimation_methods.kmm(train_partition, X_test)
-        #importance = KMM_optimized.kmm(train_partition, X_test)
         importances_partitions.append(importance)
 
     importances = np.sum(importances_partitions)
 
     return importances
-
-
-
-import utils.IO as IO
-filename_train = "datasets/classification/iris/datasets-2032/iris-train-0.33.csv"
-filename_test = "datasets/classification/iris/datasets-2032/iris-test-0.33-0.csv"
-X_train, Y_train, X_test, Y_test = IO.readDataset(filename_train, filename_test)
-
-print(estimation_methods.kmm(X_train, X_test))
-print()
-print(ensemble_KMM_test(X_train, X_test, 2))
-print()
-print(ensemble_KMM_train(X_train, X_test, 2))

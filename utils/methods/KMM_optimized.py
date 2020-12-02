@@ -28,9 +28,38 @@ def kmm(X, Z):
     if not DX == DZ:
         raise ValueError('Dimensionalities of X and Z should be equal.')
 
+    constant = (2 * bandwidth ** 2)
+
     # Radial basis functions
-    KXX = np.exp(-cdist(X, X, metric='euclidean') / (2 * bandwidth ** 2))
-    KXZ = np.exp(-cdist(X, Z, metric='euclidean') / (2 * bandwidth ** 2))
+    KXX = np.exp(-cdist(X, X, metric='euclidean') / constant)
+    KXZ = np.exp(-cdist(X, Z, metric='euclidean') / constant)
+
+
+    print(KXZ[0])
+    # Crear matrices con dimensiones KXX, KXZ
+    KXX = np.zeros(shape=(N, N))
+    KXZ = np.zeros(shape=(N, M))
+
+    # Bucle en X (i)
+    for i in range(N-1):
+        # Bucle en X (j)
+        for j in range(i, N):
+            distance = np.linalg.norm(X[i]-X[j])
+            value = np.exp(-distance/constant)
+            KXX[i][j] = value
+            KXX[j][i] = value
+
+    # Bucle en X (i)
+    for i in range(N):
+        # Bucle en Z (j)
+        for j in range(M):
+            distance = np.linalg.norm(X[i]-Z[j])
+            value = np.exp(-distance / constant)
+            KXZ[i][j] = value
+
+
+    print(KXZ[0])
+
 
     # Collapse second kernel and normalize
     KXZ = N / M * np.sum(KXZ, axis=1)
