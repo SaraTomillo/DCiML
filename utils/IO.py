@@ -4,10 +4,10 @@ import numpy as np
 import os
 
 
-headers = []
 headers_regression = ["Eval", "CV", "LR", "PLR", "CLR", "MLR", "BLR", "KMM","PKMM", "CKMM", "MKMM", "BKMM", "KDE", "PKDE", "CKDE", "MKDE", "BKDE", "KLIEP", "PKLIEP", "CKLIEP", "MKLIEP", "BKLIEP"]
-headers_classification = ["Eval", "CV", "LR", "PLR", "BLR", "KMM", "PKMM", "BKMM", "KDE", "PKDE", "BKDE", "KLIEP", "PKLIEP", "BKLIEP"]
+headers = ["Eval", "CV", "LR", "PLR", "BLR", "KMM", "PKMM", "BKMM", "KDE", "PKDE", "BKDE", "KLIEP", "PKLIEP", "BKLIEP"]
 headers_plankton = ["Eval", "CV", "LR", "PLR", "BLR", "KDE", "PKDE", "BKDE"]
+headers_classification = headers
 
 def readDataset(filename_train, filename_test):
     data_train = pd.read_csv(filename_train, sep=",", header=0)

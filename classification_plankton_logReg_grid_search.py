@@ -66,16 +66,18 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     Y_test = Y_test.reshape(-1, 1)
 
     train = []
-    for row in range(len(Y_train)):
+    for row in range(len(X_train)):
         aux = []
-        aux.append(Y_train[row])
+        for element in X_train[row]:
+            aux.append(element)
         aux.append(P_train[row])
         train.append(aux)
 
     test = []
-    for row in range(len(Y_test)):
+    for row in range(len(X_test)):
         aux = []
-        aux.append(Y_test[row])
+        for element in X_test[row]:
+            aux.append(element)
         aux.append(P_test[row])
         test.append(aux)
 

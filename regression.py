@@ -47,16 +47,18 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
     P_test = importanceModel.predict(X_test)
 
     train = []
-    for row in range(len(Y_train)):
+    for row in range(len(X_train)):
         aux = []
-        aux.append(Y_train[row])
+        for element in X_train[row]:
+            aux.append(element)
         aux.append(P_train[row])
         train.append(aux)
 
     test = []
-    for row in range(len(Y_test)):
+    for row in range(len(X_test)):
         aux = []
-        aux.append(Y_test[row])
+        for element in X_test[row]:
+            aux.append(element)
         aux.append(P_test[row])
         test.append(aux)
 
@@ -78,7 +80,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         print("Fallo PLR")
         PLR_err = []
         traceback.print_exc()
-
+    """
     try:
         importances_logReg = estimation_methods.log_regression(Y_train, Y_test, random)
         CLR_err = CVError * importances_logReg
@@ -94,7 +96,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         print("Fallo MLR")
         MLR_err = []
         traceback.print_exc()
-
+    """
     try:
         importances_logReg = estimation_methods.log_regression(train, test, random)
         BLR_err = CVError * importances_logReg
@@ -118,7 +120,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         print("Fallo PKMM")
         PKMM_err = []
         traceback.print_exc()
-
+    """
     try:
         importances_KMM = estimation_methods.kmm(Y_train, Y_test)
         CKMM_err = CVError * importances_KMM
@@ -134,7 +136,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         print("Fallo MKMM")
         MKMM_err = []
         traceback.print_exc()
-
+    """
     try:
         importances_KMM = estimation_methods.kmm(train, test)
         BKMM_err = CVError * importances_KMM
@@ -158,7 +160,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         print("Fallo PKDE")
         PKDE_err = []
         traceback.print_exc()
-
+    """
     try:
         importances_kernel_density = estimation_methods.kernel_density(Y_train, Y_test, bandwith, kernel)
         CKDE_err = CVError * importances_kernel_density
@@ -174,7 +176,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         print("Fallo MKDE")
         MKDE_err = []
         traceback.print_exc()
-
+    """
     try:
         importances_kernel_density = estimation_methods.kernel_density(train, test, bandwith, kernel)
         BKDE_err = CVError * importances_kernel_density
@@ -198,7 +200,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         print("Fallo PKLIEP")
         PKLIEP_err = []
         traceback.print_exc()
-
+    """
     try:
         importances_kliep = estimation_methods.kliep(Y_train, Y_test)
         CKLIEP_err = CVError * importances_kliep
@@ -215,7 +217,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         MKLIEP_err = []
         traceback.print_exc()
 
-
+    """
     try:
         importances_kliep = estimation_methods.kliep(train, test)
         BKLIEP_err = CVError * importances_kliep
@@ -224,11 +226,18 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         BKLIEP_err = []
         traceback.print_exc()
 
+    """
     return [np.average(eval), np.average(CVError),
             np.average(LR_err), np.average(PLR_err), np.average(CLR_err), np.average(MLR_err), np.average(BLR_err),
             np.average(KMM_err), np.average(PKMM_err), np.average(CKMM_err), np.average(MKMM_err), np.average(BKMM_err),
             np.average(KDE_err), np.average(PKDE_err),np.average(CKDE_err), np.average(MKDE_err),  np.average(BKDE_err),
             np.average(KLIEP_err), np.average(PKLIEP_err), np.average(CKLIEP_err), np.average(MKLIEP_err),  np.average(BKLIEP_err)]
+    """
+    return [np.average(eval), np.average(CVError),
+            np.average(LR_err), np.average(PLR_err), np.average(BLR_err),
+            np.average(KMM_err), np.average(PKMM_err), np.average(BKMM_err),
+            np.average(KDE_err), np.average(PKDE_err), np.average(BKDE_err),
+            np.average(KLIEP_err), np.average(PKLIEP_err), np.average(BKLIEP_err)]
 
 def main():
     parser = argparse.ArgumentParser()

@@ -49,22 +49,27 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     Y_test = Y_test.reshape(-1, 1)
 
     train = []
-    for row in range(len(Y_train)):
+    for row in range(len(X_train)):
         aux = []
-        aux.append(Y_train[row])
+        for element in X_train[row]:
+            aux.append(element)
         aux.append(P_train[row])
         train.append(aux)
 
     test = []
-    for row in range(len(Y_test)):
+    for row in range(len(X_test)):
         aux = []
-        aux.append(Y_test[row])
+        for element in X_test[row]:
+            aux.append(element)
         aux.append(P_test[row])
         test.append(aux)
 
     train = Y_train.reshape(-1, 1)
     test = Y_test.reshape(-1, 1)
 
+    LR_err = []
+    PLR_err = []
+    """
     try:
         importances_logReg = estimation_methods.log_regression(X_train, X_test, random)
         LR_err = CVError * importances_logReg
@@ -88,7 +93,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
             print("Error PLR")
             PLR_err = []
             traceback.print_exc()
-
+    """
     try:
         importances_BlogReg = estimation_methods.log_regression(train, test, random)
         BLR_err = CVError * importances_BlogReg
@@ -97,6 +102,9 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         BLR_err = []
         traceback.print_exc()
 
+    KMM_err = []
+    PKMM_err=[]
+    """
     try:
         importances_KMM = estimation_methods.kmm(X_train, X_test)
         KMM_err = CVError * importances_KMM
@@ -120,7 +128,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
             print("Error PKMM")
             PKMM_err = []
             traceback.print_exc()
-
+    """
     try:
         importances_BKMM = estimation_methods.kmm(train, test)
         BKMM_err = CVError * importances_BKMM
@@ -129,6 +137,9 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         BKMM_err = []
         traceback.print_exc()
 
+    KDE_err = []
+    PKDE_err = []
+    """ 
     try:
         importances_kernel_density = estimation_methods.kernel_density(X_train, X_test, bandwith, kernel)
         KDE_err = CVError * importances_kernel_density
@@ -144,7 +155,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         print("Error PKDE")
         PKDE_err = []
         traceback.print_exc()
-
+    """
     try:
         importances_kernel_density = estimation_methods.kernel_density(train, test, bandwith, kernel)
         BKDE_err = CVError * importances_kernel_density
@@ -153,6 +164,9 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         BKDE_err = []
         traceback.print_exc()
 
+    KLIEP_err = []
+    PKLIEP_err = []
+    """
     try:
         importances_KLIEP = estimation_methods.kliep(X_train, X_test)
         KLIEP_err = CVError * importances_KLIEP
@@ -168,7 +182,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         print("Error PKLIEP")
         PKLIEP_err = []
         traceback.print_exc()
-
+    """
     try:
         importances_KLIEP = estimation_methods.kliep(train, test)
         BKLIEP_err = CVError * importances_KLIEP
