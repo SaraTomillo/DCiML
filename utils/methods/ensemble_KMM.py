@@ -29,7 +29,7 @@ def ensemble_KMM_test(X_train, X_test, k=20, seed=2032):
         weights.append(weight)
 
 
-    importances = np.sum(importances_partitions*weights)
+    importances = np.concatenate(importances_partitions*weights)
 
     return importances
 
@@ -43,6 +43,5 @@ def ensemble_KMM_train(X_train, X_test, k=20, seed=2032):
         importance = estimation_methods.kmm(train_partition, X_test)
         importances_partitions.append(importance)
 
-    importances = np.sum(importances_partitions)
-
+    importances = np.concatenate(importances_partitions)
     return importances

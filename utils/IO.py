@@ -5,9 +5,10 @@ import os
 
 
 headers_regression = ["Eval", "CV", "LR", "PLR", "CLR", "MLR", "BLR", "KMM","PKMM", "CKMM", "MKMM", "BKMM", "KDE", "PKDE", "CKDE", "MKDE", "BKDE", "KLIEP", "PKLIEP", "CKLIEP", "MKLIEP", "BKLIEP"]
-headers = ["Eval", "CV", "LR", "PLR", "BLR", "KMM", "PKMM", "BKMM", "KDE", "PKDE", "BKDE", "KLIEP", "PKLIEP", "BKLIEP"]
+headers_classification = ["Eval", "CV", "LR", "PLR", "BLR", "KMM", "PKMM", "BKMM", "KDE", "PKDE", "BKDE", "KLIEP", "PKLIEP", "BKLIEP"]
 headers_plankton = ["Eval", "CV", "LR", "PLR", "BLR", "KDE", "PKDE", "BKDE"]
-headers_classification = headers
+headers_plankton_KMM_ens = ["Eval", "CV", "KMM-ENS", "PKMM-ENS", "BKMM-ENS"]
+headers = []
 
 def readDataset(filename_train, filename_test):
     data_train = pd.read_csv(filename_train, sep=",", header=0)
@@ -29,12 +30,15 @@ def writeToCSV(data, problem_type, dataset_name, execution_id, seed):
         os.makedirs(directory)
 
     headers = []
-    if problem_type == "regression":
+    if "regression" in problem_type:
         headers = headers_regression
-    elif problem_type == "classification":
+    elif "classification" in problem_type:
         headers = headers_classification
-    elif problem_type == "plankton":
-        headers = headers_plankton
+    elif "plankton" in problem_type:
+        if "ens" in problem_type:
+            headers = headers_plankton
+        else:
+            headers = headers_plankton
 
 
     with open(filename, 'w', newline='') as file:
@@ -57,6 +61,8 @@ def saveCSV(data, title, problem_type, dataset_name, percentage, headers=headers
             headers = headers_classification
         elif problem_type == "plankton":
             headers = headers_plankton
+        elif problem_type == "plankton-ens":
+            headers = headers_plankton_KMM_ens
 
     with open(filename, 'w', newline='') as file:
         writer = csv.writer(file, delimiter=',')

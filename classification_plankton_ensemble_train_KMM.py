@@ -9,6 +9,7 @@ from utils import IO
 from utils.methods import ensemble_KMM
 import tracemalloc
 from utils.utils import minmax, reduce, npShuffle
+import estimation_methods
 
 
 def error(predictions, y):
@@ -89,7 +90,6 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
             print("Error PKMM")
             PKMM_err = []
             traceback.print_exc()
-
     try:
         importances_BKMM = ensemble_KMM.ensemble_KMM_train(train, test)
         BKMM_err = CVError * importances_BKMM
@@ -100,6 +100,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
 
     return [np.average(eval), np.average(CVError),
             np.average(KMM_err), np.average(PKMM_err), np.average(BKMM_err)]
+
 
 def main():
     parser = argparse.ArgumentParser()
