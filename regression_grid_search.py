@@ -48,7 +48,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
     }
     grid_SVR = GridSearchCV(estimator=svr,
                            param_grid=params,
-                           scoring='accuracy',
+                           scoring='neg_mean_absolute_error',
                            cv=5,
                            verbose=1,
                            n_jobs=None)
