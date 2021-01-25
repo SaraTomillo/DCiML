@@ -8,6 +8,7 @@ from sklearn.svm import SVC
 from utils import IO
 
 import estimation_methods
+from utils.methods import ensemble_KMM
 import tracemalloc
 from utils.utils import minmax, reduce, npShuffle
 
@@ -83,6 +84,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     train = Y_train.reshape(-1, 1)
     test = Y_test.reshape(-1, 1)
 
+    """
     try:
         importances_logReg = estimation_methods.log_regression(Y_train, Y_test, random)
         LR_err = CVError * importances_logReg
@@ -106,7 +108,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
             print("Error PLR")
             PLR_err = []
             traceback.print_exc()
-
+    
     try:
         importances_BlogReg = estimation_methods.log_regression(train, test, random)
         BLR_err = CVError * importances_BlogReg
@@ -138,7 +140,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
             print("Error PKMM")
             PKMM_err = []
             traceback.print_exc()
-
+   
     try:
         importances_BKMM = estimation_methods.kmm(train, test)
         BKMM_err = CVError * importances_BKMM
@@ -162,7 +164,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         print("Error PKDE")
         PKDE_err = []
         traceback.print_exc()
-
+   
     try:
         importances_kernel_density = estimation_methods.kernel_density(train, test, bandwith, kernel)
         BKDE_err = CVError * importances_kernel_density
@@ -186,6 +188,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         print("Error PKLIEP")
         PKLIEP_err = []
         traceback.print_exc()
+   
 
     try:
         importances_KLIEP = estimation_methods.kliep(train, test)
@@ -194,12 +197,60 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         print("Error BKLIEP")
         BKLIEP_err = []
         traceback.print_exc()
+        
+    """
+    LR_err = []
+    PLR_err = []
+    BLR_err = []
+    KMM_err = []
+    PKMM_err = []
+    BKMM_err = []
+    KDE_err = []
+    PKDE_err = []
+    BKDE_err = []
+    KLIEP_err = []
+    PKLIEP_err =[]
+    BKLIEP_err = []
+
+    try:
+        importances_KMM_ENS = ensemble_KMM.ensemble_KMM_train(X_train, X_test)
+        KMM_ENS_err = CVError * importances_KMM_ENS
+    except Exception:
+        print("Error KMM ENS")
+        KMM_ENS_err = []
+        traceback.print_exc()
+    try:
+        importances_KLIEP_model = ensemble_KMM.ensemble_KMM_train(P_train, P_test)
+        PKMM_ENS_err = CVError * importances_KLIEP_model
+    except Exception:
+        print("Error PKLIEP")
+        PKMM_ENS_err = []
+        traceback.print_exc()
+    if len(PKMM_ENS_err) == 0:
+        try:
+            importances_PKMM = ensemble_KMM.ensemble_KMM_train_model(P_train, P_test)
+            PKMM_ENS_err = CVError * importances_PKMM
+        except Exception:
+            print("Error PKMM")
+            PKMM_ENS_err = []
+            traceback.print_exc()
+
+    try:
+        importances_KLIEP = ensemble_KMM.ensemble_KMM_train(train, test)
+        BKMM_ENS_err = CVError * importances_KLIEP
+    except Exception:
+        print("Error BKLIEP")
+        BKMM_ENS_err = []
+        traceback.print_exc()
 
     return [np.average(eval), np.average(CVError),
             np.average(LR_err), np.average(PLR_err), np.average(BLR_err),
             np.average(KMM_err), np.average(PKMM_err), np.average(BKMM_err),
             np.average(KDE_err), np.average(PKDE_err), np.average(BKDE_err),
-            np.average(KLIEP_err), np.average(PKLIEP_err),  np.average(BKLIEP_err)]
+            np.average(KLIEP_err), np.average(PKLIEP_err),  np.average(BKLIEP_err),
+            np.average(KMM_ENS_err), np.average(PKMM_ENS_err),  np.average(BKMM_ENS_err)]
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("filename_train", help="the csv file containing the train data")

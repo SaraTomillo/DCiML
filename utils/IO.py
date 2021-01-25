@@ -3,10 +3,9 @@ import pandas as pd
 import numpy as np
 import os
 
-
-headers_regression = ["Eval", "CV", "LR", "PLR", "CLR", "MLR", "BLR", "KMM","PKMM", "CKMM", "MKMM", "BKMM", "KDE", "PKDE", "CKDE", "MKDE", "BKDE", "KLIEP", "PKLIEP", "CKLIEP", "MKLIEP", "BKLIEP"]
-headers_classification = ["Eval", "CV", "LR", "PLR", "BLR", "KMM", "PKMM", "BKMM", "KDE", "PKDE", "BKDE", "KLIEP", "PKLIEP", "BKLIEP"]
-headers_plankton = ["Eval", "CV", "LR", "PLR", "BLR", "KDE", "PKDE", "BKDE"]
+headers_regression = ["Eval", "CV", "LR", "PLR", "BLR", "KMM", "PKMM", "BKMM", "EKMM", "EPKMM", "EBKMM", "KDE", "PKDE", "BKDE", "KLIEP", "PKLIEP", "BKLIEP"]
+headers_classification = ["Eval", "CV", "LR", "PLR", "BLR", "KMM", "PKMM", "BKMM", "EKMM", "EPKMM", "EBKMM", "KDE", "PKDE", "BKDE", "KLIEP", "PKLIEP", "BKLIEP"]
+headers_plankton = ["Eval", "CV", "LR", "PLR", "BLR", "KDE", "PKDE", "BKDE", "EKMM", "EPKMM", "EBKMM"]
 headers_plankton_KMM_ens = ["Eval", "CV", "KMM-ENS", "PKMM-ENS", "BKMM-ENS"]
 headers = []
 
@@ -54,15 +53,16 @@ def saveCSV(data, title, problem_type, dataset_name, percentage, headers=headers
     if not os.path.isdir(directory):
         os.makedirs(directory)
 
-    if len(headers) == 0:
-        if problem_type == "regression":
-            headers = headers_regression
-        elif problem_type == "classification":
-            headers = headers_classification
-        elif problem_type == "plankton":
+    headers = []
+    if "regression" in problem_type:
+        headers = headers_regression
+    elif "classification" in problem_type:
+        headers = headers_classification
+    elif "plankton" in problem_type:
+        if "ens" in problem_type:
             headers = headers_plankton
-        elif problem_type == "plankton-ens":
-            headers = headers_plankton_KMM_ens
+        else:
+            headers = headers_plankton
 
     with open(filename, 'w', newline='') as file:
         writer = csv.writer(file, delimiter=',')

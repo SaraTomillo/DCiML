@@ -5,18 +5,19 @@ sys.path.append(os.path.dirname(CURRENT_DIR))
 datasets_classification = ["iris", "sonar", "ionosphere", "cmc", "haberman",
                            "transfusion", "wdbc", "SPECT", "titanic", "splice"]
 
+datasets_classification = ["haberman"]#,"cmc"] "iris", "sonar", "ionosphere",
+
 datasets_regression = ["abalone", "computer-hardware", "wine-quality-red", "wine-quality-white",
-                       "auto-mpg", "autos", "residential-v9", "residential-v10", "ticdata", "student-mat","student-por"]
+                       "auto-mpg", "autos", "residential-v9", "residential-v10", "ticdata","student-mat","student-por"]
+datasets_regression = ["abalone", "computer-hardware", "autos", "autos-mpg", "wine-quality-red"]
 
 datasets_plankton = ["plankton-2006", "plankton-2007", "plankton-2008", "plankton-2009", "plankton-2010", "plankton-2011", "plankton-2012", "plankton-2013"]
 
+classification_script = "classification_logReg_grid_search.py"
+regression_script = "regression_logReg_grid_search.py"
+plankton_script = "classification_plankton_ensemble_train_KMM_grid_search.py"
 
-classification_script = "classification.py"
-regression_script = "regression.py"
-plankton_script = "classification_plankton.py"
-
-
-problem_type = ""
+problem_type = "-LR-GS"
 results_folder = problem_type + "/"
 
 datasets = []
@@ -26,7 +27,7 @@ for element in datasets_classification:
 for element in datasets_regression:
     datasets.append(element)
 
-f = open("makefile"+problem_type, "w")
+f = open("makefile", "w")#open("makefile"+problem_type, "w")
 f.write("python=python3\n\n")
 
 # Write the necessary files for regression
@@ -54,7 +55,7 @@ f.write("classificationFiles =")
 # Files datasets
 test_percentages = [0.33]
 tests_number = 20
-seeds = [2032, 2033, 2034, 2035, 2036]
+seeds = [2033]
 
 for seed in seeds:
     for dataset in datasets_classification:
@@ -108,6 +109,8 @@ f.write("\t@echo DELETE done\n\n")
 f.write("build\t: delete all\n")
 f.write("\t@echo BUILD done\n\n")
 
+
+seeds = [2032, 2033, 2034, 2035, 2036]
 # DATASETS REGRESSION
 for seed in seeds:
     for dataset in datasets_regression:
@@ -141,7 +144,8 @@ f.write("\t$(python) generate_results.py classification" + problem_type + "\n\n"
 
 
 #FOR plankton
-test_percentage = 1.0
+test_percentage = 1
+seeds = [2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041]
 for seed in seeds:
     for dataset in datasets_plankton:
         # Write individual instructions

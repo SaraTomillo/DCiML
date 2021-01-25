@@ -6,6 +6,7 @@ from sklearn.model_selection import cross_val_predict, GridSearchCV
 from sklearn.svm import SVR
 
 import estimation_methods
+from utils.methods import ensemble_KMM
 from utils import IO
 
 from utils.utils import minmax, reduce, npShuffle
@@ -79,6 +80,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
     train = Y_train.reshape(-1, 1)
     test = Y_test.reshape(-1, 1)
 
+    """
     try:
         importances_logReg = estimation_methods.log_regression(X_train, X_test, random)
         LR_err = CVError * importances_logReg
@@ -238,13 +240,57 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         print("Fallo BKLIEP")
         BKLIEP_err = []
         traceback.print_exc()
+    """
+    LR_err = []
+    PLR_err = []
+    BLR_err = []
+    KMM_err = []
+    PKMM_err = []
+    BKMM_err = []
+    KDE_err = []
+    PKDE_err = []
+    BKDE_err = []
+    KLIEP_err = []
+    PKLIEP_err = []
+    BKLIEP_err = []
+
+    try:
+        importances_KMM_ENS = ensemble_KMM.ensemble_KMM_train(X_train, X_test)
+        KMM_ENS_err = CVError * importances_KMM_ENS
+    except Exception:
+        print("Error KMM ENS")
+        KMM_ENS_err = []
+        traceback.print_exc()
+    try:
+        importances_PKMM = ensemble_KMM.ensemble_KMM_train(P_train, P_test)
+        PKMM_ENS_err = CVError * importances_PKMM
+    except Exception:
+        print("Error PKMM ENS")
+        PKMM_ENS_err = []
+        traceback.print_exc()
+    if len(PKMM_ENS_err) == 0:
+        try:
+            importances_PKMM = ensemble_KMM.ensemble_KMM_train_model(P_train, P_test)
+            PKMM_ENS_err = CVError * importances_PKMM
+        except Exception:
+            print("Error PKMM ENS")
+            PKMM_ENS_err = []
+            traceback.print_exc()
+
+    try:
+        importances_KLIEP = ensemble_KMM.ensemble_KMM_train(train, test)
+        BKMM_ENS_err = CVError * importances_KLIEP
+    except Exception:
+        print("Error BKMM ENS")
+        BKMM_ENS_err = []
+        traceback.print_exc()
 
     return [np.average(eval), np.average(CVError),
-            np.average(LR_err), np.average(PLR_err), np.average(CLR_err), np.average(MLR_err), np.average(BLR_err),
-            np.average(KMM_err), np.average(PKMM_err), np.average(CKMM_err), np.average(MKMM_err), np.average(BKMM_err),
-            np.average(KDE_err), np.average(PKDE_err), np.average(CKDE_err), np.average(MKDE_err), np.average(BKDE_err),
-            np.average(KLIEP_err), np.average(PKLIEP_err), np.average(CKLIEP_err), np.average(MKLIEP_err),
-            np.average(BKLIEP_err)]
+            np.average(LR_err), np.average(PLR_err), np.average(BLR_err),
+            np.average(KMM_err), np.average(PKMM_err), np.average(BKMM_err),
+            np.average(KDE_err), np.average(PKDE_err), np.average(BKDE_err),
+            np.average(KLIEP_err), np.average(PKLIEP_err), np.average(BKLIEP_err),
+            np.average(KMM_ENS_err), np.average(PKMM_ENS_err), np.average(BKMM_ENS_err)]
 
 def main():
     parser = argparse.ArgumentParser()

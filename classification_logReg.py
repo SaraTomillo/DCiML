@@ -23,7 +23,7 @@ kernel = 'linear'
 def classification(X_train, Y_train, X_test, Y_test, seed):
     random = np.random.RandomState(int(seed))
     tracemalloc.start()
-    model = SVC(kernel='linear', C=1, coef0=0)
+    model = LogisticRegression(random_state=random, C=1)
 
     minmax_X = minmax(X_train)
     X_train = reduce(X_train, minmax_X)
@@ -40,7 +40,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     CV = cross_val_predict(model, X_train, Y_train, cv=10)#, method='decision_function')
     CVError = error(CV, Y_train)
 
-    importanceModel = LogisticRegression(random_state=random, C=1, class_weight='balanced', coef0=0, n_jobs=None)
+    importanceModel = LogisticRegression(random_state=random, C=1, class_weight='balanced', coef0=0)
     importanceModel.fit(X_train, Y_train)
 
     P_train = importanceModel.decision_function(X_train)

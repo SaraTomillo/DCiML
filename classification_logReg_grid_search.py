@@ -11,6 +11,7 @@ from sklearn.model_selection import GridSearchCV
 from utils import IO
 
 import estimation_methods
+from utils.methods import ensemble_KMM
 import tracemalloc
 from utils.utils import minmax, reduce, npShuffle
 
@@ -25,7 +26,7 @@ kernel = 'linear'
 def classification(X_train, Y_train, X_test, Y_test, seed):
     random = np.random.RandomState(int(seed))
     tracemalloc.start()
-    model = SVC(kernel='linear', C=1, coef0=0)
+    model = LogisticRegression(random_state=random, C=1)
 
     minmax_X = minmax(X_train)
     X_train = reduce(X_train, minmax_X)
@@ -47,7 +48,6 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         'C': [10**(-3), 10**(-2), 10**(-1), 10**(0), 10**(1), 10**(2), 10**(3)],
         'random_state': [random],
         'class_weight': ['balanced'],
-        'coef0': [0],
         'n_jobs': [None]
     }
     grid_LR = GridSearchCV(estimator=lr,
@@ -199,11 +199,43 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         BKLIEP_err = []
         traceback.print_exc()
 
+    try:
+        importances_KMM_ENS = ensemble_KMM.ensemble_KMM_train(X_train, X_test)
+        KMM_ENS_err = CVError * importances_KMM_ENS
+    except Exception:
+        print("Error KMM ENS")
+        KMM_ENS_err = []
+        traceback.print_exc()
+    try:
+        importances_ENSKMM_model = ensemble_KMM.ensemble_KMM_train(P_train, P_test)
+        PKMM_ENS_err = CVError * importances_ENSKMM_model
+    except Exception:
+        print("Error PKLIEP")
+        PKMM_ENS_err = []
+        traceback.print_exc()
+    if len(PKMM_ENS_err) == 0:
+        try:
+            importances_PKMM = ensemble_KMM.ensemble_KMM_train_model(P_train, P_test)
+            PKMM_ENS_err = CVError * importances_PKMM
+        except Exception:
+            print("Error PKMM")
+            PKMM_ENS_err = []
+            traceback.print_exc()
+
+    try:
+        importances_ENSKMM = ensemble_KMM.ensemble_KMM_train(train, test)
+        BKMM_ENS_err = CVError * importances_ENSKMM
+    except Exception:
+        print("Error BKLIEP")
+        BKMM_ENS_err = []
+        traceback.print_exc()
+
     return [np.average(eval), np.average(CVError),
             np.average(LR_err), np.average(PLR_err), np.average(BLR_err),
             np.average(KMM_err), np.average(PKMM_err), np.average(BKMM_err),
+            np.average(KMM_ENS_err), np.average(PKMM_ENS_err),  np.average(BKMM_ENS_err),
             np.average(KDE_err), np.average(PKDE_err), np.average(BKDE_err),
-            np.average(KLIEP_err), np.average(PKLIEP_err), np.average(BKLIEP_err)]
+            np.average(KLIEP_err), np.average(PKLIEP_err),  np.average(BKLIEP_err)]
 
 def main():
     parser = argparse.ArgumentParser()

@@ -81,9 +81,6 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     train = Y_train.reshape(-1, 1)
     test = Y_test.reshape(-1, 1)
 
-    LR_err = []
-    PLR_err = []
-    """
     try:
         importances_logReg = estimation_methods.log_regression(X_train, X_test, random)
         LR_err = CVError * importances_logReg
@@ -107,7 +104,7 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
             print("Error PLR")
             PLR_err = []
             traceback.print_exc()
-    """
+
     try:
         importances_logReg = estimation_methods.log_regression(train, test, random)
         BLR_err = CVError * importances_logReg
@@ -116,9 +113,6 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         BLR_err = []
         traceback.print_exc()
 
-    KDE_err = []
-    PKDE_err = []
-    """
     try:
         importances_kernel_density = estimation_methods.kernel_density(X_train, X_test, bandwith, kernel)
         KDE_err = CVError * importances_kernel_density
@@ -135,7 +129,6 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         PKDE_err = []
         traceback.print_exc()
 
-    """
     try:
         importances_kernel_density = estimation_methods.kernel_density(train, test, bandwith, kernel)
         BKDE_err = CVError * importances_kernel_density

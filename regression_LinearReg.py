@@ -2,7 +2,7 @@ import argparse
 import traceback
 
 import numpy as np
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import cross_val_predict
 from sklearn.svm import SVR
 
@@ -41,7 +41,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
     CV = cross_val_predict(model, X_train, Y_train, cv=10)
     CVError = error(CV, Y_train)
 
-    importanceModel = LogisticRegression(random_state=random, C=1, coef0=0, n_jobs=None)
+    importanceModel = LinearRegression(random_state=random, C=1, coef0=0, n_jobs=None)
     importanceModel.fit(X_train, Y_train)
 
     P_train = importanceModel.predict(X_train)

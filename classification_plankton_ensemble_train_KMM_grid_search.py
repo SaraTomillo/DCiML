@@ -2,15 +2,14 @@ import argparse
 import traceback
 
 import numpy as np
-from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_val_predict, GridSearchCV
 from sklearn.svm import SVC
 
 from utils import IO
-import estimation_methods
 from utils.methods import ensemble_KMM
 import tracemalloc
 from utils.utils import minmax, reduce, npShuffle
+
 
 
 def error(predictions, y):
@@ -19,11 +18,10 @@ def error(predictions, y):
 
 bandwith = 1
 kernel = 'linear'
-
 def classification(X_train, Y_train, X_test, Y_test, seed):
     random = np.random.RandomState(int(seed))
     tracemalloc.start()
-    model = LogisticRegression(random_state=random, C=1)
+    model = SVC(kernel='linear', C=1, coef0=0)
 
     minmax_X = minmax(X_train)
     X_train = reduce(X_train, minmax_X)
@@ -40,24 +38,22 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     CV = cross_val_predict(model, X_train, Y_train, cv=10)#, method='decision_function')
     CVError = error(CV, Y_train)
 
-    lr = LogisticRegression()
+    svc = SVC()
     params = {
-        'C': [10 ** (-3), 10 ** (-2), 10 ** (-1), 10 ** (0), 10 ** (1), 10 ** (2), 10 ** (3)],
-        'random_state': [random],
+        'C': [10**(-3), 10**(-2), 10**(-1), 10**(0), 10**(1), 10**(2), 10**(3)],
+        'kernel': ['linear'],
         'class_weight': ['balanced'],
-        'coef0': [0],
-        'n_jobs': [None]
+        'coef0': [0]
     }
-    grid_LR = GridSearchCV(estimator=lr,
+    grid_SVC = GridSearchCV(estimator=svc,
                            param_grid=params,
                            scoring='accuracy',
                            cv=5,
                            verbose=1,
                            n_jobs=None)
+    grid_SVC.fit(X_train, Y_train)
+    importanceModel = grid_SVC.best_estimator_
 
-    grid_LR.fit(X_train, Y_train)
-
-    importanceModel = grid_LR.best_estimator_
     importanceModel.fit(X_train, Y_train)
 
     P_train = importanceModel.decision_function(X_train)
@@ -84,61 +80,6 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
 
     train = Y_train.reshape(-1, 1)
     test = Y_test.reshape(-1, 1)
-    try:
-        importances_logReg = estimation_methods.log_regression(X_train, X_test, random)
-        LR_err = CVError * importances_logReg
-    except Exception:
-        print("Error LR")
-        LR_err = []
-        traceback.print_exc()
-
-    try:
-        importances_MLogReg = estimation_methods.log_regression_model_classification(P_train, P_test, random)
-        PLR_err = CVError * importances_MLogReg
-    except Exception:
-        print("Error PLR")
-        PLR_err = []
-        traceback.print_exc()
-    if len(PLR_err) == 0:
-        try:
-            importances_MLogReg = estimation_methods.log_regression_model(P_train, P_test, random)
-            PLR_err = CVError * importances_MLogReg
-        except Exception:
-            print("Error PLR")
-            PLR_err = []
-            traceback.print_exc()
-
-    try:
-        importances_logReg = estimation_methods.log_regression(train, test, random)
-        BLR_err = CVError * importances_logReg
-    except Exception:
-        print("Error BLR")
-        BLR_err = []
-        traceback.print_exc()
-
-    try:
-        importances_kernel_density = estimation_methods.kernel_density(X_train, X_test, bandwith, kernel)
-        KDE_err = CVError * importances_kernel_density
-    except Exception:
-        print("Error KDE")
-        KDE_err = []
-        traceback.print_exc()
-
-    try:
-        importances_kernel_density_model = estimation_methods.kernel_density_model(P_train, P_test, bandwith, kernel)
-        PKDE_err = CVError * importances_kernel_density_model
-    except Exception:
-        print("Error PKDE")
-        PKDE_err = []
-        traceback.print_exc()
-
-    try:
-        importances_kernel_density = estimation_methods.kernel_density(train, test, bandwith, kernel)
-        BKDE_err = CVError * importances_kernel_density
-    except Exception:
-        print("Error BKDE")
-        BKDE_err = []
-        traceback.print_exc()
 
     try:
         importances_KMM = ensemble_KMM.ensemble_KMM_train(X_train, X_test)
@@ -172,9 +113,8 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
         traceback.print_exc()
 
     return [np.average(eval), np.average(CVError),
-            np.average(LR_err), np.average(PLR_err), np.average(BLR_err),
-            np.average(KDE_err), np.average(PKDE_err), np.average(BKDE_err),
             np.average(KMM_err), np.average(PKMM_err), np.average(BKMM_err)]
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -194,7 +134,7 @@ def main():
 
     X_train, Y_train, X_test, Y_test = IO.readDataset(filename_train, filename_test)
     results = classification(X_train, Y_train, X_test, Y_test, seed)
-    IO.writeToCSV(results, "plankton-LR-GS", dataset_name, execution_id, seed)
+    IO.writeToCSV(results, "plankton", dataset_name, execution_id, seed)
 
 if __name__== "__main__":
   main()
