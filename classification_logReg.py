@@ -9,6 +9,7 @@ from sklearn.linear_model import LogisticRegression
 from utils import IO
 
 import estimation_methods
+from utils.methods import ensemble_KMM
 import tracemalloc
 from utils.utils import minmax, reduce, npShuffle
 
@@ -32,15 +33,15 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     model.fit(X_train, Y_train)
     Pred_Eval = model.predict(X_test)
 
-    eval = error(Pred_Eval, Y_test)
+    eval_err = error(Pred_Eval, Y_test)
 
     X_train=npShuffle(X_train,seed)
     Y_train=npShuffle(Y_train,seed)
 
     CV = cross_val_predict(model, X_train, Y_train, cv=10)#, method='decision_function')
-    CVError = error(CV, Y_train)
+    CV_err = error(CV, Y_train)
 
-    importanceModel = LogisticRegression(random_state=random, C=1, class_weight='balanced', coef0=0)
+    importanceModel = LogisticRegression(random_state=random, C=1, class_weight='balanced')
     importanceModel.fit(X_train, Y_train)
 
     P_train = importanceModel.decision_function(X_train)
@@ -69,122 +70,153 @@ def classification(X_train, Y_train, X_test, Y_test, seed):
     test = Y_test.reshape(-1, 1)
 
     try:
-        importances_logReg = estimation_methods.log_regression(X_train, X_test, random)
-        LR_err = CVError * importances_logReg
+        importances_LR = estimation_methods.LR(X_train, X_test, random)
+        LR_C_err = CV_err * importances_LR
     except Exception:
-        print("Error LR")
-        LR_err = []
+        print("Error LR-C")
+        LR_C_err = []
         traceback.print_exc()
 
     try:
-        importances_PLogReg = estimation_methods.log_regression_model_classification(P_train, P_test, random)
-        PLR_err = CVError * importances_PLogReg
+        importances_LR_P = estimation_methods.LR_P_classification(P_train, P_test, random)
+        LR_P_err = CV_err * importances_LR_P
     except Exception:
-        print("Error PLR")
-        PLR_err = []
+        print("Error LR-P")
+        LR_P_err = []
         traceback.print_exc()
-    if len(PLR_err) == 0:
+    if len(LR_P_err) == 0:
         try:
-            importances_PLogReg = estimation_methods.log_regression_model(P_train, P_test, random)
-            PLR_err = CVError * importances_PLogReg
+            importances_LR_P = estimation_methods.LR_P(P_train, P_test, random)
+            LR_P_err = CV_err * importances_LR_P
         except Exception:
-            print("Error PLR")
-            PLR_err = []
+            print("Error LR-P")
+            LR_P_err = []
             traceback.print_exc()
 
     try:
-        importances_BlogReg = estimation_methods.log_regression(train, test, random)
-        BLR_err = CVError * importances_BlogReg
+        importances_LR_CP = estimation_methods.LR(train, test, random)
+        LR_CP_err = CV_err * importances_LR_CP
     except Exception:
-        print("Error BLR")
-        BLR_err = []
+        print("Error LR-CP")
+        LR_CP_err = []
         traceback.print_exc()
 
     try:
-        importances_KMM = estimation_methods.kmm(X_train, X_test)
-        KMM_err = CVError * importances_KMM
+        importances_KMM_C = estimation_methods.KMM(X_train, X_test)
+        KMM_C_err = CV_err * importances_KMM_C
     except Exception:
-        print("Error KMM")
-        KMM_err = []
+        print("Error KMM-C")
+        KMM_C_err = []
         traceback.print_exc()
 
     try:
-        importances_PKMM = estimation_methods.kmm_model_classification(P_train, P_test)
-        PKMM_err = CVError * importances_PKMM
+        importances_KMM_P = estimation_methods.KMM_P_classification(P_train, P_test)
+        KMM_P_err = CV_err * importances_KMM_P
     except Exception:
-        print("Error PKMM")
-        PKMM_err = []
+        print("Error KMM-P")
+        KMM_P_err = []
         traceback.print_exc()
-    if len(PKMM_err) == 0:
+    if len(KMM_P_err) == 0:
         try:
-            importances_PKMM = estimation_methods.kmm_model(P_train, P_test)
-            PKMM_err = CVError * importances_PKMM
+            importances_KMM_P = estimation_methods.KMM_P(P_train, P_test)
+            KMM_P_err = CV_err * importances_KMM_P
         except Exception:
-            print("Error PKMM")
-            PKMM_err = []
+            print("Error KMM-P")
+            KMM_P_err = []
             traceback.print_exc()
 
     try:
-        importances_BKMM = estimation_methods.kmm(train, test)
-        BKMM_err = CVError * importances_BKMM
+        importances_KMM_B = estimation_methods.KMM(train, test)
+        KMM_CP_err = CV_err * importances_KMM_B
     except Exception:
-        print("Error BKMM")
-        BKMM_err = []
+        print("Error KMM-CP")
+        KMM_CP_err = []
         traceback.print_exc()
 
     try:
-        importances_kernel_density = estimation_methods.kernel_density(X_train, X_test, bandwith, kernel)
-        KDE_err = CVError * importances_kernel_density
+        importances_EKMM_C = ensemble_KMM.EKMM_train(X_train, X_test)
+        EKMM_C_err = CV_err * importances_EKMM_C
     except Exception:
-        print("Error KDE")
-        KDE_err = []
+        print("Error EKMM-C")
+        EKMM_C_err = []
+        traceback.print_exc()
+    try:
+        importances_EKMM_P = ensemble_KMM.EKMM_train(P_train, P_test)
+        EKMM_P_err = CV_err * importances_EKMM_P
+    except Exception:
+        print("Error EKMM-P")
+        EKMM_P_err = []
+        traceback.print_exc()
+    if len(EKMM_P_err) == 0:
+        try:
+            importances_EKMM_P = ensemble_KMM.EKMM_train_P(P_train, P_test)
+            EKMM_P_err = CV_err * importances_EKMM_P
+        except Exception:
+            print("Error EKMM-P")
+            EKMM_P_err = []
+            traceback.print_exc()
+    try:
+        importances_EKMM_CP = ensemble_KMM.EKMM_train(train, test)
+        EKMM_CP_err = CV_err * importances_EKMM_CP
+    except Exception:
+        print("Error EKMM-CP")
+        EKMM_CP_err = []
         traceback.print_exc()
 
     try:
-        importances_kernel_density_model = estimation_methods.kernel_density_model(P_train, P_test, bandwith, kernel)
-        PKDE_err = CVError * importances_kernel_density_model
+        importances_KDE_C = estimation_methods.KDE(X_train, X_test, bandwith, kernel)
+        KDE_C_err = CV_err * importances_KDE_C
     except Exception:
-        print("Error PKDE")
-        PKDE_err = []
+        print("Error KDE-C")
+        KDE_C_err = []
         traceback.print_exc()
 
     try:
-        importances_kernel_density = estimation_methods.kernel_density(train, test, bandwith, kernel)
-        BKDE_err = CVError * importances_kernel_density
+        importances_KDE_P = estimation_methods.KDE_P(P_train, P_test, bandwith, kernel)
+        KDE_P_err = CV_err * importances_KDE_P
     except Exception:
-        print("Error BKDE")
-        BKDE_err = []
+        print("Error KDE-P")
+        KDE_P_err = []
         traceback.print_exc()
 
     try:
-        importances_KLIEP = estimation_methods.kliep(X_train, X_test)
-        KLIEP_err = CVError * importances_KLIEP
+        importances_KDE_CP = estimation_methods.KDE(train, test, bandwith, kernel)
+        KDE_CP_err = CV_err * importances_KDE_CP
     except Exception:
-        print("Error KLIEP")
-        KLIEP_err = []
+        print("Error KDE-CP")
+        KDE_CP_err = []
         traceback.print_exc()
 
     try:
-        importances_KLIEP_model = estimation_methods.kliep_model(P_train, P_test)
-        PKLIEP_err = CVError * importances_KLIEP_model
+        importances_KLIEP_C = estimation_methods.KLIEP(X_train, X_test)
+        KLIEP_C_err = CV_err * importances_KLIEP_C
     except Exception:
-        print("Error PKLIEP")
-        PKLIEP_err = []
+        print("Error KLIEP-C")
+        KLIEP_C_err = []
         traceback.print_exc()
 
     try:
-        importances_KLIEP = estimation_methods.kliep(train, test)
-        BKLIEP_err = CVError * importances_KLIEP
+        importances_KLIEP_P = estimation_methods.KLIEP_P(P_train, P_test)
+        KLIEP_P_err = CV_err * importances_KLIEP_P
     except Exception:
-        print("Error BKLIEP")
-        BKLIEP_err = []
+        print("Error KLIEP-P")
+        KLIEP_P_err = []
         traceback.print_exc()
 
-    return [np.average(eval), np.average(CVError),
-            np.average(LR_err), np.average(PLR_err), np.average(BLR_err),
-            np.average(KMM_err), np.average(PKMM_err), np.average(BKMM_err),
-            np.average(KDE_err), np.average(PKDE_err), np.average(BKDE_err),
-            np.average(KLIEP_err), np.average(PKLIEP_err),  np.average(BKLIEP_err)]
+    try:
+        importances_KLIEP_CP = estimation_methods.KLIEP(train, test)
+        KLIEP_CP_err = CV_err * importances_KLIEP_CP
+    except Exception:
+        print("Error KLIEP-CP")
+        KLIEP_CP_err = []
+        traceback.print_exc()
+
+    return [np.average(eval_err), np.average(CV_err),
+            np.average(LR_C_err), np.average(LR_P_err), np.average(LR_CP_err),
+            np.average(KMM_C_err), np.average(KMM_P_err), np.average(KMM_CP_err),
+            np.average(EKMM_C_err), np.average(EKMM_P_err), np.average(EKMM_CP_err),
+            np.average(KDE_C_err), np.average(KDE_P_err), np.average(KDE_CP_err),
+            np.average(KLIEP_C_err), np.average(KLIEP_P_err), np.average(KLIEP_CP_err)]
 
 def main():
     parser = argparse.ArgumentParser()

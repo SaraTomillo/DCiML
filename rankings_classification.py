@@ -5,11 +5,12 @@ from utils.IO import saveCSV
 def friedman_methods(datasets, problem, percentage):
     ranksMethods = []
     CDs = []
+    aux = []
     for dataset_name in datasets:
         distances =[]
         directory = "./results/rankings/" + problem + "/" + dataset_name
         filename = directory + "/" + dataset_name + "-distances-" + str(percentage) + ".csv"
-        print(filename)
+        print(dataset_name)
         data = pd.read_csv(filename, sep=",", header=0)
         data = data.values
         for element in data:
@@ -18,39 +19,39 @@ def friedman_methods(datasets, problem, percentage):
         avgRanks = []
 
         # CV-LR-PLR
-        distances_CV_LR_PLR_BLR = []
+        distances_LR_PLR_BLR = []
         for element in distances:
-            distances_CV_LR_PLR_BLR.append([element[0], element[1], element[2], element[3]])
-        ranking, avgRank, CDs = friedman.friedman(distances_CV_LR_PLR_BLR)
+            distances_LR_PLR_BLR.append([element[1], element[2], element[3]])
+        ranking, avgRank, CDs = friedman.friedman(distances_LR_PLR_BLR)
         avgRanks.append(avgRank)
         saveCSV(ranking, "friedman-CV-LR-PLR-BLR", problem, dataset_name, percentage, headers=["CV", "LR", "PLR", "BLR"])
         # CV-KMM-PKMM
-        distances_CV_KMM_PKMM_BKMM = []
+        distances_KMM_PKMM_BKMM = []
         for element in distances:
-            distances_CV_KMM_PKMM_BKMM.append([element[0], element[4], element[5], element[6]])
-        ranking, avgRank, CDs = friedman.friedman(distances_CV_KMM_PKMM_BKMM)
+            distances_KMM_PKMM_BKMM.append([element[4], element[5], element[6]])
+        ranking, avgRank, CDs = friedman.friedman(distances_KMM_PKMM_BKMM)
         avgRanks.append(avgRank)
         saveCSV(ranking, "friedman-CV-KMM-PKMM-BKMM",problem, dataset_name, percentage, headers=["CV", "KMM", "PKMM", "BKMM"])
         # CV-KDE-PKDE-BKDE
-        distances_CV_KDE_PKDE_BKDE = []
+        distances_KDE_PKDE_BKDE = []
         for element in distances:
-            distances_CV_KDE_PKDE_BKDE.append([element[0], element[7], element[8], element[9]])
-        ranking, avgRank, CDs = friedman.friedman(distances_CV_KDE_PKDE_BKDE)
+            distances_KDE_PKDE_BKDE.append([element[7], element[8], element[9]])
+        ranking, avgRank, CDs = friedman.friedman(distances_KDE_PKDE_BKDE)
         avgRanks.append(avgRank)
         saveCSV(ranking, "friedman-CV-KDE-PKDE-BKDE",problem, dataset_name, percentage, headers=["CV", "KDE", "PKDE", "BKDE"])
         # CV-KLIEP-PKLIEP-BKLIEP
-        distances_CV_KLIEP_PKLIEP_BKLIEP = []
+        distances_KLIEP_PKLIEP_BKLIEP = []
         for element in distances:
-            distances_CV_KLIEP_PKLIEP_BKLIEP.append([element[0], element[10], element[11], element[12]])
-        ranking, avgRank, CDs = friedman.friedman(distances_CV_KLIEP_PKLIEP_BKLIEP)
+            distances_KLIEP_PKLIEP_BKLIEP.append([element[10], element[11], element[12]])
+        ranking, avgRank, CDs = friedman.friedman(distances_KLIEP_PKLIEP_BKLIEP)
         avgRanks.append(avgRank)
         saveCSV(ranking, "friedman-CV-KLIEP-PKLIEP-BKLIEP", problem, dataset_name, percentage, headers=["CV", "KLIEP", "PKLIEP", "BKLIEP"])
 
         # CV-KMM-PKMM-BKMM-ENS
-        distances_CV_KMM_PKMM_BKMM_ENS = []
+        distances_KMM_PKMM_BKMM_ENS = []
         for element in distances:
-            distances_CV_KMM_PKMM_BKMM_ENS.append([element[0], element[13], element[14], element[15]])
-        ranking, avgRank, CDs = friedman.friedman(distances_CV_KMM_PKMM_BKMM_ENS)
+            distances_KMM_PKMM_BKMM_ENS.append([element[13], element[14], element[15]])
+        ranking, avgRank, CDs = friedman.friedman(distances_KMM_PKMM_BKMM_ENS)
         avgRanks.append(avgRank)
         saveCSV(ranking, "friedman-CV-KMM-PKMM-BKMM-ENS", problem, dataset_name, percentage,
                 headers=["CV", "KMM-ENS", "PKMM-ENS", "BKMM-ENS"])
@@ -61,9 +62,14 @@ def friedman_methods(datasets, problem, percentage):
                 ranks.append(each)
         ranksMethods.append(ranks)
 
+        for element in ranking:
+            if len(element) == 0:
+                break
+            aux.append(element)
+
     saveCSV(ranksMethods, "friedman-methods", problem, problem, percentage,
                 headers=["CV", "LR", "PLR", "BLR", "CV", "KMM", "PKMM", "BKMM", "CV", "KDE", "PKDE", "BKDE", "CV", "KLIEP", "PKLIEP", "BKLIEP", "CV", "KMM-ENS", "PKMM-ENS", "BKMM-ENS"])
-    return ranksMethods, CDs
+    return ranksMethods, CDs, aux
 
 
 def friedman_all(datasets, problem, percentage):

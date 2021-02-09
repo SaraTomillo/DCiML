@@ -6,7 +6,6 @@ import os
 headers_regression = ["Eval", "CV", "LR", "PLR", "BLR", "KMM", "PKMM", "BKMM", "EKMM", "EPKMM", "EBKMM", "KDE", "PKDE", "BKDE", "KLIEP", "PKLIEP", "BKLIEP"]
 headers_classification = ["Eval", "CV", "LR", "PLR", "BLR", "KMM", "PKMM", "BKMM", "EKMM", "EPKMM", "EBKMM", "KDE", "PKDE", "BKDE", "KLIEP", "PKLIEP", "BKLIEP"]
 headers_plankton = ["Eval", "CV", "LR", "PLR", "BLR", "KDE", "PKDE", "BKDE", "EKMM", "EPKMM", "EBKMM"]
-headers_plankton_KMM_ens = ["Eval", "CV", "KMM-ENS", "PKMM-ENS", "BKMM-ENS"]
 headers = []
 
 def readDataset(filename_train, filename_test):

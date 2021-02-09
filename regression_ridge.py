@@ -2,14 +2,17 @@ import argparse
 import traceback
 
 import numpy as np
+from sklearn.linear_model import Ridge
 from sklearn.model_selection import cross_val_predict
-from sklearn.svm import SVR
 
 from utils import IO
 
 import estimation_methods
 from utils.methods import ensemble_KMM
+import tracemalloc
 from utils.utils import minmax, reduce, npShuffle
+
+from sklearn.model_selection import GridSearchCV
 
 def error(predictions, y):
     return abs(predictions - y)
@@ -19,7 +22,7 @@ kernel = 'linear'
 
 def regression(X_train, Y_train, X_test, Y_test, seed):
     random = np.random.RandomState(int(seed))
-    model = SVR(kernel='linear', C=1, coef0=0)
+    model = Ridge(random_state=random, alpha=1)
 
     minmax_X = minmax(X_train)
     X_train = reduce(X_train, minmax_X)
@@ -41,7 +44,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
     CV = cross_val_predict(model, X_train, Y_train, cv=10)
     CV_err = error(CV, Y_train)
 
-    importanceModel = SVR(kernel='linear', C=1, coef0=0)
+    importanceModel = Ridge(random_state=random, alpha=1)
     importanceModel.fit(X_train, Y_train)
 
     P_train = importanceModel.predict(X_train)
@@ -81,7 +84,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         print("Error LR-P")
         LR_P_err = []
         traceback.print_exc()
-    
+
     try:
         importances_LR_CP = estimation_methods.LR(train, test, random)
         LR_CP_err = CV_err * importances_LR_CP
@@ -105,7 +108,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         print("Error KMM-P")
         KMM_P_err = []
         traceback.print_exc()
-    
+
     try:
         importances_KMM_CP = estimation_methods.KMM(train, test)
         KMM_CP_err = CV_err * importances_KMM_CP
@@ -161,7 +164,6 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         KDE_P_err = []
         traceback.print_exc()
 
-    
     try:
         importances_KDE_CP = estimation_methods.KDE(train, test, bandwith, kernel)
         KDE_CP_err = CV_err * importances_KDE_CP
@@ -185,7 +187,7 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         print("Error KLIEP-P")
         KLIEP_P_err = []
         traceback.print_exc()
-    
+
     try:
         importances_KLIEP_CP = estimation_methods.KLIEP(train, test)
         KLIEP_CP_err = CV_err * importances_KLIEP_CP
@@ -193,7 +195,6 @@ def regression(X_train, Y_train, X_test, Y_test, seed):
         print("Error KLIEP-CP")
         KLIEP_CP_err = []
         traceback.print_exc()
-
 
     return [np.average(eval), np.average(CV_err),
             np.average(LR_C_err), np.average(LR_P_err), np.average(LR_CP_err),
@@ -219,7 +220,7 @@ def main():
 
     X_train, Y_train, X_test, Y_test = IO.readDataset(filename_train, filename_test)
     results = regression(X_train, Y_train, X_test, Y_test, seed)
-    IO.writeToCSV(results, "regression", dataset_name, execution_id, seed)
+    IO.writeToCSV(results, "regression-LR", dataset_name, execution_id, seed)
 
 
 if __name__== "__main__":

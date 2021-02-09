@@ -5,19 +5,18 @@ sys.path.append(os.path.dirname(CURRENT_DIR))
 datasets_classification = ["iris", "sonar", "ionosphere", "cmc", "haberman",
                            "transfusion", "wdbc", "SPECT", "titanic", "splice"]
 
-datasets_classification = ["haberman"]#,"cmc"] "iris", "sonar", "ionosphere",
 
 datasets_regression = ["abalone", "computer-hardware", "wine-quality-red", "wine-quality-white",
                        "auto-mpg", "autos", "residential-v9", "residential-v10", "ticdata","student-mat","student-por"]
-datasets_regression = ["abalone", "computer-hardware", "autos", "autos-mpg", "wine-quality-red"]
 
+datasets_regression = ["wine-quality-white"]
 datasets_plankton = ["plankton-2006", "plankton-2007", "plankton-2008", "plankton-2009", "plankton-2010", "plankton-2011", "plankton-2012", "plankton-2013"]
 
-classification_script = "classification_logReg_grid_search.py"
-regression_script = "regression_logReg_grid_search.py"
-plankton_script = "classification_plankton_ensemble_train_KMM_grid_search.py"
+classification_script = "classification_logReg.py"
+regression_script = "regression_ridge.py"
+plankton_script = "classification_plankton_logReg.py"
 
-problem_type = "-LR-GS"
+problem_type = "-LR"
 results_folder = problem_type + "/"
 
 datasets = []
@@ -36,7 +35,7 @@ f.write("regressionFiles =")
 # Files datasets
 test_percentages = [0.33]
 tests_number = 20
-seeds = [2032, 2033, 2034, 2035, 2036]
+seeds = [2032]
 
 for seed in seeds:
     for dataset in datasets_regression:
@@ -55,7 +54,7 @@ f.write("classificationFiles =")
 # Files datasets
 test_percentages = [0.33]
 tests_number = 20
-seeds = [2033]
+seeds = [2032]
 
 for seed in seeds:
     for dataset in datasets_classification:
@@ -72,7 +71,7 @@ f.write("planktonFiles =")
 
 # Files datasets
 test_percentage = 1
-seeds = [2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041]
+seeds = [2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2042]
 for seed in seeds:
     for dataset in datasets_plankton:
         f.write(" results/error_estimations/plankton" + results_folder + dataset + "/" + dataset +"-" + str(seed)+"-"+ str(test_percentage) + ".csv ")

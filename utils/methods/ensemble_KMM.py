@@ -14,7 +14,7 @@ def partition(data, k):
     return out
 
 
-def ensemble_KMM_test(X_train, X_test, k=20, seed=2032):
+def EKMM_test(X_train, X_test, k=20, seed=2032):
     np.random.RandomState(seed)
     np.random.shuffle(X_test)
     partitions_test = partition(X_test, k)
@@ -22,7 +22,7 @@ def ensemble_KMM_test(X_train, X_test, k=20, seed=2032):
     importances_partitions = []
     weights = []
     for test_partition in partitions_test:
-        importance = estimation_methods.kmm(X_train, test_partition)
+        importance = estimation_methods.KMM(X_train, test_partition)
         weight = len(test_partition)/len(X_test)
 
         importances_partitions.append(importance)
@@ -33,21 +33,21 @@ def ensemble_KMM_test(X_train, X_test, k=20, seed=2032):
 
     return importances
 
-def ensemble_KMM_train(X_train, X_test, k=20, seed=2032):
+def EKMM_train(X_train, X_test, k=20, seed=2032):
     np.random.RandomState(seed)
     np.random.shuffle(X_train)
     partitions_train = partition(X_train, k)
 
     importances_partitions = []
     for train_partition in partitions_train:
-        importance = estimation_methods.kmm(train_partition, X_test)
+        importance = estimation_methods.KMM(train_partition, X_test)
         importances_partitions.append(importance)
 
     importances = np.concatenate(importances_partitions)
     return importances
 
 
-def ensemble_KMM_train_model(P_train, P_test):
+def EKMM_train_P(P_train, P_test):
     train = P_train
 
     train = []
@@ -60,5 +60,5 @@ def ensemble_KMM_train_model(P_train, P_test):
         test.append([element])
     test = np.array(test)
 
-    importance = ensemble_KMM_train(train, test)
+    importance = EKMM_train(train, test)
     return importance

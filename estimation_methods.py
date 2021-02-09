@@ -6,13 +6,13 @@ from utils.methods.KMM import iwe_kernel_mean_matching
 from utils.utils import T
 
 
-def kliep(X_train, X_test):
+def KLIEP(X_train, X_test):
     kliep = DensityRatioEstimator()
     kliep.fit(X_train, X_test)  # keyword arguments are X_train and X_test
     importance = kliep.predict(X_train)
     return importance
 
-def kliep_model(P_train, P_test):
+def KLIEP_P(P_train, P_test):
     aux = np.asarray(P_train)
     if len(aux.shape) == 1:
         P_trainT = T(P_train)
@@ -27,7 +27,7 @@ def kliep_model(P_train, P_test):
     importance = kliep.predict(P_trainT)
     return importance
 
-def kliep_mixed(P_train, P_test):
+def KLIEP_M(P_train, P_test):
     # Necesario añadir un if
     aux = np.asarray(P_train)
     if len(aux.shape) == 1:
@@ -44,7 +44,7 @@ def kliep_mixed(P_train, P_test):
     importance = kliep.predict(P_trainT)
     return importance
 
-def kernel_density(X_train, X_test, bandwidth, kernel):
+def KDE(X_train, X_test, bandwidth, kernel):
     kde = KernelDensity(bandwidth=bandwidth, kernel=kernel)
     # Train's DF
     kde.fit(X_train)
@@ -74,7 +74,7 @@ def kernel_density(X_train, X_test, bandwidth, kernel):
         importance[i] = importance[i] * Mean1Coef
     return importance
 
-def kernel_density_model(P_train, P_test, bandwidth, kernel):
+def KDE_P(P_train, P_test, bandwidth, kernel):
     aux = np.asarray(P_train)
     if len(aux.shape) == 1:
         P_trainV = list(map(lambda x: [x], P_train))
@@ -116,7 +116,7 @@ def kernel_density_model(P_train, P_test, bandwidth, kernel):
     return importance
 
 
-def kernel_density_mixed(P_train, P_test, bandwidth, kernel):
+def KDE_M(P_train, P_test, bandwidth, kernel):
     aux = np.asarray(P_train)
     if len(aux.shape) == 1:
         P_trainV = list(map(lambda x: [x], P_train))
@@ -162,7 +162,7 @@ def kernel_density_mixed(P_train, P_test, bandwidth, kernel):
         importance[i] = importance[i] * Mean1Coef
     return importance
 
-def log_regression(X_train, X_test, random):
+def LR(X_train, X_test, random):
     X = np.concatenate((X_train, X_test))
     y = np.zeros(len(X))
     y[:len(X_train)] = 1
@@ -187,7 +187,7 @@ def log_regression(X_train, X_test, random):
     return importance
 
 
-def log_regression_model(P_train, P_test, random):
+def LR_P(P_train, P_test, random):
     X = []
     for element in P_train:
         X.append([element])
@@ -222,7 +222,7 @@ def log_regression_model(P_train, P_test, random):
 
 
 
-def log_regression_mixed(Y_train, P_test, random):
+def LR_M(Y_train, P_test, random):
     X = []
     for element in Y_train:
         X.append([element])
@@ -252,7 +252,7 @@ def log_regression_mixed(Y_train, P_test, random):
     return importance
 
 
-def log_regression_model_classification(P_train, P_test, random):
+def LR_P_classification(P_train, P_test, random):
     X = np.concatenate((P_train, P_test))
     y = np.zeros(len(X))
     y[:len(P_train)] = 1
@@ -278,12 +278,12 @@ def log_regression_model_classification(P_train, P_test, random):
     return importance
 
 
-def kmm(X_train, X_test):
+def KMM(X_train, X_test):
     importance = iwe_kernel_mean_matching(X_train, X_test)
     return importance
 
 
-def kmm_model(P_train, P_test):
+def KMM_P(P_train, P_test):
     train = P_train
 
     train = []
@@ -299,7 +299,7 @@ def kmm_model(P_train, P_test):
     importance = iwe_kernel_mean_matching(train, test)
     return importance
 
-def kmm_mixed(Y_train, P_test):
+def KMM_M(Y_train, P_test):
     train = Y_train
     test = []
     for element in P_test:
@@ -310,7 +310,7 @@ def kmm_mixed(Y_train, P_test):
     return importance
 
 
-def kmm_model_classification(P_train, P_test):
+def KMM_P_classification(P_train, P_test):
     importance = iwe_kernel_mean_matching(P_train, P_test)
     return importance
 
